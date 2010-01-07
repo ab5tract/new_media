@@ -1,0 +1,462 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\rightmargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Week 4 - The Website
+\end_layout
+
+\begin_layout Itemize
+color theory / patterns - The Web is blue
+\end_layout
+
+\begin_layout Itemize
+Usability - 
+\begin_inset Quotes eld
+\end_inset
+
+Don't make me think
+\begin_inset Quotes erd
+\end_inset
+
+ vs a navigation poetics
+\end_layout
+
+\begin_layout Itemize
+eye-tracking - heat maps tell stories, and help redesign sites
+\end_layout
+
+\begin_layout Itemize
+site optimization - 
+\begin_inset Quotes eld
+\end_inset
+
+grabbing more eyeballs
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the line between optimization and manipulation
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+site features - types of interactivity ergo participation
+\end_layout
+
+\begin_layout Section*
+Website as Archived Object
+\end_layout
+
+\begin_layout Itemize
+Web archives & types of historiography
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Wayback Machine (single site histories - 
+\begin_inset Quotes eld
+\end_inset
+
+biographical
+\begin_inset Quotes erd
+\end_inset
+
+ history)
+\end_layout
+
+\begin_layout Itemize
+special collections (
+\begin_inset Quotes eld
+\end_inset
+
+event-based
+\begin_inset Quotes erd
+\end_inset
+
+ history)
+\end_layout
+
+\begin_layout Itemize
+emerging: national collections (
+\begin_inset Quotes eld
+\end_inset
+
+national
+\begin_inset Quotes erd
+\end_inset
+
+ history)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+archive.org and Alexa founded by the same guy
+\end_layout
+
+\begin_layout Subsection*
+Wayback Machine 'features' and history.
+\end_layout
+
+\begin_layout Standard
+Invites the biography of a web page.
+ Frames the history of the web(site) as a surf space [rather than a 'search
+ space' as found today]
+\end_layout
+
+\begin_layout Itemize
+Interface - Query URL; output list of stored pages; * means change
+\end_layout
+
+\begin_layout Itemize
+Navigation - 
+\begin_inset Quotes eld
+\end_inset
+
+Jump cuts
+\begin_inset Quotes erd
+\end_inset
+
+ through archived time, or to live Web
+\end_layout
+
+\begin_layout Itemize
+Historiisable - solution for 404 errors; no search, rather surf
+\end_layout
+
+\begin_layout Subsection*
+Special collections
+\end_layout
+
+\begin_layout Standard
+webarchivist.org - started late 90s / early 2000
+\end_layout
+
+\begin_layout Itemize
+September 11th archive - 25,000 web sites
+\end_layout
+
+\begin_layout Itemize
+built in historiagraphy - event-based
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+A web sphere is a set of dynamically defined digital resources, often connectd
+ by hyperlinks, spanning multiple websites relevant to a central event,
+ concept, or theme and bounded temporally.
+\begin_inset Quotes erd
+\end_inset
+
+ (M.
+ Dougherty and K.
+ Foot, 2007)
+\end_layout
+
+\begin_layout Itemize
+people don't seem to be using them (lack of 
+\begin_inset Quotes eld
+\end_inset
+
+Archived in the Library of Congress Web
+\begin_inset Quotes erd
+\end_inset
+
+ in Google Scholar / minimal results in Google)
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section*
+Things to know before doing website history
+\end_layout
+
+\begin_layout Standard
+(Michael Stevenson | Digital Methods | November 2009)
+\end_layout
+
+\begin_layout Subsection*
+Issues of Interface
+\end_layout
+
+\begin_layout Itemize
+wayback machine has no search
+\end_layout
+
+\begin_layout Itemize
+the url makes visible the jump cuts necessary for 'seamless' surfing
+\end_layout
+
+\begin_layout Itemize
+in addition to the url, note the importance of the *
+\end_layout
+
+\begin_layout Itemize
+note also the importance of the * within the url (wildcard for search)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+using wild-card query to createa snapshot of a set of sites for a particular
+ time period
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+coded collections, for advanced browsing
+\end_layout
+
+\begin_layout Itemize
+Searchable (sometimes)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+US cyber cemetary (sites of dead gov projects)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Issues of Inclusion
+\end_layout
+
+\begin_layout Itemize
+thematic and broad-based crawling: what decisions are made regarding inclusion?
+\end_layout
+
+\begin_layout Itemize
+sites blocked or removed by owners, via robots.txt or email
+\end_layout
+
+\begin_layout Subsection*
+Issues of Exhaustiveness
+\end_layout
+
+\begin_layout Itemize
+Flash and complex javascript is unarchivable software: 'keep it simple'
+ a design imperative for archive-friendly websits
+\end_layout
+
+\begin_layout Itemize
+when a web page is no longer one page (dynamic content, page elements archived
+ at different times)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Debunking the Wayback Machine
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+working with missing sites: 
+\begin_inset Quotes eld
+\end_inset
+
+conjuring up
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+where would the site have been? what are the related sites? 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+History of What?
+\end_layout
+
+\begin_layout Itemize
+create a narrative, with a focused question
+\end_layout
+
+\begin_layout Itemize
+consider aesthetics, front page real-estate, and the fold (see also: tabs,
+ featured content, significcant blogrolls, 
+\begin_inset Quotes eld
+\end_inset
+
+issue lists
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+politics of what is archived
+\end_layout
+
+\begin_layout Subsection*
+History of When?
+\end_layout
+
+\begin_layout Itemize
+when treating a genre of sites, consider periodization
+\end_layout
+
+\begin_layout Itemize
+examples: the campaign website, search engines before and after Google
+\end_layout
+
+\begin_layout --Separator--
+
+\end_layout
+
+\begin_layout Section*
+Periodizations
+\end_layout
+
+\begin_layout Itemize
+looking at the context of sites while examining the changes.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+(the disappearance of Google Directory in relation to the disappearance
+ of human editors)
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Retaining their own history
+\end_layout
+
+\begin_layout Standard
+sites that maintain their own history are also possible to study (wikis,
+ blogs)
+\end_layout
+
+\begin_layout Section*
+Research stuff (looking at Heavy Metal Umlaut)
+\end_layout
+
+\begin_layout Subsection*
+Narrative structure
+\end_layout
+
+\begin_layout Itemize
+full sweep of the history
+\end_layout
+
+\begin_layout Itemize
+looking back at specific elements (the n-umlaut, the factuality of the n-umlaut;
+ an incidence of vandalism) 
+\end_layout
+
+\begin_layout Subsection*
+Built-in assumptions
+\end_layout
+
+\begin_layout Itemize
+make a point about claims that have been made about the internet / subject
+ at hand
+\end_layout
+
+\begin_layout Itemize
+assumption 1: highly dedicated community vigilant against vandalism
+\end_layout
+
+\begin_layout Itemize
+assumption 2: very diverse community of contributers
+\end_layout
+
+\begin_layout Itemize
+assumption 3: 
+\begin_inset Quotes eld
+\end_inset
+
+the blogosphere recommended a site for study
+\begin_inset Quotes erd
+\end_inset
+
+ -- assumes the blogosphere is worth listening to
+\end_layout
+
+\begin_layout Subsection*
+Tips
+\end_layout
+
+\begin_layout Standard
+This project is more qualitative.
+ Look into the background of the site you are investigating and its context.
+\end_layout
+
+\begin_layout Standard
+Analyze your narrative structure in relation to 
+\begin_inset Quotes eld
+\end_inset
+
+Google: politics of tabs.
+\begin_inset Quotes erd
+\end_inset
+
+ If you deviate, deviate for the better.
+\end_layout
+
+\end_body
+\end_document

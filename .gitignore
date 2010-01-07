@@ -1,0 +1,5 @@
+./theories/virtuality/*
+*.log
+*.tuc
+*.swp
+*~

@@ -1,0 +1,83 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Presentation notes - Barbrook and Cameron
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+Enmeshed with a global economy, every bit of 'free' information carries
+ its own microslave like a forgotten twin.
+ M.
+ Pasquinelli, Animal Spirits (2009), p.
+ 75
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mainstream discussion in the USA about Japan’s forced line sharing is virtually
+ nonexistent.
+ When it does come up, it is mentioned so brieﬂy as to seem like deliberate
+ attempts to avoid dis- cussing it, such as this from a 2009 techworld.com
+ article: "Part of Japan’s policy focuses on incumbent carriers sharing
+ their networks with competitors, a policy NTT East has criticized." The
+ article is about a government initiative, uJapan, that "provides money
+ for cities to wire schools and community centers, provides zero-interest
+ or low-interest loans for cities and businesses to deploy broadband, and
+ provides tax breaks for the purchase of networking equipment"– a policy
+ Barbrook and Cameron would surely love.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

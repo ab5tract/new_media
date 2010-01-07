@@ -1,0 +1,462 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+DM Week 3
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Thesis Meeting}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+15 December @ 15:20-15:40
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Google Objects 
+\backslash
+& Subjects}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Dark Web
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+engines include and exclude by not indexing orphans
+\end_layout
+
+\begin_layout Itemize
+not only simply not indexed, but also 
+\begin_inset Quotes eld
+\end_inset
+
+burying
+\begin_inset Quotes erd
+\end_inset
+
+ sites
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A.D.D.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Engines encourage attention deficits.
+\end_layout
+
+\begin_layout Itemize
+users rarely look past result 10
+\end_layout
+
+\begin_layout Itemize
+Jansen & Spink, 2003 (groundbreaking study shows users rarely dig deep)
+\end_layout
+
+\begin_layout Itemize
+google hack: Shmoogle
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Databody
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Critical Art Ensemble
+\end_layout
+
+\begin_layout Itemize
+Google keeps search engine histories, called flecks
+\end_layout
+
+\begin_layout Itemize
+the collective, or cumulative, data held on you in databases
+\end_layout
+
+\begin_layout Itemize
+results of Google searches now designed to please your data body
+\end_layout
+
+\begin_layout Itemize
+google hack: Scroogle
+\end_layout
+
+\begin_layout Itemize
+AOL case of stored search engine queries
+\end_layout
+
+\begin_layout Itemize
+TrackMeNot - randomized search queries in a low priority process obfuscates
+ the data body
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Googlization}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Front page
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+doesn't everybody want the same simple design on every site they visit?
+\begin_inset Quotes erd
+\end_inset
+
+--seeking the single search box and button
+\end_layout
+
+\begin_layout Itemize
+ten years of the google front page (tabs) and the fall of the drectory (and
+ the editors and librarians)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+classic case of burying the human editor and fore-fronting the algorithm
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+results page
+\end_layout
+
+\begin_layout Itemize
+back-end
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Google Information Politics}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Censorship
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Tainanmen: google.com vs google.cn
+\end_layout
+
+\begin_layout Itemize
+mis-spelling as means to get around censorship
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Spammy neighborhoods
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Google Derivatives}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+licensing
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Google classifies every altering of their search results as a derivitive
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Agreeing to the Terms of Service
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+In exchange for search engine results or other services, the user acknowledges
+ and agrees to a great many terms, including the promise to access Google
+ only through its interface (5.3), and the agreement not to make derivative
+ works from the content of the results (8.2), or from the software code (10.2)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+NewsMap
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+section{Research Info}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+studying the differences between various local Googles
+\end_layout
+
+\begin_layout Itemize
+google has 175 local domain names
+\end_layout
+
+\begin_layout Itemize
+not all local googles have 
+\begin_inset Quotes eld
+\end_inset
+
+Pages from <country>...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Can also advanced search -> region
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+What type of globalizing machine is google?
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Glocalizing
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Human Rights queries through local Googles
+\end_layout
+
+\begin_layout Itemize
+Method
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+search in native languages of local googles
+\end_layout
+
+\begin_layout Itemize
+fetch location of owner from registrar and plotted on a map
+\end_layout
+
+\begin_layout Itemize
+ranked based on number of local results in top 10
+\end_layout
+
+\begin_layout Itemize
+Local domain Google does not mean local information sources
+\end_layout
+
+\begin_layout Itemize
+established sources are prominent in local results
+\end_layout
+
+\begin_layout Itemize
+language is a key factor in local results
+\end_layout
+
+\begin_layout Itemize
+there are local sources: they are just not present in the top 10
+\end_layout
+
+\begin_layout Itemize
+the underlinked is underprivileged, even if the sources are local
+\end_layout
+
+\begin_layout Itemize
+EU googles hardly share sources and may be characterzed by their local sources
+ instead
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Can the search engine be used to investigate different 
+\begin_inset Quotes eld
+\end_inset
+
+rights
+\begin_inset Quotes erd
+\end_inset
+
+ in the various locales?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+multiple languages in a country? used the top two
+\end_layout
+
+\begin_layout Itemize
+visualize top 1- issues per country
+\end_layout
+
+\begin_layout Itemize
+Glocalizing: resenting culturally specific as well as shared rights
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+section{Reminders:}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Master the format before you deviate from it
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+include dates
+\end_layout
+
+\begin_layout Itemize
+save the page as HTML/web archive and screenshot
+\end_layout
+
+\begin_layout Itemize
+search 'http' for pure PageRank
+\end_layout
+
+\begin_layout Itemize
+'site:' and 'inurl:'
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

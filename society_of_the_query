@@ -1,0 +1,77 @@
+== Disintermediation
+
+web2.0 conceptualizes the idea of web sites that gain value by their users adding data to them.
+
+	- but before the concept existed, it was already expressed by eBay
+
+not easy to extract data from one site and put it in another
+
+how do you decide which site to use?
+
+Metcalfe proposes that the value of a network is proportional to the square of the number of nodes
+	- this is why it is good that there is only one "email", one "web"; contrasted to IM
+
+machine readable web pages
+
+"we could create a Metcalfe law for data"
+
+put everything on your own page
+
+Web 2.0 is damaging to the Web by dividing it into topiclal subwebs
+
+== Semantic Search for Europeana
+
+Europeana:
+	- connnecting to European  cultural heritage
+	- access to digital content and descriptions
+
+Larg Eggort::
+	- now 50 providers
+	- target for 2010: 10 million objects
+	
+Basic idea is to use metadata from content providers
+
+semantics ae already there, in metadata and "controlled vocabularies" used in metadata
+
+semantics ain't easy
+
+
+== why the world wide web is broken
+
+search is a key function for connecting the medium of databases
+	- "search is everywhere"
+
+to talk (only) about Google at Society of the Query is like only talking about Windows at an OS conference
+
+folksonomy - unstructured and limited to their respective walled garden
+
+a controlled vocabulary in the semantic web is called an "ontology"
+	- periodic table is an "ontology"
+
+tree taxonomies - starting with Aristotle's "theory of categories"
+
+encyclopedia (alphabetical ordering) vs. tree taxonomy
+
+Clay Shirky - "Ontology is Overrated"
+
+onotologies make ideological statements
+
+metadata is prone to spamming
+
+semantic will not work without trust
+
+it will make the search engines even stronger
+
+Critiques of web:
+  - not designed with full text search in mind
+	- URL structure is too linked to structure/file system location of servers; too volatile
+
+the web has moved from "pages" to a real-time / multimedia system
+
+Proposals:
+	- the hash checksum for files; find files by checksum rather than URL
+	- revision monitoring
+  - full text index of the web (public) "everyone can build their own search engine"
+
+Perhaps it is time to leave the world wide web to the cognitive capitalists and develop a system that makes their services unnecessary
+

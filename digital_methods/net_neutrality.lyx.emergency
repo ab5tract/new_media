@@ -1,0 +1,177 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Net Neutrality
+\end_layout
+
+\begin_layout Section*
+Defining the two sides
+\end_layout
+
+\begin_layout Itemize
+Utilize the 
+\begin_inset Quotes eld
+\end_inset
+
+Internet Freedom Preservation Act of 2009
+\begin_inset Quotes erd
+\end_inset
+
+ (H.R.
+ 3458) as the 'ur-search'
+\end_layout
+
+\begin_layout Itemize
+Conservatives - culled from internetfreedomcoalition.org
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+'tax' / 'taxation'
+\end_layout
+
+\begin_layout Itemize
+'nationalization'
+\end_layout
+
+\begin_layout Itemize
+'socialism'
+\end_layout
+
+\begin_layout Itemize
+'regulation' / 'new regulation'
+\end_layout
+
+\begin_layout Itemize
+'quality of service'
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Liberals - culled from 'http://savetheinternet.com/faq' and 'Net Neutrality:
+ Fact from Fiction' ( http://www.freepress.net/files/nn_fact_v_fiction_final.pdf
+ )
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+'corporation'
+\end_layout
+
+\begin_layout Itemize
+'tiered Internet' / 'tiered service'
+\end_layout
+
+\begin_layout Itemize
+'competition' (problematic)
+\end_layout
+
+\begin_layout Itemize
+'discrimination'
+\end_layout
+
+\begin_layout Itemize
+'net neutrality'
+\end_layout
+
+\begin_layout Itemize
+'censorship'
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Wikipedia -- for both sides of debate
+\end_layout
+
+\begin_layout Itemize
+30 URLs is okay - cite Hindemann
+\end_layout
+
+\begin_layout Itemize
+explain the workings of the search engine
+\end_layout
+
+\begin_layout Itemize
+explain the differences between sphere statistics form within the sphere
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+The news sphere is driven by the 24-hour cycle so...
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+sphere specifity is how it treats a topic differently
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+we don't mean in terms in materiality
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+The implications of network neutrality debate involve the deepest levels
+ of protocol.
+\end_layout
+
+\end_body
+\end_document

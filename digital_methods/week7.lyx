@@ -1,0 +1,215 @@
+#LyX 1.6.4.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+Digital Methods - Final Lecture Notes
+\end_layout
+
+\begin_layout Section
+CENSORSHIP AND CYBERSPACE
+\end_layout
+
+\begin_layout Standard
+\begin_inset Quotes eld
+\end_inset
+
+infrastructural determinism
+\begin_inset Quotes erd
+\end_inset
+
+ : 'The Internet Treats Censorship and Routes Around It'
+\end_layout
+
+\begin_layout Subsection
+General Approaches to Internet Censorship Research
+\end_layout
+
+\begin_layout Enumerate
+Editorial - Use Yahoo or Dmoz.org for global category list
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+learning from the censors: build lists (black or white lists)
+\end_layout
+
+\begin_layout Enumerate
+seminal cases - cyberpatrol, cybernanny
+\end_layout
+
+\begin_layout Enumerate
+open source black list - Dans Guardian
+\end_layout
+
+\begin_layout Enumerate
+Open Net Initiative
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Crowd Sourcing
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+learning from collective intellgence
+\end_layout
+
+\begin_layout Enumerate
+Herdict 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Google (or other engines) + Traffic stats
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+lerning from indexed 'Webs'
+\end_layout
+
+\begin_layout Enumerate
+generatenational.net : second level domain discovery ( [*].ps )
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Website as Archived Object
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Biographical
+\begin_inset Quotes erd
+\end_inset
+
+ or 
+\begin_inset Quotes eld
+\end_inset
+
+single site
+\begin_inset Quotes erd
+\end_inset
+
+ history - Wayback Machine
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Event-based
+\begin_inset Quotes erd
+\end_inset
+
+ history - special collections
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+Institutional
+\begin_inset Quotes erd
+\end_inset
+
+ history - special collections (US Congress sessions)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Quotes eld
+\end_inset
+
+National
+\begin_inset Quotes erd
+\end_inset
+
+ history - national Web archives
+\end_layout
+
+\begin_layout Section
+Situating Digital Methods Theoretically
+\end_layout
+
+\begin_layout Subsection
+Media are specific:
+\end_layout
+
+\begin_layout Enumerate
+In how they engage the senses (McLuhan)
+\end_layout
+
+\begin_layout Enumerate
+In how they are shaped by interests (Williams)
+\end_layout
+
+\begin_layout Enumerate
+In how they refasino prior media (Bolter/Grusin)
+\end_layout
+
+\begin_layout Enumerate
+In their materiality (Hayles)
+\end_layout
+
+\begin_layout Enumerate
+In their enabling or constraining features (Fuller)
+\end_layout
+
+\begin_layout Enumerate
+In their outputs as well as their forms of production (Manovich)
+\end_layout
+
+\begin_layout Enumerate
+In their methods (Rogers)
+\end_layout
+
+\end_body
+\end_document

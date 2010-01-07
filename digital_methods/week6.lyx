@@ -1,0 +1,633 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Week 6: Wikipedia as Object of Study
+\end_layout
+
+\begin_layout Section*
+Genealogical History
+\end_layout
+
+\begin_layout Standard
+How is it often studied? As universal knowledge project with a technocultural
+ lineage
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1895 P.
+ Otlet's Permanent Encyclopedia: liberating ideas from the binding of books;
+ Mundenaeum (sp?); the radiated library
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1936 H.G.
+ Wells' World Brain: a vision of a worldwide encyclopedia using microfilm
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1945 V.
+ Bush's Memex: a vision of a hypertextual knowledge space and new forms
+ of encyclopedias
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1965 T.
+ Nelson's Xanadu: a vision of hypertext
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1971 Michael Hart's Project Gutenberg: a vision of providing e-books through
+ achievable means (
+\begin_inset Quotes eld
+\end_inset
+
+plain vanilla ASCII
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1991 T.
+ Berners-Lee's World Wide Web: a vision of highly accessible read/write
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+2001 J.
+ Wales and L.
+ Singer: 
+\begin_inset Quotes eld
+\end_inset
+
+A free encyclopedia that anyone can edit
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+V.
+ Bush's Memex - 'the essential feature'
+\end_layout
+
+\begin_layout Itemize
+browsing documents creates a 
+\begin_inset Quotes eld
+\end_inset
+
+trail
+\begin_inset Quotes erd
+\end_inset
+
+ that you can save: 
+\series bold
+Associative Indexing
+\end_layout
+
+\begin_layout Subsection*
+Wikipedia: Callaborative Writing Realized!
+\end_layout
+
+\begin_layout Itemize
+Talmud, Bible, and other seminal religious books collaboratively authored
+\end_layout
+
+\begin_layout Itemize
+Imperial Chines literature - 
+\begin_inset Quotes eld
+\end_inset
+
+To steal a book is an elegant offense
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Saint Boneventure and the Medieval culture of scribes, compilers, commentators,
+ where author added own work to others
+\end_layout
+
+\begin_layout Subsection*
+Debate informed the development of hypertext
+\end_layout
+
+\begin_layout Itemize
+R.
+ Barthes' 
+\begin_inset Quotes eld
+\end_inset
+
+Death of the Author
+\begin_inset Quotes erd
+\end_inset
+
+ (1967) - liberate the reader from the Author
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+would like the reader to not have to worry about the figure of the Author
+\end_layout
+
+\begin_layout Itemize
+just be able to read the work without thinking about the Author
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+To give a text an Author is to impose a limit on that text ...
+ When the Author has been found the text is 'explained' - victory to the
+ critic.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+M.
+ Foucault's 
+\begin_inset Quotes eld
+\end_inset
+
+What s an Author?
+\begin_inset Quotes erd
+\end_inset
+
+ (1970) - individualization of authorship is a Romantic construct
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+came into being quite late in terms of the history of writing
+\end_layout
+
+\begin_layout Itemize
+in some sense the author is the product of the publishing industry (not
+ argued by Foucault)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+The author is something designed to ward off death.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the writing lives on whilst the author dies
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Derrida 
+\begin_inset Quotes eld
+\end_inset
+
+Of Grammatology
+\begin_inset Quotes erd
+\end_inset
+
+ (1967) - texts are not closed, but open
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+writerly vs readerly
+\end_layout
+
+\begin_layout Itemize
+there is no single reader: 
+\begin_inset Quotes eld
+\end_inset
+
+everyone reads the same text differently
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Collaborative authorship software
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+1994 W.
+ Cunningham's WikiWikiWeb - collaborative authoring software
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+{2001 Wikipedia}
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+2009 Google Wave - Communicate and collaborate in real time
+\end_layout
+
+\begin_layout Subsection*
+Open Content Community - Principles
+\end_layout
+
+\begin_layout Enumerate
+open products, licensed satisfying open source definition
+\end_layout
+
+\begin_layout Enumerate
+transparency, rules, processes and rationales for rules are available
+\end_layout
+
+\begin_layout Enumerate
+integrity of processes and contributions
+\end_layout
+
+\begin_layout Enumerate
+non-discrimination; meritocratic
+\end_layout
+
+\begin_layout Enumerate
+non-interference in disutes - forking as dispute resolution
+\end_layout
+
+\begin_layout Standard
+- Reagle, 2008
+\end_layout
+
+\begin_layout Itemize
+principles are a prerequisite for community that involves decision-making
+\end_layout
+
+\begin_layout Subsection*
+Studied as a question of accuracy, as a scandal-maker
+\end_layout
+
+\begin_layout Itemize
+Wikipedia is compared to Encyclopedia Brittanica
+\end_layout
+
+\begin_layout Itemize
+Wikiscanner, the tool that 'locates' anonymous users, shows normal (and
+ scandalous) publicity management
+\end_layout
+
+\begin_layout Itemize
+as an abnormally vigilant community of free-labourers
+\end_layout
+
+\begin_layout Subsubsection*
+Jim Giles, 
+\begin_inset Quotes eld
+\end_inset
+
+Internet encyclopedias fo head to head,
+\begin_inset Quotes erd
+\end_inset
+
+ Nature 438, 900-901, 2005.
+\end_layout
+
+\begin_layout Standard
+Nature onducted a peer review of 42 entres from Wikipedia and the Encyclopedia
+ Britannica.
+ The results:
+\end_layout
+
+\begin_layout Standard
+Only eight serious errors, such as misinterpretations of important oncepts,
+ were detected in the pairs of articles, four from each encylopedia.
+\end_layout
+
+\begin_layout Subsubsection*
+WikiScanner - De-anonymizing edits to Wikipedia, and database mash-up
+\end_layout
+
+\begin_layout Standard
+Griffith's WikiScanner FAQ:
+\end_layout
+
+\begin_layout Itemize
+the tool's database contains 
+\begin_inset Quotes eld
+\end_inset
+
+34,417,493 anonymous [Wikipedia] edits dating from February 7th 2002 to
+ August 4th 207
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+database is constructed 
+\begin_inset Quotes eld
+\end_inset
+
+by extracting all anonymou edits from the publicly available Wikipedia database
+ dump (monthly release).
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+WikiScanner uses ip2location database that has 
+\begin_inset Quotes eld
+\end_inset
+
+2,668,095 different organizations.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Wikipedia: As network content
+\end_layout
+
+\begin_layout Itemize
+The top editors of Wikipedia are bots, followed by humans (with software
+ that send out alerts)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+all the research today has ignored the bots
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Capture Wkpedia data, and enquire into the technicity of content
+\end_layout
+
+\begin_layout Itemize
+How dependent is Wikipedia on non-humans?
+\end_layout
+
+\begin_layout Section*
+Sabine Presentation - wikipedia studies.
+\end_layout
+
+\begin_layout Subsection*
+Different approaches
+\end_layout
+
+\begin_layout Itemize
+genealogies
+\end_layout
+
+\begin_layout Itemize
+crowds and amateurs
+\end_layout
+
+\begin_layout Itemize
+comparing to Encyclopedia Britannica
+\end_layout
+
+\begin_layout Itemize
+accuracy testing
+\end_layout
+
+\begin_layout Itemize
+open content community
+\end_layout
+
+\begin_layout Itemize
+the oppenness of Wikipedia
+\end_layout
+
+\begin_layout Itemize
+hierarchies of Wikipedia
+\end_layout
+
+\begin_layout Itemize
+technicity of Wikipedia content
+\end_layout
+
+\begin_layout Standard
+Burke and Kraut (2008) present a mdel of indentifying future administrators
+ on Wikipedia, based on various criteria such as: strong edit history, varied
+ experience, user interactions (on talk pages), leaving comments, etc.
+\end_layout
+
+\begin_layout Standard
+Chesney (2006) provides a corrective to testing Wikipedia's credibiliy through
+ 'destructive methods', and invites researchers to (blindly) review articles
+ from Wikipedia and Encyclopedia Britannica and assess its credibility
+\end_layout
+
+\begin_layout Subsection*
+technicity of content
+\end_layout
+
+\begin_layout Standard
+Wikipedia is often studied by looking at its (crowd of) contributors or
+ the accuracy of its articles.
+\end_layout
+
+\begin_layout Enumerate
+what is the composition of the crowd?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+bots are most vigilant editors, and are higher
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+what are the protocols and technologies that facilitate collaborative editing?
+\end_layout
+
+\begin_layout Enumerate
+which non-human content agents are active?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+editing (or co-authoring) bots
+\end_layout
+
+\begin_layout Enumerate
+non-editing (or administrative) bots
+\end_layout
+
+\begin_layout Enumerate
+some bots create articles (not written by bot but 'fed in')
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+how dependent is Wikipedia on these non-human content agents?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+stats.wikimedia.org - Bot Activity Matrix
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+does not include english language Wikipedia
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+the overall share of edits by bots is 19% 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+how dependent is wikiedia on non-human content agents (comparing language
+ Wikipedias)?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+small wikipedias have significantly more bot activity
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+this is to connect the small language wikipedias to the larger wikipedia
+ landscape
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Section*
+Assignment
+\end_layout
+
+\begin_layout Enumerate
+The global-nes of a Wikipedia article
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Example; Comparing 'gy rights' articles across language wikipedias
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Visualizing the history of a Wikipedia article
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+choose a wkipedia entry
+\end_layout
+
+\begin_layout Enumerate
+check the page history
+\end_layout
+
+\begin_layout Enumerate
+choose interesting dattes or extremes in activity
+\end_layout
+
+\begin_layout Enumerate
+screen capture the changes
+\end_layout
+
+\begin_layout Enumerate
+use a voice-over or narration to tell the story
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+How does Wikipedia deal with controvers?
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+what is the constitution of its contributers (article history)?
+\end_layout
+
+\begin_layout Enumerate
+has the topic forked into multiple pages?
+\end_layout
+
+\begin_layout Enumerate
+is there a heated debate on the discussion ae?
+\end_layout
+
+\begin_layout Enumerate
+which other inficators for a controversy can you find?
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

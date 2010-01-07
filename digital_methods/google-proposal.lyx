@@ -1,0 +1,158 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+DM Proposal - Google
+\end_layout
+
+\begin_layout Author
+Susanna, Rada, and John
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Section
+Question
+\end_layout
+
+\begin_layout Standard
+Do native translations of 'terrorist' return different image results on
+ local Googles than searching with the English word 'terrorist' at the same
+ sites? What are the differences in results when those native translations
+ are fed to Google.com and compared to the results for 'terrorist' there?
+ To what extent do Spanish-language local Googles reflect their own locality
+ versus the entire Spanish speaking web?
+\end_layout
+
+\begin_layout Section
+Method
+\end_layout
+
+\begin_layout Standard
+First we gather results from queries in both Spanish and English in Google.es
+ and Google.com:
+\end_layout
+
+\begin_layout Itemize
+google.es: 'terrorista' / 'terrorist'
+\end_layout
+
+\begin_layout Itemize
+google.com: 'terrorista' / 'terrorist'
+\end_layout
+
+\begin_layout Standard
+Those results are compared and classified according to common criteria:
+ mug shots, wanted lists, armed services, armed terrorists, results of terrorism
+, and humor.
+ Furthermore, the percentage of images that are the exact same between queries
+ will be recorded.
+\end_layout
+
+\begin_layout Standard
+Then the same process is repeated for google.com.co (Colombia), google.com.ve
+ (Venezuala), and google.mx (Mexico), searching in both English and Spanish.
+\end_layout
+
+\begin_layout Standard
+Look at domains and whois information to determine the location of the informati
+on.
+\end_layout
+
+\begin_layout Standard
+Construct the country list through some sensible means.
+\end_layout
+
+\begin_layout Standard
+Reasons for our countries:
+\end_layout
+
+\begin_layout Itemize
+Not enough local Google's in Arabic language space.
+\end_layout
+
+\begin_layout Itemize
+Is the data about local terrorist groups? hosted on local servers?
+\end_layout
+
+\begin_layout Standard
+Cultural angle is:
+\end_layout
+
+\begin_layout Standard
+visual representation of 'terrorist'
+\end_layout
+
+\begin_layout Standard
+are the local terrorist groups represented in the top 30 image results?
+ do cultural conceptions of terrorism fit with the outside analysis of the
+ 'terrorist group list'?
+\end_layout
+
+\begin_layout Section
+Findings
+\end_layout
+
+\begin_layout Standard
+English and Spanish search terms will return different results across all
+ Googles.
+ The English language results will be similar.
+ Less intuitively, Spanish language queries will have roughly the same degree
+ of similarity despite being run through localized Googles.
+ Results will only differ (reflect locality) in images buried behnd the
+ first page of results.
+\end_layout
+
+\begin_layout Section
+Discussion
+\end_layout
+
+\end_body
+\end_document

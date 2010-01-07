@@ -1,0 +1,66 @@
+DM Proposal - Google
+
+Susanna, Rada, and John
+
+1 Introduction
+
+2 Question
+
+Do native translations of 'terrorist' return different image 
+results on local Googles than searching with the English word 
+'terrorist' at the same sites? What are the differences in 
+results when those native translations are fed to Google.com and 
+compared to the results for 'terrorist' there? To what extent do 
+Spanish-language local Googles reflect their own locality versus 
+the entire Spanish speaking web?
+
+3 Method
+
+First we gather results from queries in both Spanish and English 
+in Google.es and Google.com:
+
+• google.es: 'terrorista' / 'terrorist'
+
+• google.com: 'terrorista' / 'terrorist'
+
+Those results are compared and classified according to common 
+criteria: mug shots, wanted lists, armed services, armed 
+terrorists, results of terrorism, and humor. Furthermore, the 
+percentage of images that are the exact same between queries will 
+be recorded.
+
+Then the same process is repeated for google.com.co (Colombia), 
+google.com.ve (Venezuala), and google.mx (Mexico), searching in 
+both English and Spanish.
+
+Look at domains and whois information to determine the location 
+of the information.
+
+Construct the country list through some sensible means.
+
+Reasons for our countries:
+
+• Not enough local Google's in Arabic language space.
+
+• Is the data about local terrorist groups? hosted on local 
+  servers?
+
+Cultural angle is:
+
+visual representation of 'terrorist'
+
+are the local terrorist groups represented in the top 30 image 
+results? do cultural conceptions of terrorism fit with the 
+outside analysis of the 'terrorist group list'?
+
+4 Findings
+
+English and Spanish search terms will return different results 
+across all Googles. The English language results will be similar. 
+Less intuitively, Spanish language queries will have roughly the 
+same degree of similarity despite being run through localized 
+Googles. Results will only differ (reflect locality) in images 
+buried behnd the first page of results.
+
+5 Discussion
+

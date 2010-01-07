@@ -1,0 +1,107 @@
+Benkler, Yochai. The Wealth of Networks.
+
+"At the physical layer, the shift to broadband Internet hs been accompanied by less competitive pressure and greater legal freedom for providers to exclude competitors from, and shape the use of, their networks." 384
+
+	- regulation has been dedicated to increasing the power of private, commercial parties
+	"... increase the degree to which private, commerical parties can gainand assert exclusivity in core resources necessary for information production and exchange." 384
+	- copyright industries began applying more and more pressure to enforce copyrights
+
+"At the logical layer, anticircumvention provisions and the efforts to squelch peer-to-peer sharing have created institutional pressures on software and protocols to offer a more contolled and controllable environment." 384
+
+"At the content layer, we have seen a steady series of institutional changes aimed at tightening exclusivity."
+
+- countervailing forces 
+	- open PC hardware design, and resistence to changing hardware to more effectively enforce copyrights, has prevented any attempts to bring the DMCA approach to hardware
+
+- the principle of bovinit: "A small number of rules, consistently applied, suffice to control a herd of animals."
+
+"There is no need to assure that all people in all contexts coninue to behave as couch potatoes for the true scope of the information economy to be constrained. It is enough that the core enabling technologies and the core cultural practices are confined to small groups--some teenager, some countercultural activists." 385
+
+"the heightened [judicial and legislative activity] is, in fact, a battle, in the domain of law and policy, over the shape of the social settlement that will emerge around the digital computation and communications revolution." 386
+
+- Laws do more than simply affect human behavior by adjusting payoffs and risks of actions: "they also shape social norms with regard to behaviors, psychological attitudes towards various behaviors, the cultural understanding of acions, and the politics of claims about behaviors and practices." 386
+
+"The same law introduced in different societies or at different times will have different effects." 387
+
+"The term 'institutional ecology' refers to this context-dependent, causally complex, feedback-ridden, path-dependent process." 387
+	- Like the policy choices around radio in the 1920s created "different journalistic styles, consumtion expectations and styles, and funding mechanisms" in the various countries adopting various policies.
+
+"multiple stable equilibria alongside each other" 388
+
+"for any given path divergence... early actions that trigger feedbacks can cause large and sustained differences over time" 388
+
+- four points of failure for Diebold leaked documents, 390
+	1) if the university were a sole provider with no alternative physical transmission systems
+	2) the existence of p2p networks which dissolved the issue of a single point of storage
+	3) the free availability online of tools to view the files
+	4) the judicial ruling that the leaked documents were protected by fair use
+
+- map the resources necessary for a creative communication (market and non-market)
+	1) "content" itself: "existinginformation, cultural artifacts and communications, and knowledge structures" 391
+	2) the physical infrastucture and logical infrastructure (hardware, pipes, software, and protocols necessary to make/retrieve/distribute the content)
+
+- "three-layered representation of the basic functions involved in mediated human communications"
+	1) physical layer
+	2) logcal layer
+	3) content layer
+
+"Looking at the aggregat effect, we see that at all these layers, a series of battles is being fought over the degree to which some minimal set of resources and capabilities necessary to use and participate in constructing the information environment will be available for use on a nonproprietary, nonmarket basis." 392
+	"In each and every layer, we have seen significant policy battles over whether these nonproprietary or open-platform practices will be facilitated or even permitted." 392
+
+- debate occurs on local levels in specific terms, but the real question is:
+	"Are we leaving enough institutional sace for the social-economic practices of networked information production to emerge?" 393
+
+"The networked informatino economy requires access to a core set of capabilities--existing informatino and culture, mechanical means to process, store, and communicate new contributions and mixe, and the logical systems necessary to connect them with each other." 393
+
+"What nonmarket forms of prodution need is a core common infrastructure that anyone can use, irrepsective of whether their production model is market-based or not, proprietary or not." 393
+	- Benkler sees the core set of capabilities emerging without regulatory intervention
+	"It is possible that by some happenstance one or two firms, using one or two critical technologies, will be able to catureand control a bottleneck." 393
+
+- law has generally been used in reactive ways by entrenched interests, leading Benkler to conclude it is not regulatory protection that is called for, but regulatory abstinence, 393
+	- is net neutrality also on he side of "proprietary enclosure" ?
+
+"The transtion to broadband networks, and to a lesser extent the emergence of Internet services on mobile phones, are threatening to undermine that neutrality and nudge the network away from its end-to-end, user-centric model to one designedmore like a five-thousand-channel broadcast model." 397
+
+"The emergence of the networked information economy as described in this book depends on the continued existence of an open transport network connecting general-purpose computers. It therefore also depends on the failure of efforts to restructure the network on the model of proprietary networks connecting terminals with sufficiently controlled capabilities to be predctable and well behaved from the perspective of incumbent production models." 397
+	- this implies net neutrality regulation is necessary
+
+== Physical Layer
+
+- the 2005 Telus case, when the ISP cut off access to its Union's web site
+
+"The ability of service providers to block sites or packets from certain senders and promote packets from others may indeed be used to improve the network. However, whether this ability will in fact be used to improve service depends on the extent to which the interests of all users, and particularly those concerned with productive uses of the network, are aligned with the interests of the service providers." 398
+
+- three potential solutions
+	1) actual competition (switch to broadband has constrained competition)
+	2) regulations enforcing neutrality
+	3) "eliminating contemporary regulatory bariers to the emergence of a user-owned wireless infrastructure"
+		- more radical, yet less "interventionist" from a regulatory angle
+
+- look up FCC report on high speed services
+
+- Jerome Saltzer / Lessig and Mark Lemly: cable companies could destroy the end-to-end nature of the net
+
+"As information services, broadband providers obtained the legal power to 'edit' their programming, just like any operator of an informatino service, like a Web site."
+	!! "Indeed, this new designatino has placed a serious questino mark over whether future efforts to regulate carriage decisions would be considered constitutinal, or would instead be treated as violations of the carriers' 'free speech' rights as a provider of information." 401
+
+"Even if successful, the drive to network neutrality would keep the physical infrastructure a technical bottleneck, owned by a small number of firms facing very limited competition, with wide legal latitude for using that control to affect the flow of information over networks." 402
+
+municipalities face serious barriers to offering their own municipal broadband
+	- telecom act of 1996: "no state ... regulation ... may prohibit ... the ability of any entity to provide ... telecommunications service"
+		8th court upheld a municipality's case in Missouri, only for it to be overturned by the Supreme court
+
+
+== DMCA
+
+"As such, it is intended to, and does to some extent, shape the technological development toward treating informatino and culture as finished goods, rather than as the outputs of social and communications processes that blur the production-consumption distiction." 417
+
+"It makes it more difficult for individuals and nonmarket actors to gain access to digital materials that the technology, the market, and the social practices, left unregulated, would have made readily available." 417
+
+== P2P
+
+"[the history of the years since the Napster case] shows how institutional design can be a battleground over the conditions of cultural prodution in the digital environment. Second, it exposes the limits of the extent to which the institutional ecology can determine the ultimate structure of behavior at a moment of significant and rapid technological and social perturbation." 420
+
+== CONCLUSION
+
+"The networked information environment has permitted the emergence to much greater significance of the nonmarket sector, the nonprofit sector, and, most radically, of individuals." 462
+	- changes to that environment could easily affect this shift

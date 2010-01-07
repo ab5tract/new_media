@@ -1,0 +1,44 @@
+DIGITAL METHODS WEEK 2
+
+History
+	- censorship of the Internet was thought to be impossible
+  	- "The internet treats censorship as a malfunction and routes around it." -- John Gilmour
+		- end-to-end, and packet switching; delivery system, not content system
+		- "the infrastructure itself promotes civil liberties"
+	- due to 'invisibility' of blacklists, censorship research is based on detective work
+
+Techniques
+1. Editorial 	- Use Yahoo or Dmoz.org for global category lists. source experts, too.
+							- 2000 url list gathered by ONI
+2. Crowd-sourcing - have web users input urls to be checked
+3. Google - query google for country specific URL lists
+					- query "site: .sa" for Suadi Arabia, for existence
+4. Dynamic URL Sampling	- find links from sites listed in 1,2, or 3 above.
+
+Detailed descriptions:
+1. Editorial
+		- learning from the censors: buid lists (black or white)
+
+	Seminal Cases:  Cyberpatrol, Cybernanny (see ACLU lawsuits)
+	Open Source Black List: Dans Guardian
+	Open Net Initiative
+		- invented Psiphon
+
+2. Crowd-sourcing
+	- learning from collectibe intelligence
+	seminal cases - re-captcha; wikipedia
+	greatfirewallofchina.org
+
+3. Google (or other engines) + Traffic stats
+	- learning from indexed 'Webs'
+	SEE Generatenational.net
+		- queries google and pulls out URLs
+  Alexa: top sites by country
+
+4. Dynamic URL Sampling
+	- using lists of sensitive sites, hyperlinks are analyzed on a per-site basis to determine other sites that may be blocked
+	- the case of the UAE: Two providers, two internets
+		- ex-pats ISP had free access, general pop.'s ISP was blocked
+	- treat websites like books, or think of the web as a hypermedia environment?
+		- sites being blocked vs content being blocked
+	- find blocked Baloch content on unblocked sites in Pakistan

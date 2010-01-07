@@ -1,0 +1,464 @@
+#LyX 1.6.4.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Week 5 Notes - The Spheres
+\end_layout
+
+\begin_layout Section*
+Why cyberspace?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+In order to emerge as a medium of freedom, the Internet became cyberspace
+ in the mid-1990s
+\begin_inset Quotes erd
+\end_inset
+
+ (Chun, 2006)
+\end_layout
+
+\begin_layout Itemize
+Similarly, one could ask, why the blogosphere? What (ideological) conotations
+ does the term carry, and what expectations do these create?
+\end_layout
+
+\begin_layout Subsection*
+Foundational Narratives
+\end_layout
+
+\begin_layout Itemize
+Disintermediation: blog software as facilitator of independent voice.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+in the view of disintermediation, media twists reality; bloggers will bypass
+ this process
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Weblogs bring the Web - in theory a leveler, a democratic medium - to The
+ People.
+\begin_inset Quotes erd
+\end_inset
+
+ (Blood)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the onset of actual two-way communications
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+'Blogosphere' coined (again) in 2002, lineage of 'logos.' See also: geometry.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Revitalizing journalism: blogging as incisive media commentary and conventional
+ reporting.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+when is a blogger a journalist?
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Josh Wolf - made video of protests, published it on the web.
+ California subpeona'd him to obtain the source tapes.
+ He refused, citing the 
+\begin_inset Quotes eld
+\end_inset
+
+shield laws
+\begin_inset Quotes erd
+\end_inset
+
+ that protect journalist sources.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Remaking the public sphere: blogosphere as yardstick for public opinion.
+ Blogger as voice 
+\begin_inset Quotes eld
+\end_inset
+
+from the ground.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+the realness/authenticity of the blogger's voice
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+How are they often studied?
+\end_layout
+
+\begin_layout Itemize
+Blogs as new genre, as news and empowering voice.
+\end_layout
+
+\begin_layout Itemize
+Blogs as 'genre' (recognizable with reverse chronology), and constructed
+ / reified as genre by software.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Intermediation: Does blog software serve the needs of engines?
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Blogosphere as parasitic on news, and obsessed with MSM.
+\end_layout
+
+\begin_layout Itemize
+Blogs and blogosphere as organizers of public voice (Sony RM) and authenticator
+ of voice (Iraqi bloggers).
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+example: boingboing's campaign against Sony DRM rootkit
+\end_layout
+
+\end_deeper
+\begin_layout Section*
+How else to study them?
+\end_layout
+
+\begin_layout Itemize
+As enngine-demarcated spaces with particular qualities.
+\end_layout
+
+\begin_layout Itemize
+The term 'sphere' recognizes its most famous example, the blogosphere, as
+ well as scholarshi on another, 'Web sphere.'
+\end_layout
+
+\begin_layout Itemize
+Approached in terms of comparative media studies, or cross-spherical analysis.
+ Compare engine results across spheres.
+\end_layout
+
+\begin_layout Itemize
+Inquire into qualities of each sphere, blogosphere, Websphere, newssphere,
+ tagosphere.
+\end_layout
+
+\begin_layout Part*
+Cross-Spherical Analysis
+\end_layout
+
+\begin_layout Itemize
+Word Choice is very important.
+\end_layout
+
+\begin_layout Itemize
+medium-specific analysis
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+treat the categories of media differently.
+\end_layout
+
+\begin_layout Itemize
+Coverage, Absence presence, and Prominence
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+different in each medium
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection*
+newspapers
+\end_layout
+
+\begin_layout Itemize
+Editorial authority:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+headlines
+\end_layout
+
+\begin_layout Itemize
+section
+\end_layout
+
+\begin_layout Itemize
+length of article
+\end_layout
+
+\begin_layout Itemize
+dedicated journalists
+\end_layout
+
+\begin_layout Itemize
+more...
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+in Google news, it is text analysis that determines how to categorize news,
+ rather than editorial control
+\end_layout
+
+\begin_layout Subsection*
+Google News
+\end_layout
+
+\begin_layout Itemize
+news clusters are ranked according to 
+\begin_inset Quotes eld
+\end_inset
+
+aggregate editorial interest
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection*
+Article ranking within a cluster
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Quotes eld
+\end_inset
+
+Fresh and New
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Recent, substantial, original, ann focused on the topic
+\end_layout
+
+\begin_layout Itemize
+op-ed, satire, press-release and subsciption are not eligible to lead clusters
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Duplication and Novelty Detection
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+credit to original and novel content
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Local / Personal relevancy
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+weighted by section and story and more credit to local sources
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Trusted Sources
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+boosts for trusted sources
+\end_layout
+
+\begin_layout Itemize
+section and edition
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+google news (again)
+\end_layout
+
+\begin_layout Itemize
+Algorithmic authority:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+crawl, group, rank
+\end_layout
+
+\begin_layout Itemize
+grouping: categories and locations
+\end_layout
+
+\begin_layout Itemize
+Ranking:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Story ranking: 
+\begin_inset Quotes eld
+\end_inset
+
+aggregate editorial interest
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Article rankng: fresh and new, duplication and novelty detection, local
+ and personal relevancy, trusted sources based on 
+\begin_inset Quotes eld
+\end_inset
+
+aggregate user behavior
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+based on 
+\begin_inset Quotes eld
+\end_inset
+
+registrational activity
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Methods
+\end_layout
+
+\begin_layout Enumerate
+Feed the HTML source of the search results for an engine into the Harvester.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+make sure to select 'unique sites only' and 'exclude Google and YouTube
+ links'
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Feed that URL list into Google Scraper URL list.
+\end_layout
+
+\begin_layout Enumerate
+Place keywords into Google Scraper Keywords list.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+for Google News, make sure to uncheck 'Only Query discrete sites'; also
+ an option for others
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The Lippmanian Device: tag clouds.
+\end_layout
+
+\begin_layout Section*
+Explained again
+\end_layout
+
+\begin_layout Enumerate
+query for sources
+\end_layout
+
+\begin_layout Enumerate
+choose spheres
+\end_layout
+
+\begin_layout Enumerate
+query sources
+\end_layout
+
+\end_body
+\end_document
