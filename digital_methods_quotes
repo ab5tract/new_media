@@ -90,3 +90,103 @@ interviewee G: "You have to be subtle in controlling where people go. You can't 
 "Metrics such as precision and recall are still part of quality-testing search engines, but what is contested is the underlying ability to categorize documents into relevant and irrelevant."
 
 "From a technical standpoint, then, the definition of a quality search engine is simple: If the search engine gives you results that answer your question, then the search engine has delivered a relevant response and the results are quality results."
+
+"It would be fair to say that quality schemas including ideas of full disclosure, representativeness, or diversity operate at a tangent to the way in which producers primarily frame their work."
+
+== The End of the Virtual / Rogers
+
+"The issue no longer is how much of society and culture is online, but rather how to diagnose cultural change and societal conditions using the Internet." 8
+
+- the Internet is not just an object of study, but a source
+
+"to reorient Internet research to consider the Internet as a source of data, method, and technique" 13
+
+search engines are not only "a crucial entry point to the Web," they are "epistemological machines in the sense that they crawl, index, cache, and ultimately order content." 19
+
+"Cross-spherical analysis is a digital method for measuring and learning from thedistance between sources in different spheres on the Web." 21
+
+"Conceptually, a sphere is considered to be a device demarcated source set" 21
+
+"Thus, to sudy a sphere, we propose first to allow the engines to demarcate it." 21
+
+"Cross spherical analysis compares the sources by each sphere for the same query.' 21
+
+cross-spherical analysis is comparative ranking reearch
+
+"Knowledge claims may be made on the basis of data collected and analyzed by devices such as search engines." 8
+
+== The Google Dilemma / Grimmelmann
+
+"Whoever controls the search engines, perhaps, controls the Internet itself."
+	"Today, no one comes closer to controlling search than Google does." 940
+
+documents "ways that individuals, companies, and even governments have tried to shape Google's results to server their goals"
+
+"Your random-click quest for gerbil information s like looking for a needle in a field full of haystacks." 941      
+
+"The Internet today is usable because of search engines." 941
+
+!!check comscore.com for Search Engine rankings
+
+"So many people use search engines, and their results appear to be so sophisticated, that any message you can sneak through in the form of a Googlebomb has at least a veneer of legitimacy." 942
+
+"A successful Googlebomb doesn't just _reflect_ the consensus of web users; it can help _construct_ that consensus." 943
+
+- contrast the Jew Googlebomb with the disappearance of 911truth.org
+
+Google: "The beliefs and preferences of those who work at Google, as well as the opinions of the generl public, do not determine or impact our search results." 944
+	- not true on multiple levels; public opinion generates the link structures they use in the first place; also, programmers are driven by the market schema to return links that the user thinks are relevant
+
+"You can't say that a search engine was irresponsible unless you have a baseline of what would be responsible." 945
+
+Google Dilemma: "Google has the ability to shape its search results to prefer some web sites over others. Indeed, whatever choice it makes--alphabetical, by link count, by politics, by whatever--will result in some sites being on the first page of results and others not." 944-945
+	- only increases the reasoning for disclosure
+	- court held that Google hs editorial control of its search results under 1st amendment
+	- a strange precedence, in the sense that other governments are not shy about restricting Google
+
+"Every decision about search, and every lawsuit about search, has these inescapably political questions at its heart." 950
+
+== "Googlearchy" // Hindeman
+
+"Claims about the importance of narrowcasting online have persisted, in part, becuse they are difficult to test." 31
+
+"we argue that the link structure of the Internet is particularly important in shaping online political activity." 32
+
+"The link topology of the Internet thus llows us to draw a rough map of how the attention of citizens is distributed across different sources of online information." 32
+
+"The link topology of the Web suggests that the online public sphere is less open than many have hoped or feared." 33
+
+- surfing behavior is also constrained by the power-law link patterns
+
+"One might think that a less concentrated search engine market would help ensure diversity in the content seen. But once search engines focus on link structure, the popularity contst dynamics seen with PageRank are difficult to avoid." 35
+
+"The raw number of hyerlink pointing to a site does predict much of its traffic." 35
+
+"While the global power law distribution of the Internet is clear, sub-groups of sites also diverge significantly from the overall pattern." 36
+
+"First, the number of highly visible sites is small by any measure." 43
+
+"Second, comparative visibility drops off in a rapid and highly regular fashion once one moves outside the core group of successful sites." 44
+
+- power laws all the way down
+
+Googlearchy: "the rule of the most heavily linked"
+	1) "Googlearchy suggests that the number of links pointing to a site is the most important determinant of site visibility." 44
+	2) "Googlearchy suggests that niche dominance should be a general rule of online life."
+	3) "Googlearchy suggests that this dependence upon links should make niche dominance self-perpetuating." 44
+
+"By relying so heavily on links, search engines should reinforce or even accelerate this rich-get-richer phenomenon. Search engines should produce patterns of traffic at least as concentrated as those produced if citizens were surfing randomly across the Web." 44
+
+"link density is an effective proxy for online audience share" 45
+
+"The end to end nature of the Web might not limit the political sites that citizens visit, but the link structure of the Web certainly does." 46
+
+
+
+
+
+
+
+
+
+
