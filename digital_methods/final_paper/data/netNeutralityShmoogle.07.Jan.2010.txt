@@ -1,0 +1,489 @@
+result #	query	article title	article url	article description	total nr of results indicated by Google	Extra settings	
+0	“big government” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+1	“big government” site:petelumbis.org/blog/?p=1197	Senator Grassley,	http://petelumbis.org/blog/images/policy.doc		1		
+2	“big government” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+3	“big government” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+4	“big government” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+5	“big government” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+6	“big government” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+7	“big government” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+8	“big government” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+9	“big government” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+10	“big government” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+11	“big government” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+12	“big government” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+13	“big government” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+14	“big government” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+15	“big government” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+16	“big government” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+17	“big government” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+18	“big government” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+19	“big government” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+20	“big government” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+21	“big government” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+22	“big government” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+23	“big government” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+24	“big government” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+25	“big government” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+26	“big government” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+27	“big government” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+28	“big government” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+29	“big government” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+30	“new regulation” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+31	“new regulation” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+32	“new regulation” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+33	“new regulation” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+34	“new regulation” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+35	“new regulation” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+36	“new regulation” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+37	“new regulation” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+38	“new regulation” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+39	“new regulation” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+40	“new regulation” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+41	“new regulation” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+42	“new regulation” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	FTC abandons net neutrality - V3.co.uk - formerly vnunet.com	http://www.v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	2 Jul 2007 ... or demonstrated consumer harm, policy makers should be particularly hesitant to enact new regulation in this area." ...  	1		
+43	“new regulation” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+44	“new regulation” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+45	“new regulation” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+46	“new regulation” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+47	“new regulation” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+48	“new regulation” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+49	“new regulation” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+50	“new regulation” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+51	“new regulation” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+52	“new regulation” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+53	“new regulation” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+54	“new regulation” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+55	“new regulation” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+56	“new regulation” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+57	“new regulation” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+58	“new regulation” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+59	“new regulation” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+60	nationalization site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+61	nationalization site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+62	nationalization site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+63	nationalization site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+64	nationalization site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+65	nationalization site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+66	nationalization site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+67	nationalization site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+68	nationalization site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+69	nationalization site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+70	nationalization site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+71	nationalization site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+72	nationalization site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+73	nationalization site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+74	nationalization site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+75	nationalization site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+76	nationalization site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+77	nationalization site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+78	nationalization site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+79	nationalization site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+80	nationalization site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+81	nationalization site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+82	nationalization site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+83	nationalization site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+84	nationalization site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+85	nationalization site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+86	nationalization site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+87	nationalization site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+88	nationalization site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+89	nationalization site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+90	socialism site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+91	socialism site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+92	socialism site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+93	socialism site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+94	socialism site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+95	socialism site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+96	socialism site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+97	socialism site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+98	socialism site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+99	socialism site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+100	socialism site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+101	socialism site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+102	socialism site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+103	socialism site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+104	socialism site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+105	socialism site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+106	socialism site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+107	socialism site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+108	socialism site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+109	socialism site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+110	socialism site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+111	socialism site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+112	socialism site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+113	socialism site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+114	socialism site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+115	socialism site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+116	socialism site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+117	socialism site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+118	socialism site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+119	socialism site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+120	“quality of service” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+121	“quality of service” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+122	“quality of service” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	New York City Broadband Advisory Committee: NYC Council holds Net ...	http://nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	... over the Internet on a "best efforts" basis, without creating different levels of quality of service based upon amounts paid by content providers; and ...  	1		
+123	“quality of service” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+124	“quality of service” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+125	“quality of service” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+126	“quality of service” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+127	“quality of service” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	Net neutrality back in spotlight for debate : Insight : Internet ...	http://www.zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	"Part of the standard for WiMax defines quality of service . So we can schedule the packets to guarantee a level of service for our customers. ...  	1		
+128	“quality of service” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+129	“quality of service” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+130	“quality of service” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+131	“quality of service” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+132	“quality of service” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+133	“quality of service” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+134	“quality of service” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+135	“quality of service” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+136	“quality of service” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+137	“quality of service” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+138	“quality of service” site:enterprisenetworkingplanet.com/news/article.php/3851946	FCC Begins Technical Inquiry  Into Net Neutrality - www ...	http://www.enterprisenetworkingplanet.com/news/article.php/3851946/FCC-Begins-Technical-Inquiry-Into-Net-Neutrality.htm	8 Dec 2009 ... "Will quality of service be available  not just in a single network but end to end?" Jordan asked. Of course, the utopia for Net neutrality ...  	1		
+139	“quality of service” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+140	“quality of service” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+141	“quality of service” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+142	“quality of service” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+143	“quality of service” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+144	“quality of service” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+145	“quality of service” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+146	“quality of service” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+147	“quality of service” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+148	“quality of service” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+149	“quality of service” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+150	“fairness doctrine” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+151	“fairness doctrine” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+152	“fairness doctrine” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+153	“fairness doctrine” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+154	“fairness doctrine” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+155	“fairness doctrine” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+156	“fairness doctrine” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+157	“fairness doctrine” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+158	“fairness doctrine” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+159	“fairness doctrine” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+160	“fairness doctrine” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+161	“fairness doctrine” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+162	“fairness doctrine” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+163	“fairness doctrine” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+164	“fairness doctrine” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+165	“fairness doctrine” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+166	“fairness doctrine” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+167	“fairness doctrine” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+168	“fairness doctrine” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+169	“fairness doctrine” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+170	“fairness doctrine” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+171	“fairness doctrine” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+172	“fairness doctrine” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+173	“fairness doctrine” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+174	“fairness doctrine” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+175	“fairness doctrine” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+176	“fairness doctrine” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+177	“fairness doctrine” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+178	“fairness doctrine” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+179	“fairness doctrine” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+180	“big telecom” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+181	“big telecom” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+182	“big telecom” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+183	“big telecom” site:democraticmedia.ca/net-neutrality/net-neutrality	Net Neutrality | OpenMedia.ca	http://democraticmedia.ca/net-neutrality/net-neutrality	Big telecom companies like Telus like to scare policy makers by suggesting any open Internet requirements for Internet Service Providers will lead to ...  	2		
+184	“big telecom” site:democraticmedia.ca/net-neutrality/net-neutrality	OpenMedia.ca - Net Neutrality	http://democraticmedia.ca/net-neutrality/net-neutrality/feed	Big telecom companies like Telus like to scare policy makers by suggesting any open Internet requirements for Internet Service Providers will lead to ...  	2		
+185	“big telecom” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+186	“big telecom” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+187	“big telecom” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+188	“big telecom” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+189	“big telecom” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+190	“big telecom” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+191	“big telecom” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+192	“big telecom” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+193	“big telecom” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+194	“big telecom” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+195	“big telecom” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+196	“big telecom” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+197	“big telecom” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+198	“big telecom” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+199	“big telecom” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+200	“big telecom” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+201	“big telecom” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+202	“big telecom” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+203	“big telecom” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+204	“big telecom” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+205	“big telecom” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+206	“big telecom” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+207	“big telecom” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+208	“big telecom” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+209	“big telecom” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+210	“big telecom” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+211	“open internet” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+212	“open internet” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+213	“open internet” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+214	“open internet” site:democraticmedia.ca/net-neutrality/net-neutrality	Net Neutrality | OpenMedia.ca	http://democraticmedia.ca/net-neutrality/net-neutrality	Big telecom companies like Telus like to scare policy makers by suggesting any open Internet requirements for Internet Service Providers will lead to ...  	3		
+215	“open internet” site:democraticmedia.ca/net-neutrality/net-neutrality	OpenMedia.ca - Net Neutrality	http://democraticmedia.ca/net-neutrality/net-neutrality/feed	Big telecom companies like Telus like to scare policy makers by suggesting any open Internet requirements for Internet Service Providers will lead to ...  	3		
+216	“open internet” site:democraticmedia.ca/net-neutrality/net-neutrality	Net Neutrality | OpenMedia.ca	http://democraticmedia.ca/net-neutrality/net-neutrality?page=1	SaveOurNet.ca: Coalition rallies public to support Open Internet  ... Charlie Smith discusses the political support for an open Internet  ...  	3		
+217	“open internet” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+218	“open internet” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+219	“open internet” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+220	“open internet” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+221	“open internet” site:democraticmedia.ca/netneutrality	Net Neutrality Background | OpenMedia.ca	http://democraticmedia.ca/netneutrality/background	The Fight for the Open Internet http://canadiandimension.com/articles/2008/01/16 /1543/. The Search  for Net Neutrality  ...democraticmedia.ca/netneutrality/background - Cached 	1		
+222	“open internet” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+223	“open internet” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	Adam Green: Mike McCurry -- Hurting The Internet, Hurting His Admirers	http://www.huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	2 May 2006 ... Not  only is he serving as the mouthpiece for AT&T and other corporations who self-servingly want to end the free and open Internet as we ...  	1		
+224	“open internet” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+225	“open internet” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+226	“open internet” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+227	“open internet” site:openinternet.gov/read-speech.html	Preserving a free and open Internet - Speeches - OpenInternet.gov	http://openinternet.gov/read-speech.html	21 Sep 2009 ... And let us not forget that the open Internet enables much more than commerce. It is also an unprecedented platform for speech, ...  	1		
+228	“open internet” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+229	“open internet” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+230	“open internet” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	FCC Chairman Julius Genachowski Backs Net Neutrality in Speech ...	http://digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full/	21 Sep 2009 ... "It is vital that we safeguard the free and open Internet ," Genachowski said during at event at the Brookings Institute.  	1		
+231	“open internet” site:enterprisenetworkingplanet.com/news/article.php/3851946	FCC Begins Technical Inquiry  Into Net Neutrality - www ...	http://www.enterprisenetworkingplanet.com/news/article.php/3851946/FCC-Begins-Technical-Inquiry-Into-Net-Neutrality.htm	8 Dec 2009 ... "to ensure that decisions in the commission's proceeding on the open Internet reflect a thorough understanding of current technology." ...  	1		
+232	“open internet” site:helium.com/items/1423651-net-neutrality-internet-regulation	An overview of what net neutrality means - by Jessica Bosari - Helium	http://www.helium.com/items/1423651-net-neutrality-internet-regulation	Net neutrality is the concept of a free and open internet , where everyone  can compete fairly and get their content seen. It levels the playing field, ...  	1		
+233	“open internet” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+234	“open internet” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+235	“open internet” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+236	“open internet” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+237	“open internet” site:laquadrature.net/Net_neutrality	La Quadrature du Net	http://www.laquadrature.net/Net_neutrality	It guarantees a free an open Internet that enables wider democratic participation and effective economic competition. But this funding principle of the ...  	1		
+238	“open internet” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+239	“open internet” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+240	“open internet” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+241	“open internet” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	2009 Year in Review: Net neutrality fight begins ...	http://www.fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	... out plans less than three months later to implement net neutrality and open Internet regulations for telecom companies--both wireline and wireless. ...  	1		
+242	“open internet” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+243	“digital divide” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+244	“digital divide” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+245	“digital divide” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	New York City Broadband Advisory Committee: NYC Council holds Net ...	http://nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	Since 2002, Council Member Gale A. Brewer has been leading the effort to close the " digital divide "  in New York. Her interest in this important issue led ...  	1		
+246	“digital divide” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+247	“digital divide” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+248	“digital divide” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+249	“digital divide” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+250	“digital divide” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+251	“digital divide” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+252	“digital divide” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+253	“digital divide” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+254	“digital divide” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+255	“digital divide” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+256	“digital divide” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+257	“digital divide” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+258	“digital divide” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+259	“digital divide” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+260	“digital divide” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+261	“digital divide” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+262	“digital divide” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+263	“digital divide” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+264	“digital divide” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+265	“digital divide” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+266	“digital divide” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+267	“digital divide” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+268	“digital divide” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+269	“digital divide” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+270	“digital divide” site:internetnews.com/government/article.php/3845416	Net Neutrality Postmortem: Cheers and Jeers - InternetNews.com	http://www.internetnews.com/government/article.php/3845416	23 Oct 2009 ... Latinos Closing Digital Divide : Pew [December 22, 2009] New report finds rising Internet usage among minority segment. ...  	1		
+271	“digital divide” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+272	“digital divide” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+273	discrimination site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+274	discrimination site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» Blog Archive Â» State of the Union	http://petelumbis.org/blog/?p=250	This is discrimination in its purest form. We are saying these "people" are less than "us" only on the fact that they love someone of the same sex. ...  	2		
+275	discrimination site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» Blog Archive Â» The Journey That Never Ends	http://petelumbis.org/blog/?p=234	It is a shame that they are going to outlaw it again, but then it is only a matter of time before it is once again struck down based on discrimination . ...  	2		
+276	discrimination site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+277	discrimination site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+278	discrimination site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+279	discrimination site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+280	discrimination site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+281	discrimination site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+282	discrimination site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+283	discrimination site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+284	discrimination site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+285	discrimination site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+286	discrimination site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+287	discrimination site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+288	discrimination site:openinternet.gov/read-speech.html	Speeches - OpenInternet.gov	http://openinternet.gov/read-speech.html	21 Sep 2009 ... The fifth principle is one of non- discrimination -- stating that broadband providers cannot discriminate against particular Internet content ...  	1		
+289	discrimination site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+290	discrimination site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+291	discrimination site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	FCC Chairman Julius Genachowski Backs Net Neutrality in Speech ...	http://digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full/	21 Sep 2009 ... The fifth principle is one of non- discrimination âstating that broadband providers cannot discriminate against particular Internet content or ...  	1		
+292	discrimination site:enterprisenetworkingplanet.com/news/article.php/3851946	FCC Begins Technical Inquiry  Into Net Neutrality - www ...	http://www.enterprisenetworkingplanet.com/news/article.php/3851946/FCC-Begins-Technical-Inquiry-Into-Net-Neutrality.htm	8 Dec 2009 ... Of course, the utopia for Net neutrality proponents would be the speedy delivery of all packets handled by providers without discrimination  ...  	1		
+293	discrimination site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+294	discrimination site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+295	discrimination site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+296	discrimination site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+297	discrimination site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+298	discrimination site:laquadrature.net/Net_neutrality	La Quadrature du Net	https://www.laquadrature.net/Net_neutrality	... La Quadrature answers werebuild.eu survey about an open Net · It Is Crucial To Save Net Neutrality · Net Discrimination in the Telecoms Package ...  	1		
+299	discrimination site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+300	discrimination site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+301	discrimination site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+302	discrimination site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+303	discrimination site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	FCC's Genachowski gives strong net neutrality endorsement ...	http://www.networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	21 Sep 2009 ... Genachowski said that enforcing the non- discrimination rule would occur on a case-by-case basis, just as the commission has enforced its ...  	1		
+304	tiered site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+305	tiered site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+306	tiered site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+307	tiered site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+308	tiered site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+309	tiered site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+310	tiered site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	Telecom Trends: Net Neutrality or Open Access?	http://mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	It will create an undemocratic and tiered system, stifle innovation and our voices. Posted by Anonymous : 2:06 PM, August 09, 2007 ...  	1		
+311	tiered site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+312	tiered site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+313	tiered site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+314	tiered site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+315	tiered site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+316	tiered site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+317	tiered site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+318	tiered site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+319	tiered site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+320	tiered site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+321	tiered site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+322	tiered site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+323	tiered site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+324	tiered site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+325	tiered site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+326	tiered site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+327	tiered site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+328	tiered site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+329	tiered site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+330	tiered site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+331	tiered site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+332	tiered site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+333	tiered site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+334	censorship site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	Amazon.com: Virtual Freedom: Net Neutrality and Free Speech in the ...	http://www.amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	Her book chronicles some alarming examples of censorship on the Internet, and the surprise the book reveals is that the source of the censorship is not the ...  	1		
+335	censorship site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» Emo	http://petelumbis.org/blog/?cat=8	I've been practicing a lot of self- censorship as of late, and this isn't going to ... This self- censorship is one of the reasons why my blogging has been so ...  	5		
+336	censorship site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» Blog Archive Â» Sleepless Night	http://petelumbis.org/blog/?p=969	I've been practicing a lot of self- censorship as of late, and this isn't going to ... This self- censorship is one of the reasons why my blogging has been so ...  	5		
+337	censorship site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» Blog Archive Â» Move to Strike	http://petelumbis.org/blog/?p=719	Self- censorship sucks, but  there are things that I just can't bring myself to write about. Despite the fact that I really would love to lay words down on ...  	5		
+338	censorship site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» 2007 Â» December	http://petelumbis.org/blog/?m=200712	Wednesday, December 19th, 2007 Posted in Emo | 1 Comment Â». I'm frustrated by self- censorship . Read more.. My New Internet Crush ...  	5		
+339	censorship site:petelumbis.org/blog/?p=1197	PeteLumbis(dot)org â Blog Â» Blog Archive Â» Keep It A Secret	http://petelumbis.org/blog/?p=948	I'm frustrated by self- censorship . You can follow any responses to this entry through the RSS 2.0 feed. Both comments and pings are currently closed. ...  	5		
+340	censorship site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+341	censorship site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+342	censorship site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+343	censorship site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+344	censorship site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	Telecom Trends: Net Neutrality or Open Access?	http://mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	Aspects of censorship , consolidation, and preferential treatment of the internet are now being debated under the umbrella of "Net Neutrality. ...  	1		
+345	censorship site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+346	censorship site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+347	censorship site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+348	censorship site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+349	censorship site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+350	censorship site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+351	censorship site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+352	censorship site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+353	censorship site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+354	censorship site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+355	censorship site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+356	censorship site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+357	censorship site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+358	censorship site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+359	censorship site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+360	censorship site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+361	censorship site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+362	censorship site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+363	censorship site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+364	censorship site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+365	censorship site:internetnews.com/government/article.php/3845416	Net Neutrality Postmortem: Cheers and Jeers - InternetNews.com	http://www.internetnews.com/government/article.php/3845416	23 Oct 2009 ... Search And Censorship · Search Engine Optimization · Search Meets Mapping · Thinner Slices of The Paid Search Pie ...  	1		
+366	censorship site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+367	censorship site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	FCC's Genachowski gives strong net neutrality endorsement ...	http://www.networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	21 Sep 2009 ... I pay a carrier for bandwidth, not censorship . To play the carrier's game, they want money on both sides - essentially reverting. ...  	1		
+368	astroturf site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+369	astroturf site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+370	astroturf site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+371	astroturf site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+372	astroturf site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+373	astroturf site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+374	astroturf site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+375	astroturf site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+376	astroturf site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+377	astroturf site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+378	astroturf site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+379	astroturf site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+380	astroturf site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+381	astroturf site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+382	astroturf site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+383	astroturf site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+384	astroturf site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+385	astroturf site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+386	astroturf site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+387	astroturf site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+388	astroturf site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+389	astroturf site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+390	astroturf site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+391	astroturf site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+392	astroturf site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+393	astroturf site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+394	astroturf site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+395	astroturf site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+396	astroturf site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+397	astroturf site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+398	“physical layer” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+399	“physical layer” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+400	“physical layer” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+401	“physical layer” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+402	“physical layer” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+403	“physical layer” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+404	“physical layer” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+405	“physical layer” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+406	“physical layer” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+407	“physical layer” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+408	“physical layer” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+409	“physical layer” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+410	“physical layer” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+411	“physical layer” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+412	“physical layer” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+413	“physical layer” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+414	“physical layer” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+415	“physical layer” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+416	“physical layer” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+417	“physical layer” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+418	“physical layer” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+419	“physical layer” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+420	“physical layer” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+421	“physical layer” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+422	“physical layer” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+423	“physical layer” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+424	“physical layer” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+425	“physical layer” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+426	“physical layer” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+427	“physical layer” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+428	“logical layer” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+429	“logical layer” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+430	“logical layer” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+431	“logical layer” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+432	“logical layer” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+433	“logical layer” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+434	“logical layer” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+435	“logical layer” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+436	“logical layer” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+437	“logical layer” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+438	“logical layer” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+439	“logical layer” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+440	“logical layer” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+441	“logical layer” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+442	“logical layer” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+443	“logical layer” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+444	“logical layer” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+445	“logical layer” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+446	“logical layer” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+447	“logical layer” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+448	“logical layer” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+449	“logical layer” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+450	“logical layer” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+451	“logical layer” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+452	“logical layer” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+453	“logical layer” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+454	“logical layer” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+455	“logical layer” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+456	“logical layer” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+457	“logical layer” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
+458	“content layer” site:amazon.com/Virtual-Freedom-Neutrality-Internet-Stanford/dp/0804763852	n/a	n/a	n/a	n/a		
+459	“content layer” site:petelumbis.org/blog/?p=1197	n/a	n/a	n/a	n/a		
+460	“content layer” site:nycbroadband.blogspot.com/2009/11/nyc-council-holds-net-neutrality.html	n/a	n/a	n/a	n/a		
+461	“content layer” site:democraticmedia.ca/net-neutrality/net-neutrality	n/a	n/a	n/a	n/a		
+462	“content layer” site:defendnetneutrality.org	n/a	n/a	n/a	n/a		
+463	“content layer” site:azcentral.com/arizonarepublic/opinions/articles/0626mon1-26.html	n/a	n/a	n/a	n/a		
+464	“content layer” site:mhgoldberg.com/blog/2006/03/net-neutrality-or-open-access.html	n/a	n/a	n/a	n/a		
+465	“content layer” site:zdnetasia.com/insight/internet/0,39044877,62057309,00.htm	n/a	n/a	n/a	n/a		
+466	“content layer” site:democraticmedia.ca/netneutrality	n/a	n/a	n/a	n/a		
+467	“content layer” site:digitaldaily.allthingsd.com/20091023/mccain-gets-mavericky-on-net-neutrality	n/a	n/a	n/a	n/a		
+468	“content layer” site:huffingtonpost.com/adam-green/mike-mccurry-hurting-t_b_20216.html	n/a	n/a	n/a	n/a		
+469	“content layer” site:isen.com/blog/2007/10/why-net-neutrality-law-is-not-enough.html	n/a	n/a	n/a	n/a		
+470	“content layer” site:v3.co.uk/vnunet/news/2193214/ftc-abandons-net-neutrality	n/a	n/a	n/a	n/a		
+471	“content layer” site:cio.com/article/502574/Report_FCC_Will_Formalize_Net_Neutrality_Rule	n/a	n/a	n/a	n/a		
+472	“content layer” site:openinternet.gov/read-speech.html	n/a	n/a	n/a	n/a		
+473	“content layer” site:ecommercetimes.com/rsstory/68927.html	n/a	n/a	n/a	n/a		
+474	“content layer” site:inc.com/news/articles/2009/09/net.html	n/a	n/a	n/a	n/a		
+475	“content layer” site:digitaldaily.allthingsd.com/20090921/net-neutrality-fcc-chairman-julius-genachowskis-speech-in-full	n/a	n/a	n/a	n/a		
+476	“content layer” site:enterprisenetworkingplanet.com/news/article.php/3851946	n/a	n/a	n/a	n/a		
+477	“content layer” site:helium.com/items/1423651-net-neutrality-internet-regulation	n/a	n/a	n/a	n/a		
+478	“content layer” site:helium.com/channels/520-Internet-Access-Providers	n/a	n/a	n/a	n/a		
+479	“content layer” site:4g-wirelessevolution.tmcnet.com/broadband-stimulus/topics/broadband-stimulus/articles/62478-broadband-stimulus-fuels-net-neutrality-debate-acme-packet.htm	n/a	n/a	n/a	n/a		
+480	“content layer” site:lauren.vortex.com/archive/000627.html	n/a	n/a	n/a	n/a		
+481	“content layer” site:americanthinker.com/2009/11/net_neutrality_nets_out_to_gov.html	n/a	n/a	n/a	n/a		
+482	“content layer” site:laquadrature.net/Net_neutrality	n/a	n/a	n/a	n/a		
+483	“content layer” site:unionsquareventures.com/2006/07/through-the-loo-1.php	n/a	n/a	n/a	n/a		
+484	“content layer” site:eponymouspickle.blogspot.com/2009/12/net-neutrality-and-tech-implications.html	n/a	n/a	n/a	n/a		
+485	“content layer” site:internetnews.com/government/article.php/3845416	n/a	n/a	n/a	n/a		
+486	“content layer” site:fiercebroadbandwireless.com/story/2009-year-review-net-neutrality-fight-begins/2009-12-18	n/a	n/a	n/a	n/a		
+487	“content layer” site:networkworld.com/news/2009/092109-genachowski-net-neutrality-speech.html?fsrc=netflash-rss	n/a	n/a	n/a	n/a		
