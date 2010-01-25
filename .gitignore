@@ -1,5 +1,6 @@
-./theories/virtuality/*
+theories/virtuality/*
 *.log
 *.tuc
 *.swp
 *~
+*.pdf
