@@ -1,0 +1,43 @@
+An Introductory Note on the Path to a Final Proposal
+====================================================
+
+The reason this hasn't happened yet is because the source has only just now evolved to a point it can carry it.
+
+
+# The Holy Grail #
+
+- What is the Holy Grail?
+
+# Self Injection #
+
+This writer prefers a flexibility in narrative styles. That is, I would reserve the right to shift perspectives in order to further the cause of weaving a readable whole, if that right were granted me. I've found that a text lacking its author is impossible for me to write well. 
+
+But first, about where I come from:
+
+I am here in Amsterdam as a result of a single blog post, found through the serendipitous contemporality (_synchronicity_) afforded by logging into my del.icio.us account and finding an algorithmically suggested page titled 'Review: Software Studies a Lexicon Edited by Matthew Fuller.' Clicking that link, little did I know I was diving down the rabbit hole. Hosted on a Netherlands domain, Anne Helmond's review inspired me to inquire into programs offering opportunities in this new field in that country. A theoretical approach to understanding and describing software is a dream field for me---I've always lurked in the background as a user, and devotee, of FLOSS. This was a clear way to contribute.[^1] 
+
+[^1]: And, perhaps, an avenue to articulate the need, as I see it, for a critical, non-programming point of participation in FLOSS projects. While there are clear examples of proactive design in open source, the fact that a vision generally needs to be implemented _a priori_ in order for it to exist at all seems like a failing to me.
+
+I also expected that it would provide me the language, and attendant concepts embedded therein, to articulate an on-going collaborative project that could easily have been described as 'New Media Art,' if we had known to classify it that way. Not that we could ever fully describe it any, including this, point---its core focus was always to interrogate the negative space between a word and the concept it describes. Its plan is to  One of its core adaptations is a total absence of name attribution in the outward facing interface. How do we refer to concepts when we cannot simply append an '-ian' to a name and discuss it in that fashion?[^2] 
+
+[^2]: A question that bears considerably on the readability of new media, or so it seems to me.
+
+This, though, is not the project I'm proposing. The work I intend to do is based, at a foundational level, with an erstwhile dormant allergy to ill-formatted text recently activated by investigations into digital typesetting with TeX. This became coupled to the my original impulses at developing collaborative frameworks when Geert Lovink opened the idea of a new 'post-journal' unaffiliated with any academic institution and seeking a new means of vetting beyond traditional peer-review processes. The platform to deliver this, then, to me, is the Holy Grail. By being open-source, it is infinitely embeddable once it is properly accomplished. The platform that can power such a journal can power a collaborative classroom, an open source laboratory, even the project I briefly mentioned before. 
+
+Yet that is also not what I seek to accomplish here, especially software wise. I cannot design a working journal while carrying through a legitimate theoretical investigation/justification for the effort. Instead I will be working on a prototype, itself embeddable, that can provide real-time WYSIWYM editing of a document that will be exportable into HTML, OpenDocument Format, and PDF via ConTeXt. The edits to the document will be tracked via the git version control system. But it will very much resemble a stand-alone app, with the difference that you run it locally as a web server and access it via your browser.[^3]
+
+[^3]: Once embedded in a larger context, the system could easily accomodate the kind of platform Anne Helmond suggests as a solution to the mutability that the _Software studies_ lexicon implies. [http://www.annehelmond.nl/2008/09/22/review-software-studies-a-lexicon-edited-by-matthew-fuller/](http://www.annehelmond.nl/2008/09/22/review-software-studies-a-lexicon-edited-by-matthew-fuller/)
+
+# Whither Theory? #
+
+Where there is a Holy Grail, there are paths littered with artifacts left by those who seek it. Donald Knuth, originator of TeX, famously thought that that project would take a summer of thesis work by a masters student---32 years later, TeX is still in development as issues of right-to-left formatting and support for contemporary font features remain just two outstanding issues. 
+
+To that end, the theoretical portion of this project can be described in three threads:
+
+1. Establish the various options for typesetting text with FLOSS _based on a plaintext workflow_ (for this project: HTML, ODT, and ConTeXt). Simultaneously typeset the thesis in all three output formats, exploring the relative strengths and weaknesses of each. Using standards established over the history of typography, judge them on their materiality as typeset documents. Code cannot be separated from politics, and the importance of FLOSS to realizing/perpetuating Enzensberger's 'emancipatory media' must also be discussed. 
+
+2. Establish the importance of plaintext for collaboration by explaining binary file formats, markup syntax, version control, and translation utilties. All of these aspects would seem to have theoretically heavy implications, not least of which is the materiality of documents with multiple authors[^4] and multiple output formats. As far as I know, Hayles has never dived into a technical discussion of typesetting, i.e. line-breaking algorithms, markup standards, etc. To some extent the mystical aspects/history of text and codes must also be incorporated here, as well as the vision of the collaboritive platform to which the vector of this project eventually aims.
+
+[^4]: It is to be acknowledged that 'author' is a problematic word embodying a concept of creative development that was pushed heavily by publishing industries in order establish literary works as the product of a single mind.
+
+3. Establish typesetting for the screen as a significant issue in typsetting that is not addressed by ODT and not adequate (in a typographic sense) in the case of HTML. Only ConTeXt can take one input and, utilizing a project workflow feature called 'environments,' produced a document meant for the page and a document meant for the screen. The distinctions between the two will be explored as the thesis targets both mediums.

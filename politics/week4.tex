@@ -1,0 +1,319 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+
+% jagged-right (aligned to the left)
+%\setupalign[right]
+
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+		\setupwhitespace[medium]  
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+% % % %
+% Lazy version of a title.
+% % % %
+{\tfd What You See With What You Have}
+%{\tfb Mapping the Open Source Typesetting Landscape}
+
+% % % %
+% Including a list of information for the paper requires 'tabulate'
+% % % %
+\starttabulate[|l|l|]
+	\NC Student:
+	\NC John Haltiwanger
+\NR
+	\NC Paper:
+	\NC Week 4
+\NR
+	\NC Supervisor:
+	\NC Thomas Poell
+\NR
+	\NC Date:
+	\NC 24 February 2010
+\NR 
+\stoptabulate  
+
+\subject{Reaction to Turner}
+
+Fred Turner's text deals primarily with the question of
+\quote{digital utopianism.} Where did the sentiment, so common in
+the 1990s, that computers represented a new paradigm of
+digitally-enabled equality, personal liberation, and utopia
+actually come from? Turner's answer lies in the social force that
+is one Stewart Brand, founder of the {\em Whole Earth Catalog} and
+integral component of a vast number of overlapping social networks.
+As a professor of Communications, his focus on Brand's social
+networking techniques (extrapolated from the
+military-academic-industrial complex's embrace of cybernetic
+theory) and the influence of {\em Wired} specifically in shaping
+the discourse and understandings of PCs in the 1990s make
+sense---Brand, if nothing else, has pushed the potentials of
+\quotation{communication} and demonstrated something remarkably
+like a successful propaganda campaign. However, as I will
+elaborate, there are flaws with this attribution, some of which may
+result from Turner's non-technical background.
+
+Inasmuch as Turner's text concerns the question of how computers
+came to be seen as tools of personal liberation, his sole-minded
+focus on the networks of Stewart Brand overplays their importance.
+Steven Levy clearly outlined a moral ethic to which hackers
+self-subscribed in his 1984 book {\em Hackers} (Levy 1984,1994).
+This morality issues forth declarations of universal access to
+computers and information and a judgment system that foreclosed
+issues of race, gender, age, and social position in favor of
+evaluating fellow hackers based only on code. These positions have
+clear relations to (my understanding of) American New Left
+ideology, including a predisposition for some degree of socialism.
+
+The origins of the first commercially successful PC (Apple I) in
+the activities of Steve Wozniak are intrinsically tied to his
+connections to the hackers in the Homebrew Computing Club. Many in
+this group of hackers saw communal
+\footnote{Yet also very individual at the same time, in the grand tradition
+of prestige competition and capitalist resource allocation (some
+could afford more components / newer kits than others). An Altair
+kit was in the mail to an HBCC member at the time of the first
+meeting, for instance.}
+development of microcomputers as a moral imperative, a transition
+to individual access to computers that likely would never come from
+the corporate world. Why would they ever choose to give up their
+powerful positions as dominating patriarchs in a world of computer
+access defined by its resemblance to a priest class? In fact, when
+Hewlett Packard decided whether HP should exercise its rights over
+the Apple I (which Wozniak had developed while working a summer job
+at the company), it waived its option due to the sheer
+incomprehensibility its corporate mind faced at the concept of an
+average individual ever wanting their own computer. These hackers
+knew the potential of the microcomputer as a tool and endeavored to
+ensure it came into existence, yet the relationships of hackers to
+machines is complex and probably represent unique
+cross-liberations. The hacker hacks often for the sheer thrill---in
+other words, the universal liberation known as a high.
+\footnote{If there is a moral component, it can be easily exercised by
+licensing in a morally accordant format and, likely, through the
+nature and utility (scope) of the hack.}
+Couldn't the hacking be said to liberate the computer by equipping
+it with new modes of potential? Wasn't Wozniak's Apple I a
+liberational watershed for all involved? The man gets some money
+and a job hacking, the people get PCs, and the microcomputer begins
+its reorientation of entire societies. It seems to me that
+isolating a liberational view of computers into the result of
+Stewart Brand's networking seems exclusionary to the point of
+reinforcing Brand's legacy and legitimizing his libertarian
+approach. These standpoints are of course valid, so long as they
+are not presented in the absence of other clear lineages of
+liberational moralities that stand to weaken an argument that
+traces the popular liberatory view of computers to Brand and his
+networks.
+\footnote{Brand once gave away 20,000 dollars to an audience and told them to
+decide who should be its recipient. Fred Moore, an early member of
+the then-embryonic HBCC, held a moral stance against money and
+spent the entire night campaigning against even having a vote about
+voting about the money, trying to convince people to organize and
+stay in touch as a network, and passing around a petition stating
+\quotation{We feel the union of people here tonight is more important than money, a greater resource.}
+In the end, the last of the audience gave the money to Moore. I
+find this an interesting contrast to Brand's apparrent approach to
+social networking (Levy 1994: 156--7).}
+In Brand's own words,
+\quotation{No other group that I know of has set out to liberate a technology and succeeded}
+(Levy 1994: 356).
+
+This is not to undermine the importance of Turner's elucidation of
+the effects that Brand's cybernetically inspired networks {\em did}
+have. Stewart Brand and associates (the SBAA?) truly did see the
+utility potential of the tools at their disposal. Deploying
+cybernetic theory to entrepeneurship enabled the social networks
+that would one day spread {\em a particular form of} computer
+liberation ideology. Turner's frequent invocation of LSD as a
+technology for communal organization (in the hands of the New
+Communalists) and personal liberation (in general) does directly
+mirror the rhetoric, and even experience, of the early Internet
+era. There are also important unexplored parallels in the
+criminalization of LSD and file sharing. At their most idealistic,
+both enable new and unique social potentials and understandings.
+Criminalized, these potentials are marginalized and co-opted into a
+caricature of its now socially illegitimate (taboo and dangerous)
+technology.
+
+By demonstrating that Brand, et al., were instrumental in steering
+and shaping the language, and thus the conceptual framings, of the
+Internet's Big Bang, Turner exposes them as the agents of the
+deregulation that has resulted in oligolopic telecom assemblage
+ruling the wires. Forced line-sharing, also known as the principle
+of carrier neutrality, is the main driving force behind Japan's
+lead in broadband connectivity and is a model that has been
+successfully replicated anywhere that is not too corrupt, or just
+plain stupid, to try. Yochai Benkler identifies it as the most
+effective, yet least politically likely, means to ensure network
+neutrality in the United States (Benkler 2005). This clearly
+illustrates that when Turner warns that information workers that if
+they
+\quotation{buy into the notion that computers and the network economy will bring about a peer-to-peer utopia, as many still do, they run the risk of perpetuating the forms of suffering and exclusion that plagued the back-to-the-landers,}
+he may in fact be more right than he knows (Turner 2006: 257). It
+certainly echoes Enzensberger's assertion that a techno-determinism
+that relies on machines and
+{\em the simple existence of those machines} to provide paths to
+liberation will result in no liberation at all. The path must be blazed to freedom before those in
+control can lay concrete slabs in the way. It is hackers, not
+Brand's networks, who achieved this trailblazing and thus unlocked
+the microcomputer for the masses. Brand may have been instrumental
+in publicizing (his own particular vision of) digital utopianism,
+but his involvment in constructing the core architecture to support
+that vision is minimal to the extreme.
+
+The libertarian, \quotation{market is nature} viewpoint that Brand
+embeds in his networking continues to dominate not only the
+language of technology and its potential, but of the entire
+discourse underpinning America's economy today, with
+{\em universally similar results as those Turner warns based on the elitist communard experience}.
+Turner's narration of the role in which Brand, et al. plays in
+shaping these social conceptions not only provides solid entities
+and decisions with which to critique the Californian Ideology, it
+also illuminates social networking techniques based on cybernetic
+theory that could prove useful in countering that ideology.
+
+\subject{Reactions to Beck / Latour}
+
+Ulrich Beck's {\em World at Risk} attempts to explain a new theory
+of sociology, or at least a new sociological understanding, based
+on the idea that a new stage of modernity has arrived (Beck 2009).
+This new stage of modernity is defined by widespread risks that are
+increasingly difficult, if not impossible, to assess in terms of
+responsibility. While the first era of modernity is defined by its
+ignorance of the risks it was generating, the second era knows of
+the risks and therefore seeks to incorporate them (or not) into its
+understanding and practice.
+
+A significant countervailing force to this trend of actully
+managing risks instead of skirting blame and responsibility lies in
+what Beck calls \quote{relations of definition.} Similar to Marx's
+\quote{relations of domination,} Beck's explication of these
+relations demonstrates that the capacity to define a thing (here,
+risk) allows control over society's understanding of that thing. As
+the degree and scope of pollution increases, the likelihood for a
+polluter to be punished decreases (30). Questions of who determines
+what a risk is, and what to do about it, are answered through these
+relations of definition (or {\em not} answered, as the case may
+increasingly be).
+
+To be perfectly honest, the selections of Beck did not give me a
+good sense {\em at all} of what the man is promoting. That the
+world is risky? Derrick Jensen's {\em Endgame} provides a much more
+robust articulation of the actual problems facing it. That the hope
+lies in sub-politics, a la his case study of a 1995 Greenpeace
+action? (96) The text bounces around with the action of a medicine
+ball, weighed down by its cumbersome associations with the
+\quote{social} and \quote{modernity.} As Latour rebuts gracefully,
+the former is invalid and the latter impossibly hard to define.
+Reading Latour's response brought some of Beck's thinking to light,
+but much of that I failed to see in the readings from
+{\em World at Risk}.
+
+For Latour, the proof is in the pudding. When asked to look into
+Beck's \quotation{reflexive modernity,} which he mercifully calls
+re-modernization, Latour approaches with his characteristic
+proof-focused analysis (Latour 2003). By comparing the relative
+approaches for proving 're-modernization' and ANT, Latour slowly
+eviscerates Beck's argument.
+\footnote{I'd like to reiterate that I did {\em not} necessarily see this
+argument in the text we read.}
+For ANT (and, specifically, Latour's own persepctive), the initial
+step would be to prove that a perspective shift had occurred in the
+understanding and appreciation of
+risks---{\em because modernity has never accurately described itself},
+the mere act of describing itself differently would prove a) there
+never was an acceptable vision of risk in modernity, and b) that a
+new master narrative had been introduced. For 're-modernization'
+the task is to prove that such a second stage of modernity actually
+incorporates \quotation{very different characteristics} (39). In
+other words,
+\quotation{for Beck and his group the proofs have to be in the {\em substance} of the phenomena they study, for me only in the {\em collective interpretation} given to phenomena which, all along, have never been modern}
+(39). The difference in the two approaches is quite large---ANT's
+reliance on an {\em actual litmus} for demonstrating the accuracy
+of a theory allows it to easily stomp on Beck's social rhetoric. In
+fact, Latour uses the litmuses for both approaches to show the
+extensive work necessary {\em to even test} Beck's assertions.
+Ultimately Latour does not condemn Beck's 're-modernization' but
+rather declares it a potential tool in shaping our understanding
+and approach {\em going forward}.
+\quotation{Re-modernization might not descrie what has already happened, but it can offer a powerful lever to make new things happen}
+(46).
+
+{\em Note: I would like to take this moment to say that I am not happy with this paper. While I think my critique of Turner is not only biting, but relevant, I have to say that I a) did not understand or appreciate Beck, and b) mis-managed time and did not end up reading Marres. If Marres' work actually connected with my case study, it would be the first to do so non-tangentially, thus the absence of the case study here as well. Next week I will get this timing right or die trying.}
+
+\startworkscited
+
+Beck, Ulrich. {\em World at Risk}. Cambridge: Polity Press, 2009.
+24--46 (chapter 2), 81--108 (chapter 5).
+
+Benkler, Yochai. {\em The Wealth of Networks}. New Haven: Yale
+University Press, 2006.
+
+Latour, Bruno.
+\quotation{Is {\em Re}-modernization Occurring---And If So, How to Prove It? A Commentary on Ulrich Beck.}
+{\em Theory, Culture, \& Society: Explorations in Critical Social Science},
+20, no. 2 (2003): 35--48.
+
+Levy, Steven. {\em Hackers: Heros of the computer revolution}. New
+York: Dell Publications, 1994. Originally published 1984.
+
+Turner, Fred. {\em From Counterculture to Cyberculture}. Chicago:
+University of Chicago Press. 2006. 1--9 (Introduction), 175--262
+(chapters: 6--8).
+
+\stopworkscited
+
+\stoptext
