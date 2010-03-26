@@ -1,0 +1,308 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+% \setupwhitespace[small1]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+% \setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata, 11pt]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+\starttabulate[|l|]
+\NC {\tfd Flattening Screens}
+\NR
+\NC {\tfb Investigating the Reduction of Opinion Diversity in the Blogosphere}
+\stoptabulate
+
+\starttabulate[|l|l|]
+\NC Student:
+\NC John Haltiwanger
+\NR
+\NC Paper:
+\NC Politics paper (very) rough draft
+\NR
+\NC Supervisor:
+\NC Thomas Poell
+\NR
+\NC Date:
+\NC 16 March 2010
+\NR 
+\stoptabulate  
+
+
+\subject{{\em Preface: Caveats}}
+
+{\em The following is a paper which seeks to investigate the particularities of an event whose central theme is race. It therefore seems imperative to begin by stating that this project approaches from the perspective of new media theory. Furthermore, it is written by a white male. While I consider myself antiracist, these two factors may result in \quote{blind spots} in this analysis. Please consider any absence of relevant theory to be not the result of deliberate snubbing but rather the limitations imposed by my relative ignorance. This last feature of myself is something I'm always seeking to reform, so please alert me if there is something crucial missing at \useURL[1][mailto:john.haltiwanger@gmail.com][][john.haltiwanger@gmail.com]\from[1].}
+
+{\em There is an additional caveat---I would like to weave this as a creative nonfiction piece, rather than as a dry academic liturgy. Be aware that narrative voice can and will switch.}
+
+\subject{Introductory Note on Racism in America}
+
+To say that the shadow of racism looms large over the American
+psyche is at once both an over- and an under-statement. It is an
+understatement in that for many, many people, race is a defining
+element of their personal experience---in this way, the statement
+does not convey the real impact of race. It is an overstatement
+because a large proportion of people also fail to recognize race as
+a significant issue---for them, racism is not a shadow but a lie to
+begin with, at least in contemporary terms. This discrepancy is
+played out daily on the Internet, television, radio, and in print.
+The situation has only become more tense with the advent of our
+first non-white president. The group that believes in the advent of
+a \quote{post-racial} society uses the election of President Obama
+to assert that racism is no longer an issue---society has achieved
+equality and thus any calls of \quote{racism} are themselves racist
+(this phenomenon has been called \quote{reverse racism}).
+
+This is especially interesting when contrasted with Wendy Hui Kyong
+Chun's {\em Control and Freedom}, which documents the manner in
+which \quote{post-race} visions of the Internet necessarily shift
+the blame of discrimination from the discriminator to the
+discriminated. In both cases post-racial rhetoric is used to
+discredit accusations of racism and to redirect the blame from the
+accused to the accuser. While the Internet (\quotation{cyberspace})
+is the realm of a post-racial utopia in the narrative which Chun
+critiques, the election of President Obama has brought that same
+narrative into discourses about the real world.
+
+The binary logic of reverse racism
+\footnote{Expressed in psuedocode:
+\overstrikes{\overstrikes{\overstrikes{\overstrikes{\overstrikes{\lettertilde{} if (society.post-racial? \&\& accusation.racism?) then accuser == racist accused == absolved end}}}}}\lettertilde{}}
+is predicated on this claim of a \quote{post-racial} society. It
+appears almost universally in American discussions of race. The
+problem with it is that equality has {\em not} been achieved: the
+post-racial society does not exist. At this point it is simply a
+clever rhetorical tool by which accusations of racism can be
+quickly diffused. The two most effective rhetorical tools to
+respond to this from an antiracist perspective are the concepts of
+{\em privilege} and {\em structural discrimination}. To demonstrate
+the inevitability of reverse racism in online discussions, I've
+chosen a well-written comment from a recent boingboing
+\footnote{If the selection seems random, remember that I am attempting to
+demonstrate ubiquity here. All one needs to do is click on a thread
+about race, and reverse racism appears. Then, hopefully, someone
+else enters to describe the phenomena of privilege and structural
+discrimination. As this one is quite lucid, I've chosen it to
+explain the terms. The endless rephrasings of essential concepts
+(that somehow no one still seems to know) is both unnecessary and
+tiring.}
+post promoting a satirical book called
+{\em Obamistan! Land Without Racism} in which user CantEvenGo
+claims:
+
+\startlongquote
+
+annnnd....here we go. Hello, BoingBoing commenters! I'd like to introduce you to a couple of interlocking concepts: structural discrimination and white privilege.
+
+structural discrimination (often publicly articulated as racism) is a system of practices and beliefs that combine to leverage the resources (material, financial, spiritual, ideological) of one group over another. While racism is the most visible of these practices, there are many other implicit behaviors and tacit beliefs that work to privilege (wait for it...) whiteness in a wide variety of institutional settings. These range from disparate sentencing rates, to beliefs about educational attainment, to redlining. Whether your parents owned slaves or not, if you're white then chances are good that you have benefitted (albeit unknowingly) from longstanding structural discrimination patterns.
+
+Which leads us to Privilege (here we go). I often argue that privilege is the obverse of racism: where racism is the police baton to the back of the head, privilege is the belief that police are always friendly and here to help you. Many whites enjoy privilege that is unearned; that is, there is no other rationale BESIDES whiteness that entitles you to a better mortgage rate than a person of color with the exact same income, credit score, debt-to-income ratio, and assets.
+
+IMHO, understanding structural discrimination and white privilege will enable many of you to relinquish your individualist, color-blind, liberal, and ahistorical (and ultimately, racist) beliefs...and coincidentally keep you from putting your foot in your mouth when talking about stuff you don't understand.
+
+\stoplongquote
+
+The linguistic switch from \quote{racism} to
+\quote{structural discrimination} is effective because no one has
+ever claimed that American society has become
+\quote{post-structural discrimination.} This reduces the impact of
+attempts to reverse responsibility for the causes of grievances.
+Aiding in this is the presence of \quotation{structure} in the
+verbalization of the concept---if discrimination is enabled by a
+specific structure, then it becomes harder (though not impossible)
+to accuse the discriminated of bringing it on themselves. The
+concept of privilege, however, is crucial for understanding not
+only structural discrimination, but the very means through which
+the arguments of a \quote{post-racial} society is articulated,
+promoted, and cited in reverse racism.
+
+\subject{Introductory Note on Race and the Internet}
+
+\letterunderscore{}[Having trouble finding the theorist who
+explicitly mentions the importance of \quote{safe spaces} fo]
+
+\subject{Citizen Journalism}
+
+Axel Bruns identifies an cooperative, rather than the oft-touted
+antagonistic, interplay between the mainstream media and the realm
+of \quote{citizen journalism} constituted in large part by the
+blogosphere but encapsulating non-blog projects such as Indymedia.
+The former has traditionally held the power of \quote{gatekeepers.}
+That is, the editorial decisions of the mainstream media have
+historically defined the degree to which a story was given voice.
+Certain framings could be ensured, as the opportunity for critique
+(on a scale of mass distribution, from non-specialists unlikely to
+be interviewed on TV) lay in the reader comments section of a
+newspaper. This section is obviously also \quote{gatekept,} leaving
+the editors to pick and choose what critique to entertain with
+printing space. The limitations presented by deadlines,
+profitability, and, above all, space tend to shape the stories
+reported on into \quote{single packet} stories that can be
+characterized by their reduction of complexities into a short
+narrative that carries few, if any, of these complexities across.
+
+The Internet has changed all that. The medium that has enabled
+\quote{citizen journalism} through its capacity for many-to-many
+communications. Capital investment in launching a new publishing
+platform can be as low as zero, allowing anyone to contribute to
+the online discourse in any area that may be of interest to them.
+This enables a new mode that Bruns labels
+\quote{gatewatching}---analyzing the products released by the
+gatekeepers and attempting to hold them accountable to their
+editorial decisions. This is a whole new form of muckraking, and to
+Bruns it represents an integral piece of a healthy news ecosystem.
+
+Organizationally, citizen journalism is heterachical rather than
+hierarchical, concerned not with producing discrete, individual
+(one could say commodified) versions of events but rather
+collaboratively digesting the implications and context of those
+events. This engaging with
+{\em unfinished artefacts, continuing process} signals citizen
+journalism's classification by Bruns as a form \quote{produsage,} a
+term he positions in opposition to production as a new form of
+productive expression typified by the increasing presence of
+\quote{the people formerly known as the audience} in content
+creation. The lines have blurred between the old gatekeepers of
+industrial news, still a crucial component in citizen journalism
+besides the antipathy between the two, and the citizen journalists
+in terms of who is trusted to deliver the news. Bruns notes that
+the two each have important roles to engage with: the former should
+produce factually accurate, neutral reportage while the latter
+continues its role as the collective digestive system for social
+event processing (92).
+
+Unconstrained by space requirements and the format of the
+supposedly definitive \quote{single packet} news story, not to
+mention political and commercial elements unique to industrial news
+production, citizen journalism allows the flowering of debate
+around topics that are unpallateable to the old regime. The
+proscribed role of citizen journalism is gatewatching, that is,
+observing the misrepresentations and omissions in the industrial
+newsfeed, though Bruns notes a tendency towards original reporting
+and new \quotation{Pro-Am} hybrid news organizations. This is done
+through a process of aggregating personally interesting information
+and sharing it (and usually an opinion) with others whose responses
+are an integral part of assessing that information. No one is
+assumed to have all the knowledge, freeing individuals from a
+responsibility to speak from anything besides personal experience.
+Single \quotation{articles} within the unfolding of the discussion
+are nothing more than the means of furthering discussion by
+offering an individual perspective that others may or may not agree
+with, may or may not have something imperative to contribute to
+that perspective. In this way citizen journalism can be seen as
+probabalistic---it strives for quality through the collectivization
+of opinion, context, and insight. Not all is worthy, but the worthy
+will often arise from the cacaphony. Methods within individual
+sites such as karma points are a means for filtering up the worthy,
+but even the anarchic relations of the blogosphere reveal the
+importance of {\em continued} quality in maintaining the reputation
+of a blog.
+
+That citizen journalism represents a new mode of news
+making/digestion that gives especially welcome space to voices and
+opinions neglected by mainstream media is exemplified in the site
+Racialicious
+(\useURL[2][http://racialicious.com/][][racialicous.com]\from[2]).
+The site hosts a continuous discussion of pop culture from an
+anti-racist perspective, gatewatching the media's (mis)portrayal of
+race from a strongly moral and critical perspective.
+
+\subject{The Case Study}
+
+In January 2010 the editors of Essence magazine chose a picture of
+Reggie Bush, a black football player in a multiracial relationship,
+to put on the cover of its
+\quotation{Black Men, Love \& Relationships} issue. This set off a
+firestorm of discussion that finally \quotation{ended} with a sigh
+of relief that the corresponding explosion of debate within the
+black blogosphere was not picked up and reported by the mainstream
+media (Peterson 2010). Essence is a magazine that markets
+specifically to the black female community, sparking a conversation
+about the appropriateness of highlighting a multiracial
+relationship on the cover of an issue about \quotation{black love.}
+Explaining the blog's posting about the issue, Latoya Peterson
+states that
+\quotation{talking about \quote{the situation within the black female community} isn't really what we do since most of those perceptions are based in stereotypes about black women. However, what is compelling about the whole situation is how conversations about interracial dating play upon stereotypes and deeply held convictions, that tend to drown out any other type of commentary.}
+
+In other words, it is precisely the dynamic, social process itself
+that constitutes the news that Racialicious is reporting on, or at
+least one instantiation of that process. The other piece of the
+news reported is, intriguingly, that the debate around the cover
+didn't become news in the industrial media. This is precisely
+because the \quote{single-packet} format would inevitable compress,
+through institutionalized race and gender stereotypes, into a story
+about how \quotation{black women hate interracial dating!}
+Precisely because the debate was not subjected to such formative
+reduction, it is allowed to become nothing more (or, crucially,
+less) than the collective expression of itself. Racialicious
+performs an honorable, and perhaps all-too-absent, service by
+presenting an overview of the very diverse reactions of commenters
+on various pages relating to the issue, thus chronicling the
+unfolding of collaborative opinion sharing. No less than twelve
+distinct viewpoints receive re-articulation, demonstrating the
+destructive capacity of the \quote{single packet} format in the
+context of complex social situations.
+
+This project aims to investigate the case in light of Latour's
+Actor-Network Theory (ANT). In this space we have actors such as
+the editors of Essence, the authors of blogs on the topic, and the
+blog software that enables the interconnection of the various
+threads expressed in different posts and comments sections.
+Intriguingly, the mainstream media itself may appear in this
+network as a mediator by the very virtue that their
+{\em lack of action} had an important influence on the unfolding of
+the discussion.
+
+\stoptext

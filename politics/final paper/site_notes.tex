@@ -1,0 +1,264 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+\setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+{\tfd Essence Source Lists}
+
+
+{\em Essence.com} ---
+\useURL[1][http://photos.essence.com/galleries/essencecom_hooks_reggie_bush_up][][http://photos.essence.com/galleries/essencecom\letterunderscore{}hooks\letterunderscore{}reggie\letterunderscore{}bush\letterunderscore{}up]\from[1]
+
+\startitemize
+\item
+  another link was provided by {\em What about our daughters} that
+  now returns a page missing from essence.com:
+  \useURL[2][http://www.essence.com/magazine/reggie_bush_on_the_february_cover_of_ess.php][][http://www.essence.com/magazine/reggie\letterunderscore{}bush\letterunderscore{}on\letterunderscore{}the\letterunderscore{}february\letterunderscore{}cover\letterunderscore{}of\letterunderscore{}ess.php]\from[2]
+\stopitemize
+
+{\em What About Our Daughters} ---
+\useURL[3][http://www.whataboutourdaughters.com/2010/01/cry-for-attention-essence-magazine-puts-reggie-bush-on-cover-of-love-romance-issue-readers-enraged/][][http://www.whataboutourdaughters.com/2010/01/cry-for-attention-essence-magazine-puts-reggie-bush-on-cover-of-love-romance-issue-readers-enraged/]\from[3]
+
+\startitemize
+\item
+  \quotation{Gurl please their male overseers wouldn't let them put Robin Thicke on the cover. Stop playing. No Robin Thicke on the cover would be a provocative act on their part, but they don't do provocative, only sensationalism..}
+\item
+  \quotation{Well anywhoo, {\em this is clearly a cry for attention from ESSENCE}.. Because while ESSENCE readers might look beyond things like older men having sex with underage girls, infidelity, or being advised to go compete with STRIPPERS for a Black man's attention and any host of other foolishness ESSENCE has thrown at us, {\em apparently if you want to have a REVOLT, bring up dating a non-Black woman on an issue that supposed to be about LOVE \& RELATIONSIHPS with BLACK WOMEN.}}
+  (emph. added)
+\stopitemize
+
+{\em A Belle in Brooklyn} ---
+\useURL[4][http://www.abelleinbrooklyn.com/home/2010/1/7/reflections-reggie-bush.html][][http://www.abelleinbrooklyn.com/home/2010/1/7/reflections-reggie-bush.html]\from[4]
+{\em [linked as \quote{ESSENCE's Sex Editrix} by {\em What about our daughters}]}
+
+\startitemize
+\item
+  \quotation{The overwhelming reaction has been vicious and scornful. It appears for now that the vast majority of you are offended, at worst, and not thrilled, at best, over the site of Bush's chiseled chocolate chesticles and cheese-grate worthy abs peering out from your local newsstand.}
+\item
+  \quotation{We got issues, ya'll. Note the we. I‘m not sitting on high horse judging anybody for their unresolved ish when I got my own fair share. It just so happens though that my ish? Well, it ain't with Black men dating non-Black women or a overtly troubled self-worth from being born brown in a world that lauds White.}
+\item
+  \quotation{Reggie Bush, or any successful and/or attractive Black man didn't do anything to us, in general, or to you, in particular. So why are we flipping out on him like he did?}
+  \startitemize
+  \item
+    this after a quote from comedian Katt Williams (qualified with
+    \quotation{he might be crazy, but when he's lucid, he drops bombs})
+    places the responsibility for self-esteem solely on an individual,
+    echoing the redistribution of the responsibility for discrimination
+    onto the discriminated (Chun)
+  \stopitemize
+\item
+  \quotation{Reggie Bush, or any successful and/or attractive Black man didn't do anything to us, in general, or to you, in particular. So why are we flipping out on him like he did? This self-loathing, woe-is-me stance that's being evoked all across the Internet over this cover is something we did to ourselves. We tied up our self-worth in someone else's perception — a recipe for disaster if ever there was one— and now we feel like crap because we don't think the Black men we aspire to have see us the way we see ourselves.}
+\item
+  \quotation{I think the man is a god among men and partially that's because I can place whatever personality/fantasy I chose on him because he never opens his mouth to say something like, “Malcolm X? What does the X stand for?}
+  I don't even know what his voice sounds like (but it my mind it's
+  very bass-y and commanding.)"
+\item
+  \quotation{And too, stop fronting like you ain't never done no wild ish with your man. (Lewis Williams over at ihustlenation.com didn't write that blog about “doing the most}
+  for nothing.) The only reason your tapes, sexts, emails,
+  voice-mails and tales of your wild ish aren't everywhere is because
+  you're not even C-list famous."
+  \startitemize
+  \item
+    dropping a little snarky superiority?
+  \stopitemize
+\item
+  \quotation{I don't have a sex tape, and for the love of God I don't understand why people keep making them since it seems like they keep leaking, but I'm not coming down hard on a woman who did some wild ish with her man. Of three years. There are some folks reading who've done crazier acts (perhaps off camera) with men they just met.}
+\item
+  \quotation{To hurl unfounded names and judgments at her just for pulling a Black athlete that you'd probably otherwise want to do if he weren't with her (more on that in a moment), says more about the name-caller than it does the woman being called names. We're making things about her that have nothing to do with her. Let me make it plain: Kim Kardashian has nothing to do with a society that lets non-Black women get away with behavior that we can't. Stop unloading your ish on her.}
+\item
+  \quotation{My fantasies involve me, and the man I'm fantasizing about. I can't believe how many of ya'll are looking at Reggie Bush's glare that threatens to}beat
+  the @\#\$\$\%" up like a Ying Yang chorus and those wide shoulders
+  holding the promise of flipping a chick like she's just one more on
+  a stack at the international house of pancakes and still thinking
+  about his woman."
+\item
+  \quotation{Might I suggest you change the batteries on your device so you can stay focused on more important matters like getting off. Either that or try working thru your issues so you can enjoy the splendor of a fine man, as you were meant to, without all that other mess getting in the way.}
+  - another redirection of responsibility
+\stopitemize
+
+{\em Essence Takes Heat For Reggie Bush Cover}
+\useURL[5][http://blogs.bet.com/entertainment/spotlight/2010/01/07/essence-takes-heat-for-reggie-bush-cover/][][http://blogs.bet.com/entertainment/spotlight/2010/01/07/essence-takes-heat-for-reggie-bush-cover/]\from[5]
+
+\startitemize
+\item
+  short piece that does exactly what Racialicious expects the
+  traditional media to do: reduce the issue to black women rejecting
+  it because Bush dates a white woman
+\item
+  \quotation{The February issue featured 10 black men, including Idris Elba, LL Cool J and Lance Gross in the cover story so they could've easily picked another one of those men as the first image you see on their Black love issue, but is it really that big of a deal or are people just making an issue out of nothing? What do you think?}
+  \startitemize
+  \item
+    establishes a specific frame from which to view the options that
+    Essence had
+  \stopitemize
+\stopitemize
+
+{\em Reggie Bush Essence Cover Controversy}
+\useURL[6][http://hiphop.popcrunch.com/reggie-bush-essence-cover-controversy/][][http://hiphop.popcrunch.com/reggie-bush-essence-cover-controversy/]\from[6]
+
+\startitemize
+\item
+  again the issue is reduced to binaries
+\item
+  \quotation{Bush has been in a high-profile relationship with reputed HOcialite Kim Kardashian since 2007 — and that's the main source of consternation for those protesting the Essence's February cover. Some can't help but wonder why editors chose to put a Black Man who is rumored to shun Black women as potential mates on the cover of mag that targets them. Thoughts?}
+\stopitemize
+
+{\em LOL @ the Comments Section Regarding Reggie Bush's Essence Cover}
+\useURL[7][http://www.starzlife.com/20100105/lol-the-comments-section-regarding-reggie-bushs-essence-cover/][][http://www.starzlife.com/20100105/lol-the-comments-section-regarding-reggie-bushs-essence-cover/]\from[7]
+
+\startitemize
+\item
+  \quotation{Daaaamn, girl, sistas is MAD HEATED at the editors of Essense for putting Reggie Bush on the cover of their “Black Men, Love \& Relationships}
+  issue. You see, Reggie Bush isn't dating a black girl. He's dating
+  Kim Kardashian, who, for some reason, Essence readers think is
+  white. Kim Kardashian is not white. She's middle eastern, and
+  clearly a woman \quotation{of color.} She's not black, but she's
+  not Amy Adams. Are these girls blind, or do they think KK got her
+  skin shade from sleeping outside during the day? Listen to these
+  {\em shrieking banshees:}" (hyperlink italicized, to the same
+  missing page at essence.com)
+\item
+  \quote{Middle Eastern} assertion redacted 2 February 2010
+\stopitemize
+
+{\em Reggie Bush Gets The Cover Of Essence Magazine - How Do The Sistas Feel About This?}
+\useURL[8][http://dimewars.com/Blog/Reggie-Bush-Gets-The-Cover-Of-Essence-Magazine---How-Do-The-Sistas-Feel-About-This-.aspx?BlogID=a69b0a07-784a-43b0-b897-b5dcf6869ebb][][http://dimewars.com/Blog/Reggie-Bush-Gets-The-Cover-Of-Essence-Magazine---How-Do-The-Sistas-Feel-About-This-.aspx?BlogID=a69b0a07--784a--43b0-b897-b5dcf6869ebb]\from[8]
+
+\startitemize
+\item
+  \quotation{Reggie Bush is on the latest cover of Essence magazine. The question is how do sistas feel about Reggie flaunting Kim Kardashians goodies all over a magazine geared toward black women, 42\% of whom are single and can't find a good man. How do the female DW readers feel about this?}
+  \startitemize
+  \item
+    less bracketed by a binary frame
+  \item
+    spawned 11 comments
+  \stopitemize
+\stopitemize
+
+{\em Reggie Bush Covers Essence Mag, Black Women Are Mad}
+\useURL[9][http://hellobeautiful.com/your-world/jeanene-james/reggie-bush-covers-essence-mag-black-women-are-pd/][][http://hellobeautiful.com/your-world/jeanene-james/reggie-bush-covers-essence-mag-black-women-are-pd/]\from[9]
+
+\startitemize
+\item
+  \quotation{There is some valid argument in this perspective, though it is mostly exclusionary in nature and therefore flawed.}
+  (the perspective mentioned is essence caters to black women, reggie
+  dates non-black women, essence doesnt care about black women)
+\item
+  \quotation{But why are black women really upset? Is it the fact that Bush chose a white girlfriend? At what point does his personal preference in women cross over into territory that is really none of our business? And while it is understandable that his choice in a partner is irrelevant so long as it is not broadcast on an avenue designated for black women, does this discount the fact that he is still a black man? Must we exclude the opinions of black men that don't date black women? On some level, this seems unfair. Reggie Bush represents one clear perspective; although it is not approved of by everyone, why should his perspective be excluded from discussion in a black women's magazine?}
+\item
+  \quotation{Rather than coming down on those who made the decision, however, it seems much more prudent for black women who are angry, or disapproving of Bush's relationship choices to use this opportunity to voice their opinions and engage in conversation about the touchy subject.}
+  \startitemize
+  \item
+    interesting, because this seems to be exactly what has happened
+  \stopitemize
+\item
+  \quotation{Essence is not calling Reggie Bush the authority on black love. It is simply honoring an attractive black man, and seeking his individual perspective.}
+  \startitemize
+  \item
+    but other blog posts state that he is not asked about multiracial
+    relationships
+  \stopitemize
+\stopitemize
+
+{\em Essence Readers Outraged Over Reggie Bush Cover}
+\useURL[10][http://sandrarose.com/2010/01/07/essence-readers-outraged-over-reggie-bush-cover/][][http://sandrarose.com/2010/01/07/essence-readers-outraged-over-reggie-bush-cover/]\from[10]
+
+\startitemize
+\item
+  \quotation{If Essence editors weren't aware before, they know now that the average, black, female demographic is fairly intelligent and not at all as gullible as Essence thinks they are.}
+\item
+  \quotation{Not only is the pic old (Essence can't afford photo shoots at the moment) — but readers objected to the fact that Reggie could care less about dating black women. So why put him on the cover of a magazine that targets a majority black female demographic?}
+\stopitemize
+
+{\em Reggie Bush: Essence Cover Boy}
+\useURL[11][http://brownsista.com/reggie-bush-essence-cover-boy/][][http://brownsista.com/reggie-bush-essence-cover-boy/]\from[11]
+
+\startitemize
+\item
+  \quotation{The Essence boards are reeling over the fact Kim Kardashian's boy toy Reggie Bush is being featured on the cover. The major consensus is that a man who is dating outside of his race should not be on the cover of a magazine aimed towards Black women. What are your thoughts on this?}
+\stopitemize
+
+{\em Shirtless Reggie Bush Covers Essence}
+\useURL[12][http://backseatcuddler.com/2010/01/09/shirtless-reggie-bush-covers-essence/][][http://backseatcuddler.com/2010/01/09/shirtless-reggie-bush-covers-essence/]\from[12]
+
+\startitemize
+\item
+  \quotation{Essence is taking all kinds of crap for putting New Orleans Saint Reggie Bush on their February 2010 cover. Many readers are unhappy that a black women's interest magazine would feature a man who dates outside the race for the cover of the “Black Men, Love and Relationships}
+  issue. Check out the arguments here to see just how some sisters
+  feel about Reggie, not to mention his on-again, off-again girl Kim
+  Kardashian. Or, if you are so inclined, you can just enjoy Reggie's
+  six-pack."
+\stopitemize
+
+{\em Reggie Bush Covers Essence: Kim Kardashian Controversy}
+\useURL[13][http://www.bvonlove.com/2010/01/06/reggie-bush-essence-cover-february/][][http://www.bvonlove.com/2010/01/06/reggie-bush-essence-cover-february/]\from[13]
+
+\startitemize
+\item
+  \quotation{Should the opponents of the magazine cover lighten up and enjoy the pictures, or does Bush have no place on the cover of Essence's love and relationships issue? Let us know below.}
+\item
+  \quotation{Should ESSENCE have put Reggie Bush on the cover of its Love Issue?}
+  \startitemize
+  \item
+    \quote{Yes or No} poll clearly frames the debate in binary logic
+  \stopitemize
+\stopitemize
+
+\stoptext

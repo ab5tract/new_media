@@ -1,0 +1,264 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+\setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+{\tfd Jokers }
+
+\starttabulate[|l|l|]
+\NC Student:
+\NC John Haltiwanger
+\NR
+\NC Paper:
+\NC Week 6
+\NR
+\NC Supervisor:
+\NC Thomas Poell
+\NR
+\NC Date:
+\NC 10 March 2010
+\NR 
+\stoptabulate  
+
+\subject{Gunkel}
+
+David J. Gunkel centers his
+\quote{Second thoughts: toward a critique of the digital divide} on
+the ambiguous, yet ubiquitous, nature of the term
+\quote{digital divide.} In the terms of Latour, he sees the term as
+a matter of contention. His reaction is to push for a broadened
+understanding of the plural nature of the term. Tracing the origins
+of \quote{digital divide} through the claims made by one of its
+main promoters (the US Department of Commerce's National
+Telecommunications and Information Administration, or NTIA) as to
+where they found it, they come across journalism discussing a
+division between those who held faith in technology to solve the
+world's problems and those that had misgivings about having such
+faith. Even at this early stage there is a binary modulation on a
+much more complicated scenario---for instance, those that have
+faith in technology to have the {\em potential} to solve problems
+might not have deep reservations about answering in affirmative if
+that potential was phrased in technodetermistic terms in a survey
+question. As the term continues its unfolding into its present
+state as a household term, it retains these binary and
+technodetermistic attributes and gains a plurality of definitions.
+From hardware clashes between digital and analog devices coexisting
+in information networks to being situated as analagous to a
+\quote{racial ravine} where statistics show correlations to race in
+terms of access to devices and knowledge, the digital divide is
+multifaceted. In Gunkel's view, in order to continue using the term
+it should be interrogated for what it has claimed to cover, basing
+this on the recognition that the phenomenons it has been used to
+describe all fit under the discussions it has been used to
+describe. The answer lies in developing a self-reflexivity by
+questioning
+\quotation{the terms and conditions by which studies of the digital divide define their own mode of questioning}
+(Gunkel 2003: 517).
+
+Yet simply recognizing the gradation of potential instances of the
+digital divide does not arbitrate its reliance on a binary
+structure. Gunkel does not problematize binary thinking, though I
+find his justification of its necessity to be problematic because
+he magically equates \quotation{Western thought} with
+\quotation{meaningful discourse} (508). Yet the point remains:
+\quotation{In defining others as deficient, one does not simply provide a neutral expression of inequality}
+(508). By separating what is actually a diversity of levels and
+modes of connectivity into a dualistic division, the term digital
+divide misframes its subject.
+\footnote{For Gunkel, the binary mode of thinking is not itself a problem,
+but it seems a remaining issue to me.}
+Perhaps his division of equating \quote{binary} to \quote{coherent}
+and therefore its opposite with \quote{incoherence} is a knowing
+example of his suggestion to utilize binary logic to interrogate
+the limits of the binary division {\em not} represented but
+{\em implanted} by the term digital divide.
+
+The third outstanding issue, then, is the continued reliance of the
+digital divide on technodeterminism. In fact, its invocation bears
+the weight of accepting by fiat that access to technology
+automatically yield social, economic, and, presumably even if never
+evoked, spiritual benefits. Gunkel quickly notes that history does
+not bear out such an interpretation, nor do statistical surveys of
+usage patterns on the internet. The telegraph
+\quotation{did not hasten the coming of the kingdom of heaven but supported nationalist aggression and empire-building}
+(515). Which is true, though I bristled that Enzensberger was
+listed as a member of those who had faith in the capacity of radio
+without qualifying his own intense critique of technodeterminism.
+The potential of radio was never tested to its natural social
+limits, as the internet to some extent has been. This is, after
+all, what usage statistics measure. Governments did not trust their
+citizens with access to a many-to-many communications mechanism and
+the throbbing logic of capitalism provided the perfect excuse to
+hand over the reigns to corporations and mandate a mandatory
+crippling of all radio devices. Given the progress of the
+corporatization of the internet in tandem with a continued push for
+copyright control to extend to hardware, Enzensberger's critique
+remains as valid as ever. Indeed, a \quote{digital divide} between
+access to programmable versus non-programmable devices might one
+day emerge. Gunkel's response to the technodeterministic overtones
+of the digital divide is similar to his call for self-reflexivity:
+he calls for questioning
+\quotation{the terms and conditions by which studies of the digital divide define their own mode of questioning.}
+(517)
+
+\subject{Chun}
+
+Wendy Hui Kyong Chun's 2006 book
+{\em Control and Freedom: Power and paranoia in the age of fiber optics}
+critiques many undiscussed and undigested assumptions aboout the
+internet. Writing from an antiracist perspective, Chun establishes
+a case for examining the ways in which race lies at the core of a
+utopian interpretation of cyberspace as a \quote{perfect}
+commercial realm. Analyzing rhetoric and visual tropes used by
+corporations in their advertising, Chun demonstrates how
+\quotation{conceiving race as skin-deep has been crucial to conceiving technology as screen deep}
+(Chun 2006: 129). As computers and the internet became increasingly
+sold as an \quotation{answer} to dilemmas of race and racism,
+racism becomes naturalized---a frame that declares the presence of
+intermediary screens as capable of dissolving race has as its
+logical conclusion that race, then, is only skin deep. Marketing to
+different races at once generates race as a consumer and
+pornographic category. The result
+\quotation{effectively conceals individual and institutional responsibility for discrimination}
+by
+\quotation{positing discrimination as a problem that the discriminated must solve}
+by gaining access to the internet (132). The internet in this
+instance (supposedly) allows those \quote{already marked} to escape
+{\em their} differences, making it their own responsibility to do
+so.
+
+This side effect is an example of what Chun calls a
+\quote{privatization of civil rights}:
+\quotation{There is no need any more for battles over discrimination because the Internet can guarantee those rights the state has not been able to provide}
+(144). Corporations utilize the (often racialized) issue of the
+digital divide as leverage to position themselves as the answer to
+the problem. The answer to equality is technology, or specifically,
+corporate technology. In marketing towards racial groups, such as
+the computer-owning Latino, corporations do not strive to connect
+and power those who we think of as marginalized in the terms of a
+digital divide. Rather the corporations seek to maximize profit by
+targetting those who can {\em already afford} the access. Chun
+claims the inevitable side product of race as a consumer class is
+race as a pornographic category. This happens through processes of
+passing
+(\quotation{where one takes on a marked body rather than an unmarked one}
+(154)), {\em pornotroping} (where those priveleged enough to have
+flesh, and therefore body, engage in psychologically adopting new
+flesh), and the closely related \quote{scenes of subjection.} The
+last of these is described by Chun:
+\quotation{These scenes produce a form of empathy that obliterates difference: self replaces other, the white sel imagines itself the black beaten slave. The other's degradation thus becomes an opportunity for self-reflection, not an event to which one witnesses and testifies}
+(136).
+
+Chun's central concern is properly intertwined with issues of race,
+but it can also be identified on a more abstract level. For Chun
+the internet represents a means of communication that exposes its
+users to new vulnerabilities:
+\quotation{Invisibly, the Internet turns every spectator into a spectacle}
+(130). Information flows two ways, and the corporate processes she
+highlights are quite interested in collecting the information you
+must necessarily input in order to get a desired output. For
+instance, what search term you used or what site you eventually
+chose to visit (to name only a few of the banal). Chun discusses
+projects by artist-hackers Mongrel that expose, for instance, the
+assumed but incorrect \quote{superagency} of a user by producing
+\quotation{interfaces and content that are provocative---even offensive---in order to reveal the limits of choice, to reveal the fallacy of the all-powerful, race-free user}
+(164). In contrast to many other books on the internet and new
+media environments, one of Chun's main goals is to investigate the
+\quotation{ramifications and possibilities of vulnerability and connectivity rather than superagency}
+(130). From an antiracist perspective this involves {\em not}
+avoiding race, taking it from its whitewashed invisibility and
+forcing it into the visible. Race must not only be visible, it must
+be \quotation{difficult to consume,} arguably a standard attribute
+of race to begin with (130).
+
+Chun's answer lies in exposing and discussing the ways in which the
+internet does {\em not} enable democracy or provide a race-free
+utopia, in discussing the vulnerabilities that come as a result of
+our connections. She mentions the possibility that ideas of
+\quotation{personal} computers serve to obscure the extent to which
+we give away information about ourselves that we might never
+consider giving away, if asked for voluntarily rather than
+automatically cultivated through the two-way nature of the network.
+In her words, there are
+\quotation{myriad ways in which cooperation is {\em forced} on us}
+(170). I don't read her \quotation{solution} (computers that aren't
+perceived as personal) as a request for State mandates and communal
+ownership of computer property (she seems much to concerned with
+privacy and civil rights to necessarily advocate that). However,
+the question is an interesting one. Certainly the ways in which she
+problematizes the corporate/governmental tropes of screen-deep
+differences is an important contribution to one day living in a
+world that is not so dramatically defined by its racial tensions.
+
+{\em [Here goes the unfortunately omnipresent apology. Other matters in my life have unfortunately taken a foreground position in recent weeks. I hate handing in a half-finished paper, but I'd hate it even more if I felt it contained anything half-assed within it. Thus, it is missing some pieces.] }
+
+\startworkscited
+
+Chun, Wendy Hui Kyong.
+{\em Control and Freedom: Power and paranoia in the age of fiber optics}.
+Cambridge: MIT Press, 2006.
+
+Gunkel, David J.
+\quotation{Second thoughts: toward a critique of the digital divide}.
+{\em new media \& society}, 5(4): 499--522. 2003.
+
+\stopworkscited
+
+\stoptext

@@ -1,0 +1,416 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+%\setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext    
+
+
+{\tfd Information}
+
+\starttabulate[|l|l|]
+\NC Student:
+\NC John Haltiwanger
+\NR
+\NC Paper:
+\NC Week 3: Information
+\NR
+\NC Supervisor:
+\NC Thomas Poell
+\NR
+\NC Date:
+\NC 16 February 2010
+\NR 
+\stoptabulate  
+
+\subject{Free Culture}
+
+The readings from this week cover the diverse range of issues that
+result from a society's approach to \quote{information.} For
+Lawrence Lessig, the idea of intellectual property as currently
+conceived, in the United States at least, is often the result of
+not logical decision making, but a process of \quote{capture} that
+leads to governments favoring the interests of those entrenched
+over the potential new forms that could affect that entrenchment
+(Lessig 2005: 6). This cyclical pattern has led to drastic
+extensions of copyright as well as significant expansions of what
+falls under intellectual property protections (software patents,
+technique patents, database patents in the EU,\ldots{}). The net
+result of this transformation of IP is, according to Lessig, a
+strangling of culture. Lessig's reaction was to propose the
+Creative Commons, a legal hack, in the tradition of the GNU Public
+License but different in a key way, that enables copyright holders
+to specify the terms under which their property can be used by
+others (Lessig 2005: 283). This is particularly necessary because
+the expanding rights to propertize the intellect is on-going and
+has particular implications for an age defined by new ways to
+access information. A quote that Lessig offers to explain the
+central thrust of his book explains it
+\quotation{that while the Internet has indeed produced something fantastic and new, our government, pushed by big media to respond to this \quote{something new,} is destroying something very old}
+(Lessig 2005: 13). Lessig, then, calls for reform of IP laws and
+institutions from within legislative processes as well as the
+changes to our understanding and approach to information
+represented by the Creative Commons license. He does not, however,
+object to the general idea of the \quote{intellectual} as
+\quote{property.} In fact, his reforms suggestions, backed by his
+case studies, are all firmly within the current system---they just
+alter the landscape to afford more sensible treatment of
+intellectual property and its \quotation{holders.}
+
+\subject{Autonomous Commons}
+
+Finishing such a logical, pragmatic treatment as Lessig delivers in
+{\em Free Culture}, it could seem obvious that there is little room
+for coherent criticism. This expectation is necessarily shattered
+by Matteo Pasquinelli's
+\quotation{The Ideology of Free Culture and the Grammar of Sabotage.}
+Pasquinelli begins by grounding society as
+\quotation{the management of that constantly reincarnates itself in new forms of state and economy,}
+a notion he has paraphrased from Bataille (Pasquinelli 2008: 2).
+Noting that media all feed on this same \quote{excess of energy,}
+he questions whether that energy has ever been effectively
+described.
+\quotation{The energy of semiotic flows is not the energy of material and economic flows. They interact but not in a symmetrical and specular way}
+(2). Even within energetic interactions of the same type (semiotic
+or material) there is asymmetry, leading to Pasquinelli's
+invocation of the parasite. This concept, developed by Michel
+Serres, exists to express that
+\quotation{there is never an equal exchange of energy but always a parisite stealing energy and feeding on another organism}
+(3). There are {\em immaterial parasites}, Pasquinelli asserts,
+which establish themselves through providing infrastructure for
+collaboration or communication only to accumulate the energy
+produced along thos channels and invest
+\quotation{in favour of its physical substratum} (here I am
+assuming Pasquinelli means the corporation behind the parasite).
+Many examples are given, but the most striking to me personally is
+the exploitation of Free Software to sell proprietary hardware.
+(The views expressed by Pasquinelli here converge with other recent
+readings that have significantly changed the way I would
+theoretically treat the example of \useURL[1][http://github.com][][Github]\from[1], a proprietary Web
+2.0 application running on Free Software, than I did in my Masters
+of Media post \useURL[2][http://mastersofmedia.hum.uva.nl/2009/11/01/git-virtue-github-and-commons-based-peer-production/][][Git Virtue\?\: Github and Commons-based Peer Production]\from[2].
+While it may still spread virtue in a Benkler-ian sense, its
+parasitical nature needs further articulation. The controversial
+aspects of hosting FLOSS projects on a proprietary platform are
+much starker in light of Pasquinelli's presentation.)
+\quotation{[W]here does profit end up in the so-called Free Society?}
+he wonders (5).
+
+Pasquinelli scoffs at the paradox behind Lessig's proposal of a new
+tax to compensate artists, making me curious about how he feels
+about the proposals for a universal livable wage (not tied to
+productivity) seen in the work of Michel Bauwens and Christoph
+Spehr. The Creative Commons license fails to consider the frictions
+that digital copies create in real spaces governed by limited
+resources. Not only this, CC fails to follow a key line of
+reasoning behind Free Software licenses: rather than granting
+rights to users, rights are reserved for copyright holders. Worse
+still is the naivete that comes with ignoring the issue of
+surplus-value extraction, as evidenced by Free Software's easy
+co-option into proprietary business structures and technological
+infrastructures alike. The answer may lie in a new form of
+licensing, proposed by Dmytri Kleiner, in which class
+considerations are taken into account, ie worker co-ops can have
+access to licensed works for free but for profit enterprises would
+be forced to pay.
+\footnote{It would be extremely interesting to get Richard Stallman's opinion
+of this. Indeed, I am trying to conceptualize questions to send him
+as an interview that would be compelling enough to invoke a
+response.}
+If software were to be licensed this way, the issue of immaterial
+parasites sucking on the energy of Free Software would be
+drastically altered (and one might imagine that some of the
+volunteers making software might actually see compensation for it
+under such a scheme). This is part of an \quote{autonomous commons}
+that would pay considerable attention to issues arising from
+passive/personal consumption vs.~productive uses, the role of the
+commons in relation to the economic/corporate forces that would
+exploit it, the asymmetry of the immaterial versus the material,
+and the dynamic hybridity of the commons (including its need for
+being built and for being defended) (6).
+\quotation{If someone cannot pasture cows and produce milk on it, it's not a real commons}
+(7). This reintegration with the ancient form of commons (the
+\quotation{something very old} that Lessig mentions) allows
+Pasquinelli to begin discussing rent.
+
+It was forced rent-paying for use of common land that fed the
+parasitical entities of nobility. The rent aspect of the commons
+has not disappeared, however, and therefore it manifests over the
+network as well as the land commons (8). To fight back requires
+sabotage, Pasquinelli argues, echoing Spehr's idea of the freedom
+of refusal and Geert Lovink's \quote{not-working.} Like Galloway
+and Thacker's virus, however, Pasquinelli only has one example upon
+which the idea can immanentize: \quotation{illegal} file-sharing.
+That file-sharing is a form of sabotage can perhaps be corroborated
+by the \quotation{anti} tone of defenders of downloading. For a
+proposal that he calls
+\quotation{the only possible gesture to defend the commons,} I
+would appreciated Pasquinelli developing this idea of sabotage into
+tangible strategies beyond merely downloading copyrighted material
+(12). Does he mean blowing up source code repositories when one
+feels betrayed by the project?
+
+\subject{Identification}
+
+Switching gears from modes of handling information as property to
+the ways in which information is remolding the concepts of identity
+and citizenship is David Lyon's articulation of the effects of the
+Information Age on identification (Lyons 2009). Identification is
+increasingly defined by its reliance on what Lyon's terms
+\quotation{stretched screens.} Screens call up information from a
+potentially global network of databases on individuals, and this
+information is often taken as a more valid explanation of personal
+history than what those individuals can explain for themselves.
+This concept of stretched screens allows Lyons to describe four
+undercurrent concepts:
+{\em liquidity, governing by identification, identification rotocols, interoperability, and ubiquitous computing}.
+Liquidity calls attention to the increasing mobility of individuals
+across the globe. Filtered through the lens of
+\quotation{national security,} this aspect of liquidity is seen as
+a necessary liability: the labor must continue to flow, but that
+flow must be tightly \quote{triaged} to exclude undesirable
+individuals. This filtering process will no longer be precluded to
+borders and checkpoints, however. The disconnection of
+identification from space (through these globally distributed
+databases) means that the
+\quotation{border now seems to travel with them [ordinary people] in their portable ID documents; the border really does seem to be everywhere}
+(90). The idea of exclusion resurfaces in the discussion of
+governing by identification, where difference is converted to
+Otherness in a process that exacerbates already existing lines of
+tension along race, class, and gender (also called the
+\quote{marginal}, a word we speak to delineate an exclusion).
+Exclusion is here enabled by identification protocols---the core of
+identification in the Information Age by definition. When tied to
+the yet-dormant potential of ubiquitous computing, the Marginalized
+can literally be transformed into the Excluded with the ease of
+protocological control.
+\footnote{I find the case of Google's new patent
+on techniques of (data) exclusion based on geographical IP data and
+national licensing policies to be most telling in this regard (U.S
+Patent Office 2010). Your location in physical space can now
+determine the privilege of your access to Google.}
+Doors can open for the privileged one second can remained sealed to
+the unprivilege the next, physically literalizing a metaphor often
+invoked in discussions of RCG (race/class/gender) privilege.
+\footnote{Please excuse this new acronym. Anything that makes privilege less
+awkward to discuss is something to be sought, in my opinion.}
+Likewise, interoperability is the extension of historical
+tendencies.
+\quotation{In the case of international policing, the standardization of identification techniques was also a central goal from the start}
+(Lyons 2008: 99). After 9/11 the screens have stretched to check
+databases in diverse, distant locations. As a result
+\quote{border checking} (a crucial and ancient aspect of governing
+by identification) often occur \quote{upstream} of a mobilized
+individual as their data is checked against databases in the
+destination country while the individual is still in route (98).
+Interoperability is closely tied to protocol, and thus involves
+many non-governmental entities in technology companies and
+standards bodies.
+
+The tendency to desire finer-grained methods of identification is
+shared between commercial interests and governments. These already
+convergent assemblages could conceivably produce a
+\quote{banopticon} through which consumer will presumably no longer
+be a blanket term for citizen, instead becoming a signifier for the
+privileged as those who are unable to participate in bourgeois
+consumerism find excluded from wherever their RCG is deemed
+undesirable. This process is called \quote{social sorting} and it
+is a key element of government by identity. The lack of standards
+and the fact that ubiquitous computing is not yet a reality give
+Lyons hope that a significant social response can counterbalance
+the convergence of these powerful assemblages.
+
+\subject{Citizen Journalism}
+
+Any such response will require the organization and spread of
+knowledge about the issues surrounding identification. To that end,
+Bruns' analysis of citizen journalism provides a means of examining
+the channels through which such organization and dissemination can
+flow (Bruns 2008). Bruns begins the discussion of citizen
+journalism by acknowledging not only its similarities to but its
+wholesale reliance on open source software as the platforms that
+support the phenomenon run primarily on FLOSS (actual statistics
+would be quite interesting). Additionally, citizen journalism
+resembles FLOSS development practices because of its reliance on
+collaborative filtering and the challenges it raises towards the
+industrial form of news production. As such, citizen journalism is
+heterachical rather than hierarchical, concerned not with producing
+discrete, individual (one could say commodified) versions of events
+but rather collaboratively digesting the implications and context
+of those events. This engaging with
+{\em unfinished artefacts, continuing process} signals citizen
+journalism's classification by Bruns as a form \quote{produsage,} a
+term he positions in opposition to production as a new form of
+productive expression typified by the increasing presence of
+\quote{the people formerly known as the audience} in content
+creation. The lines have blurred between the old gatekeepers of
+industrial news, still a crucial component in citizen journalism
+besides the antipathy between the two, and the citizen journalists
+in terms of who is trusted to deliver the news. Bruns notes that
+the two each have important roles to engage with: the former should
+produce only factually accurate, flat reportage while the latter
+continues its role as the collective digestive system for events
+(92).
+
+Unconstrained by space requirements and the format of the
+supposedly definitive \quote{single packet} news story, not to
+mention political and commercial elements unique to industrial news
+production, citizen journalism allows the flowering of debate
+around topics that are unpallateable to the old regime. The
+proscribed role of citizen journalism is gatewatching, that is,
+observing the misrepresentations and omissions in the industrial
+newsfeed, though Bruns notes a tendency towards original reporting
+and new \quotation{Pro-Am} hybrid news organizations. This is done
+through a process of aggregating personally interesting information
+and sharing it (and usually an opinion) with others whose responses
+are an integral part of assessing that information. No one is
+assumed to have all the knowledge, freeing individuals from a
+responsibility to speak from anything besides personal experience.
+Single \quotation{articles} within the unfolding of the discussion
+are nothing more than the means of furthering discussion by
+offering an individual perspective that others may or may not agree
+with, may or may not have something imperative to contribute to
+that perspective. In this way citizen journalism can be seen as
+probabalistic---it strives for quality through the collectivization
+of opinion, context, and insight. Not all is worthy, but the worthy
+will often arise from the cacaphony. Methods within individual
+sites such as karma points are a means for filtering up the worthy,
+but even the anarchic relations of the blogosphere reveal the
+importance of {\em continued} quality in maintaining the reputation
+of a blog. Like Pasquinelli, Bruns believes it is important for
+individuals be able to profit from contributions that rely on a
+collective commons. However, his analysis does not address the
+issue of surplus value extraction. The realm of citizen journalism
+seems a ripe field for investigating the issue of parasites.
+
+\subject{Case Study}
+
+That citizen journalism represents a new mode of news
+making/digestion that gives especially welcome space to voices and
+opinions neglected by mainstream media is exemplified, for me, in
+the site {\em Racialicious}
+(\useURL[4][http://www.racialicious.com][][racialicous.com]\from[4]).
+The site hosts a continuous discussion of pop culture from an
+anti-racist perspective, gatewatching the media's (mis)portrayal of
+race from a strongly moral and critical perspective. An interesting
+case arose in January 2010 which began with the editors of
+{\em Essence} magazine choosing a picture of Reggie Bush, a black
+man in a multiracial relationship, on the cover of its
+\quotation{Black Men, Love \& Relationships} issue and
+\quotation{ended} with a sigh of relief that the corresponding
+explosion of debate within the black blogosphere was not picked up
+and reported by the mainstream media (Peterson 2010). {\em Essence}
+is a magazine that markets specifically to the black female
+community, sparking a conversation about the appropriateness of
+highlighting a multiracial relationship on the cover of an issue
+about \quotation{black love.} Explaining the blog's posting about
+the issue, Latoya Peterson states that
+\quotation{talking about \quote{the situation within the black female community} isn't really what we do since most of those perceptions are based in stereotypes about black women. However, what is compelling about the whole situation is how conversations about interracial dating play upon stereotypes and deeply held convictions, that tend to drown out any other type of commentary.}
+
+In other words, it is precisely the dynamic, {\em social} process
+itself that constitutes the news that {\em Racialicious} is
+reporting on, or at least one instantiation of that process. The
+other piece of the news reported is, intriguingly, that the debate
+around the cover {\em didn't become news} in the industrial media.
+This is precisely because the \quote{single-packet} format would
+inevitable compress, through institutionalized race and gender
+stereotypes, into a story about how
+\quotation{black women hate interracial dating!} Precisely because
+the debate was not subjected to such formative reduction, it is
+allowed to become nothing more (or, crucially, {\em less}) than the
+collective expression of itself. {\em Racialicious} performs an
+honorable, and perhaps all-too-absent, service by presenting an
+overview of the very diverse reactions of commenters on various
+pages relating to the issue, thus chronicling the unfolding of
+collaborative opinion sharing. No less than twelve distinct
+viewpoints receive re-articulation, demonstrating the destructive
+capacity of the \quote{single packet} format in the context of
+complex social situations.
+
+\startworkscited
+
+Bruns, Axel.
+{\em Blogs, Wikipedia, Second Life, and Beyond: From Production to Produsage}.
+New York: Peter Lang, 2008. 69--100, 171--198.
+
+Lessig, Lawrence.
+{\em Free Cultue: How Big Media Uses Technology and the Law to Lock Down Culture and Control Creativity}.
+New York: Penguin Press, 2004. 1--13 (Introduction), 274--306
+(Afterword)
+
+Lyon, David. {\em Identifying Citizens. ID Cards as Surveillance}.
+Cambridge: Polity, 2009. 84--109 (Chapter 4), 131--155 (Chapter 6).
+
+Pasquinelli, Matteo.
+\quotation{The Ideology of Free Culture and the Grammar of Sabotage.}
+{\em Education in the Creative} Economy: Knowledge and Learning in
+the Age of Innovation\letterunderscore{}. Eds. D. Araya, and
+M.A.~Peters. New York: Peter Lang, 2010.
+
+Peterson, Latoya.
+\quotation{{\em Essence} Magazine Accidentally Steps Into an Intra/Interracial Dating Minefield.}
+{\em Racialicious}." 22 January 2010.
+\letterless{}\useURL[5][http://www.racialicious.com/2010/01/12/essence-magazine-accidentally-steps-into-an-intrainterracial-dating-minefield/][][http://www.racialicious.com/2010/01/12/essence-magazine-accidentally-steps-into-an-intrainterracial-dating-minefield/]\from[5]\lettermore{}
+
+U.S. Patent Office.
+\quotation{Variable user interface based on document access privileges.}
+USPTO Patent Full-Text and Image Database. 16 February 2010.
+\letterless{}\useURL[6][http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm&r=1&f=G&l=50&s1=7,664,751.PN.&OS=PN/7,664,751&RS=PN/7,664,751][][http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1\&Sect2=HITOFF\&d=PALL\&p=1\&u=\%2Fnetahtml\%2FPTO\%2Fsrchnum.htm\&r=1\&f=G\&l=50\&s1=7,664,751.PN.\&OS=PN/7,664,751\&RS=PN/7,664,751]\from[6]\lettermore{}
+
+\stopworkscited
+
+\stoptext
