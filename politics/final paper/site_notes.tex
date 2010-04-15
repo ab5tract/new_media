@@ -1,67 +1,4 @@
-% Links
-\setupcolors[state=start]
-\setupinteraction[state=start,color=darkblue]
-
-% ..
-\setuppagenumbering[location={footer,left,margin}]  
-
-% paper, layout, etc.
-\setuppapersize[A4]
-%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
-%  header=0.5in,footer=0.5in]
-% double space
-%\setupinterlinespace[line=5.6ex]
-% 1/2 inch indents
-\setupindenting[medium]
-\indenting[always]
-% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
-% jagged-right (aligned to the left)
-\setupalign[right]
-% font
-%\setupbodyfont[rm,12pt]
-\usemodule[simplefonts]
-\setmainfont[Liberation-Serif]
-\setmonofont[inconsolata]
-
-% for long quotes
-\definestartstop[longquote][
-  before={\indenting[never]
-    \setupnarrower[left=0.5in,right=0.5in]
-    \startnarrower[2*left,right]},
-  after={\stopnarrower
-    \indenting[yes]}]
-
-% for heading and header
-\def\MLA#1[#2][#3][#4][#5][#6][#7]%
-	{\setuppagenumbering[left=#3 ,location={header,right}]
-	\indenting[never]
-	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
-	\indenting[yes]}
-	
-% following hanging indent code (also in workscited) taken from 
-%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
-% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
-%  ~ Patrick Gundlach
-\def\hangover{\hangafter=1\hangindent=0.5in}
-\definestartstop[workscited][
-  before={
-    \page[no]
-    \indenting[never]
-    \startalignment[left]
-    \subject{Bibliography}
-    \stopalignment
-    \setupwhitespace[medium]
-    \bgroup\appendtoks\hangover\to\everypar
-    },
-  after={
-    \egroup
-    \indenting[yes]}]
-
-
-\starttext      
-
-{\tfd Essence Source Lists}
-
+\subject{Essence Source Lists}
 
 {\em Essence.com} ---
 \useURL[1][http://photos.essence.com/galleries/essencecom_hooks_reggie_bush_up][][http://photos.essence.com/galleries/essencecom\letterunderscore{}hooks\letterunderscore{}reggie\letterunderscore{}bush\letterunderscore{}up]\from[1]
@@ -70,7 +7,7 @@
 \item
   another link was provided by {\em What about our daughters} that
   now returns a page missing from essence.com:
-  \useURL[2][http://www.essence.com/magazine/reggie_bush_on_the_february_cover_of_ess.php][][http://www.essence.com/magazine/reggie\letterunderscore{}bush\letterunderscore{}on\letterunderscore{}the\letterunderscore{}february\letterunderscore{}cover\letterunderscore{}of\letterunderscore{}ess.php]\from[2]
+  \useURL[2][http://www.essence.com/magazine/reggie_bush_on_the_february_cover_of_ess.php#comments][][http://www.essence.com/magazine/reggie\letterunderscore{}bush\letterunderscore{}on\letterunderscore{}the\letterunderscore{}february\letterunderscore{}cover\letterunderscore{}of\letterunderscore{}ess.php\#comments]\from[2]
 \stopitemize
 
 {\em What About Our Daughters} ---
@@ -261,4 +198,192 @@
   \stopitemize
 \stopitemize
 
-\stoptext
+\subject{Post-racial}
+
+{\em Is America Really Post-racial? A Definition and Assessment of Post-racialism in the US}
+\useURL[14][http://racism-politics.suite101.com/article.cfm/postracialism_in_america][][http://racism-politics.suite101.com/article.cfm/postracialism\letterunderscore{}in\letterunderscore{}america]\from[14]
+
+\startitemize
+\item
+  first return on a search for \quote{definition post-racial} at
+  google.com
+\item
+  \quotation{A true definition is undoubtedly hard to come by, as the term and connotations of the term are dubious. The idea of a post-racial society, in its most basic form, is a society in which race is no longer significant or important.}
+\item
+  \quotation{Ironically, the media, which is the institution claiming post-racialism, is the very institution promoting a racial divide. When analyzing the votes, the press looks at the racial demographic break down of the votes and highlights it on the front page of major newspapers. If we are to truly think we're beyond the focus of race, it shouldn't be the main focus.}
+\item
+  Adrienne focuses on the fact that David Duke doesn't hate Obama as
+  a sign of \quotation{coming a long way}
+\item
+  comments clearly demonstrate the
+  \quotation{white people are beyond race, black people are racist}
+  trope
+\stopitemize
+
+{\em What is post-racial America? [View from the Right]}
+\useURL[15][http://www.amnation.com/vfr/archives/010000.html][][http://www.amnation.com/vfr/archives/010000.html]\from[15]
+
+\startitemize
+\item
+  \quotation{Presumably a post-racial, beyond-race America will be one in which no one thinks about race any more, an America in which we all just see each other as individuals. This is most puzzling, since I was not aware that Obama has called for the elimination of the vast system of race-conscious preferences for blacks and other nonwhite groups that is institutionalized at every level of our society.}
+\item
+  \quotation{If post-racial America does not mean the removal of these pro-nonwhite, anti-white policies and beliefs, what does it mean? It means a post-white America, an America transformed by the symbolic removal of whiteness as the country's explicit or implicit historic and majority identity.}
+\item
+  \quotation{The post-racial America of which Obama's champions speak does not mean the end of racial preferences for nonwhites. It does not mean the end of constant accusations of white racism. It does not mean the end of the systematic cover-up of blacks' lower abilities, and of the fact that these lower abilities, not white racism, are the reason blacks are behind. It does not mean the end of the systematic cover up of the true facts of black-on-white crime. It does not mean the end of mandatory sensitivity training for whites. It does not mean the end of the belief that there is a moral cloud over America's entire history up until the civil rights movement---or, in the event Obama is elected, up until the election of Barack Obama.}
+\item
+  \quotation{Post-racial America is an America in which whites, as whites, go silent forever.}
+  
+  \startitemize
+  \item
+    Sage McLaughlin: \quotation{"Post-racial America} can only mean an
+    America in which white racial consciousness can be said to be
+    definitively dead; it surely does not mean that nonwhite racial
+    consciousness and nonwhite racial spoils will be considered dead.
+    \ldots{} Moving beyond racial divisions simply means ceasing any
+    resistance to the full scope of blacks' and nonwhite foreigners'
+    demands on white America."
+  \item
+    Tim W.:
+    \quotation{I agree with much of your take on this, but is it not possible that an Obama administration would wake a portion of white America up? \ldots{} Assuming we don't elect Obama, I don't see any of the anti-white policies you describe changing. \ldots{} I've said before that I think we're in really bad shape as a nation, and our population is largely brainwashed by political correctness. Maybe, just maybe, the shock of a black president, with a shrill race-obsessed wife, would prompt the frog to jump out of the pot before it reaches boiling temperature.}
+  \item
+    Mark Jaws:
+    \quotation{First of all, based on the symptoms you have described, I would say that we have been in}post-racial
+    America" for over 30 years. To approximately 99 percent of whites,
+    it is forbidden for them to think as whites and to act from the
+    white perspective. \ldots{} I believe once affluence begins to fade
+    in this post-racial world and crime, disease, poverty begin to
+    consume whole states, we will see whites acting more like men, and
+    less as mice."
+  \item
+    LA (in a continuing discussion of whether \quote{post-racial}
+    America has arrived):
+    \quotation{It is prohibited in the American mainstream to discuss any issue, such as immigration or minority race preferences, in terms of race or white racial concerns. Not just prohibited, but white people don't want to do it, don't believe in it, and recoil from the very idea of it. \ldots{} In a post-racial America, white people would lose the moral confidence to argue even in non-racial terms against open borders, because they would have accepted the idea that this was racist and intolerant and divisive.}
+  \item
+    Paul Gottfried:
+    \quotation{Certainly you can't blame the blacks for this anti-white discrimination, since it is white Americans who choose to do these things to themselves. You have certainly seen the news in US News and World Report about which historical figures young American adults admire most. These heroines were all black leftists, and the only male who made it on to the list is MLK. People who think this way deserve not Obama's set aside policies but the pleasures of living under Robert Mugabe.}
+  \stopitemize
+\stopitemize
+
+{\em wiktionary}
+\useURL[16][http://en.wiktionary.org/wiki/postracial][][http://en.wiktionary.org/wiki/postracial]\from[16]
+
+\startitemize
+\item
+  No longer bound by racial divisions.
+\stopitemize
+
+{\em urbandictionary}
+\useURL[17][http://www.urbandictionary.com/define.php?term=postracial][][http://www.urbandictionary.com/define.php?term=postracial]\from[17]
+
+\startitemize
+\item
+  To exist beyond the point where race is a consideration.
+\stopitemize
+
+{\em What is \quotation{Post-Racial} and Where Is It?}
+\useURL[18][http://www.jackandjillpolitics.com/2009/03/what-is-post-racial-and-where-is-it/][][http://www.jackandjillpolitics.com/2009/03/what-is-post-racial-and-where-is-it/]\from[18]
+
+\startitemize
+\item
+  \quotation{First of all, I'm not sure I want to be “post-racial}
+  because that would mean denial of one's ethnic, racial and cultural
+  heritage, and I'm not down with that, especially if that's what it
+  means to be \quotation{post-racial} in America."
+\item
+  second point is the increase in racially motivated events since the
+  election of Obama
+\item
+  \quotation{What does “Post-Racial} mean to YOU? And should America
+  be striving for that, rather than continue working towards
+  facilitating diversity and inclusion, while respecting and
+  accepting that citizens of this country come from all walks of
+  life, from every culture and religious practice; from every creed
+  and ethnicity? What would a \quotation{Post-Racial} America look
+  like?"
+  \startitemize
+  \item
+    asking for feedback in a clearly multi-valent manner
+  \item
+    {\em ASmith}:
+    \quotation{It's a feel good term for white folks so they can stop saying}I'm
+    not racist, I have black friends" Don't get me wrong, I understand
+    that a lot of white folks feel guilty and they don't know why when
+    they've never called a black person a n*gger (i'm a very
+    tongue-in-cheek person, so this may go over people's heads) so they
+    need this post-racial stuff, but the ONLY thing we need to be
+    focused on is being honest and calling our society post-racial is
+    not being honest and only continuing what has been wrong all this
+    time."
+  \item
+    eclecticbrotha:
+    \quotation{I have noticed something interesting happening whenever you bring up issues of race since Obama's election that I would like to coin}pulling
+    the POST-racial card:" Blacks and whites alike claiming that issues
+    of race are no longer relevant topics of discussion because
+    electing the black guy with the funny name proves America isn't a
+    racially divided society anymore. Its absolute BS, of course. What
+    we have is a \quotation{get out of white gulit free} card being
+    thrown in our faces whenever we try to confront the issues that
+    remain relevant to our people. We can't let this crap walk."
+  \item
+    RobM:
+    \quotation{This is beyond silly. There is no such thing as post racial. Even as a construct it doesn't work because it means there is one race.}
+  \item
+    isonprize: \quotation{"Post racial} is a cowardly term that folks,
+    mostly white folks, are trying to use to excuse the uncomfortable
+    feeling they get when issues of race arise. That feeling usually
+    manifests itself in the phrase
+    \quotation{Can't we just get past all that and not talk about it anymore?}
+    That is how I interpret the term \quote{post-racial} "
+  \item
+    Acts of Faith Blog:
+    \quotation{Hmmm that's like asking if it's a sexism free world - DUMB QUESTION/IDIOT ASSUMPTION.}
+  \item
+    GreenLadyHere:
+    \quotation{POST-RACIAL has NOT ARRIVED. BUT - - I do believe, as the article stated, a STEP has been made! Annnnnd, MSM - - the \quote{originators" of the TERM OUGHT TA STEP UP and do THEIR PART in CREATIN} something that THEY POSED!!}
+  \item
+    spirit\letterunderscore{}55z: \quotation{As for}Post-Racial" I 'm
+    not buying into another label. No sir ree, I aint doing it! It's
+    just another term to hide behind and not deal with unaccepable
+    behavior. And in this case, RACIST, hurtful, and damaging
+    behaviors. The MSM, newspapers, blogsand folks will continue to get
+    called on their RACIST behavior. We will hold their asses
+    accountable."
+    \startitemize
+    \item
+      CPL: \quotation{Whycome}they" gotta keep labeling us, Spirit?"
+      \startitemize
+      \item
+        spirit\letterunderscore{}55z:
+        \quotation{If we were in a so called post racial society, we wouldn't need to be talking about why it isn't a post-racial society \ldots{} No Black faces in MSM tv news as anchors, or late night talk shows. All lilly white faces. Which means whites drive the narrative for POC. \ldots{} POST- RACIAL implies, Go shut the fuck up and sit down now, you've got a black president., so we don't have to deal with our sorry ass, damaging, history of centuries of institutional RACISM.}
+      \stopitemize
+    \stopitemize
+  \item
+    JunePearl:
+    \quotation{What people are saying when they say}post-racial” is: I
+    don't have to do anything else towards the cause of equality.
+    \ldots{}
+    {\em In a post-racial society our social problem is no longer, issues are now my personal problem.}[\letterhat{}1]
+    \ldots{} Just as \quotation{nigger} carries with it the history of
+    overt racism, \quotation{post-racial} carries with it the
+    connotations and realities of covert racism. \ldots{} "
+    [\letterhat{}1]: Emphasis added. Chun to a T!
+  \stopitemize
+\stopitemize
+
+{\em The Watchman: We are not yet a post-racial society}
+\useURL[19][http://thepoliticalwatchman.blogspot.com/2009/01/we-are-not-yet-post-racial-society.html][][http://thepoliticalwatchman.blogspot.com/2009/01/we-are-not-yet-post-racial-society.html]\from[19]
+
+\startitemize
+\item
+  \quotation{The following statement may shock some people who have long strived for a colorblind society as a solution to the racism that has plagued us: a colorblind society is detrimental, no matter how well-intentioned, to the cause of creating a post-racial society.}
+\item
+  \quotation{Colorblindness is, by definition, a position of ignorance. It chooses to ignore and deny the reality around us, opting for a collective mental enema that makes social thought-criminals out of anyone intrepid enough to acknowledge or discuss race. It looks upon the rainbow that is our country and see a dull, gray arc. A post-racial society cannot be one bred in defiance of the truth but one bred in reason and intellectualism - one that can intelligently use the lessons of the past and thusly strive toward a better, more cohesive future.}
+\item
+  \quotation{Order at the expense of knowledge is a tyranny of the ignorant. We must reject this existence for ourselves.}
+\item
+  \quotation{Rather than colorblindness, let us strive for a respectful color-conscious society that chooses to see and know our differences - that fearlessly confronts the most uncomfortable qualities from the underbelly of our nation.}
+\item
+  \quotation{Appropriately enough, it is the election of an African American man as President that has triggered a feeling of final accomplishment in the social war on racism.}
+\stopitemize
+
+-

@@ -40,6 +40,14 @@ Essence Source Lists
 	
 - "Might I suggest you change the batteries on your device so you can stay focused on more important matters like getting off. Either that or try working thru your issues so you can enjoy the splendor of a fine man, as you were meant to, without all that other mess getting in the way."
 		- another redirection of responsibility
+	
+		
+-- **COMMENTS**
+
+- "I think it's interesting that the very thing you and everyone who has commented so far are complaining about is the very same thing that you are doing! Talk about hypocrisy! So what if some women (myself included) don't like the fact that this dude was put on the cover of Essence, a supposedly (black women’s magazine) it's our right."
+
+- "P.S. The Essence cover was an epic fail either way for the 4 yr old picture that they ran. I mean dag this wonderful black man couldn’t be bothered to give a black magazine a photo shoot. Guess I have to catch the next issue of People! Wow... Do better!"
+	- STOPHATIN!, Unregistered Commenter
 		
 *Essence Takes Heat For Reggie Bush Cover* [http://blogs.bet.com/entertainment/spotlight/2010/01/07/essence-takes-heat-for-reggie-bush-cover/](http://blogs.bet.com/entertainment/spotlight/2010/01/07/essence-takes-heat-for-reggie-bush-cover/)
 
@@ -101,6 +109,11 @@ Essence Source Lists
 	
 - "Should ESSENCE have put Reggie Bush on the cover of its Love Issue?"
 	- 'Yes or No' poll clearly frames the debate in binary logic
+	
+*Essence (magazine)* []()
+
+- a monthly magazine for African-American women between the ages of 18 and 49. The magazine covers fashion, lifestyle and beauty with an intimate girlfriend-to-girlfriend tone."
+
 
 # Post-racial #
 
@@ -184,5 +197,5 @@ Essence Source Lists
 
 - "Appropriately enough, it is the election of an African American man as President that has triggered a feeling of final accomplishment in the social war on racism."
 
-- 
+
 
