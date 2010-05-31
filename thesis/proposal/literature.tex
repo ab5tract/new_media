@@ -1,0 +1,152 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+\setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setupwhitespace[medium]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Literature}
+    \stopalignment
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+
+\starttabulate[|l|l|]
+\NC Student:
+\NC John Haltiwanger
+\NR
+\NC Paper:
+\NC Literature list
+\NR
+\NC Supervisor:
+\NC Richard Rogers
+\NR
+\NC Date:
+\NC 6 March 2010
+\NR 
+\stoptabulate  
+
+\startworkscited
+
+Bolter, Jay David.
+{\em Writing Space: The computer, hypertext, and the history of writing}.
+Hillsdale, New Jersey: Lawrence Erlbaum, 1991. Print.
+
+Bolter, Jay David and Richard Grusin. {\em Remediation}. Cambridge:
+MIT Press, 1999. Print.
+
+Cramer, Florian.
+{\em Words Made Flesh: Code, culture, imagination}. Piet Zwart
+Institute, 2005. Web.
+\letterless{}\useURL[1][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/][][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/]\from[1]\lettermore{}
+
+Dworkin, Craig. \quotation{Hypermnesia}. {\em boundary 2}, 36:3, p.
+77--95. 2009.
+
+Fuller, Matthew.
+\quotation{It looks like you're trying to write a letter: Microsoft Word}.
+2000. Web.
+\letterless{}\useURL[2][http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html][][http://www.nettime.org/Lists-Archives/nettime-l--0009/msg00040.html]\from[2]\lettermore{}
+
+Fuller, Matthew, ed. {\em Software studies: a lexicon}. Cambridge:
+MIT Press, 2008. Print.
+
+Gitelman, Lisa.
+{\em Always Already New: Media, history, and the data of culture}.
+Cambridge: MIT Press, 2008. Print.
+
+Hagen, Hans. {\em ConTeXt: A brief excursion}. Pragma ADE, 1999.
+Web.
+\letterless{}\useURL[3][http://www.pragma-ade.com/general/manuals/ms-cb-en.pdf][][http://www.pragma-ade.com/general/manuals/ms-cb-en.pdf]\from[3]\lettermore{}
+
+Hagen, Hans. {\em ConTeXt: the manual}. Pragma ADE, 2001. Web.
+\letterless{}\useURL[4][http://www.pragma-ade.com/general/manuals/cont-eni.pdf][][http://www.pragma-ade.com/general/manuals/cont-eni.pdf]\from[4]\lettermore{}
+
+Hagen, Hans. {\em The history of luaTeX}. Pragma ADE, 2009. Web.
+\letterless{}\useURL[5][http://www.pragma-ade.com/general/manuals/mk.pdf][][http://www.pragma-ade.com/general/manuals/mk.pdf]\from[5]\lettermore{}
+
+Hayles, N. Katherine.
+{\em Electronic Literature: New horizons for the literary}.
+Indiana: University of Notre Dame, 2008. Print.
+
+Heim, Michael.
+{\em Electric Language: A Philosophical Study of Word Processing}.
+New Haven: Yale, 1989. Print.
+
+Illich, Ivan and Barry Sanders.
+{\em ABC: The alphabetization of the popular mind}. San Francisco:
+North Point Press, 1988. Print.
+
+Kinross, Robin. {\em Modern typography}. London: Hyphen Press,
+2004. Print.
+
+Knuth, Donald. {\em The TeXBook}. Massachusetts: Addison-Wesley,
+1984. Print.
+
+Knuth, Donald. {\em Digital Typography}. Stanford: CSLI, 1999.
+
+Latour, Bruno. {\em Reassembling the social}. Oxford: Oxford
+University Press, 2005. Print.
+
+Manovich, Lev. Software Takes Command. Forthcoming from The MIT
+Press in 2010 in Software Studies Series. Web.
+\letterless{}\useURL[6][http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.pdf][][http://softwarestudies.com/softbook/manovich\letterunderscore{}softbook\letterunderscore{}11\letterunderscore{}20\letterunderscore{}2008.pdf]\from[6]\lettermore{}
+
+McLuhan, Marshall and Wilfred Watson.
+{\em From Cliche to Archetype}. New York: Viking Press, 1970.
+Print.
+
+\stopworkscited
+
+\stoptext

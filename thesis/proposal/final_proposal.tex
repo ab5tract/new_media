@@ -1,0 +1,327 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+\setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata,11pt]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+{\tfd Generative Re-mediation}
+
+{\tfb An investigation of cross-media publishing in free and open source software}
+
+\starttabulate[|l|l|]
+\NC Student:
+\NC John Haltiwanger
+\NR
+\NC Paper:
+\NC Final Thesis Proposal
+\NR
+\NC Supervisor:
+\NC Richard Rogers
+\NR
+\NC Date:
+\NC 6 March 2010
+\NR 
+\stoptabulate  
+
+
+
+
+\subject{Introduction}
+
+The very term \quote{media} comes from the discipline of
+advertising, which in the 1940s began to develop a vocabulary to
+discuss the emerging issue of delivering messages across various
+distribution channels. While this initial impulse did not
+necessarily involve an algorithmic capacity to target multiple
+mediums using a single input, the advent of networked computers has
+seen just such a desire arise. \quote{Traditional} design tools
+such as the Adobe Creative Suite are being replaced in top design
+firms with workflows that dynamically generate documents. Rather
+than constructing everything by hand in what the What You See Is
+What You Get (WYSIWYG) interfaces of those programs, designers are
+now using software {\em wrappers} and scripts that facilitate
+translations of one format into another. Tied together in a
+deliberate workflow, the tools receive relatively simple source
+documents as input and produce multiple outputs given the
+parameters the designer has implemented into their workflow. This
+process is called {\em cross-media publishing}.
+
+Free, Libre, and Open Source Software (FLOSS) often plays an
+important role in such workflows. FLOSS programming languages,
+wrappers, frameworks, toolkits, and applications are increasingly
+incorporated into a design workflow. The success of the generative
+art toolkit Processing is exemplary in this regard
+\footnote{Processing.
+\useURL[2][http://processing.org/][][http://processing.org/]\from[2].}.
+The WYSIWYG application Scribus, which aims to provide an interface
+with capabilities analagous to Adobe InDesign, provides
+Python-based scripting functionality to allow a hybridized
+approach. Indeed, Adobe has developed an XML-based input format for
+InDesign that allows generative production of InDesign documents.
+Cross-media publishing and generative techniques are not only
+increasingly successful in the design world, they are also closely
+related. This thesis aims to investigate this relationship through
+a specific mode of cross-media publishing. Using a specific wrapper
+called Pandoc
+\footnote{Pandoc.
+\useURL[1][http://johnmacfarlane.net/pandoc/][][http://johnmacfarlane.net/pandoc/]\from[1]},
+the thesis will be simultaneously typeset in three output formats:
+HTML, OpenDocument (ODT), and ConTeXt. Each of these formats
+represent a distinct approach to the issue of typesetting---these
+approaches are worthwhile to investigate, as they represent the
+three approaches to typesetting currently found on the computer:
+semantic markup, formal markup, and WYSIWYG. The Holy Grail of
+cross-media publishing, according to Florian Cramer, is
+\quotation{one system that serves as the universal document source.}
+\footnote{From a personal interview.}
+
+\subject{Remediation}
+
+The theoretical framework to be deployed in this investigation of
+generative, cross-media typesetting is Jay David Bolter and Richard
+Grusin's concept of remediation (Bolter \& Grusin 1999). As defined
+by the authors, remediation is
+\quotation{the representation of one medium an another} (45).
+Bolter and Grusin identify two distinct approaches for messages in
+a given medium. In the first, immediacy, the message is tailored in
+such a way as to, ideally, make the audience forget the presence of
+the medium. In the second, hypermediacy, the opposite is sought:
+unique aspects of the medium are highlighted by the message.
+Remediation, then, involves an interplay of these two approaches.
+That the WYSIWYG style developed for Word (and wholeheartedly
+adopted by OpenOffice.org) takes quite seriously the goal of
+mimicking a typewriter is then an example of immediacy. Even the
+approach of representing a page of paper on a screen is an example
+of remediation. Since HTML and ConTeXt can both be used to create
+not only remediated paper documents but also \quote{screen-native}
+pages as well, the theoretical framework of remediation, immediacy,
+and hypermediacy provides a compelling means for developing this
+thesis.
+
+\subject{Actor-Network Theory}
+
+At the risk of mis-applying Bruno Latour's Actor-Network Theory
+(ANT), this thesis will incorporate the language and conceptual
+tools presented in Latour's {\em Reassembling the Social} (Latour
+2005) in order to properly position the various applications,
+frameworks, and output formats that will collectively generate and
+encompass the final output of the thesis. Not only is \type{pandoc}
+a mediator in this thesis, the output formats themselves are as
+well, as their functionalities, peculiarities, and limitations will
+have an effect on the content of the thesis as well as its final
+presentation. The programs and scripts that come into play can also
+be seen as having mediating roles. I am also an obvious actor in
+this network, but in more ways than simply writing the thesis---for
+example, questions I ask to the ConTeXt mailing list are
+translations
+\footnote{In Latour's words, though I may adopt the less confusing
+\quote{modulation} as well as \quote{assemblage} over
+\quote{network.}}
+between actors. The simple production of this thesis, bridging as
+it does both free software and generative design, could be thought
+of as a point of contention through which once unconnected actors
+are brought into contact with one another. Acknowledging this fact
+up front and directly through an ANT framing of the project can
+only strengthen its potential to one day become a mediating text
+itself. Certainly it seems appropriate to begin to situate
+softwares as important actors in their own right, especially in
+this context where the very materiality of the thesis (let alone
+its content) is dependent on the translations produced by these
+actors.
+
+\subject{Questions}
+
+\startitemize
+\item
+  What is the current state of generative design? What drives its
+  adoption by designers? What role does FLOSS play?
+\item
+  What are the individial merits of each of the three open source
+  output formats? How do they contrast in relation with each other?
+  What are the output formats unique capacities? The figurations of
+  their capacities emerging from this document are to be discovered
+  in the process of attempting to perform relative tasks between
+  them.
+\item
+  What capacity do the output formats have for addressing issues of
+  remediation? That is, does a given output format allow for
+  targetting either immediacy, hypermediacy, or a hybridization? Or
+  is only one or the other possible in that format?
+\item
+  What limitations are present that prevent accomplishing certain
+  typesetting goals in a given format? What limitations in the
+  software tools used will affect and limit the capabilities of this
+  thesis?
+\item
+  Is it possible, through this approach, to generate aesthetically
+  pleasing typesetting in any of the three formats? What advantages
+  does a \quote{single source input format} have?
+\stopitemize
+
+\subject{Approach}
+
+{\em What follows is an example of how the investigation the inclusion of hypertext in a ConTeXt document can provide a springboard for investigating material differences in the typesetting options.}
+
+For instance \useURL[3][http://wikileaks.org/][][this url]\from[3]
+was input according to the syntax
+\useURL[4][http://daringfireball.net/projects/markdown/syntax][][found here]\from[4].
+In the Markdown format this code appears as
+
+\starttyping
+For instance [this url](http://wikileaks.org/) was input according to the syntax 
+[found here](http://daringfireball.net/projects/markdown/syntax).
+\stoptyping
+
+When the text
+\type{pandoc -t context -o thesis.tex thesis.markdown} is input
+into a shell prompt, the resulting output appears as follows
+
+\starttyping
+For instance \useURL[1][http://wikileaks.org/][][this url]\from[1] was input according to the syntax 
+\useURL[2][http://daringfireball.net/projects/markdown/syntax][][found here]\from[2].
+\stoptyping
+
+However, that in itself is not enough for \type{context thesis} to
+generate a valid PDF with hyperlinks. For three additional lines
+are required.
+
+\starttyping
+\setupinteraction[state=start,color=darkblue] 
+\starttext 
+For instance \useURL[1][http://wikileaks.org/][][this url]\from[1] 
+was input according to the syntax 
+\useURL[2][http://daringfireball.net/projects/markdown/syntax][][found here]\from[2].
+
+\stoptext
+\stoptyping
+
+The differences in the syntax are clearly explained by their status
+as different markup languages. The structural differences, however,
+such as the indication of a \quote{start} and a \quote{stop} to
+\quote{text} as well as a slightly cryptic \quote{setup} for
+\quote{interaction} reflect that TeX is a
+{\em batch text processor} and the way that ConTeXt structures its
+TeX macros, respectively. In other words, that these additional
+commands are required reflects architectural differences that in
+turn reflect the goals around which the text processing software
+was designed. This is obvious when one considers that the output of
+\type{pandoc -t html -o thesis.html thesis.markdown} not only shows
+HTML's own structural choices (including it's much less awkward
+hyperlink syntax), it will likely also render in a browser without
+the addition of HTML's version of \quote{start} and \quote{stop}
+(\letterless{}HTML\lettermore{} and
+\letterless{}/HTML\lettermore{}) due to architectural decisions
+relating to backwards compatability and leniancy belonging to the
+browser's design.
+
+Additional work would be required to achieve a decent looking
+typesetting of the source code blocks above if the Pandoc utility
+did not already do some primitive linebreaking of its own. ConTeXt
+has trouble with handling long unbroken strings such as URLs and
+even text commands, at least in the relatively primitive version of
+a source code block that is being used here (\type{\starttyping}
+and \type{\stoptyping}) as seen in the second code block. Meanwhile
+the same code blocks look acceptable in ODT and HTML by default,
+while the ConTeXt output fails as it to leaves off portions of
+text. What procedures must be followed to achieve an acceptable
+output in ConTeXt? Are they worth the effort? While the ODT output
+is passable, to what extent can it be improved? HTML is only some
+lines of CSS away from outputing the complete text of the code
+blocks with the nicety of an boxed outline to offset it from the
+general flow.
+
+\subject{Expected Findings}
+
+\startitemize[n][stopper=.]
+\item
+  There will be significant limitations in each format. ODT will be
+  frustratingly manual in its requirements for effecting the desired
+  typesetting. HTML will likely fall short in line-breaking and print
+  quality. ConTeXt will likely prove highly temperamental and
+  difficult to utilize to its full extent.
+\item
+  ConTeXt will be the most suitable for straddling \quote{immediacy}
+  and \quote{hypermediacy,} as it allows for targetting both the
+  printed page and the computer screen. It's superior typesetting
+  algorithms will give it distinct aesthetic advantages, but in the
+  end these will be weighed against the effort expended to achieve
+  the desired result.
+\item
+  Generative design workflows will generally involve a majority of
+  FLOSS software.
+\item
+  Typographic programming is not a well-documented field. A
+  theoretical-technical of three FLOSS formats in typographic terms
+  will provide a distinct contribution to both traditions.
+\item
+  A \quote{single source input format} that is a) plaintext and b)
+  simple and readable is an integral requirement for the
+  collaborative writing of texts.
+\stopitemize
+
+\startworkscited
+
+Bolter, Jay David and Richard Grusin. {\em Remediation}. Cambridge:
+MIT Press. 1999. Print.
+
+Latour, Bruno. {\em Reassembling the social}. Oxford: Oxford
+University Press, 2005. Print.
+
+\stopworkscited
+
+\stoptext

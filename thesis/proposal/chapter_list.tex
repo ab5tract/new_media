@@ -1,0 +1,163 @@
+
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+% jagged-right (aligned to the left)
+\setupalign[right]
+% font
+%\setupbodyfont[rm,12pt]
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+% for long quotes
+\definestartstop[longquote][
+  before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[2*left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for heading and header
+\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+	{\setuppagenumbering[left=#3 ,location={header,right}]
+	\indenting[never]
+	#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+	\indenting[yes]}
+	
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+
+\starttext      
+
+\starttabulate[|l|l|]
+\NC Student:
+\NC John Haltiwanger
+\NR
+\NC Paper:
+\NC Proposed Thesis Chapter List
+\NR
+\NC Supervisor:
+\NC Richard Rogers
+\NR
+\NC Date:
+\NC 6 March 2010
+\NR 
+\stoptabulate  
+
+\subject{Thesis Chapter List}
+
+\startitemize[n][stopper=.]
+\item
+  Introduction
+  \startitemize
+  \item
+    Re-mediation
+  \item
+    Historical developments of the various formats (Typewriter
+    -\lettermore{} Word, SGML -\lettermore{} HTML, Typesetting math
+    -\lettermore{} TeX)
+  \item
+    Contrast the approaches: WYSIWYG, semantic markup, formal markup
+  \stopitemize
+\item
+  A history of cross-media publishing and generative design
+  \startitemize
+  \item
+    History of the term \quote{media,} it's origins in advertising as
+    they developed a language to discuss \quote{mediating} messages,
+    that is, tailoring the message to suit a particular \quote{medium}
+  \item
+    Advantages and disadvantages of generative design.
+    \startitemize
+    \item
+      Issues of scale can considerably affect the suitability of a
+      generative workflow over a traditional one.
+    \stopitemize
+  \item
+    The Holy Grail:
+    \quotation{one system that serves as the universal document source}
+    \startitemize
+    \item
+      Resembles other holy grails, \quotation{artificial intelligence}
+      and
+      \quotation{real-time collaborative editing of the same document}
+    \stopitemize
+  \item
+    Wrappers: software for remediating formats
+  \item
+    Showstoppers: errors and/or limitations in functionality that force
+    abandoning one approach for another
+  \item
+    The role of FLOSS in generative design
+  \stopitemize
+\item
+  Approaches to digital typesetting
+  \startitemize
+  \item
+    WYSIWYG: the computer as a typewriter
+    \startitemize
+    \item
+      Concrete poetry and \quotation{free form typography} as unique to
+      this approach.
+    \stopitemize
+  \item
+    Semantic markup: interpreted plaintext (top-down)
+    \startitemize
+    \item
+      Tuned for remediation, strict separation of display from content.
+    \stopitemize
+  \item
+    Formal markup: the document typesets itself (bottom-up)
+    \startitemize
+    \item
+      The long and varied history of TeX.
+    \item
+      Why ConTeXt?
+    \stopitemize
+  \stopitemize
+\item
+  Case studies
+  \startitemize
+  \item
+    HTML
+  \item
+    OpenOffice.org
+  \item
+    ConTeXt
+  \stopitemize
+\item
+  Conclusion
+\stopitemize
+
+\stoptext
