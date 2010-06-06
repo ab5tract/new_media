@@ -1,0 +1,39 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+		\setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+\starttext
+\startworkscited
+
+
+
+\stopworkscited
+\stoptext

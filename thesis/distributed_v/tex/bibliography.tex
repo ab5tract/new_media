@@ -1,0 +1,116 @@
+% Links
+\setupcolors[state=start]
+\setupinteraction[state=start,color=darkblue]
+
+% ..
+\setuppagenumbering[location={footer,left,margin}]  
+
+% paper, layout, etc.
+\setuppapersize[A4]
+%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+%  header=0.5in,footer=0.5in]
+% double space
+%\setupinterlinespace[line=5.6ex]
+% 1/2 inch indents
+\setupindenting[medium]
+\indenting[always]
+
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+		\setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+\starttext
+\startworkscited
+
+Bolter, Jay David. (2001).
+{\em Writing Space: Computers, hypertext, and the remediation of print}.
+New York: Routledge. Print.
+
+Bolter, Jay David and Richard A. Grusin. (1996).
+\quotation{Remediation}. {\em Configurations} 4:3. PDF.
+
+Bringhurst, Robert. (2008).
+{\em The Elements of Typographic Style, version 3.2}. Vancouver:
+Hartley \& Marks. Print.
+
+Brooks, Frederick. (1975).
+{\em The Mythical Man-Month: Essays on software engineering}.
+Massachusetts: Addison-Wesley. PDF.
+
+Cramer, Florian. (2001).
+\quotation{Digital Code and Literary Text}. {\em netzlituratur}.
+Web.
+\letterless{}\useURL[1][http://www.netzliteratur.net/cramer/digital_code_and_literary_text.html][][http://www.netzliteratur.net/cramer/digital\letterunderscore{}code\letterunderscore{}and\letterunderscore{}literary\letterunderscore{}text.html]\from[1]\lettermore{}
+(last accessed 5 June 2010).
+
+Cramer, Florian and Matthew Fuller. (2008). \quotation{Interface.}
+In {\em Software Studies: a lexicon}, edited by Matthew Fuller. MIT
+Press: Cambridge.
+
+Fuller, Matthew.
+\quotation{It looks like you're trying to write a letter: Microsoft Word}.
+2000. Web.
+\letterless{}\useURL[2][http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html][][http://www.nettime.org/Lists-Archives/nettime-l--0009/msg00040.html]\from[2]\lettermore{}
+(last accessed 5 June 2010).
+
+Galloway, Alexander. (2010). \quotation{Interface}. Presented at
+{\em A wedge between public and private conference} on 22 April
+2010, Amsterdam.
+
+Gitelman, Lisa. (2008).
+{\em Always Already New: Media, history, and the data of culture}.
+Cambridge: MIT Press. Print.
+
+Hagen, Hans. (2009). {\em The history of luaTeX}. Netherlands:
+Pragma ADE. Web.
+\letterless{}\useURL[3][http://www.pragma-ade.com/general/manuals/mk.pdf][][http://www.pragma-ade.com/general/manuals/mk.pdf]\from[3]\lettermore{}
+(last accessed 5 June 2010).
+
+Hayles, N. Katherine. (2004)
+\quotation{Print is Flat, Code is Deep: The Importance of Media Specific Analysis}.
+{\em Poetics Today} 25:1. PDF.
+
+Hayles, N. Katherine. (2008).
+{\em Electronic Literature: new horizons for the literary}. Notre
+Dame: University of Notre Dame. Print.
+
+Kinross, Robin. (2004).
+{\em Modern typography: an essay in critical history}. London:
+Hyphen Press. Print.
+
+Knuth, Donald. (1984). {\em The TeXBook}. Massachusetts:
+Addison-Wesley. Print.
+
+Knuth, Donald. (1999). {\em Digital Typography}. Stanford: CSLI.
+Print.
+
+Manovich, Lev. (2001). {\em The Language of New Media}. MIT Press:
+Cambridge. Print.
+
+Rosenberg, Scott. (2008). {\em Dreaming in Code}. New York: Three
+Rivers Press. Print.
+
+Simondon, Gilbert. (2009).
+\quotation{The Position of the Problem of Ontogenesis}. Gregor
+Flanders, trans. {\em Parrhesia} 7. Web.
+\letterless{}\useURL[4][http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf][][http://www.parrhesiajournal.org/parrhesia07/parrhesia07\letterunderscore{}simondon1.pdf]\from[4]\lettermore{}
+(last accessed 5 June 2010).
+
+Snelting, Femke. (2009). \quotation{The Making of}.
+{\em Tracks in electr(on)ic fields}. Brussels: Constant. Web.
+\useURL[5][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf][][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf]\from[5]
+(last accessed 5 June 2010).
+
+\stopworkscited
+\stoptext

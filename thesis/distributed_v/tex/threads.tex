@@ -1,0 +1,96 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+
+\subject{Threads (Introduction)}
+
+There are several threads that I perceive as necessary for the
+construction of a proper report on the subject. The first is the
+theoretical geneology of the medium. What claims have been made
+about the {\em composition} of mediums? The seond thread involves
+interrogating these claims in light of the nature of generative
+processes. What place do discussions of mediums and
+medium-specificty have in the realms of morphic generativity? The
+third thread revolves around documenting the historical dimensions
+of electronic typesetting. What currents flow through the
+development of the typesetting tools found today in the world of
+FLoSS?
+
+The importance of this question lies in the mercurial context of
+open source, and even computing in general, in which time is spent
+on coding software rather than writing history. Constructing a
+historical record is thus an attempt to contribute this relatively
+invisible undercurrent to the scholarly record of new media in hope
+of providing a template for further introspection in other fields
+of software evolution.
+
+The fourth thread involves direct integration of generative
+processes in a typesetting workflow composed of FLoSS softwares.
+Through this activity I hope to materially instantiate a zone for
+discursive interplay between new media theory and real-world
+typographic engineering. Does theory offer methods or tools useful
+for interpreting the dynamics of typographic workflows, especially
+as they involve generative processes? One obvious toolis a
+vocabulary through which theory can attempt to describe and
+critique the software's capacities and interactions. This thread of
+the project aims to deliver exactly that.
+
+\stoptext
+

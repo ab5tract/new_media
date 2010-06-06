@@ -10,7 +10,7 @@
 ### Surface Level ###
 
 - Hypertextuality (formal or semantic) *[Can a claim be made that Hayles' printed hypertext is semantic? could there be a parallel connection between the surface and subtext layers?]*
-- Typographic qualities ("simple issues" of kerning, line breaking; "society" formats)
+- Typographic qualities ("simple issues" of kerning, line breaking; "institutional" formats)
 
 ### Subtext Level ###
 
@@ -22,5 +22,7 @@
 ### Substrate Level ###
 
 - hardware (rarely discussed, barely understood)
+	- but perhaps not necessarily all that *relevant* to the material analysis of text?
 - the unspoken labor of *making* that hardware 
+	- Pasquinelli's parasitic resource extraction
 
