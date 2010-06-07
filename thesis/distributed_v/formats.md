@@ -20,3 +20,8 @@ Bibliography is the most visible difference between the formats of academia. It 
 
 [^1]: In the case of OO.o, there is Zotero ([http://zotero.org](http://zotero.org)) and in the case of ConTeXt there is the `bib` module ([]()) as well as the possibility of integrating any other TeX-compatible bibliographic module through some degree of individual effort.
 
+## Degrees of Volatility ##
+
+- Text encodings: the complicated nature of bit-constraints. The introductino of Unicode as a solution and the time it has taken to achieve UTF ubiquity.
+- File formats can be vectors of infection. Look at recent securtiy notifications coming from Adobe. Longstanding MS Office vulnerabilities.
+	- Free Software offers accountability; the source should not be vulnerable for long after an exploit is unveiled.
