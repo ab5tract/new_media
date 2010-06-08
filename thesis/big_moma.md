@@ -1,8 +1,8 @@
 # Introduction #
 
-This thesis is an attempt to interrogate current new media theories through practice-based, process-oriented approach. The point of origin is that the screen. Information transmission is increasingly screen-based, a fact that only intensifies with the increasing ubiquity of mobile devices such as the iPhone. The long-awaited advent of cheap "tablet" computers and e-readers is also now at hand. These devices may all be seen as mediums for _screenic processes_ in that their entire configuration and all of its computation exists to serve as the basis for screenic interactions with _human processes_. These phrasings introduce the perceptual angle attendent with this thesis, namely the centering of _process_ as the atomic unit of what is discussed in new media theory. The term _screenic_ simply means 'screen-based,' or perhaps 'screen-native.' It is analagous to 'printed.'
+This thesis is an attempt to interrogate current new media theories through a practice-based, process-oriented approach. The point of origin is that the screen. Information transmission is increasingly screen-based, a fact that only intensifies with the increasing ubiquity of mobile devices such as the iPhone. The long-awaited advent of cheap "tablet" computers and e-readers is also now at hand. These devices may all be seen as mediums for _screenic processes_ in that their entire configuration and all of its computation exists to serve as the basis for screenic interactions with _human processes_. These phrasings introduce the perceptual angle attendent with this thesis, namely the centering of _process_ as the atomic unit of what is discussed in new media theory. The term _screenic_ simply means 'screen-based,' or perhaps 'screen-native.' It is analagous to 'printed.'
 
-Screens are defined first and foremost by their interactivity. Some screens, such as television screens, offer very limited interactivity: the choice of content. This choice itself can be constrained by varying degrees, such as the number of available channels and playback formats (VHS, DVD, Xvid, etc.), even to the point of disappearing (in the case of many televisions that appear in public spaces).[^1] The medium of the remote control should not be underestimated in its effects on human processes, to say nothing of the screens at which they are aimed. Indeed, they drive the interactivity of the video game consoles, an interactivity that clearly represent the cultural cutting edge of what a television screen can offer.
+Screens are defined first and foremost by their interactivity. Some screens, such as television screens, offer very limited interactivity: the choice of content. This choice itself can be constrained by varying degrees, such as the number of available channels and playback formats (VHS, DVD, Xvid, etc.), even to the point of disappearing (in the case of many televisions that appear in public spaces).[^1] The medium of the remote control should not be underestimated in its effects on human processes, to say nothing of the screens at which they are aimed. Indeed, they drive the interactivity of the video game consoles, an interactivity that clearly represents the cultural cutting edge of what a television screen can offer.
 
 [^1]: 
 
@@ -20,7 +20,15 @@ Another branching element of this thesis, one that runs throughout the entirety 
 
 The process of their generation inspires an attempt at integrating Gilbert Simondon's concept of _transduction_, which eems to relate with the increasingly generative nature of contemporary design.  All of which are generated from a plain-text file written in what can only be considered an input format. 
 
-The polycephalous nature of _the text itself_ thus demands further branching into a discussion of formats. What are the attributes of the class of process to which formats belong? Formats are seen as stable, yet they move like glass (or glaciar) in the nano-magnitudes of the digital. Both of these topics raise questions relating to the capacities of current new media theory to discuss and interrogate real processes that new media deploy.
+The polycephalous nature of _the text itself_ thus demands further branching into a discussion of formats. What are the attributes of the class of process to which formats belong? Formats are seen as stable, yet they move like glass (or glaciar) in the nano-magnitudes of the digital. 
+
+The discussion of generativity is thus partially an attempt to parallelize human and digital processes. Analyzed materially, these processes are chunks of code electronically lifted from hard drive platters, loaded into system memory, and then executed via the assemblage of chips on the computer's motherboard by way of instructions from the operating system currently residing as a mass of memory heaps in RAM chips. Analyzed _processually_, however, these digital processes are properly seen as material extensions of processes that derive from a human. From a process angle the computer becomes something of an external nervous system, extending and modifying the realm of human potentiality even as it surpasses the capacity of a single mind to functionally comprehend the entirety of its workings.[^	1]
+
+[^1]: The chips produced by Intel, for example, are too complex for any single person to ever hope to entirely reconstruct (!CITE!).
+
+## Remote Controls, or the Epitome of Cool Media? ##
+
+
 
 ## Recognizing the Ontogenesis in Generativity ##
 
