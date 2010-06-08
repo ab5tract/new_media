@@ -16,5 +16,16 @@ To discuss computer screens one must necessarily engage with the concept of _int
 
 The centrality of text to the experience of computer screens represents the main avenue by which we proceed from the origin, constituting a trunk from which many additional concerns fork away and then face examination. The arguments of the paper are augmented by the inclusion of a historiography of digital typesetting. Engaging critically with the history of _software itself_ is proposed as a requisite for responsible software studies.
 
-Another branching element of this thesis, one that runs throughout the entirety of itself, is the underlying presentation of the text. Through the utilization of FLoSS software, multiple output formats will be not only be investigated but also materially instantiated. These output formats represent the top (can we name another one?) three interfaces currently used to manage and display texts digitally.  all of which are generated from a plain-text file written in what can only be considered an input format. The polycephalous nature of _the text itself_ thus demands further branching into discussions of formats and generativity. Both of these topics raise questions relating to the capacities of current new media theory to discuss and interrogate real processes that new media deploy.
+Another branching element of this thesis, one that runs throughout the entirety of itself, is the underlying presentation of the text. Through the utilization of FLoSS software, multiple output formats will be not only be investigated but also materially instantiated. These output formats represent the top three interfaces currently used to manage and display texts digitally: HTML, PDF, and OpenOffice.org's ODT. 
+
+The process of their generation inspires an attempt at integrating Gilbert Simondon's concept of _transduction_, which eems to relate with the increasingly generative nature of contemporary design.  All of which are generated from a plain-text file written in what can only be considered an input format. 
+
+The polycephalous nature of _the text itself_ thus demands further branching into a discussion of formats. What are the attributes of the class of process to which formats belong? Formats are seen as stable, yet they move like glass (or glaciar) in the nano-magnitudes of the digital. Both of these topics raise questions relating to the capacities of current new media theory to discuss and interrogate real processes that new media deploy.
+
+## Recognizing the Ontogenesis in Generativity ##
+
+In his text _The Position of the Problem of Ontogenesis_ (written in (!CITE!) but only recently translated into English), Simondon writes,
+
+  By transduction we mean an operation--physical, biological, mental, social--by which an activity propagates itself from one element to the next, within a given domain,  and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structure serves as the principle and the model for the next area, as a primer for its constitution, to the extent that the modification expands progresively at the same time as the structuring operation. (Simondon 2009: 11)
+
 
