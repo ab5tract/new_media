@@ -29,7 +29,7 @@ The discussion of generativity is thus partially an attempt to parallelize human
 
 ## Remote Controls, or: the Epitome of Cool Media? ##
 
-
+Is it possible to take the remote control and use it to create a metaphor for all human-computer interaction? 
 
 ## Recognizing the Ontogenesis in Generativity ##
 
@@ -37,5 +37,8 @@ In his text _The Position of the Problem of Ontogenesis_ (written in (!CITE!) bu
 
   By transduction we mean an operation--physical, biological, mental, social--by which an activity propagates itself from one element to the next, within a given domain,  and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structure serves as the principle and the model for the next area, as a primer for its constitution, to the extent that the modification expands progresively at the same time as the structuring operation. (Simondon 2009: 11)
 
+## Attributes of Process ##
+
+Process is reflective. It's outputs reflect its inputs. Additionally, process affects the metapotential in a given system. It's reflectivity, then, has material effect. As it reflects the inputs into the outputs, the outputs in turn reflect new (or else simply different) potentials back into the landscape which receives input.
 
 ## Human Process vs. Interface ##
