@@ -1,0 +1,31 @@
+% runtime options files (command line driven)
+\unprotect
+% special commands, mostly for the ctx development team
+% feedback and basic job control
+% handy for special styles
+\startluacode
+document = document or { }
+document.arguments={
+ ["o"]=true,
+ ["s"]=true,
+ ["t"]=true,
+}
+document.files={
+ "context",
+ "florian_notes.tex",
+ "florian_notes.markdown",
+}
+\stopluacode
+% process info
+\setupsystem[inputfile=context]
+\setupsystem[\c!n=1,\c!m=1]
+% modes
+% options (not that important)
+\startsetups *runtime:options
+\setupoutput[pdftex]
+\stopsetups
+% styles and modules
+\startsetups *runtime:modules
+\stopsetups
+% done
+\protect \endinput

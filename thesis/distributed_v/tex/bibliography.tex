@@ -1,37 +1,65 @@
-% Links
+%\enableregime[utf]  % use UTF-8
+
 \setupcolors[state=start]
-\setupinteraction[state=start,color=darkblue]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
 
-% ..
-\setuppagenumbering[location={footer,left,margin}]  
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
 
-% paper, layout, etc.
-\setuppapersize[A4]
-%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
-%  header=0.5in,footer=0.5in]
-% double space
-%\setupinterlinespace[line=5.6ex]
-% 1/2 inch indents
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
 \setupindenting[medium]
 \indenting[always]
 
-\def\hangover{\hangafter=1\hangindent=0.5in}
-\definestartstop[workscited][
-  before={
-    \page[no]
-    \indenting[never]
-    \startalignment[left]
-    \subject{Bibliography}
-    \stopalignment
-		\setupwhitespace[medium]
-    \bgroup\appendtoks\hangover\to\everypar
-    },
-  after={
-    \egroup
-    \indenting[yes]}]
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
 
 \starttext
-\startworkscited
+
+\subject{Bibliography}
 
 Bolter, Jay David. (2001).
 {\em Writing Space: Computers, hypertext, and the remediation of print}.
@@ -112,5 +140,5 @@ Snelting, Femke. (2009). \quotation{The Making of}.
 \useURL[5][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf][][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf]\from[5]
 (last accessed 5 June 2010).
 
-\stopworkscited
 \stoptext
+

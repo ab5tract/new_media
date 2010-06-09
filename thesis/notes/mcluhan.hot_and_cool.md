@@ -1,0 +1,1 @@
+Nobody yet knows the language inherent in the new technological culture; we are all deaf-blind mutes in terms of the new situation. Our most impressive words and thoughts betray us by referring to the previously existent, not to the present. (117)

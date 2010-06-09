@@ -1,6 +1,7 @@
 
 # Literature List #
 
+Brooks, Frederick. _The Mythical Man-Month_.
 
 Bolter, Jay David. _Writing Space: The computer, hypertext, and the history of writing_. Hillsdale, New Jersey: Lawrence Erlbaum, 1991. Print.
 
