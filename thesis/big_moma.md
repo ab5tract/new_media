@@ -1,8 +1,10 @@
+
+
 # Introduction #
 
-This thesis is an attempt to interrogate current new media theories through a practice-based, process-oriented approach. The point of origin is that the screen. Information transmission is increasingly screen-based, a fact that only intensifies with the increasing ubiquity of mobile devices such as the iPhone. The long-awaited advent of cheap "tablet" computers and e-readers is also now at hand. These devices may all be seen as mediums for _screenic processes_ in that their entire configuration and all of its computation exists to serve as the basis for screenic interactions with _human processes_. These phrasings introduce the perceptual angle attendent with this thesis, namely the centering of _process_ as the atomic unit of what is discussed in new media theory. The term _screenic_ simply means 'screen-based,' or perhaps 'screen-native.' It is analagous to 'printed.'
+This thesis is an attempt to interrogate current new media theories through a practice-based, process-oriented approach. The point of origin is that of the screen. Information transmission is increasingly screen-based, a fact that only intensifies with the exponentializing ubiquity of mobile devices such as the iPhone. The long-awaited advent of cheap "tablet" computers and e-readers is also now at hand. These devices may all be seen as mediums for _screenic processes_ in that their entire configuration and all of its computation exists to serve as the basis for screenic interactions with _human processes_. These phrasings introduce the perceptual angle attendent with this thesis, namely the centering of _process_ as the atomic unit of what is discussed in new media theory. The term _screenic_ simply means 'screen-based,' or perhaps 'screen-native.' It is analagous to 'printed.'
 
-Screens are defined first and foremost by their interactivity. Some screens, such as television screens, offer very limited interactivity: the choice of content. This choice itself can be constrained by varying degrees, such as the number of available channels and playback formats (VHS, DVD, Xvid, etc.), even to the point of disappearing (in the case of many televisions that appear in public spaces).[^1] The medium of the remote control should not be underestimated in its effects on human processes, to say nothing of the screens at which they are aimed. Indeed, they drive the interactivity of the video game consoles, an interactivity that clearly represents the cultural cutting edge of what a television screen can offer.
+One way to define screens is in terms of their interactivity. Some screens, such as television screens, offer very limited interactivity: the choice of content. This choice itself can be constrained by varying degrees, such as the number of available channels and playback formats (VHS, DVD, Xvid, etc.), even to the point of disappearing (in the case of many televisions that appear in public spaces).[^1] The medium of the remote control should not be underestimated in its effects on human processes, to say nothing of the screens at which they are aimed. Indeed, they drive the interactivity of the video game consoles, an interactivity that clearly represents the cultural cutting edge of what a television screen can offer.
 
 [^1]: Mobile devices are beginning to ship IR transeivers with full hardware access through software. That is, the _entire potential_ of the IR spectrum is available to them.
 
@@ -23,13 +25,17 @@ This elate with the increasingly generative nature of contemporary design.  All 
 
 The polycephalous nature of _the text itself_ thus demands further branching into a discussion of formats. What are the attributes of the class of process to which formats belong? Formats are seen as stable, yet they move like glass (or glaciar) in the nano-magnitudes of the digital. 
 
-The discussion of generativity is thus partially an attempt to parallelize human and digital processes. Analyzed materially, these processes are chunks of code electronically lifted from hard drive platters, loaded into system memory, and then executed via the assemblage of chips on the computer's motherboard by way of instructions from the operating system currently residing as a mass of memory heaps in RAM chips. Analyzed _processually_, however, these digital processes are properly seen as deriving from interactions with human beings. That is to say, digital and human processes are intimately intertwined, from the design of their physical landscape of execution (microcircuitry) to the instructions derived from the user. From a process angle the computer becomes something of an external nervous system, extending and modifying the realm of human potentiality even as it surpasses the capacity of a single mind to functionally comprehend the entirety of its workings.[^	1]
+The discussion of generativity is thus partially an attempt to parallelize human and digital processes. Analyzed materially, these processes are chunks of code electronically lifted from hard drive platters, loaded into system memory, and then executed via the assemblage of chips on the computer's motherboard by way of instructions from the operating system currently residing as a mass of memory heaps in RAM chips. Analyzed _processually_, however, these digital processes are properly seen as deriving from interactions with human beings. That is to say, digital and human processes are intimately intertwined, from the design of their physical landscape of execution (microcircuitry) to the instructions derived from the user. From a process angle the computer becomes something of an external nervous system, extending and modifying the realm of human potentiality even as it surpasses the capacity of a single mind to functionally comprehend the entirety of its workings.[^1]
 
 [^1]: The chips produced by Intel, for example, are too complex for any single person to ever hope to entirely understand (!CITE!).
 
+
 ## Remote Controls, or: the Epitome of Cool Media? ##
 
-Is it possible to take the remote control and use it to create a metaphor for all human-computer interaction? 
+Is it possible to take the remote control and use it to create a metaphor for all human-computer interaction?
+
+Every digital process has, at its origin, a human. The rate of computation has increased the impact of human-digital processes in that the results deliver their results faster. The results will either match the intentions of the originating human process, or they will not. In the second case we can find the first evidence of the effects of digital process on human process: _the code behind the digital process will be re-arranged in an attempt to deliver an output that satisfies the intention of the human processes._ 
+
 
 ## Recognizing the Ontogenesis in Generativity ##
 
@@ -37,8 +43,11 @@ In his text _The Position of the Problem of Ontogenesis_ (written in (!CITE!) bu
 
   By transduction we mean an operation--physical, biological, mental, social--by which an activity propagates itself from one element to the next, within a given domain,  and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structure serves as the principle and the model for the next area, as a primer for its constitution, to the extent that the modification expands progresively at the same time as the structuring operation. (Simondon 2009: 11)
 
+
 ## Attributes of Process ##
 
 Process is reflective. It's outputs reflect its inputs. Additionally, process affects the metapotential in a given system. It's reflectivity, then, has material effect. As it reflects the inputs into the outputs, the outputs in turn reflect new (or else simply different) potentials back into the landscape which receives input.
 
-## Human Process vs. Interface ##
+
+## Screens as the Site of Digital-Human Process ##
+
