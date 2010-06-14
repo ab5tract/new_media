@@ -1,0 +1,219 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+
+\subject{Thesis Chapter List}
+
+\startitemize[n][stopper=.]
+\item
+  Introduction
+  \startitemize
+  \item
+    Re-mediation: the drive towards
+    \quotation{greater authenticity and immediacy of presentation}
+    (Bolter 2001: 70)
+  \item
+    Historical developments of the various formats (Typewriter
+    -\lettermore{} Word, SGML -\lettermore{} HTML, Typesetting math
+    -\lettermore{} TeX)
+  \item
+    Contrast the approaches: WYSIWYG, semantic markup, formal markup
+  \item
+    the relationship between computers and language (Cramer 2001)
+    \startitemize
+    \item
+      computers run on alphabets;
+      \quotation{Literature is therefore a privileged symbolic form in digital information systems.}
+      (Cramer 2001: 2)
+    \item
+      the rule of searching for a specific text phrase is complicated by
+      formats: intermediate layers are required for text searching when
+      ODT/PDF are involved
+    \stopitemize
+  \item
+    the re-remediation of Project Gutenberg: the availability of ASCII
+    (itself a remdiation) allows for translation across interfaces; the
+    appearance of the tablets/e-readers as interfaces to the ASCII
+    re-mediates them back into a book
+  \stopitemize
+\item
+  A history of cross-media publishing and generative design
+  \startitemize
+  \item
+    Simondon's {\em transduction}:
+    \quotation{By transduction we mean an operation---physical, biological, mental, social---by which an activity propagates itself from one element to the next, within a given domain, and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structures serves as the principle and the model of the next area, as a primer for its constitution, to the extent that the modification expands progressibely at the same time as the structuring operation}
+    (Simondon 2009: 11).
+    \startitemize
+    \item
+      the \quotation{pre-format} as preindividual (but still individual);
+      ontologies on top of ontologies
+    \stopitemize
+  \item
+    History of the term \quote{media,} it's origins in advertising as
+    they developed a language to discuss \quote{mediating} messages,
+    that is, tailoring the message to suit a particular \quote{medium}
+  \item
+    Advantages and disadvantages of generative design.
+    \startitemize
+    \item
+      Issues of scale can considerably affect the suitability of a
+      generative workflow over a traditional one.
+    \stopitemize
+  \item
+    The Holy Grail:
+    \quotation{one system that serves as the universal document source}
+    \startitemize
+    \item
+      Resembles other holy grails, \quotation{artificial intelligence}
+      and
+      \quotation{real-time collaborative editing of the same document}
+    \stopitemize
+  \item
+    Wrappers: software for remediating formats
+    \startitemize
+    \item
+      the ultimate intersection point
+    \stopitemize
+  \item
+    Showstoppers: errors and/or limitations in functionality that force
+    abandoning one approach for another
+    \startitemize
+    \item
+      limitations of bibliographic intersections
+    \stopitemize
+  \item
+    The role of FLOSS in generative design
+  \item
+    bootstrapping - Engelbart's idea of using computer tools to make
+    better computer tools
+  \stopitemize
+\item
+  Approaches to digital typesetting
+  \startitemize
+  \item
+    Print is Static, Code is Process: the physics of text
+    \startitemize
+    \item
+      Hayles requests taking into account physical specificity; the last
+      chapter will include memory heap visualizations in order to
+      interrogate the utility of such an approach
+      \startitemize
+      \item
+        what about the physicality of the writer in crafting the text? this
+        leads directly into questions of workflow
+      \stopitemize
+    \stopitemize
+  \item
+    WYSIWYG: the computer as a typewriter
+    \startitemize
+    \item
+      Concrete poetry and \quotation{free form typography} as unique to
+      this approach.
+    \item
+      \quotation{A typewriter (or a computer-drive printer of the same quality) that justifies its lines in imitation of typesetting is a presumptious, uneducated machine, mimicking the outward form instead of the inner truth of typography.}
+      (Bringhurst 2008: 28)
+    \stopitemize
+  \item
+    Semantic markup: interpreted plaintext (top-down)
+    \startitemize
+    \item
+      Tuned for remediation, strict separation of display from content.
+    \stopitemize
+  \item
+    Formal markup: the document typesets itself (bottom-up)
+    \startitemize
+    \item
+      The long and varied history of TeX.
+    \item
+      Why ConTeXt?
+    \stopitemize
+  \stopitemize
+\item
+  A Generative Methodology
+  \startitemize
+  \item
+    Is this process useful? Does such a practical approach have
+    anything to offer theory? And does theory offer anything useful for
+    the practice?
+  \item
+    Visualizations: memory heap analysis (again, is it useful? does it
+    map a \quote{materiality}?)
+    \startitemize
+    \item
+      also, version control visualizations of the git repository that
+      hosts the thesis files
+    \stopitemize
+  \item
+    Case studies
+    \startitemize
+    \item
+      HTML
+    \item
+      OpenOffice.org
+    \item
+      ConTeXt
+    \stopitemize
+  \stopitemize
+\item
+  Conclusion
+\stopitemize
+
+\stoptext
+

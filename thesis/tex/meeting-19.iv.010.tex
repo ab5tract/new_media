@@ -1,0 +1,180 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+
+\subject{Week 3 - The Happening of A Relative Absence}
+
+\subsubject{Meeting 19 . iv . 010}
+
+\startitemize[n][stopper=.]
+\item
+  investigating mediums is done by examining qualities/properties
+  \startitemize
+  \item
+    by looking at the formats it \quotation{hosts} (how to pick that
+    verb?)
+  \stopitemize
+\item
+  how to study media
+  \startitemize
+  \item
+    definitional step (properties)
+  \item
+    Manovich: computer complicates medium understanding, mking it no
+    longer so easy just to define media strictly by their properties
+    \startitemize
+    \item
+      becomes focused on input and output
+    \stopitemize
+  \item
+    chronological order of theory?
+    \startitemize
+    \item
+      Mcluhand -\lettermore{} Bolter -\lettermore{} Hayles -\lettermore{}
+      Manovich
+    \stopitemize
+  \item
+    media through McLuhan: based on sensory captivation;
+    \quotation{effects} analysis
+  \stopitemize
+\item
+  how to treat computer typography
+  \startitemize
+  \item
+    what is the relationship between medium analysis and computer
+    typography?
+  \item
+    is it a medium?
+  \item
+    cross-media challenge
+    \startitemize
+    \item
+      transmedia?
+    \item
+      transference (a cross-media strategy)
+    \item
+      there could be other approaches
+    \item
+      \quotation{one could evaluate various strategies for moving to the screen in terms of media theory.}
+      \startitemize
+      \item
+        is it a remediation problem? cross-media problem? does the problem
+        go away if looked at in a different sense, a la transmedia?
+      \stopitemize
+    \item
+      what can theory do?
+      \startitemize
+      \item
+        reformulate the problem in ways that lead to more productive work
+        in that area
+      \item
+        can theory help redefine or reposition the problem with computer
+        typography?
+      \stopitemize
+    \stopitemize
+  \stopitemize
+\stopitemize
+
+\subsubject{TODO}
+
+\startitemize
+\item
+  read up \quote{genres}
+  \startitemize
+  \item
+    \quote{genres} vs \quote{formats} ?
+  \item
+    van der Pol teaches a whole genre theory class
+  \stopitemize
+\item
+  cross-formats? (can formats be found in other formats a la Hayles?)
+\item
+  cross-media / transmedia (Jenkins)
+  \startitemize
+  \item
+    same story vs story segmented across media
+  \stopitemize
+\item
+  the complicated nature of typography can be seen as through
+  remediation?
+\item
+  Nature of the problem??
+  \startitemize
+  \item
+    classic problems of conversion
+    \startitemize
+    \item
+      Mars rover metric vs english
+    \stopitemize
+  \item
+    the {\em reason} to go to media theory
+  \stopitemize
+\item
+  what are the mmost obvious ways of studying this?
+  \startitemize
+  \item
+    make the point for introucing another point of view
+  \item
+    how is it researched normally
+  \stopitemize
+\stopitemize
+
+\stoptext
+

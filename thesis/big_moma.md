@@ -22,7 +22,7 @@ The computer screen, on the other hand, is defined by its seemingly limitless de
 
 Screens offer an ideal point of juxtaposition between the material and processual frames. From a material view, the very formulation of "screens" as _the_ interface between humans and computers is problematic: what of the interfaces that have been developed to work around instances of blindness or other [disabilities] that prohibit visually screenic interaction?
 
-From a processual orientation, the question becomes: how do interactions between humans and computers resolve themselves? The answer returns in the form of the _available_ remote controls and the _available_ response interfaces. The next step might be to investigate the degree of variance between these availabilities, and whether they problematize any umbrella-classification. While it would be insensible to argue that material differences in inputs and outputs can--or do--not lead to a huge amount of variation between experiences within humans. 
+From a processual orientation, the question becomes: how do interactions between humans and computers resolve themselves? The answer returns in the form of the _available_ remote controls and the _available_ response interfaces. The next step might be to investigate the degree of variance between these availabilities, and whether they problematize any umbrella-classification. While it would be _insensible_ to argue that material differences in inputs and outputs can--or do--not lead to a huge amount of variation between experiences within humans. Such variation is likely to occur in differentials. That is to say, the spectrum of possible feedback occurs at the level of the human individual---one's experiences are functionally irrepresentable without translation of some kind. [We can choose to call these translations mediums, or we can choose to call these processes.]
 
 At this point the question becomes, then, whether it is necessary to instantiate these inherent divergences in every evocation of a broad level discussion of input and output mechanisms or whether the inherent, _core_ similarity between them all remains that in all instances they serve as _the point of contact_ between human and digital processes. Does it make a processual difference if the output technology is a braille screen or an LCD screen? Only inasmuch as to what degree the process being examined is unique to, or highlights differences between, one or the other. From a discursive level, _controls_ and _screens_ can capture the essence of these dual "action spaces" that together form the single point of contact between human and digital process.
 
@@ -47,6 +47,12 @@ The discussion of generativity provides further means to demonstrate the equilib
 
 The design world is increasingly dominated by generativity.
 
+### Print is (meta)static, code is (meta)process ###
+
+The flat/deep distinction proposed by Hayles is, by its formualtion, material. Problematizing this material focus is the interwoven nature of print and code. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process. This non-reducibility of typesetting reflects the non-reducibility of language, as well as the non-reducibility of language into the very concepts which it has developed through attempts to describe.
+
+[Florian Cramer goes here!!]
+
 ## Remote Controls, or: the Epitome of Cool Media? ##
 
 Is it possible to take the remote control and use it to create a metaphor for all human-computer interaction?
@@ -67,7 +73,7 @@ Note the distinct lack of 'computational' in Simondon's list of operations. Writ
 
 ## Attributes of Process ##
 
-Process is reflective. It's outputs reflect its inputs. Additionally, process reconfigures the metapotential in any given system. It's reflectivity, then, has material effect. As it reflects the inputs into the outputs, the outputs in turn reflect new (or else simply different) potentials back into the landscape which receives input.
+Process is reflective. It's outputs reflect its inputs. Additionally, process reconfigures the metapotential in any given system. It's reflectivity, then, has material effect. As it reflects the inputs into the outputs, the outputs in turn reflect new (or else simply different) potentials back into the _context_ which is the reciprocal contact point in which the processes began. This language is extrapolative into any set of intersections. This paper considers just the subset of human-digital recipricity, and within the relatively static domain of typesetting.
 
 A new configuration of metapotential in any system results in the reconfiguration of (all) other systems as well. This fact reflects the _fractal_ nature of process--there is a degree of non-reducibility inherent in any (description of?) process.   
 

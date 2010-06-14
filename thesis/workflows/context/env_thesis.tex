@@ -1,0 +1,63 @@
+
+\startenvironment env_thesis
+
+	% Links
+	\setupcolors[state=start]
+	\setupinteraction[state=start,color=darkblue]
+
+	% ..
+	\setuppagenumbering[location={footer,left,margin}]  
+
+	% paper, layout, etc.
+	\setuppapersize[A4]
+	%\setuplayout[width=6.5in,height=10.5in,topspace=0.5in,backspace=1in,
+	%  header=0.5in,footer=0.5in]
+	% double space
+	%\setupinterlinespace[line=5.6ex]
+	% 1/2 inch indents
+	\setupindenting[medium]
+	\indenting[always]
+	% CSL is a new form of handling bibliographic data and citations. It also apparently   http://xbiblio.sourceforge.net/csl/
+	% jagged-right (aligned to the left)
+	\setupalign[right]
+	% font
+	%\setupbodyfont[rm,12pt]
+	\usemodule[simplefonts]
+	\setmainfont[Liberation-Serif]
+	\setmonofont[inconsolata]
+
+	% for long quotes
+	\definestartstop[longquote][
+  	before={\indenting[never]
+    	\setupnarrower[left=0.5in,right=0.5in]
+    	\startnarrower[2*left,right]},
+  	after={\stopnarrower
+    	\indenting[yes]}]
+
+	% for heading and header
+	\def\MLA#1[#2][#3][#4][#5][#6][#7]%
+ 		{\setuppagenumbering[left=#3 ,location={header,right}]
+		\indenting[never]
+		#2 #3\par#4\par#5\par#6\par\startalignment[middle]#7\stopalignment
+		\indenting[yes]}
+	
+	% following hanging indent code (also in workscited) taken from 
+	%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+	% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+	%  ~ Patrick Gundlach
+	\def\hangover{\hangafter=1\hangindent=0.5in}
+	\definestartstop[workscited][
+  	before={
+    	\page[no]
+    	\indenting[never]
+    	\startalignment[left]
+    	\subject{Bibliography}
+    	\stopalignment
+    	\setupwhitespace[medium]
+    	\bgroup\appendtoks\hangover\to\everypar
+    },
+  	after={
+    	\egroup
+    	\indenting[yes]}] 
+
+\stopenvironment

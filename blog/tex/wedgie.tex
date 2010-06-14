@@ -1,0 +1,581 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+
+\subject{Introductory speakers}
+
+\startitemize[n][stopper=.]
+\item
+  What are the possibilities and pitfalls in interactivity, art, and
+  public space?
+\item
+  How to contribute to civility in these precarious times?
+\stopitemize
+
+\subject{Affect}
+
+\subsubject{Kluitenberg}
+
+\startitemize
+\item
+  video of Ligna, a radio-controlled collective street performance;
+  flash mob
+  \startitemize
+  \item
+    \quotation{I Am(not)sterdam}
+  \stopitemize
+\item
+  overburdening of the senses
+  \startitemize
+  \item
+    exemplary artist Raphael Barzamo Hammer
+    \startitemize
+    \item
+      \quotation{In relation to the \quote{violence of the visual} that is taking over the public space: we don't want less images, we want {\em more} images}
+    \stopitemize
+  \stopitemize
+\item
+  informational environment versus cognition
+\item
+  The Third Body
+  \startitemize
+  \item
+    emotional attachment to records; first time playing a record, a
+    certain experience happens; when the record is put away, the
+    experience is not fully present, just a memory; but when the record
+    is listened again, the experience returns
+  \item
+    the experience is not attached to the listeners body, nor the
+    record, but this \quotation{third} body
+  \item
+    the third body is not technologically determined
+  \item
+    digital technologies are technologies of complete andperfect
+    articulation (especially in regards to control sequences, etc)
+  \item
+    something needs to be left out for digitization; what is missing is
+    the precise thing that makes us feel that the digital object is
+    anemic;
+  \stopitemize
+\item
+  affect is the thing discarded by digitization
+\item
+  we need art that points beyond itself in a negative way
+  \startitemize
+  \item
+    the denial of the system's rules, of its inherent methodologies
+  \item
+    the word processor (elle
+  \item
+    the bubblespace: intervention and rupture where the intervention
+    itself points beyond the technology
+  \item
+    take scenarios where interactivity is truly and literally forced
+  \item
+    \quotation{break the frame} as well as \quotation{impose the frame}
+  \stopitemize
+\stopitemize
+
+\subsubject{Round Table 1}
+
+\startitemize
+\item
+  interpassive systems such as speed bumps: if the speed bumps are
+  there as a result of lobbying from the concrete industry and not as
+  a result of democracy, is it still interpassivity? and the tension
+  between the cognitive and the body's desire for cigarettes? why
+  should we listen to the cognitive over the body?
+  \startitemize
+  \item
+    (Gijs): interactive and interpassive eras are not defined by a
+    clean split: \quotation{tectonic plates} shifting together
+  \stopitemize
+\stopitemize
+
+\subject{Interface}
+
+\subsubject{Lovink}
+
+\startitemize
+\item
+  Is the interace luring us away from the hidden powers of the new
+  media or is it the real battlefield?
+\item
+  If we want to reach more audiences, one possible solution could be
+  that we look more at the interface level. Should we put more money
+  into new media arts programs and computer science? Or should we
+  raise issues of aesthetics and politics of interfaces to highlight
+  the underlying power of the systems?
+\stopitemize
+
+-
+
+\subsubject{Galloway}
+
+\startitemize
+\item
+  Powerful example of the interface in society today: the airport
+\item
+  \quotation{I wrote them mostly on airplanes,} Paul Baran on where
+  he wrote his influential memos (ethernet/distributed networks)
+  \startitemize
+  \item
+    jet-setting panache? foreshadowing of today's distributed office
+    spaces?
+  \item
+    indication of a certain social mobility; the result of speaking
+    engagements
+  \stopitemize
+\item
+  the experience of communicated (physically) through the airport
+  networks was particularly conducive to writing about communication
+  networks themselves
+\item
+  its not simply the decentralized qualities of Baran's work, it is
+  the distributed networks that are more radical
+  \startitemize
+  \item
+    would have been more fittingly written in automobiles
+  \stopitemize
+\item
+  interface: a facade, mostly useless and inconsequential. The desk
+  has been outsourced to the passenger. Almost providing tech support
+  to assist us in navigating the interface, rather than being
+  representative agents of the airline.
+\item
+  After the check-in interface comes security. Searches, take off
+  your hat, jacket, shoes, etc. (old techniques). But now data
+  mining, computer vision techniques (faces, gestures monitored).
+  Theatrical experience: certain people with certain roles asking
+  certain questions, and then we have other actors responding.
+\item
+  After the security comes the shopping area. All manners of
+  meandering pathways through well-lit store rooms. If security is a
+  line, the shopping is a curve. A clean room, buffered by the
+  security gate. International trade is physically represented.
+  \quotation{Made clean for mass consumption.}
+\item
+  The gate: last interface.
+\item
+  Airport as a succession of interfaces.
+\item
+  \quotation{Interfaces are back, and perhaps they never left.}
+\item
+  Plato's concept of communication as writing words on the soul of
+  another person.
+\item
+  The more these devices erase the evidence of their own functioning,
+  the more effective they are. The more invisible they become.
+\item
+  \quotation{To succeed at an interface is at best self-deception, and at worse self-annihilation.}
+  o
+\item
+  In some ways an interface is only an interface when it disappears
+  from view.
+\item
+  Mediation as the irreducible disintegration of self and others into
+  contradiction.
+\item
+  Interfaces are \quote{intuitive} or \quote{not intuitive}. However,
+  looking at interfaces less as surfaces than as a doorway. The
+  language of thresholds, of doorways,
+\item
+  Interfaces become important in the issues of cybernetics in that it
+  is the site of discussion of where humans meet machine, or flesh
+  meets metal. Or systems theory, where energy moves from one node to
+  another in the system.
+\item
+  Interface and media might be two names for the same thing.
+  \startitemize
+  \item
+    McLuhan: re-mediation, so-called natural laws of media; media are
+    merely containers that encapsulate other pieces of media.
+    \quotation{Onion} model of media. Media are \quote{scale-based},
+    different layers of scale.
+  \item
+    Media themselves are interfaces: through the containment concept,
+    it becomes the means by which the encapsulated media can be
+    extracted from the layers
+    \startitemize
+    \item
+      the point of friction, agitation between the different layers
+    \stopitemize
+  \stopitemize
+\item
+  An interface as
+  \quotation{putting yourself at the beginning and the end} (a la
+  ancient Greek poetry)
+  \startitemize
+  \item
+    the outside \quote{possesses} the inside
+  \item
+    introductory liminal modes of expression
+  \item
+    \quotation{An area of , a fertile nexus.} The interface is special
+    place that has its own autonomy, an area of choice.
+  \stopitemize
+\item
+  the \quote{apostrophe}, addressing an object/character and breaking
+  the
+\item
+  The \quote{text} and the \quote{paratext} (through or beyond text).
+  The paratext is the edge, while the text is the center.
+\item
+  Diagetic versus non-diagetic.
+\item
+  \quotation{The interface as any artificial differentiation between two media.}
+  \startitemize
+  \item
+    Any examination of the difference between the edge and the center
+    leads to understanding that it is difficult to disceren where a
+    center begins and an edge ends. Avant garde techniques are very
+    interested in this tension.
+  \item
+    A web page is entirely artificial. Both are ASCII text but we have
+    nevertheless created an artificial distrinction between the two.
+    The source code of HTML is an interface.
+  \stopitemize
+\item
+  We impose a linguistic construct to artiulate the distinction. An
+  interface is not a \quotation{thing,} it is always an effect, a
+  process, a mode of translation.
+\item
+  Norman Rockwell's triple self-portrait. A circulation of coherence
+  that gestures toward the outside but ultimately remains afraid of
+  the outside and withdraws from it.
+  \startitemize
+  \item
+    The artist is operating in the white kind of nowhere space (visible
+    in sci-fi through THX 1138 and The Matrix).
+  \item
+    On the canvas he appears with the soft wisdom of an elder.
+  \item
+    The image in the mirror is a \quote{technical} image.
+  \item
+    Fourth layer of the interface, the image itself, between the viewer
+    and the image. Usually this interface is made invisible. Is this
+    interface acknowledged or repressed?
+    \startitemize
+    \item
+      The self-consciousness of the painting
+    \stopitemize
+  \item
+    It claims to address concerns of interface within the image itself
+    (diagetic space of the image)
+  \item
+    A diagetic circuit between the artist, the mirror, and the canvas.
+    A circulation of intesnity, holding inward the energy. The image is
+    a process, not a conglomeration of artistic details.
+  \item
+    everything is aimed at internalization
+  \stopitemize
+\item
+  Mad magazine's Alfred
+  \startitemize
+  \item
+    has no concern with making himself look better, just in making
+    himself look clever
+  \item
+    the mode of address becomes the core concern
+    \startitemize
+    \item
+      addressing the viewer in an intense way
+    \stopitemize
+  \item
+    circular coherence of Rockwell is broken into three orthogonal
+    spikes. Orthogonally outward (mirror), orthognally inward (almost
+    at the mirror), and
+  \item
+    everything is aimed at externalization
+  \item
+    direct address to the viewer is \quotation{always} treated in a
+    special way
+    \startitemize
+    \item
+      narrative forms almost entirely eschews direct address
+    \stopitemize
+  \item
+    \quote{short circuit}
+  \stopitemize
+\item
+  With Rockwell we see an interface that addresses itself to the
+  nterface itself. It answers the question of interface by repressing
+  it. Alfred solves the question of the interface through a
+  schizophrenia. It dwells on the pain of shattered coherence as a
+  result of interface.
+\item
+  All interfaces are looking back at us, even when we become
+  engrossed with them ourselves.
+\stopitemize
+
+\subsubject{Sommerer}
+
+\startitemize
+\item
+  \quotation{Interfacing Reality}
+  \startitemize
+  \item
+    from a Sony Research Labs project
+  \stopitemize
+\item
+  Department of interface cultures
+\item
+  Interfaces in art
+\item
+  A language of cultural interfaces (from Manovich) ;
+\item
+  Paul Weibel traces the roots of the word \quotation{interface} back
+  to \quotation{surgce science}---etymological and conceptual
+  connection between \quotation{surface} and \quotation{interface.}
+  \startitemize
+  \item
+    the representation of an interface becomes the interface (a map of
+    the world becomes how we see the world)
+  \stopitemize
+\item
+  social psychology -
+\item
+  interaction design in the creation of social meaning
+\item
+  interaction and participation in art.
+  \startitemize
+  \item
+    social forms of participation since Dada-ism
+  \stopitemize
+\item
+  yoko Ono cut piece
+  \startitemize
+  \item
+    "Intelliget dialogue about gender relationship, voyerism and the
+    artist-audience relationship
+  \stopitemize
+\item
+  Examples of Cultural Interfaces
+  \startitemize
+  \item
+    Stephen Johnson:
+    \quotation{Interfaces will intrude into our lives and it is important for artists and designers to respond to that.}
+  \item
+    Tangible Interface: InfoTable
+  \item
+    News Machine
+  \item
+    Mountain Guitar --- played with body movements
+  \item
+    Intelligen homes
+    \startitemize
+    \item
+      The living room: listening to conversation and looking up keywords
+    \stopitemize
+  \stopitemize
+\item
+  New interfaces are not generally developed for commercial ends.
+  Avoid pure art or pure commercial applicatins
+\stopitemize
+
+\subsubject{van Thije}
+
+\startitemize
+\item
+  the notion of interface and how it relates to art, especially in
+  the sense of museum.
+\item
+  \quotation{Systems work because they don't work.}
+  \startitemize
+  \item
+    If a relation remains, it is because the connection has failed.
+  \stopitemize
+\item
+  one can act within the realm of an interface or one could engage
+  within the interface
+  \startitemize
+  \item
+    play with the limits vs using already understood rules
+  \stopitemize
+\item
+  an artwork can be an action upon the interface or a moment of
+  density within a system
+  \startitemize
+  \item
+    how does a musuem facilitate this?
+  \item
+    19th century museums did not display art on the wall in an
+    organized gallery style but rather in an all-at-once manner
+    \startitemize
+    \item
+      a direct interface to the art \quote{depot}
+    \stopitemize
+  \item
+    the type of knowledge production in a culture is displaed in the
+    interface of museums
+  \item
+    the development in the early twentieth century of museums towards
+    an exhibition space (a format in itself)
+  \item
+    19th century museum was interface pointing to the universal, in the
+    20th it was towards an individual or even \quote{dividual}
+    \startitemize
+    \item
+      exhibition interface was designed to disappear the body of the
+      audience
+    \item
+      within the white cube it is just an exercise
+    \stopitemize
+  \stopitemize
+\item
+  how can the interface be approached in these two different ways?
+\item
+  what is currently happening in the museum space?
+  \startitemize
+  \item
+    if the art can no longer function in the Rockwell sense
+    (self-contained, internal focus) and instead focuses on the edges,
+    how do we display it?
+  \item
+    less and less artwork just objects to collect but rather
+    installations; art can no longer just be collected and put into a
+    depot; when the artwork is a complex interface it allows for
+    contemplation of how to share and/or display this type of art
+  \stopitemize
+\stopitemize
+
+\subsubject{Round Table 2}
+
+Interfaces and Affect - \quote{affective computing}: developing
+interfaces that engage with feelings
+
+\subsubsubject{Black boxes vs White cubes}
+
+AG: We seem to need both these days?
+
+SvT: The exchange between
+
+: The black box entering the white cube is a great metaphor. Hybrid
+artforms are entering the white cube in greater and greater scales.
+Everyone can be artistic these days, and so the technology is at
+once dissolving the distinction and uniqueness of art in the white
+cube.
+
+\subject{Object}
+
+\subsubject{Round Table 3}
+
+\startitemize
+\item
+  {\em (Summary of Willem van Weelden's absent lecture)}:
+  Essentialism in Latour: hidden in ANT is an endless opening of
+  black boxes. Willem van Weelden calls this a
+  \quotation{road to hell.} There is less and less margin for space
+  for contentious objects.
+\stopitemize
+
+\subsubsubject{Object Research Lab}
+
+\startitemize
+\item
+  Integrating different disciplines (material engineering,
+  philosophy) in day long workshops. This results in translations
+  between the disciplines/discourses.
+\item
+  What is the Swiss Army going to be lke in the 20th century? None of
+  the individual tools on a swiss army knife are optimal.
+  \startitemize
+  \item
+    The morality of the knife: only the officer knives had a corkscrew,
+    enlishted knives had bottle cap openers.
+  \stopitemize
+\item
+  \quotation{Relational thing-ness}
+  \startitemize
+  \item
+    A thing is not defined, a thing always exists in relation to other
+    things.
+  \item
+    An object can never be wrong, it can be mistreated.
+  \item
+    An object can never be right, it can be well treated.
+  \stopitemize
+\item
+  Where do we start talking about the objects? At the molecular
+  level? At the tactile level?
+\item
+  You can't have a good bicycle without a good road.
+\item
+  Objects that exist specifically to inspire
+  \quotation{thoughts about things.}
+  \startitemize
+  \item
+    Designed in a single color to reduce distraction and focus on the
+    essence.
+  \stopitemize
+\stopitemize
+
+\subsubject{}
+
+\startitemize
+\item
+  Theory is going rampant right now. The future belongs to practice.
+\item
+  Every object stands as a relation between (at least) two human
+  beings.
+\stopitemize
+
+\stoptext
+

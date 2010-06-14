@@ -1,0 +1,179 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+
+\subject{Republic.com 2.0}
+
+\subsubject{Cass Sunstein}
+
+\startitemize
+\item
+  \quotation{to screen in and to screen out} : central concern of
+  Sunstein's book
+\item
+  \quotation{Members of a democratic public will not do well if they are unable to appreciate the views of their fellow citizens, or if they see one another as enemiesor adversaries in some kind of war.}
+  (xi)
+\item
+  \quotation{the question of fragmenttion and the risk of polarization}
+  (xii)
+\item
+  \quotation{Democracy does best with what James Madison called a \quote{yielding and accomodating spirit,} and that sirit is at risk whenever people sort themselves into enclaves in which their own views and commitments are constantly reaffirmed.}
+  (xii)
+  \startitemize
+  \item
+    \quotation{As we shall see, such sorting should not be identified with freedom, and much less wth democratic self-government.}
+    (xii)
+  \stopitemize
+\item
+  \quotation{{\em The market for news, entertainment, and information has finally been perfected.}}
+  (3)
+\item
+  \quotation{In reality, we are not so very far from complete personalization of the system of communications.}
+  (4)
+\item
+  two requirements of a
+  \quotation{well-functioning system of free expression}
+  \startitemize
+  \item
+    \quotation{{\em First,} people should be expossed to materials that they would not have chosen in advance. Unplanned, unanticipated encounters are central to democracy itself.}
+    (5)
+    \startitemize
+    \item
+      ensures against
+      \quotation{fragmentation and extremism, which are predictable outcomes of any situation in which like-minded people speak only to themselves}
+      (6)
+    \item
+      contradictory aspect, government should not {\em force} people to
+      \quotation{see things they wish to avoid}, however
+      \quotation{lives should be structured so that people often come across views and topics that they have not specifically selected}
+      (6)
+    \stopitemize
+  \item
+    \quotation{{\em Second,} many or most citizens should have a range of common experiences. Without shared experiences, a heterogeneous society will have a much more difficult time in addressing social problems. People may even find it hard to understand one another.}
+    (6)
+    \startitemize
+    \item
+      \quotation{Common experiences, emphatically including the common experiences made possible by the media, provide a form of social glue.}
+      (6)
+      \startitemize
+      \item
+        the sharing of experience of racism is impossible. the different
+        reactions to \quote{post-racial} is indicative of a structural void
+        separating those that experience racism from those that don't.
+        media portrayals of race do not provide any \quotation{glue}
+        because they reinforce the \quotation{common experiences} of white
+        people (that racism is not a problem) by explicitly ignoring the
+        experiences of people of color. this itself leads to fragmentation.
+      \stopitemize
+    \item
+      \quotation{A system of communications that radically diminishes the number of such experiences will create a number of problems, not least because th of the increase in social fragmentation.}
+      (6)
+      \startitemize
+      \item
+        this is verified by the feared impact of MSM coverage on the issue.
+        fragmentation of the PoC from whites but perhaps a congealing among
+        both those parties.
+      \stopitemize
+    \stopitemize
+  \stopitemize
+\item
+  \quotation{But the emerging situation does contain large difference, stemming above all from a dramatic increase in available options, a simultaneous increase in individual control over contend, and a corresponding decrease in the power of {\em general-interest intermediaries}. These include newspapers, magazines, and broadcasters.}
+  (8)
+\item
+  \quotation{People who rely on such intermediaries have a range of chance encounters, involving shared experienes with diverse others, and also exposure to materials and topics that they did not seek out in advance.}
+  (9)
+  \startitemize
+  \item
+    there is no guarantee that the intermediaries are offering an
+    actually diverse opinion on the topic. it is just as easy for them
+    to \quote{packetize} their news coverage in the most commercially
+    accessible, and therefore least controversial, way. this negative
+    aspect of industrial journalism is countervailed only through the
+    channels of citizen journalism.
+  \item
+    mentioning {\em Time} and {\em Newsweek} as venues for diverse
+    stories is problematic: neither magazine will ever stray outside of
+    normative expectations of pro-capitalist reporting.
+  \stopitemize
+\item
+  \quotation{A system in which individuals lack control over the particular content that they see has a great deal in common with a public street, where you might encounter not only friends, but also a heterogeneous array of people engaged in a wide array of activities (including perhaps bank presidents, political protesters, and panhandlers).}
+  (9)
+  \startitemize
+  \item
+    the street is an incredible metaphor, as it is a place where people
+    of color face unique threats. getting from the streets to a safe
+    venue is desirable when the street offers the threat of
+    discrimination. the street is not universally safe for vulnerable
+    populations such as people of color and women.
+  \stopitemize
+\item
+  \quotation{whether it is important to maintain the quivalent of \quote{street corners} or \quote{commons} where people are exposed to things quite involuntarily.}
+  (11)
+  \startitemize
+  \item
+    the question of how to get minority views out to people is an
+    intriguing one. protocologically addressed in the original idea of
+    bi-directional links in Xanadu, where references to ones work are
+    visible regardless of the author's wishes.
+  \stopitemize
+\stopitemize
+
+\stoptext
+

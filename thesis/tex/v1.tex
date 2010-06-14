@@ -1,0 +1,251 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+	{\tfd Formatting Processes: A reflexive investigation of generative typesetting using FLOSS}
+	\starttabulate[|l|] 
+	\NC {\tfa John Haltiwanger} 
+	\NR
+  \NC 15 April 2010
+	\stoptabulate
+
+\subject{Core concerns}
+
+This paper claims that the type of material analysis in which
+Hayles engages is an inadequate formulation of a valid
+concern.{\em Scriptons} and {\em textons} are two terms proposed by
+Esper Aarseth and utilized by Hayles to refer to the surface of
+text and the underlying codes that produces that text,
+respectively. Confusingly, if some degree of code is available for
+investigation, that code is considered part of the {\em scripton}
+(Hayles 2004: 78).
+\footnote{This isn't to mention the confusion, from a programming
+perspective, of using the root words \quote{script} to refer to
+surface level and \quote{text} to refer to programmatic layers
+beneath that surface. This is counterintuitive to a tradition in
+which \quote{scripts} are written to deal with \quote{text}
+algorithmically.}
+This complicates the capacity for discussion as the code that is
+most relevant for the presentation of text on a screen in any given
+{\em specific} instance is necessarily the source code. If the
+source code is considered part of the \quote{surface text}, there
+is little left to truly investigate on a per-document basis. As
+important an observation it is that all electronic text begins as
+voltage signals, it is not much more informative than stating that
+all printed text begins as ink.
+
+One goal of this paper is to push the boundaries of material
+analysis to include a detailed examination of surface text and the
+code used to generate it. In order to do so this paper will focus
+on the relationships of inputs and outputs in a generative design
+workflow, specifically the typesetting of the thesis itself. The
+variance of the chosen output formats in both typographic quality
+as well as compositional elements allows the interrogation of
+electronic text on a deeper level. This is not meant to be a simple
+features analysis. Rather, the goal is to develop a theoretical
+framework for discussing the separate layers of {\em text},
+{\em code}, and {\em type} (as in typography). Without considering
+issues of presentation (type) or composition (code), a material
+analysis remains incomplete. In other words, there is a lot of room
+in Hayles' \quotation{frothy digital middle} for a deeper level of
+discussion (Hayles 2004: 75). This froth will be examined in light
+of the remediation theory provided by Jay David Bolter and David
+Grusin.
+
+\subject{Research Questions}
+
+\startitemize
+\item
+  What claims are made about the qualities of a \quote{format} in
+  relation to a \quote{medium}? Within computers, to what extent can
+  a specific format yield the same effects/components of a medium?
+\item
+  What does a material analysis of a {\em generative process} look
+  like? If a text is merely an input in a process that yields
+  specifically different outputs, what kind of materiality does it
+  have?
+\item
+  If typography has a material effect, on which layer does it
+  operate? Should typography be incorporated into the material
+  analyses of documents in the tradition of Hayles?
+\item
+  What claims are made about computer typography? and what claims, if
+  any, are specific open source software?
+\stopitemize
+
+\subject{Generative design}
+
+Generative practices increasingly take a larger prominence in
+design workflows. \quotation{The process is the product,} declares
+the {\em Conditional Design Manifesto}. Employing the
+\quotation{methods of philosophers, engineers, inventors and mystics,}
+the four authors of the manifesto seek to abandon the idea of a
+product in favor of
+\quotation{things that adapt to their environment, emphasize change and show difference}
+(Maurer, et al.). The text is split into a prose introduction and
+three sections of manifesto-style declarative sentences:
+{\em process}, {\em logic}, and {\em input}. These are the
+governing principles of their proposed angle towards design.
+
+By focusing on process, the authors of the manifesto employ a
+conscious decision away from productized design. Process produces
+\quotation{formations rather than forms} and facilitates a search
+for \quotation{unexpected but correlative, emergent patterns}
+(Maurer, et al.). Logic is invoked as their method for
+\quotation{accentuating the ungraspable} and provides the means for
+designing the
+\quotation{condtions through which the process can take place}.
+Input is their \quotation{material,} and should come from the
+\quotation{external and complex environment}. It
+\quotation{engages logic and influences the process}
+
+The powerful Java-platform tool named Processing has become wildly
+popular amongst visualization designers. The demo scene has long
+employed generative techniques to instantiate complexity on-screen
+using as few as 4 kilobytes of compiled binary code. Video game
+design guru Will Wright's 2008 game {\em Spore} relies heavily on
+procedural generation. Many open-source (and, presumably,
+otherwise) projects generate their documentation using a
+combination of algorithm and in-code markup.
+\footnote{Indeed one of the available input formats (still) in consideration
+for this thesis is reStructuredText, the markup syntax which lies
+at the core of the Python programming language's online
+documentation.}
+Beyond this, Dutch designer Petr van Blokland has ceased using
+Adobe products in the design pipeline at his firm. By
+{\em programming} instead of {\em hand-crafting} Blokland is able
+to achieve a balance of control and flexibility that can support
+the kind of enormous workflow demanded by clients such as Rabobank.
+
+The case study at the core of this paper will explore these
+concerns as the materiality of the thesis itself remains ethereal.
+It is more than its input, it is more than its output: it is
+literally and figuratively very much a {\em process}.
+
+The substrate of the text you are reading right now is a simple
+formal markup language called Markdown. Originally written in Perl,
+it has spread to any language that ends up touching the web. This
+is due to its popularity as an approachable \quote{pre-formatting}
+markup language for operations, such as blog posts and comments,
+where HTML is the desired output but a simpler
+{\em and more readable} input is often preferrable. Using a
+\quote{wrapper} tool called {\bf Pandoc}, the Markdown input is
+converted to HTML, ConTeXt, and OpenOffice.org Writer (ODT)
+formats. Through customizable templates, {\bf Pandoc} provides a
+great deal of flexibility to the end-user.
+
+\subsubject{Caveats}
+
+Florian Cramer offers a techno-musical analogy for generative
+design in the context of typesetting: TeX is to WYSIWYG typesetting
+as a player piano is to a piano under the fingertips of a real
+pianist (Cramer 2010). Cramer also Femke Snelting, of Open Source
+Publishing in Brussels, has mentioned \quotation{showstopper}
+issues facing the enactment of specific design goals in OSP's first
+project using ConTeXt (Snelting 2010).
+
+\subject{Theoretical Perspectives}
+
+Without having a great deal of literature on \quotation{formats} to
+work with, I would like to assert that formats are sub-species of
+mediums. The sitcom is a television format, the action blockbuster
+a cinematic format, and the concrete poem a writing format. It is
+perhaps within the medium of the microcomputer, however, that the
+largest number of formats can be found. As a fully programmable
+medium, the microcomputer facilitates the development of an
+enormous number of formats. These formats can carry political and
+social significance, as in the case of HTML 5 and the debate over
+the use of the patent-encumbered h.264 codec versus the
+open-source, royalty free Ogg Theora format. In the case of
+computers, then, it is perhaps possible to assert that formats have
+a more distinct, medium-like dimension than formats in other media
+have.
+
+In his piece \quotation{Media Cold and Hot}, Marshall McCluhan
+argues that a medium's capacity to capture a sense defines, in some
+ways, its social effect. The state of the society to begin with is
+critical and will determine the nature of a new medium's impact.
+First it is important to establish what his scale is based on and
+how he establishes it.
+\quotation{A hot medium is one that extends one single sense in \quote{high definion}. High definition is the state of being well filled with data}
+(McLuhan 1964: 24). Hot media require little participation because
+they are so engrossing---their \quotation{high resolution} (to
+switch his phrasing a bit) doesn't provide or require extensive
+participation. Cool media, on the other hand, require a great deal
+of audience participation.
+
+In McLuhan's view, nationalism and religious wars in sixteenth
+century Europe were the result of a \quotation{hotting-up} of the
+medium of writing as it transitioned to print (25). Furthermore,
+\quotation{a tribal and feudal hierarchy of traditional kind collapses quickly when it meets any hot medium of the mechanical, uniform, and repetitive kind}
+(26). In this way media can be seen as highly influential, having
+the power to completely alter societies, as the introduction of the
+letter press and the subsequent collapse of Catholic hegemony in
+various parts of Europe.
+
+\subject{Materialist Format Analysis}
+
+One of the primary objectives of this paper is to force integration
+of typographical design principles into a material analysis. Robin
+Kinross' argues that the first typographically modern typesetting
+began much earlier than what is now conisdered to be the modern era
+(Kinross).
+
+\stoptext
+

@@ -1,0 +1,12 @@
+# Mistake Correcting #
+## A Fanedit Fan's Perspective ##
+
+The end of the formerly dominant 'finished' movie ended with the release of _The Phantom Edit_ in 2000. Facilitated by the power of the DeCSS DVD-ripping hack, the proverbial source code of George Lucas' famous failure became a workspace within which shit could be polished into gold. While that partiular film has never been fully corrected in this fan's opinion, there are enough examples of polished Hollywood fossils within this subculture to merit media study attention.
+
+### The Matrix DeZionized  ###
+
+Fanediting godfather figure CBB released this classic in 200XXXX. I only had the fortune to view it in 2008. There was always something disgusting about the Matrix sequels, a lingering effect I attribute to the disenchantment that met those willing to lose their blindfolds between 1999 and 2003. _The Matrx Reloaded_ was nothing if not a condemnation of producing a prroper followup. Cross-media tie-ins through video games and comic books, unbelievable hype concerning a car chase that cost multiple millions, and an ultimately disappointing cinematic experience were all absorbed by myself as a failure of capitalism's capacity for inspiring creative expression. Regardless of whether a sequel already has a contracted followup scheduled into its sequence it should be capable of sustaining a holistic viewing. The Wachowski brothers ditched the debatable nuance of the first film to thrust fully into our faces the fact that they no longer required anything innovative to make metric tons of money.
+
+Literally re-centering the cinematic focus by incorporating only scenes containing actions within the Matrix and amongst shipmates, CBB effectively resurrects the _vibe_ of the original film.[^1] Zion is still a remote reality to these soldiers at war and for which their entire fight exists. Absent from the audience's field of view, Zion solidifies into a mythical ideal. Through this our connection deepens. While I confess I had a nice _de ja vu_ moment seeing humans (once again) jamming in large caves, I did not miss Zion the way CBB edited this film. It is always there in the original, after all. Or multiple other Matrix fanedits, for that matter.
+
+[^1] I encourage the experience of JasonN's fanedit _The Matrix: Evolution_ and indeed rate it exceptionally high on my personal fanedit list. Given the extremity of reactions it's been met with in private viewings, however, I wouldn't necessarily recommend it as a first fanedit experience.

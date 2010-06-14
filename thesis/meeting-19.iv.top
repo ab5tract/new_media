@@ -1,0 +1,26 @@
+% runtime options files (command line driven)
+\unprotect
+% special commands, mostly for the ctx development team
+% feedback and basic job control
+% handy for special styles
+\startluacode
+document = document or { }
+document.arguments={
+}
+document.files={
+ "meeting-19.iv.010.tex",
+}
+\stopluacode
+% process info
+\setupsystem[inputfile=meeting-19.iv.010.tex]
+\setupsystem[\c!n=2,\c!m=3]
+% modes
+% options (not that important)
+\startsetups *runtime:options
+\setupoutput[pdftex]
+\stopsetups
+% styles and modules
+\startsetups *runtime:modules
+\stopsetups
+% done
+\protect \endinput

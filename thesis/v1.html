@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>Formatting Processes: A reflexive investigation of generative typesetting using FLOSS</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="John Haltiwanger" />
+  <meta name="date" content="15 April 2010" />
+  <link rel="stylesheet" href="workflows/html/base.css" type="text/css" />
+</head>
+<body>
+<div class="title_page">
+	<h1 class="title">Formatting Processes: A reflexive investigation of generative typesetting using FLOSS</h1>
+	<h1 class="author">John Haltiwanger</h1>
+	<h1 class="date">15 April 2010</h1>
+</div>
+<div id="core-concerns"
+><h1
+  >Core concerns</h1
+  ><p
+  >This paper claims that the type of material analysis in which Hayles engages is an inadequate formulation of a valid concern.<em
+    >Scriptons</em
+    > and <em
+    >textons</em
+    > are two terms proposed by Esper Aarseth and utilized by Hayles to refer to the surface of text and the underlying codes that produces that text, respectively. Confusingly, if some degree of code is available for investigation, that code is considered part of the <em
+    >scripton</em
+    > (Hayles 2004: 78).<sup
+    ><a href="#fn1" class="footnoteRef" id="fnref1"
+      >1</a
+      ></sup
+    > This complicates the capacity for discussion as the code that is most relevant for the presentation of text on a screen in any given <em
+    >specific</em
+    > instance is necessarily the source code. If the source code is considered part of the 'surface text', there is little left to truly investigate on a per-document basis. As important an observation it is that all electronic text begins as voltage signals, it is not much more informative than stating that all printed text begins as ink.</p
+  ><p
+  >One goal of this paper is to push the boundaries of material analysis to include a detailed examination of surface text and the code used to generate it. In order to do so this paper will focus on the relationships of inputs and outputs in a generative design workflow, specifically the typesetting of the thesis itself. The variance of the chosen output formats in both typographic quality as well as compositional elements allows the interrogation of electronic text on a deeper level. This is not meant to be a simple features analysis. Rather, the goal is to develop a theoretical framework for discussing the separate layers of <em
+    >text</em
+    >, <em
+    >code</em
+    >, and <em
+    >type</em
+    > (as in typography). Without considering issues of presentation (type) or composition (code), a material analysis remains incomplete. In other words, there is a lot of room in Hayles' &quot;frothy digital middle&quot; for a deeper level of discussion (Hayles 2004: 75). This froth will be examined in light of the remediation theory provided by Jay David Bolter and David Grusin.</p
+  ></div
+><div id="research-questions"
+><h1
+  >Research Questions</h1
+  ><ul
+  ><li
+    ><p
+      >What are the qualities of a 'format' in relation to a 'medium'? Within computers, to what extent can a specific format yield the same effects/components of a medium?</p
+      ></li
+    ><li
+    ><p
+      >What does a material analysis of a <em
+	>generative process</em
+	> look like? If a text is merely an input in a process that yields specifically different outputs, what kind of materiality does it have?</p
+      ></li
+    ><li
+    ><p
+      >If typography has a material effect, on which layer does it operate? Should typography be incorporated into the material analyses of documents in the tradition of Hayles?</p
+      ></li
+    ><li
+    ><p
+      >What claims are made about computer typography? and what claims, if any, are specific open source software?</p
+      ></li
+    ></ul
+  ></div
+><div id="generative-design"
+><h1
+  >Generative design</h1
+  ><p
+  >Generative practices increasingly take a larger prominence in design workflows. &quot;The process is the product,&quot; declares the <em
+    >Conditional Design Manifesto</em
+    >. Employing the &quot;methods of philosophers, engineers, inventors and mystics,&quot; the four authors of the manifesto seek to abandon the idea of a product in favor of &quot;things that adapt to their environment, emphasize change and show difference&quot; (Maurer, et al.). The text is split into a prose introduction and three sections of manifesto-style declarative sentences: <em
+    >process</em
+    >, <em
+    >logic</em
+    >, and <em
+    >input</em
+    >. These are the governing principles of their proposed angle towards design.</p
+  ><p
+  >By focusing on process, the authors of the manifesto employ a conscious decision away from productized design. Process produces &quot;formations rather than forms&quot; and facilitates a search for &quot;unexpected but correlative, emergent patterns&quot; (Maurer, et al.). Logic is invoked as their method for &quot;accentuating the ungraspable&quot; and provides the means for designing the &quot;condtions through which the process can take place&quot;. Input is their &quot;material,&quot; and should come from the &quot;external and complex environment&quot;. It &quot;engages logic and influences the process&quot;</p
+  ><p
+  >The powerful Java-platform tool named Processing has become wildly popular amongst visualization designers. The demo scene has long employed generative techniques to instantiate complexity on-screen using as few as 4 kilobytes of compiled binary code. Video game design guru Will Wright's 2008 game <em
+    >Spore</em
+    > relies heavily on procedural generation. Many open-source (and, presumably, otherwise) projects generate their documentation using a combination of algorithm and in-code markup.<sup
+    ><a href="#fn2" class="footnoteRef" id="fnref2"
+      >2</a
+      ></sup
+    > Beyond this, Dutch designer Petr van Blokland has ceased using Adobe products in the design pipeline at his firm. By <em
+    >programming</em
+    > instead of <em
+    >hand-crafting</em
+    > Blokland is able to achieve a balance of control and flexibility that can support the kind of enormous workflow demanded by clients such as Rabobank.</p
+  ><p
+  >The case study at the core of this paper will explore these concerns as the materiality of the thesis itself remains ethereal. It is more than its input, it is more than its output: it is literally and figuratively very much a <em
+    >process</em
+    >.</p
+  ><p
+  >The substrate of the text you are reading right now is a simple formal markup language called Markdown. Originally written in Perl, it has spread to any language that ends up touching the web. This is due to its popularity as an approachable 'pre-formatting' markup language for operations, such as blog posts and comments, where HTML is the desired output but a simpler <em
+    >and more readable</em
+    > input is often preferrable. Using a 'wrapper' tool called <strong
+    >Pandoc</strong
+    >, the Markdown input is converted to HTML, ConTeXt, and OpenOffice.org Writer (ODT) formats. Through customizable templates, <strong
+    >Pandoc</strong
+    > provides a great deal of flexibility to the end-user.</p
+  ><div id="caveats"
+  ><h2
+    >Caveats</h2
+    ><p
+    >Florian Cramer offers a techno-musical analogy for generative design in the context of typesetting: TeX is to WYSIWYG typesetting as a player piano is to a piano under the fingertips of a real pianist (Cramer 2010). Cramer also Femke Snelting, of Open Source Publishing in Brussels, has mentioned &quot;showstopper&quot; issues facing the enactment of specific design goals in OSP's first project using ConTeXt (Snelting 2010).</p
+    ></div
+  ></div
+><div id="theoretical-perspectives"
+><h1
+  >Theoretical Perspectives</h1
+  ><p
+  >Without having a great deal of literature on &quot;formats&quot; to work with, I would like to assert that formats are sub-species of mediums. The sitcom is a television format, the action blockbuster a cinematic format, and the concrete poem a writing format. It is perhaps within the medium of the microcomputer, however, that the largest number of formats can be found. As a fully programmable medium, the microcomputer facilitates the development of an enormous number of formats. These formats can carry political and social significance, as in the case of HTML 5 and the debate over the use of the patent-encumbered h.264 codec versus the open-source, royalty free Ogg Theora format. In the case of computers, then, it is perhaps possible to assert that formats have a more distinct, medium-like dimension than formats in other media have.</p
+  ><p
+  >In his piece &quot;Media Cold and Hot&quot;, Marshall McCluhan argues that a medium's capacity to capture a sense defines, in some ways, its social effect. The state of the society to begin with is critical and will determine the nature of a new medium's impact. First it is important to establish what his scale is based on and how he establishes it. &quot;A hot medium is one that extends one single sense in 'high definion'. High definition is the state of being well filled with data&quot; (McLuhan 1964: 24). Hot media require little participation because they are so engrossing---their &quot;high resolution&quot; (to switch his phrasing a bit) doesn't provide or require extensive participation. Cool media, on the other hand, require a great deal of audience participation.</p
+  ><p
+  >In McLuhan's view, nationalism and religious wars in sixteenth century Europe were the result of a &quot;hotting-up&quot; of the medium of writing as it transitioned to print (25). Furthermore, &quot;a tribal and feudal hierarchy of traditional kind collapses quickly when it meets any hot medium of the mechanical, uniform, and repetitive kind&quot; (26). In this way media can be seen as highly influential, having the power to completely alter societies, as the introduction of the letter press and the subsequent collapse of Catholic hegemony in various parts of Europe.</p
+  ></div
+><div id="materialist-format-analysis"
+><h1
+  >Materialist Format Analysis</h1
+  ><p
+  >One of the primary objectives of this paper is to force integration of typographical design principles into a material analysis. Robin Kinross' argues that the first typographically modern typesetting began much earlier than what is now conisdered to be the modern era (Kinross).</p
+  ></div
+><div class="footnotes"
+><hr
+   /><ol
+  ><li id="fn1"
+    ><p
+      >This isn't to mention the confusion, from a programming perspective, of using the root words 'script' to refer to surface level and 'text' to refer to programmatic layers beneath that surface. This is counterintuitive to a tradition in which 'scripts' are written to deal with 'text' algorithmically. <a href="#fnref1" class="footnoteBackLink" title="Jump back to footnote 1">↩</a></p
+      ></li
+    ><li id="fn2"
+    ><p
+      >Indeed one of the available input formats (still) in consideration for this thesis is reStructuredText, the markup syntax which lies at the core of the Python programming language's online documentation. <a href="#fnref2" class="footnoteBackLink" title="Jump back to footnote 2">↩</a></p
+      ></li
+    ></ol
+  ></div
+>
+</body>
+</html>
+

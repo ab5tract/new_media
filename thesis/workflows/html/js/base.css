@@ -1,0 +1,26 @@
+body {
+	font-family : "Lib-R", serif;
+}
+
+h1[class="title"] {
+	font-size : 2.8em;
+	color : #910A00;
+}
+
+h1[class="author"] {
+	font-size : 1.8em;
+}
+
+h1[class="date"] {
+	font-size : 1.3em;
+}
+
+div[class="title_section"] {
+	padding-bottom : 4em; 
+}
+
+@font-face {
+	font-family : "Lib-R";
+	src : url(ttf/LiberationSerif-Regular.ttf) format("truetype");
+}
+

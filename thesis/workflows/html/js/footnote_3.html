@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+
+<title>Format sidenotes with Javascript &amp; CSS | brandspankingnew</title>
+
+
+<style type="text/css">
+
+
+body {
+	font-family: Lucida Grande, Arial, sans-serif;
+	font-size: 10px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	overflow-y: auto;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	color: #f30;
+}
+
+a:hover {
+	color: #fff;
+	background-color: #f30; 
+}
+
+#wrapper {
+	text-align: left;
+	padding: 10px;
+}
+
+#content {
+	width: 65%;
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+
+#content h1 {
+	font-size: 1.6em;
+	border-bottom: 1px solid #ccc;
+	padding: 5px 0 5px 0;
+}
+
+#content span.footnote {
+	color: #f30;
+}
+
+#content span.ftnlink {
+	vertical-align: super;
+	font-size: 0.8em;
+	cursor:help;
+}
+
+#footnotes {
+	position: fixed;
+	border-left: 1px solid #ccc;
+	top: 0px;
+	right: 0px;
+	width: 30%;
+	margin: 75px 10px 0 10px;
+	padding: 0 0 0 10px;
+}
+
+#footnotes div.footnote {
+	display: none;
+	margin: 0 0 5px 0;
+}
+
+</style>
+
+<!--[if IE]>
+<style type="text/css">
+
+html {
+	overflow-y:hidden;
+}
+
+#footnotes {
+	position: absolute;
+}
+</style>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+
+	var notes;
+	var active;
+	
+	function formatFootnotes(contID,noteID)
+	{
+		var cont = document.getElementById(contID);
+		var noteholder = document.getElementById(noteID);
+		var spans = cont.getElementsByTagName("span");
+		
+		notes = 0;
+		active = 0;
+		
+		for (i=0;i<spans.length;i++)
+		{
+			if (spans[i].className == "footnote")
+			{
+				notes++;
+				
+				// get content of span
+				var notetext = spans[i].firstChild.data;
+			
+			
+				// create a new div to hold the footnote
+				var newEle = document.createElement( "div" );
+				
+				newEle.appendChild( document.createTextNode( notes + ". " + notetext ) );
+				 
+        		noteholder.appendChild( newEle );
+        		noteholder.lastChild.id = "ftn"+notes;
+        		noteholder.lastChild.className = "footnote";
+        		
+        		
+        		
+        		// insert link into span
+				var newEle = document.createElement( "span" );
+        		
+				newEle.appendChild( document.createTextNode( notes ) );
+				
+        		spans[i].replaceChild( newEle, spans[i].firstChild );
+        		spans[i].firstChild.id = "ftnlink"+notes;
+        		spans[i].firstChild.title = "show footnote";
+        		spans[i].firstChild.className = "ftnlink";
+        		spans[i].firstChild.onclick = showFootnote;
+			}
+		}
+		
+		// hide button
+		document.getElementById("btn").style.display = 'none';
+		
+	}
+	
+	function showFootnote()
+	{
+		// get id of footnote
+		var id = "ftn" + this.id.substring(7);
+	
+		// hide active footnote
+		if (active)
+			document.getElementById(active).style.display = "none";
+		
+		active = id;
+		
+		// show new footnote
+		document.getElementById(active).style.display = "block";
+	}
+
+//]]>
+</script>
+
+</head>
+<body>
+
+<div id="wrapper">
+
+<div id="content">
+
+	<p><a href="http://www.brandspankingnew.net/archive/2005/07/css_footnotes_r.html">www.brandspankingnew.net</a></p>
+	
+	<h1>Sidenotes with Javascript &amp; CSS.</h1>
+
+	<p>
+	<input id="btn" type="button" onclick="formatFootnotes('content','footnotes')" value="reformat footnotes" />
+	</p>
+
+	<p>
+	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. <span class="footnote">This is a footnote.</span> Integer accumsan placerat magna. Duis tincidunt adipiscing mi. Mauris tincidunt, ante nec mollis consequat, nibh lectus consectetuer massa, vitae vestibulum nisl nunc dapibus sem. Suspendisse ligula dui, ornare et, vulputate eu, laoreet non, ligula. Suspendisse malesuada tincidunt tortor. Curabitur sagittis tristique diam. Cras sem wisi, tincidunt et, condimentum id, aliquam sed, velit. Phasellus sapien velit, tempor in, rhoncus sed, ultricies eget, urna. Cras orci neque, facilisis sit amet, iaculis ut, tristique vulputate, lorem. Vivamus pretium diam sed neque.
+	</p>
+	
+	<p>
+	Phasellus tortor odio, convallis sit amet, consequat id, eleifend vitae, lorem. Proin vitae nibh. Nulla velit felis, condimentum sit amet, luctus eu, auctor ut, quam. <span class="footnote">Sed molestie. In nibh risus, aliquet in, sodales id, imperdiet sit amet, risus.</span> Sed eros ante, malesuada non, varius ornare, porttitor lobortis, ligula. Vivamus semper arcu a nibh. Mauris congue, eros quis ullamcorper dapibus, pede justo rhoncus urna, sit amet sollicitudin sapien velit quis ante. Donec rutrum blandit ligula. Aliquam id nibh. Mauris metus nulla, dapibus ut, iaculis vitae, tincidunt in, metus. Phasellus vestibulum.
+	</p>
+	
+	<p>
+	Quisque elementum massa vitae ante. Aenean in diam. Nam non metus. Proin dapibus enim in diam. Phasellus et eros non dui interdum aliquam. Integer eleifend venenatis tortor. Suspendisse potenti. In a arcu. Praesent hendrerit enim ut tellus molestie dictum. Morbi mattis, ipsum ac tempus imperdiet, purus neque hendrerit augue, nec suscipit sem tortor sed tortor. Maecenas et nunc non ante sollicitudin commodo. Ut felis. Nam euismod tortor sed lorem. Pellentesque pharetra. Praesent vel risus. Aliquam erat volutpat. Vivamus porttitor metus in augue. Nullam id mi vel ligula imperdiet tristique. Suspendisse ante elit, volutpat eu, fringilla et, dictum vitae, nunc.
+	</p>
+
+	<p>
+	Aenean lacus metus, pulvinar sed, consectetuer eget, tempor ut, enim. <span class="footnote">Praesent porta, odio ac commodo pulvinar, wisi risus interdum tellus, vel facilisis nunc sem et elit. Curabitur placerat interdum felis.</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent eleifend magna vitae ligula gravida tristique. Vivamus bibendum odio ac enim. Donec sagittis auctor libero. Sed metus arcu, accumsan eget, dapibus et, lobortis quis, dolor. Etiam nec lectus sed ipsum facilisis mattis. Morbi non ligula quis pede fringilla egestas. Donec vitae enim ac lorem consectetuer pulvinar. Praesent vitae orci id metus adipiscing fringilla. Mauris gravida lorem quis diam. Nunc non massa aliquam pede iaculis condimentum. Vivamus tincidunt. Quisque ornare orci ac massa. Ut malesuada condimentum lectus. Proin vitae sapien ac eros vulputate ultrices.
+	</p>
+
+	<p>
+	Fusce aliquet ante sed pede. Vivamus vitae nibh. Nulla est lacus, consequat ut, interdum ut, ullamcorper at, enim. Duis placerat sem sed mauris. Donec in odio. Nulla a erat ut diam eleifend tempor. Aenean vel magna nec metus vestibulum vestibulum. Nam ac orci varius lorem ultrices aliquam. Praesent gravida, quam at hendrerit rutrum, quam pede iaculis sem, eget sodales risus risus iaculis risus. Morbi mattis mauris.
+	</p>
+
+</div>
+
+
+<div id="footnotes"></div>
+
+
+
+</div>
+
+</body>
+</html>

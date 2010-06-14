@@ -1,0 +1,363 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=blue] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[Liberation-Serif]
+\setmonofont[inconsolata]
+
+\setuppapersize[A4][A4]  % use letter paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+\setuppagenumbering[location={footer,right}]  % number pages
+\setupbodyfont[12pt]  % 11pt font
+\setupwhitespace[small]  % inter-paragraph spacing
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\tfc]
+\setuphead[subsection][style=\tfb]
+\setuphead[subsubsection][style=\bf]
+
+% define descr (for definition lists)
+\definedescription[descr][
+  headstyle=bold,style=normal,align=left,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+\protect
+
+\starttext
+
+\subject{Introduction}
+
+Today's new media theory increasingly invokes {\em materiality} as
+a significant, perhaps even {\em the} significant, mode of
+investigating digital objects and the media through which they are
+delivered. This thesis questions such a centrality of materiality
+through a practice-based, process-oriented approach. {\em Process}
+is proposed as the atomic unit of that which new media theory
+investigates. A process-oriented approach will be shown to provide
+superior methodologies for engaging with and understanding software
+than material analysis alone provides. For instance, certain
+problematics within Lev Manovich's concept of
+\quote{media hybridity} will be resolved by a re-orientation
+towards process (Manovich 2008). Process also allows a fresh
+perspective for examining human-digital relations. Human processes
+and digital processes are seen as inextricably intertwined, leaving
+any discussion of digital process that excludes relevant dimensions
+of human process necessarily unfinished.
+
+The method proposed to demonstrate these points is two-fold. The
+first is a mhistiographic approach, while the second is a detailed
+interrogation of actual practice. The focus of both the
+historiography and the practice is the topic of
+{\em digital typesetting}. This topic was chosen for several
+reasons. The first is a general lack of focus on the processes
+behind typesetting among new media theory. The second is the
+general lack of media hybridity of typesetting---according to
+Manovich's definitions of the terms, typesetting has failed to move
+beyond \quote{multimedia} to a state of \quote{media hybridity}
+(this is opposed to typography, which undoubtedly has). This allows
+us to not only interrogate this distinction but to question what
+barriers may cause such a relative rigidity in the first place. The
+third aspect is the allowance of a truly reflexive investigation in
+which multiple processes of digital typesetting are utilized to
+generate the thesis itself. This provides a means to integrate the
+process-oriented perspective into a software study of FLoSS
+typesetting software.
+
+\subsubject{Screens}
+
+As digital typesetting provides the focus for the application of
+the process-oriented perspective, the point of origin is
+necessarily that of the screen. Information transmission is
+increasingly screen-based, a fact that only intensifies with the
+exponentializing ubiquity of mobile devices such as the iPhone. The
+long-awaited advent of cheap \quotation{tablet} computers and
+e-readers is also now at hand. These devices may all be seen as
+mediums for {\em screenic processes} in that their entire
+configuration and all of its computation exists to serve as the
+basis for screenic interactions with {\em human processes}. These
+phrasings introduce the perceptual angle attendent with this
+thesis, namely the centering of {\em process} as the atomic unit of
+what is discussed in new media theory. The term {\em screenic}
+simply means \quote{screen-based,} or perhaps
+\quote{screen-native.} It is analagous to \quote{printed.}
+
+One way to define screens is in terms of their interactivity. Some
+screens, such as television screens, offer very limited
+interactivity: the choice of content. This choice itself can be
+constrained by varying degrees, such as the number of available
+channels and playback formats (VHS, DVD, Xvid, etc.), even to the
+point of disappearing (in the case of many televisions that appear
+in public spaces).
+\footnote{Mobile devices are beginning to ship IR transeivers with full
+hardware access through software. That is, the
+{\em entire potential} of the IR spectrum is available to them.}
+The medium of the remote control should not be underestimated in
+its effects on human processes, to say nothing of the screens at
+which they are aimed. Indeed, they drive the interactivity of the
+video game consoles, an interactivity that clearly represents the
+cultural cutting edge of what a television screen can offer.
+
+The computer screen, on the other hand, is defined by its seemingly
+limitless degree of interactivity. Remote controls can be run as
+screenic processes and can not only change television
+channels---processes on remote systems can be controlled with
+similar ease. Indeed, the entire screenic composition of one
+computer can be controlled over a network by a second computer
+using included, or easy to obtain, applications. Furthermore, the
+very interfaces to the screen (keyboards and mice) are examples of
+remote controls in cases where the screen has not itself become its
+own remote control (touch-screen devices). Typically the only
+element of a computer screen that the user does not effectively
+control are the structure and visual language of an operating
+system's graphical user interface (GUI). Even this, however, is
+generally accomplishable by a significantly informed user. In the
+case of GNU/Linux the task is not only accomplishable: in the case
+of a \quotation{from scratch} installation,
+\footnote{Such as is demanded by no-frills distributions such as Gentoo and
+ArchLinux, where manual installation and configuration of a GUI is
+required for use.}
+the user is literally forced to make a choice of GUI structure and
+visual styling. Microsoft has generally shipped their operating
+systems with multiple choices for widget
+\footnote{A widget is the technical term for a GUI element. Scrollbars,
+titlebars, menus, and close/minimize/maximize buttons are widgets
+attached to most of the \quotation{windows} that appears on any
+given GUI-driven computer.}
+presentation, including re-mediations of widgets from previous
+versions of Windows. Users also developed Apple, however, maintains
+strict control of widget presentation, especially on their mobile
+devices.
+
+\subsubsubject{Screens as material, screens as process}
+
+Screens offer an ideal point of juxtaposition between the material
+and processual frames. From a material view, the very formulation
+of \quotation{screens} as {\em the} interface between humans and
+computers is problematic: what of the interfaces that have been
+developed to work around instances of blindness or other
+[disabilities] that prohibit visually screenic interaction?
+
+From a processual orientation, the question becomes: how do
+interactions between humans and computers resolve themselves? The
+answer returns in the form of the {\em available} remote controls
+and the {\em available} response interfaces. The next step might be
+to investigate the degree of variance between these availabilities,
+and whether they problematize any umbrella-classification. While it
+would be insensible to argue that material differences in inputs
+and outputs can---or do---not lead to a huge amount of variation
+between experiences within humans.
+
+At this point the question becomes, then, whether it is necessary
+to instantiate these inherent divergences in every evocation of a
+broad level discussion of input and output mechanisms or whether
+the inherent, {\em core} similarity between them all remains that
+in all instances they serve as {\em the point of contact} between
+human and digital processes. Does it make a processual difference
+if the output technology is a braille screen or an LCD screen? Only
+inasmuch as to what degree the process being examined is unique to,
+or highlights differences between, one or the other. From a
+discursive level, {\em controls} and {\em screens} can capture the
+essence of these dual \quotation{action spaces} that together form
+the single point of contact between human and digital process.
+
+[Is it possible to remediate of the term screen into discussions of
+previous mediums? For instance could one speak of the
+\quotation{screen} of a newspaper or the \quotation{screen} of a
+cave wall? What about the \quotation{screen} of a radio? From a
+linguistic-conceptual perspective the final example certainly
+pushes the limits. From a process perspective, though, the presence
+of the radio/what it is playing/what listening choices are
+available/how and to what degree does the hardware support
+frequency tuning: these questions can all be conceived in terms of
+\quote{control} and \quote{screen.} The sounds of a radio do emit,
+after all, from the vibrations of a stretched membrane.]
+
+\subsubject{From Screens to Text}
+
+To discuss computer screens one must necessarily engage with the
+concept of {\em interface}, a topic that rightfully occupies a
+great deal of current new media discourse. Interface, then,
+represents one point of departure from our origin. While interfaces
+often utilize many visual metaphors (most of them inherited from
+the work done developing the first GUI at Xerox's Palo Alto
+Advanced Research Lab (PARC) in the 1970s), there are yet few
+computer interfaces that do not rely on text as their dominant
+mechanism for organizing and presenting a program's internal
+capabilities to a user. (Mobile screens, on the other hand,
+increasingly display developing trends of icon-only design, though
+the web browser remains a popular application). Despite the success
+of the GUI over the text-only command-line interface (CLI), text
+remains central to contemporary experiences of computer screens.
+
+The centrality of text to the experience of computer screens
+represents the main avenue by which we proceed from the origin,
+constituting a trunk from which many additional concerns fork away
+and then face examination. The arguments of the paper are augmented
+by the inclusion of a historiography of digital typesetting.
+Engaging critically with the history of {\em software itself} is
+proposed as a requisite for responsible software studies: a full
+range of influences (economic, cultural, technological) should be
+considered in the re-telling of a given processual unfolding.
+Inspiring this enagement is the work of Robin Kinross, whose
+{\em Modern typography: an essay in critical history} is one of but
+a few texts covering a history of typography to adequately engage
+with the influence of factors outside of the field on the field
+itself (Kinross 2004). By integrating a critical history of digital
+typesetting with a process perspective, an equilibrium between
+human and digital processes will be illustrated.
+
+Another importannt element of this thesis, one that runs throughout
+the entirety of itself, is the underlying presentation of the text.
+Through the utilization of FLoSS software, multiple output formats
+will be not only be investigated but also materially instantiated.
+These output formats represent the top three (open) interfaces
+currently used to manage and display texts digitally: HTML, PDF and
+OpenOffice.org's ODT (Do we need ODT? I'm thinking not. It can be
+excluded as anathemic form of digital process---it's WYSIWYG
+interface does not make it an optimal format for an investigation
+in generativity).
+
+The process(es) of their generation offers an attempt at mapping
+Gilbert Simondon's language of ontogenesis onto file format
+translation or, to begin the project immediately,
+{\em individuation}. Coupled with Simondon's individuation is the
+concept of {\em transduction}, which concerns itself with the
+nature of change.
+
+This relates with the increasingly generative nature of
+contemporary design. All of which are generated from a plain-text
+file whose syntax conforms to a format standard called
+\quote{markdown.} The polycephalous nature of {\em the text itself}
+thus demands further branching into a discussion of formats. What
+are the attributes of the class of process to which formats belong?
+Formats are seen as stable, yet they move like glass (or glaciar)
+in the nano-magnitudes of the digital. Formats provide another
+point of contrast between process and material perceptual
+orientations.
+
+The discussion of generativity provides further means to
+demonstrate the equilibrium of human and digital processes.
+Analyzed materially, these processes are chunks of code
+electronically lifted from hard drive platters, loaded into system
+memory, and then executed via the assemblage of chips on the
+computer's motherboard by way of instructions from the operating
+system currently residing as a mass of memory heaps in RAM chips.
+Analyzed {\em processually}, however, these digital processes are
+properly seen as deriving from interactions with human beings. That
+is to say, digital and human processes are intimately intertwined,
+from the design of their physical landscape of execution
+(microcircuitry) to the instructions derived from the user. From a
+process angle the computer becomes something of an external nervous
+system, extending and modifying the realm of human potentiality
+even as it surpasses the capacity of a single mind to functionally
+comprehend the entirety of its workings.
+\footnote{The chips produced by Intel, for example, are too complex for any
+single person to ever hope to entirely understand (!CITE!).}
+
+The design world is increasingly dominated by generativity.
+
+\subsubject{Remote Controls, or: the Epitome of Cool Media?}
+
+Is it possible to take the remote control and use it to create a
+metaphor for all human-computer interaction?
+
+Every digital process has, at its origin, a human. The rate of
+computation has increased the impact of human-digital processes in
+that the results deliver their results faster. The results will
+either match the intentions of the originating human process, or
+they will not. In the second case we can find the first evidence of
+the effects of digital process on human process:
+{\em the code behind the digital process will be re-arranged in an attempt to deliver an output that satisfies the intention of the human processes.}
+Whether this modulation of the executed code is through
+sliders/input boxes/etc within a GUI interface or through direct
+reworking of the source code itself, the effect is the same: the
+code executed has been re-configured according to the goal of human
+process. The result(s) of the digital process, experienced through
+a screen, can match, exceed, or fail this goal. In turn, human
+process is effected and the next move is made according to new
+goals or revised digital processes.
+
+Video games, for example, can easily be represented by this model.
+Human process is obviously shaped by digital at the outset: there
+are a finite number of actions that a game offers within its
+context. In addition, these actions are often presented as pre-set
+mappings of action to controller button.
+
+\subsubject{Recognizing the Ontogenesis in Generativity}
+
+In his text {\em The Position of the Problem of Ontogenesis},
+Simondon writes,
+
+By transduction we mean an operation---physical, biological,
+mental, social---by which an activity propagates itself from one
+element to the next, within a given domain, and founds this
+propagation on a structuration of the domain that is realized from
+place to place: each area of the constituted structure serves as
+the principle and the model for the next area, as a primer for its
+constitution, to the extent that the modification expands
+progresively at the same time as the structuring operation.
+(Simondon 2009: 11)
+
+The idea of transduction is tied to Simondon's solution for the
+problematic of {\em individuation}, a long-standing issue in
+discussions of ontogenesis.
+
+Note the distinct lack of \quote{computational} in Simondon's list
+of operations. Written prior to the advent of Manovich's
+formulation of the age of cultural computing, this absence might
+simply be read as a matter of temporal context. Nevertheless,
+Simondon's solution to the ontogenesis problematic provides a
+framework for describing digital processes of a generative nature.
+
+\subsubject{Attributes of Process}
+
+Process is reflective. It's outputs reflect its inputs.
+Additionally, process reconfigures the metapotential in any given
+system. It's reflectivity, then, has material effect. As it
+reflects the inputs into the outputs, the outputs in turn reflect
+new (or else simply different) potentials back into the landscape
+which receives input.
+
+A new configuration of metapotential in any system results in the
+reconfiguration of (all) other systems as well. This fact reflects
+the {\em fractal} nature of process---there is a degree of
+non-reducibility inherent in any (description of?) process.
+
+\subsubject{Screens as the Site of Digital-Human Process}
+
+\stoptext
+
