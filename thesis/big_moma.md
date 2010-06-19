@@ -49,7 +49,7 @@ The design world is increasingly dominated by generativity.
 
 ### Print is (meta)static, code is (meta)process ###
 
-The flat/deep distinction proposed by Hayles is, by its formualtion, material. Problematizing this material focus is the interwoven nature of print and code. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process. This non-reducibility of typesetting reflects the non-reducibility of language, as well as the non-reducibility of language into the very concepts which it has developed through attempts to describe.
+The flat/deep distinction proposed by Hayles is, by its formualtion, material. Problematizing this material focus is the interwoven nature of print and code. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process. This non-reducibility of typesetting reflects the non-reducibility of computational processing of language, as well as the non-reducibility of language into the very concepts which it has developed through attempts to describe.
 
 [Florian Cramer goes here!!]
 

@@ -24,6 +24,8 @@ Hayles, N. Katherine. (2004) "Print is Flat, Code is Deep: The Importance of Med
 
 Hayles, N. Katherine. (2008). _Electronic Literature: new horizons for the literary_. Notre Dame: University of Notre Dame. Print.
 
+Kay, Alan and Adele Goldber. (1977). "Personal Dynamic Media". From the collection _The New Media Reader_, edited by Noah Wardrip-Fruin and Nick Montfor, 2003. Cambridge: MIT Press. PDF. <[http://www.newmediareader.com/book_samples/nmr-26-kay.pdf](http://www.newmediareader.com/book_samples/nmr-26-kay.pdf)> (last accessed 15 June 2010).
+
 Kinross, Robin. (2004). _Modern typography: an essay in critical history_. London: Hyphen Press. Print.
 
 Knuth, Donald. (1984). _The TeXBook_. Massachusetts: Addison-Wesley. Print.
@@ -31,6 +33,8 @@ Knuth, Donald. (1984). _The TeXBook_. Massachusetts: Addison-Wesley. Print.
 Knuth, Donald. (1999). _Digital Typography_. Stanford: CSLI. Print.
 
 Manovich, Lev. (2001). _The Language of New Media_. MIT Press: Cambridge. Print.
+
+Manovich, Lev. (2008). _Software Takes Comman_. MS Doc manuscript, published online 20 November 2008. <[http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.doc](http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.doc)> (last accessed 15 June 2008).
 
 Rosenberg, Scott. (2008). _Dreaming in Code_. New York: Three Rivers Press. Print.
 
