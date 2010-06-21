@@ -1,4 +1,4 @@
-﻿# Generative Design in the Context of Process #
+# Generative Design in the Context of Process #
 
 The design world is increasingly integrating generative approaches to their workflows. As Lev Manovich notes, the program Processing is gaining an increasing degree of marketshare among designers---in fact, Manovich singles out Processing as "coming close to [Alan] Kay's vision" of an easy-to-use programming environment  that allows users to "develop complex media programs and also to quickly test out ideas" (Manovich 2008: 79-80).
 
@@ -21,7 +21,7 @@ Object-oriented programming, though, represents an even larger shift in the pote
 
 The last attribute of Smalltalk on this list, its _reflectivity_, simply means that every object can explain its own properties, i.e. which "methods" (blocks of code oriented towards performing a specific task) it provides, what variables it is keeping track of, etc. The result is that "objects can easily be inspected, copied, (de)serialized and so on with generic code that applies to any object in the system" (_Smalltalk_ 2010). This capacity for writing "generic" code once again has a positive impact on programmer productivity, as demonstrated by Kay and Goldberg's description of a hospital simulation designed to be able to compute "any hospital configuration with any number of patients" in their ground-breaking essay presentation of their work, "Personal Dynamic Media" (Kay and Goldberg 1977[^kg]: 400).
 
-[^kg]: The page numbers refer to the article's position within _The New Media Reader_, published in (!CITE!). The original date of publication has been maintained in order to respect the publication's true chronological position in computer history.
+[^kg]: The page numbers refer to the article's position within _The New Media Reader_, published in 2003. The original date of publication has been maintained in the in-line citations in order to respect the publication's true chronological position in computer history.
 
 This digression into the specific mechanisms by which Smalltalk eases the tasks of programming highlights the focus of Kay and his group (the Learning Research Group) at Xerox PARC. The intentions of their research--as Kay says in a passage quoted earlier--was a paradigm shift on the level of the printing press. Given the degree to which the mechanics of contemporary computing received their "start" within the Learning Research Group as well as the pervasive impact of that contemporary ("cultural") computing, it can reasonaly be said that they achieved this goal. Further testament to the success of their system was the fact that "children really can write programs that do serious things" (Kay and Goldberg 1977: 394). Indeed, a "young girl, who had never programmed before, decided that a pointing device _ought_ to let her draw on the screen. She then built a sketching tool without ever seeing ours" (399).
 
