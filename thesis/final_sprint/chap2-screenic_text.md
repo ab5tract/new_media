@@ -1,6 +1,6 @@
 # Screenic Text #
 
-## Text as Interface/Text as Process ##
+# Text as Interface/Text as Process #
 
 The command-line interface (CLI), once a culturally universal site of intersection between human and digital process, has found itself virtually superceded by the visually metaphoric instrumentation of the graphical user interface (GUI). The mechanism of this transition from CLI to GUI within mainstream computing was the introduction of Microsoft Windows into the ecosystem of IBM-compatible PCs. For almost two decades consumer versions of Windows, however, were "DOS front-ends" that could not function without real, historical dependencies fulfilled by the presence of DOS deep within the guts of the operating system. Windows 1.0, for instance, used DOS's file operation functions (_Windows 1.0_ 2010). This dependency on DOS recedes over time, eventually disappearing entirely in Windows XP, in which the DOS interface and functionality still exists but has migrated out of the substrate and into a virtual machine (_Windows XP_ 2010).
 
@@ -14,9 +14,7 @@ In this text, titled ¨In the beginning was the command line,¨ Neal Stephenson 
 
 Text, as the least abstracted of the available sites of symbol translation between digital binary forms (which can be considered the text of a different alphabet) and human process, is the formal level of computing. As such, the general non-consideration of the command-line interface in new media discourse is a disservice to the metamedium with which much of that discourse concerns itself.
 
--- http://garote.bdmonkeys.net/commandline/index.html
-
-One of the angles by which the CLI is even approached, yet still not engaged, are discussions of code poetry. Florian Cramer provides a step by step engagement with computation both within digital contexts and written language that leads to an important insight:
+One of the angles by which the CLI approached--tangentially--are discussions of code poetry. Florian Cramer provides a step by step engagement with computation both within digital contexts and written language that leads to an important insight:
 
   The cultural history of computation shows that it is as rich and contradictory as that of any other symbolic form. It encompasses opposites, algorithms as a tool versus algorithms as a material of aesthetic play and speculation, computation as inner workings of nature (as in Pythagorean thought) or God (as in Kabbalah and magic) versus computation as culture and a medium of cultural reflection (starting with Oulip and hacker cultures in the 1960s), computation as a means of abolishing semantics (Bense) versus computation as a means to structure and generate semantics (as in Lullism and Artificial Intelligence), computation as a means of generating totality (Quirinus Kuhlmann) versus computation as a means of taking things apart (Tzara, cut-ups), software as ontological freedom (GNU) versus software as ontological enslavement (Netochka Nezvanova), ecstatic computation (Kuhlmann, Kabbala, Burroughs) versus rationalist computation (from Liebniz to Turing) versus pataphysical computation as the parody of both rationalist and irrationalist computation (Oulipo and generative psychogeography), algorithm as expansion (Lullism, generative art) versus algorithm as constraint (Oulipo, net.art), code as chaotic imagination (Jodi, codeworks) versus code as structured description of chaos (Tzara, John Cage).
   
@@ -26,8 +24,11 @@ This contradictory nature envelops the command line as well. A tool at once more
 
 will erase the entire contents of that Unix´s filesystem from the hard drive. The code for `rm` loaded into memory survives to delete itself from a core component of its materiality, that is, the raw 1s and 0s on the magnetic platters that constitute the persistent body of the command. It will not, however, survive the reboot inevitably awaiting such a fubar´d system.
 
+## Remediation and the Command Line ##
 
-## Language is Programming ##
+While the modern command line can easily be considered a remediated teletype machine, it is crucial to note that the commands available at the prompt _re-mediate nothing_. All commands on the prompt are 
+
+# Language is Programming #
 
 In their book _The Alphabetization of the Popular Mind_, Ivan Illich and Barry Sanders write of the dimensionality that phonetic alphabets introduce to words. For them, "language" does not proceed our capacity to store representations of words as sounds:
 
@@ -45,7 +46,8 @@ Florian Cramer provides an important perspective when he notes ¨the technical p
 
 The connection to magic is instantiated culturally in the language of the hacker class. Firstly, in the formulation of the individual command-line entry as an  `invocation.´ This recognition is important, for text has never been so kinetic as it is on the command line. From the literally typed input of the teletype machines to the virtual terminals with transparent backgrounds and multi-aphabet encoding running in a GUI, the textual input of the command-line represents a site of language that promotes words from their status as _signifiers of meaning_ to become _signifiers of action_. Not merely the description (evocation) of action, but the literal _invocation_ of action through words.
 
-## Language adds dimensions ##
+
+# Language adds dimensions #
 
 Language can be conceived as a 'program' for decoding the strings of symbols we call an alphabet into the meaning those symbols were arranged in order to convey. Language is thus adding the dimension of meaning to the digital code of the alphabet. Contrary to the popular misconstruing of 'digital' with 'binary', the term 'digital' just means a system with discrete units capable of formally representing some _thing_. For instance, alphabets are utilized for calculations in some fields of informatics. Likewise, characters of the alphabet are used to stand in for entire mathematical algorithms in the case of physics. Due to the discrete jumps between characters, they are utilizable for computation as well as representation (one could even argue that there is a computation occuring in the decoding of the representation from signifier to signified). 
 

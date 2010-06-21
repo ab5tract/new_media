@@ -60,16 +60,17 @@ The process(es) of their generation offers an attempt at mapping Gilbert Simondo
 This relates with the increasingly generative nature of contemporary design. All of which are generated from a plain-text file whose syntax conforms to a format standard called 'markdown.' The polycephalous nature of _the text itself_ thus demands further branching into a discussion of formats. What are the attributes of the class of process to which formats belong? Formats are seen as stable, yet they move like glass (or glaciar) in the nano-magnitudes of the digital. Formats provide another point of contrast between process and material perceptual orientations.
 
 The discussion of generativity provides further means to demonstrate the equilibrium of human and digital processes. Analyzed materially, these processes are chunks of code electronically lifted from hard drive platters, loaded into system memory, and then executed via the assemblage of chips on the computer's motherboard by way of instructions from the operating system currently residing as a mass of memory heaps in RAM chips. Analyzed _processually_, however, these digital processes are properly seen as deriving from interactions with human beings. That is to say, digital and human processes are intimately intertwined, from the design of their physical landscape of execution (microcircuitry) to the instructions derived from the user. From a process angle the computer becomes something of an external nervous system, extending and modifying the realm of human potentiality even as it surpasses the capacity of a single mind to functionally comprehend the entirety of its workings.[^4]
-[^4]: The chips produced by Intel, for example, are too complex for any single person to ever hope to entirely understand (!CITE!).
-The design world is increasingly dominated by generativity.
+
+[^4]: The chips produced by Intel, for example, are too complex for any single person to ever hope to entirely understand.
+
+
 
 ### Print is (meta)static, code is (meta)process ###
 
-The flat/deep distinction proposed by Hayles is, by its formualation, material. Problematizing this material focus is the interwoven nature of print and code. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process (NP-Incomplete). This non-reducibility of typesetting reflects the non-reducibility of computational processing of language, as well as the non-reducibility of language into the very concepts which it has developed through attempts to describe.
-[Florian Cramer goes here!!]
+The flat/deep distinction proposed by Hayles is, by its formualation, material. Problematizing this material focus is the interwoven nature of print and code. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process (NP-Complete). This non-reducibility of typesetting reflects the non-reducibility of computational processing of language, as well as the non-reducibility of language, as signifier, into that which is actually signified. This "turtles all the way down" scenario has intriguing implications from a process perspective as we investigate the methods that have been developed in order to work around this non-reducibility. 
 
 
-## Remote Controls, or: the Epitome of Cool Media? ##
+## Remote Controls ##
 
 Is it possible to take the remote control and use it to create a metaphor for all human-computer interaction?
 
@@ -90,10 +91,49 @@ Note the distinct lack of 'computational' in Simondon's list of operations. Writ
 
 ## Attributes of Process ##
 
-It needs to be asserted that I am willingly engaging in my own appropriation of the term 'process.' As the process oriented perspective arose under the looming shadow of the draft deadline, I admit to a lack of historical perspective on the use of this word in either new media or other contexts. Withstanding that, however, I sense a real applicability of this term in the discourse of new media. I'm looking forward to working on the final draft and using some of that time to build a historical perspective for this shift to process.
+[It needs to be asserted that I am willingly engaging in my own appropriation of the term 'process' outside of any traditions other than my own. As the process oriented perspective arose under the looming shadow of the draft deadline, I admit to a lack of historical perspective on the use of this word in either new media or other contexts. Withstanding that, however, I sense a real applicability of this term in the discourse of new media. I'm looking forward to working on the final draft and using some of that time to construct historical perspective for this shift to process. One important angle is Ned Rossiter's work on "Processual Media Theory" in his book _Organized Networks_ (Rossiter 2007: 166-192), which this draft does make use of but which I would like to interweave more deeply. As it stands, this introduction was left relatively alone for the sake of fleshing out the middle part of this thesis. This was at the suggestion of the second reader.]
 
 Process is reflective. It's outputs reflect its inputs. Additionally, process reconfigures the metapotential in any given system. It's reflectivity, then, has material effect. As it reflects the inputs into the outputs, the outputs in turn reflect new (or else simply different) potentials back into the _context_ which is the reciprocal contact point in which the processes began. This language is extrapolative into any set of intersections. This paper considers just the subset of human-digital recipricity, and within the relatively static domain of typesetting.
 
 A new configuration of metapotential in any system results in the reconfiguration of (all) other systems as well. This fact reflects the _fractal_ nature of process--there is a degree of non-reducibility inherent in any discussion of process, as ultimately certain factors in its functioning are unknown to us.
 
-## Screens as the Site of Digital-Human Process ##
+## Why free software? ##
+
+There are multiple points of consideration that lead me to concentrate on free software. The first is its relative lack of presence within new media circles. Time and again I arrive at a conference only to see a room full of computers booted into proprietary operating systems. While I am not a 'zealot' who disavows any potential use or need for proprietary software, I find the general population of new media's reliance on proprietary operating systems--chiefly, by way of personal and anecdotal evidence, Mac OS X--disturbing. Hans Magnus Enzensberger outlined in his "Constituents of a Theory of the Media" the importance of issues of control with relation to mediums. Let us move through the juxtaposed elements of repressive versus emancipatory uses of media which Enzensberger provides and interrogate them in relation to Mac OS X and GNU/Linux (Enzensberger 1970: 269):
+
+_Repressive versus Emancipatory_
+
+Centrally controlled program vs. Decentralized program
+
+:	This question is answered by asking the question: "Where is the source code of the operating system?"
+	In the case of OS X, the source code resides only within the confines of Apple's corporate computers. It is likely heavily guarded by multiple mechanisms. Whereas in the case of GNU/Linux, the operating system source code is spread across dozens of mirrors on the Internet as well as the computers of programmers and users around the world. Each of these copies can be readily modified to the designs of any given user, demonstrating decentralized (in fact, distributed) control. Apple maintains sole, central control of the code and thus fully determines the functional possibilities of the operating system.
+
+One transmitter, many receivers vs. Each receiver a potential transmitter
+
+:	This is already demonstrated above: the code for GNU/Linux is globally distributed across hundreds of thousands of computers. Each one of these has the ability to modify the software and share those modifications with anyone who will listen. OS X can be modified by no one.
+
+Immobilization of isolated individuals vs. Mobilization of the masses
+
+:	OS X encourages the use of proprietary applications. These applications have restrictive license that generally allow only one individual the right to run the application. GNU/Linux, meanwhile,
+
+Passive consumer behavior vs. Interaction of those involved, feedback
+
+:	A major advantage for both users and developers in a free software ecosystem is the feedback that occurs between them. Users may suggest new features at any time. If they have the skill and/or time, they can add these features themselves. If the addition of the features is contentious in any way, the contributer can simply fork the codebase and continue evolving the software in new directions.
+	In OS X, you run the binaries you are given.
+
+Depoliticization vs. A political learning process
+
+:	Mac OS X is pro-capitalist and promotes consumer culture. It can probably be said that it is politically "neutral" in its codedness, but this very codedness remains obfuscated and proprietary. GNU/Linux, in conservative judgment, at least does not actively promote consumerism. In an idealistic formulation, it destabilizes the capitalist ecosystem.[^untenable] It's politics are as multifaceted as its user base.
+	In its well-deserved reputation as 'taking some work to make it work,' GNU/Linux forces its users to become active in the system's administration. This induced learning of (one approach) to computer systems could be said to have political dimension.
+
+[^untenable]: It is important to note that free software also plays a significant role in supporting this infrastructure, as the license provides no recourse on the terms of the softwares use (Pasquinelli 2008).
+
+Production by specialists vs. Collective production
+
+:	This seems self-explanatory.
+
+Control by property owners or bureaucracy vs Social control by self-organization
+
+:	Are you getting the picture?
+
+Aymeric Mansoux, also of the Networked Media design faculty at the Piet Zwart Institute, describes the critical engagement in the error message, common to GNU/Linux distributions, found in the Totem media player program complaining of a missing codec library that is required to decode common patent-encumbered media formats such as MPEG-Layer 3 (Cramer, Mansoux, and Murtaugh 2010).

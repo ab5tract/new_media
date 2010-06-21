@@ -1,10 +1,10 @@
-# Generative Design in the Context of Process #
+# Substrates of Digital Process #
 
-The design world is increasingly integrating generative approaches to their workflows. As Lev Manovich notes, the program Processing is gaining an increasing degree of marketshare among designers---in fact, Manovich singles out Processing as "coming close to [Alan] Kay's vision" of an easy-to-use programming environment that allows users to "develop complex media programs and also to quickly test out ideas" (Manovich 2008: 79-80).
+In his outlining of the nature of a 'processual media theory,' Ned Rossiter asserts that "a processual media theory examines the tensions and torques between that which has emerged and conditions of possibility; it is an approach that inquires into the potentiality of motion that underpins the existence and formation of a system" (2007: 178). To that end I have deemed it important to begin at "a basis" of digital process as it stands today. Computers have multiplexed dependencies. The hardware is virtually non-functional without an operating system. Likewise operating systems, like all software, are non-functional, even "non-existent," without the presence of hardware. As the coded substrate for software, the operating system provides the sites of intersection between human and digital process.
 
-## The Programmer and the Designer ##
 
-### Alan Kay and `Metamedium´ Vision for Personal Computing ###
+
+# Alan Kay and a `Metamedium´ Vision for Personal Computing #
 
 In his text _Software Takes Command_, it is Manovich's inclination to focus on the work of Alan Kay at Xerox PARC when discussing the development of _cultural software_. He notes that there are multiple entry potential entrypoints for consideration: the work of Douglas Englebart and his team, the development of the LINC computer at the MIT´s Lincoln Lab, and Donald Sutherland´s SketchPad. The development of the Xerox Alto, however, is unique in multiple ways. First and foremost is the architecture of the software: by developing and employing an object-oriented approach to software design, users were positioned as inventors of new media through their ability to design their own interfaces that both enabled and spurred new modes of creation native to the screen. These screenic modes of creation represented a new, vital dimension to computing---the willful, _shaping into existence_ through design and implementation of new digital processes. Kay´s team was specifically dedicated to applying intersections between education and computation. In the process of teaching the system to children and adults alike, those they taught often ended up developing their own unique applications out of the _objects_ that could be shared between applications as well as extended through the inheritance model of object-oriented programming.
 
@@ -75,28 +75,43 @@ Three other hybridities occur within this top level of Mac OS X: Carbon, Classic
 
 The hybridities present in Mac OS X have material effects from the execution of code to the variability of its cultural enablement. It allows for a vast assortment of applications from various lineages and paradigms to coexist and interoperate within a single operating system context. Short of labelling each of these hybridized elements a "medium," there is currently no proposed language within new media for articulating the hybridity of the assemblage as a whole. In this fashion, _process hybridity_ provides a mechanism with which we can describe the facets of OS X. Perhaps UNIX is a medium, perhaps not. However, as a standard, it can be recognized as a formalized resolution of a design process. In an environment where 3D cinema is not even presented as a new medium in popular discourse, the term itself appears to me to have lost its utility. Further in the thesis I will introduced more localized and dissectable instances of process hybridity. At this point it should be convincingly demonstrated that Mac OS X hybridizes not only material processes (code) but also ideological processes (licensing terms). This allows OS X its status as the only successful, commercial UNIX for a desktop as well as its status as an easy-to-use, GUI driven development platform (something no other UNIX can claim as convincingly), while maintaining a clean integration with the lineage of previous versions of Macintosh operating systems.
 
+
 #### Design Beyond the Proprietary ####
+
 Much of the prominent research within the field of software studies thus far has been dedicated to investigating the operation of various proprietary applications (Fuller 2000; Manovich 2008). Culturally speaking this may make sense: study what the users actually use. However, from a moral or political angle it can easily be seen as irresponsible or, at the very least, incomplete. Use of proprietary operating systems and application software still seems to dominate the field of new media. This is in spite of Hans Magnus Enzensberger's classic critique of 'repressive' media---if you do not control the mechanisms of your medium, those mechanisms can be used to control you.
+
 Whether for political or economic reasons, there is a small, yet increasing, number of designers and artists who have begun to use FLoSS either exclusively or at some stage in their workflows. Economic considerations should not be underestimated: Adobe charges no less than $599.99 for a new (non-upgraded) version of Photoshop, while bundles of their software sell for $1699 (Production Premium CS5) or $1899 (Design Premium CS5).[^adobe] That makes Photoshop more expensive than an entry level desktop system, and the bundles each more expensive than a higher-performance computer! The long-standing solution to this situation is simply piracy. The newer solution, really only available for the last decade or less, is to use FLoSS software to accomplish these goals instead.
+
 [^adobe]: All prices sourced from the Adobe online store on 18 June 2010 ([http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US&view=ols_cl&nr=0](http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US&view=ols_cl&nr=0))
+
 Though at a superficial level one can highlight FLoSS design programs as mere reproduction of proprietary process--the GNU Image Manipulation Program (GIMP) reproduces the process of photo editing that is the domain of Adobe Photoshop--Florian Cramer declares that free softwares are not simply cheap imitations or reproductions of proprietary software (Cramer 2010). Instead, he argues, they represent new and unique avenues for accomplishing a given task.
+
 The degree to which the shape of our tools shapes that which we create with those tools has long been established within media theory, though the focus on the dynamics of given medium specificities often overshadow the processes through which those media are filled with content.
+
 Why do relatively so few professional designers use FLoSS? For designer and free software advocate ginger coons[^ginger], the answer lies in a feedback loop between academia, industry, and the designers themselves:
-[^ginger]: ginger coons does not capitalize her names for moral reasons related to linguistic processes of capitalizing some nouns over others.
+
+[^ginger]: ginger coons does not capitalize her names for moral reasons related to the judgment implications of capitalizing some nouns over others.
+
 Graphics professionals learn proprietary software in school because the industry runs on it. Employers demand knowledge of specific software because it is the norm. Connected industries, like printing, run on those de facto standards because of their clients. This feedback loop cements the place of proprietary software in the graphics industry. (coons 2010)
+
 Part of the problem lies in the evolutionary nature of the open source development model. Whereas proprietary programs are expected to be "feature complete" with any given release, FLoSS integrates features as they are added. Any potential proprietary competitor to Adobe Photoshop, for instance, has to ship its first version under the expectations of proprietary software: a) it should offer at least the features that are used every day in Photoshop; and b) it should be stable. Otherwise there is no reason for a user to purchase this new proprietary option over the older, more mature one. Also, if coons' formulation of the feedback loop supporting proprietary software is correct, a new proprietary entrant into the field of image manipulation faces vertical economic barriers to adoption: it isn't an industry standard, so the industry isn't hiring those who only know that software. Thus, coons' formulation not only explains why professionals are slow to adopt FLoSS alternatives, it also serves to demonstrate why there is no competition in the space of professional proprietary image manipulation programs---competition, insofar as it exists, is solely within the consumer space where relatively few features are needed to meet user requirements.
+
 In a personal conversation between myself and professional web designer Andy Fitz, he explained how he came to use FLoSS. In college, the Windows operating system on his computer broke down. His roommate restored the computer, but replaced the operating system with a variant of GNU/Linux. After realizing that this meant no more working with Photoshop, Andy gave GIMP a try. Frustrated by the difficulty of transitioning, he complained to his roommate that GIMP simply was not powerful enough. It didn't have all the features of Photoshop. Nothing was in the same place.
+
 "How long did it take you to learn Photoshop?" his roommate replied.
+
 "Five years," replied Andy.
+
 "Learn GIMP for five years. Then you can complain."
+
 Five years later and counting, Andy Fitz is no longer complaining.
+
 #### Software Time ####
+
 Five years is both a long and short time for FLoSS. It is long because a piece of software that hasn't been updated for five years not only seems horribly outdated, the chances are high that it will not even compile against the versions of the software it depends on that exist today. It is also a short time because there are many projects for which five years is just a small slice of the time it has been in development. For instance, GNUStep (a free software implementation of the same NeXTSTEP technologies behind Cocoa in Mac OS X) has been in development since the mid-1990s, which means it predates the development of Cocoa by five or more years itself. The typesetting system TeX began development 32 years ago---while the main program is no longer extended, new variations that fix longstanding issues with the original implementation continue to evolve. Five years can be a long time in terms of new features and code growth, yet it is not necessarily a long time in the lifespan of a FLoSS project.
 
-----DREAMING IN CODE------
 
-"With FLOSS, the resistance of the tool is now for us such a daily meal, that it has become a work field, an investigation space, and a playground" (OSP 2010).
 
-## Generative Design: FLoSS' vector into the design world ##
 
-The design world is increasingly integrating generative approaches to their workflows. The most explicit manifestation, in writing, of this impulse is the "Conditional Design Manifesto" (Maurer, Paulus, Puckey, Wouters 2008). Written by Amsterdam-based designers Luna Maurer, Edo Paulus, Jonathan Puckey, and Roel Wouters, this manifesto outlines the approach that they have named conditional design and presents its three central elements: _process_, _logic_, and _input_.
+
+
