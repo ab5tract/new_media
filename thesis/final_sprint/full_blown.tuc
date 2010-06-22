@@ -1,0 +1,1602 @@
+-- version: 1.10
+-- file: full_blown
+-- format: cont-en
+-- stamp: 2010.02.23 14:10
+-- escape: [===[ ... ]===]
+
+jobvariables = jobvariables or { }
+jobvariables.checksums = jobvariables.checksums or { }
+jobvariables.checksums={
+ new="22AF645D1859CB5CA6DA0C484F1F37EA",
+ old="149603E6C03516362A8DA23F624DB945",
+}
+jobvariables = jobvariables or { }
+jobvariables.collected = jobvariables.collected or { }
+jobvariables.collected={
+ randomseed=0.81866837610429,
+ totalnofparbackgrounds=0,
+}
+jobpasses = jobpasses or { }
+jobpasses.collected = jobpasses.collected or { }
+jobpasses.collected={
+ floatdata={
+  ["1"]=40,
+ },
+}
+structure = structure or { }
+structure.specials = structure.specials or { }
+structure.specials.collected = structure.specials.collected or { }
+structure.specials.collected={
+}
+structure = structure or { }
+structure.lists = structure.lists or { }
+structure.lists.collected = structure.lists.collected or { }
+structure.lists.collected={
+ {
+  metadata=3,
+  numberdata=2,
+  references={
+   block="bodypart",
+   internal=1,
+   realpage=1,
+   section=1,
+  },
+  titledata={
+   label="chapter",
+   title="Introduction",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=5,
+  references={
+   block="bodypart",
+   internal=2,
+   realpage=2,
+   section=2,
+  },
+  titledata={
+   label="section",
+   title="Screens",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=9,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=3,
+   order=1,
+   realpage=3,
+   section=2,
+  },
+  titledata={
+   title="Mobile devices are beginning to ship IR transeivers with full hardware access through software. That is, the {\\em entire potential} of the IR spectrum is available to them.",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=12,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=4,
+   order=2,
+   realpage=3,
+   section=2,
+  },
+  titledata={
+   title="Such as is demanded by no-frills distributions such as Gentoo and ArchLinux, where manual installation and configuration of a GUI is required for use.",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=14,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=5,
+   order=3,
+   realpage=3,
+   section=2,
+  },
+  titledata={
+   bookmark="A widget is the technical term for a GUI element. Scrollbars, titlebars, menus, and close/minimize/maximize buttons are widgets attached to most of the \"windows\" that appears on any given GUI-driven computer.",
+   title="A widget is the technical term for a GUI element. Scrollbars, titlebars, menus, and close/minimize/maximize buttons are widgets attached to most of the \\quotation {windows} that appears on any given GUI-driven computer.",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=16,
+  references={
+   block="bodypart",
+   internal=6,
+   realpage=4,
+   section=3,
+  },
+  titledata={
+   label="subsection",
+   title="Screens as material, screens as process",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=19,
+  references={
+   block="bodypart",
+   internal=7,
+   realpage=5,
+   section=4,
+  },
+  titledata={
+   label="section",
+   title="From Screens to Text",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=21,
+  references={
+   block="bodypart",
+   internal=9,
+   realpage=6,
+   section=5,
+  },
+  titledata={
+   label="subsection",
+   title="Recognizing the Ontogenesis in Generativity",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=23,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=8,
+   order=4,
+   realpage=6,
+   section=4,
+  },
+  titledata={
+   title="{\\bf Note:} This work largely remains unfinished in this draft, as it became apparent that I needed to work back through more discussions of basic infrastructural elements such as operating systems in order to fully describe the assemblage of process upon which computer-based design is situated.)",
+  },
+ },
+ {
+  metadata=26,
+  numberdata=25,
+  references={
+   block="bodypart",
+   internal=11,
+   realpage=7,
+   section=6,
+  },
+  titledata={
+   label="subsubsection",
+   title="Print is static, code is process",
+  },
+ },
+ {
+  metadata=29,
+  numberdata=28,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=10,
+   order=5,
+   realpage=7,
+   section=5,
+  },
+  titledata={
+   title="The chips produced by Intel, for example, are too complex for any single person to ever hope to entirely understand.",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=31,
+  references={
+   block="bodypart",
+   internal=12,
+   realpage=8,
+   section=7,
+  },
+  titledata={
+   label="section",
+   title="Remote Controls",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=33,
+  references={
+   block="bodypart",
+   internal=13,
+   realpage=9,
+   section=8,
+  },
+  titledata={
+   label="section",
+   title="Attributes of Process",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=35,
+  references={
+   block="bodypart",
+   internal=14,
+   realpage=9,
+   section=9,
+  },
+  titledata={
+   label="section",
+   title="Why free software?",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=15,
+   order=1,
+   realpage=10,
+   section=9,
+  },
+  titledata={
+   bookmark="Centrally controlled program vs. Decentralized program",
+   title="Centrally controlled program vs.~Decentralized program",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=16,
+   order=2,
+   realpage=10,
+   section=9,
+  },
+  titledata={
+   bookmark="One transmitter, many receivers vs. Each receiver a potential transmitter",
+   title="One transmitter, many receivers vs.~Each receiver a potential transmitter",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=17,
+   order=3,
+   realpage=10,
+   section=9,
+  },
+  titledata={
+   bookmark="Immobilization of isolated individuals vs. Mobilization of the masses",
+   title="Immobilization of isolated individuals vs.~Mobilization of the masses",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=18,
+   order=4,
+   realpage=10,
+   section=9,
+  },
+  titledata={
+   bookmark="Passive consumer behavior vs. Interaction of those involved, feedback",
+   title="Passive consumer behavior vs.~Interaction of those involved, feedback",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=19,
+   order=5,
+   realpage=11,
+   section=9,
+  },
+  titledata={
+   bookmark="Depoliticization vs. A political learning process",
+   title="Depoliticization vs.~A political learning process",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=21,
+   order=6,
+   realpage=11,
+   section=9,
+  },
+  titledata={
+   bookmark="Production by specialists vs. Collective production",
+   title="Production by specialists vs.~Collective production",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=22,
+   order=7,
+   realpage=11,
+   section=9,
+  },
+  titledata={
+   title="Control by property owners or bureaucracy vs Social control by self-organization",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=38,
+  references={
+   block="bodypart",
+   internal=23,
+   realpage=11,
+   section=10,
+  },
+  titledata={
+   label="subsection",
+   title="Caveats",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=40,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=20,
+   order=6,
+   realpage=11,
+   section=9,
+  },
+  titledata={
+   title="It is important to note that free software also plays a significant role in supporting this infrastructure, as the license provides no recourse on the terms of the softwares use (Pasquinelli 2008).",
+  },
+ },
+ {
+  metadata=3,
+  numberdata=42,
+  references={
+   block="bodypart",
+   internal=24,
+   realpage=13,
+   section=11,
+  },
+  titledata={
+   label="chapter",
+   title="Substrates of Digital Process",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=44,
+  references={
+   block="bodypart",
+   internal=25,
+   realpage=13,
+   section=12,
+  },
+  titledata={
+   label="section",
+   title="Alan Kay and a `Metamedium´ Vision for Personal Computing",
+  },
+ },
+ {
+  metadata=26,
+  numberdata=46,
+  references={
+   block="bodypart",
+   internal=26,
+   realpage=16,
+   section=13,
+  },
+  titledata={
+   label="subsubsection",
+   title="Operating Systems as the Substrates of Contemporary Design",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=48,
+  references={
+   block="bodypart",
+   internal=28,
+   realpage=16,
+   section=14,
+  },
+  titledata={
+   label="section",
+   title="The evolving nature of operating systems",
+  },
+ },
+ {
+  metadata=51,
+  numberdata=50,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=27,
+   order=7,
+   realpage=16,
+   section=13,
+  },
+  titledata={
+   bookmark="In his text \"The Ideology of Free Culture and the Grammar of Sabotage,\" Italian media theorist Matteo Pasquinelli provides a critical analysis combining Marxist discourse on {\\em resource extraction} with Michael Serres' conception of the {\\em parasite} in an analysis of contradictory intersections between capitalism and FLoSS (Pasquinelli 2008). Apple´s investment in developing a competitor to the GNU compiler, LLVM, is the result of Apple´s decision to avoid the GNU Public License as much as possible (LLVM is licensed under an easily-coopted open source license).",
+   title="In his text \\quotation {The Ideology of Free Culture and the Grammar of Sabotage,} Italian media theorist Matteo Pasquinelli provides a critical analysis combining Marxist discourse on {\\em resource extraction} with Michael Serres' conception of the {\\em parasite} in an analysis of contradictory intersections between capitalism and FLoSS (Pasquinelli 2008). Apple´s investment in developing a competitor to the GNU compiler, LLVM, is the result of Apple´s decision to avoid the GNU Public License as much as possible (LLVM is licensed under an easily-coopted open source license).",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=53,
+  references={
+   block="bodypart",
+   internal=29,
+   realpage=18,
+   section=15,
+  },
+  titledata={
+   label="subsection",
+   title="Unix and Code Drift",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=55,
+  references={
+   block="bodypart",
+   internal=30,
+   realpage=19,
+   section=16,
+  },
+  titledata={
+   label="subsection",
+   title="Mac OS X: Process Hybridity in Action",
+  },
+ },
+ {
+  metadata=29,
+  numberdata=57,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=31,
+   order=8,
+   realpage=21,
+   section=16,
+  },
+  titledata={
+   bookmark="However, there are many different versions of Java, making this ideal of \"write once, run everywhere\" somewhat problematic. Microsoft was even successfully sued for trying to hijack the language with by leveraging an incompatible implementation through the virtual industry standardization of its Visual Studio development environment.",
+   title="However, there are many different versions of Java, making this ideal of \\quotation {write once, run everywhere} somewhat problematic. Microsoft was even successfully sued for trying to hijack the language with by leveraging an incompatible implementation through the virtual industry standardization of its Visual Studio development environment.",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=59,
+  references={
+   block="bodypart",
+   internal=32,
+   realpage=22,
+   section=17,
+  },
+  titledata={
+   label="section",
+   title="Design Beyond the Proprietary",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=61,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=33,
+   order=9,
+   realpage=22,
+   section=17,
+  },
+  titledata={
+   bookmark="All prices sourced from the Adobe online store on 18 June 2010 (\\useURL [1][http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US&view=ols_cl&nr=0][][http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US\\&view=ols_{}cl\\&nr=0]\\from [1])",
+   title="All prices sourced from the Adobe online store on 18 June 2010 (\\useURL [1][http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US&view=ols_cl&nr=0][][http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US\\&view=ols\\letterunderscore {}cl\\&nr=0]\\from [1])",
+  },
+ },
+ {
+  metadata=10,
+  numberdata=63,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=34,
+   order=10,
+   realpage=23,
+   section=17,
+  },
+  titledata={
+   title="ginger coons does not capitalize her names for moral reasons related to the judgment implications of capitalizing some nouns over others.",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=65,
+  references={
+   block="bodypart",
+   internal=35,
+   realpage=24,
+   section=18,
+  },
+  titledata={
+   label="subsection",
+   title="Traditional Design Interfaces in FLoSS",
+  },
+ },
+ {
+  metadata=68,
+  numberdata=67,
+  references={
+   block="bodypart",
+   internal=36,
+   realpage=24,
+   section=19,
+  },
+  titledata={
+   label="subsubsubsection",
+   title="Software Time",
+  },
+ },
+ {
+  metadata=3,
+  numberdata=70,
+  references={
+   block="bodypart",
+   internal=37,
+   realpage=26,
+   section=20,
+  },
+  titledata={
+   label="chapter",
+   title="Screenic Text",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=72,
+  references={
+   block="bodypart",
+   internal=38,
+   realpage=26,
+   section=21,
+  },
+  titledata={
+   label="section",
+   title="Text as Interface/Text as Process",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=74,
+  references={
+   block="bodypart",
+   internal=39,
+   realpage=28,
+   section=22,
+  },
+  titledata={
+   label="subsection",
+   title="Remediation and the Command Line",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=76,
+  references={
+   block="bodypart",
+   internal=40,
+   realpage=29,
+   section=23,
+  },
+  titledata={
+   label="section",
+   title="Language is Programming",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=78,
+  references={
+   block="bodypart",
+   internal=41,
+   realpage=31,
+   section=24,
+  },
+  titledata={
+   label="section",
+   title="Language adds dimensions",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=80,
+  references={
+   block="bodypart",
+   internal=42,
+   realpage=32,
+   section=25,
+  },
+  titledata={
+   label="section",
+   title="Top Down, Bottom Up",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=82,
+  references={
+   block="bodypart",
+   internal=43,
+   realpage=32,
+   section=26,
+  },
+  titledata={
+   label="subsection",
+   title="WYSIWYG",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=84,
+  references={
+   block="bodypart",
+   internal=44,
+   realpage=33,
+   section=27,
+  },
+  titledata={
+   label="subsection",
+   title="Processed Text",
+  },
+ },
+ {
+  metadata=3,
+  numberdata=86,
+  references={
+   block="bodypart",
+   internal=45,
+   realpage=34,
+   section=28,
+  },
+  titledata={
+   label="chapter",
+   title="Constraints: Generative Design in FLoSS",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=88,
+  references={
+   block="bodypart",
+   internal=46,
+   realpage=34,
+   section=29,
+  },
+  titledata={
+   label="section",
+   title="Enter the Conditional",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=47,
+   order=8,
+   realpage=34,
+   section=29,
+  },
+  titledata={
+   title="Process",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=48,
+   order=9,
+   realpage=34,
+   section=29,
+  },
+  titledata={
+   title="Logic",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=49,
+   order=10,
+   realpage=35,
+   section=29,
+  },
+  titledata={
+   title="Input",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=90,
+  references={
+   block="bodypart",
+   internal=50,
+   realpage=35,
+   section=30,
+  },
+  titledata={
+   label="section",
+   title="Generative Design is driven by text",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=92,
+  references={
+   block="bodypart",
+   internal=51,
+   realpage=36,
+   section=31,
+  },
+  titledata={
+   label="section",
+   title="Cases",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=94,
+  references={
+   block="bodypart",
+   internal=52,
+   realpage=36,
+   section=32,
+  },
+  titledata={
+   label="subsection",
+   title="The Piet Zwart Institute",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=96,
+  references={
+   block="bodypart",
+   internal=54,
+   realpage=36,
+   section=33,
+  },
+  titledata={
+   label="subsection",
+   title="Open Source Publishers",
+  },
+ },
+ {
+  metadata=29,
+  numberdata=98,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=53,
+   order=11,
+   realpage=36,
+   section=32,
+  },
+  titledata={
+   title="All quotes in this section, unless otherwise denoted, are from the presentation.",
+  },
+ },
+ {
+  metadata=3,
+  numberdata=100,
+  references={
+   block="bodypart",
+   internal=55,
+   realpage=38,
+   section=34,
+  },
+  titledata={
+   label="chapter",
+   title="Crystalized Process: Text That Typesets Itself",
+  },
+ },
+ {
+  metadata=6,
+  numberdata=102,
+  references={
+   block="bodypart",
+   internal=57,
+   realpage=38,
+   section=35,
+  },
+  titledata={
+   label="section",
+   title="Environment of Operation",
+  },
+ },
+ {
+  metadata=105,
+  numberdata=104,
+  prefixdata=7,
+  references={
+   block="bodypart",
+   internal=56,
+   order=12,
+   realpage=38,
+   section=34,
+  },
+  titledata={
+   title="The second edition of the book, published in 2001, was used for this thesis. While it is updated to include the Web, its roots in a significantly older text are worth noting.",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=58,
+   order=11,
+   realpage=39,
+   section=35,
+  },
+  titledata={
+   title="HTML",
+  },
+ },
+ {
+  metadata=36,
+  references={
+   block="bodypart",
+   internal=59,
+   order=12,
+   realpage=39,
+   section=35,
+  },
+  titledata={
+   title="ConTeXt",
+  },
+ },
+ {
+  metadata=17,
+  numberdata=107,
+  references={
+   block="bodypart",
+   internal=60,
+   realpage=39,
+   section=36,
+  },
+  titledata={
+   label="subsection",
+   title="Constraints",
+  },
+ },
+ {
+  metadata=109,
+  prefixdata=108,
+  references={
+   block="bodypart",
+   internal=61,
+   realpage=40,
+   section=36,
+  },
+  titledata={
+   title="Textroom and gvim. gvim is displayed on this screen but running on my netbook.",
+  },
+ },
+ {
+  metadata=3,
+  numberdata=111,
+  references={
+   block="bodypart",
+   internal=62,
+   realpage=41,
+   section=37,
+  },
+  titledata={
+   label="chapter",
+   title="Bibliography",
+  },
+ },
+ {
+  metadata=114,
+  numberdata=113,
+  references={
+   block="bodypart",
+   internal=63,
+   realpage=41,
+   section=37,
+  },
+  titledata={
+   label="subject",
+   title="Bibliography",
+  },
+ },
+}
+structure = structure or { }
+structure.counters = structure.counters or { }
+structure.counters.collected = structure.counters.collected or { }
+structure.counters.collected={
+ ["@@si"]={
+  { 0, 0 },
+ },
+ endnote={
+  { 0, 0, 0, 0 },
+ },
+ figure={
+  { 0, 0, 0, 0, 0, 0, 0, 0 },
+ },
+ footnote={
+  { 0, 0, 0, 12 },
+ },
+ formula={
+  { 0, 0, 0, 0, 0, 0, 0, 0 },
+ },
+ graphic={
+  { 0, 0, 0, 0, 0, 0, 0, 0 },
+ },
+ intermezzo={
+  { 0, 0, 0, 0, 0, 0, 0, 0 },
+ },
+ ["itemgroup:itemize"]={
+  { 0, 0, 0, 0, 0, 0, 0, 0 },
+ },
+ ["ln:linenote"]={
+  { 0, 0, 0, 0 },
+ },
+ realpage={
+  { 0, 43 },
+ },
+ subpage={
+  { 0, 1 },
+ },
+ table={
+  { 0, 0, 0, 0, 0, 0, 0, 0 },
+ },
+ userpage={
+  { 0, 43 },
+ },
+}
+jobpages = jobpages or { }
+jobpages.collected = jobpages.collected or { }
+jobpages.collected={
+ {
+  block="bodypart",
+  number=1,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=2,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=3,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=4,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=5,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=6,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=7,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=8,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=9,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=10,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=11,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=12,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=13,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=14,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=15,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=16,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=17,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=18,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=19,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=20,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=21,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=22,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=23,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=24,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=25,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=26,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=27,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=28,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=29,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=30,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=31,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=32,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=33,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=34,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=35,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=36,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=37,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=38,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=39,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=40,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=41,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=42,
+  prefixdata=115,
+ },
+ {
+  block="bodypart",
+  number=43,
+  prefixdata=115,
+ },
+}
+jobreferences = jobreferences or { }
+jobreferences.collected = jobreferences.collected or { }
+jobreferences.collected={
+}
+jobregisters = jobregisters or { }
+jobregisters.collected = jobregisters.collected or { }
+jobregisters.collected={
+}
+jobpositions = jobpositions or { }
+jobpositions.collected = jobpositions.collected or { }
+jobpositions.collected={
+}
+jobobjects = jobobjects or { }
+jobobjects.collected = jobobjects.collected or { }
+jobobjects.collected={
+}
+joblists = joblists or { }
+joblists.collected = joblists.collected or { }
+joblists.collected={
+}
+structure = structure or { }
+structure.blocks = structure.blocks or { }
+structure.blocks.collected = structure.blocks.collected or { }
+structure.blocks.collected={
+}
+jobfiles = jobfiles or { }
+jobfiles.collected = jobfiles.collected or { }
+jobfiles.collected={
+}
+job.packer={
+ index={
+  { 0, 1 },
+  {
+   block="bodypart",
+   numbers=1,
+   set="all",
+  },
+  {
+   catcodes=9,
+   coding="tex",
+   increment="yes",
+   kind="section",
+   name="chapter",
+  },
+  { 0, 1, 1 },
+  {
+   block="bodypart",
+   numbers=4,
+   set="all",
+  },
+  {
+   catcodes=9,
+   coding="tex",
+   increment="yes",
+   kind="section",
+   name="section",
+  },
+  {
+   connector=".",
+   prefix="no",
+  },
+  { 1 },
+  {
+   numbers=8,
+  },
+  {
+   catcodes=9,
+   kind="description",
+   level=3,
+   name="footnote",
+  },
+  { 2 },
+  {
+   numbers=11,
+  },
+  { 3 },
+  {
+   numbers=13,
+  },
+  { 0, 1, 1, 1 },
+  {
+   block="bodypart",
+   numbers=15,
+   set="all",
+  },
+  {
+   catcodes=9,
+   coding="tex",
+   increment="yes",
+   kind="section",
+   name="subsection",
+  },
+  { 0, 1, 2 },
+  {
+   block="bodypart",
+   numbers=18,
+   set="all",
+  },
+  { 0, 1, 2, 1 },
+  {
+   block="bodypart",
+   numbers=20,
+   set="all",
+  },
+  { 4 },
+  {
+   numbers=22,
+  },
+  { 0, 1, 2, 1, 1 },
+  {
+   block="bodypart",
+   numbers=24,
+   set="all",
+  },
+  {
+   catcodes=9,
+   coding="tex",
+   increment="yes",
+   kind="section",
+   name="subsubsection",
+  },
+  { 5 },
+  {
+   numbers=27,
+  },
+  {
+   catcodes=9,
+   kind="description",
+   level=4,
+   name="footnote",
+  },
+  { 0, 1, 3 },
+  {
+   block="bodypart",
+   numbers=30,
+   set="all",
+  },
+  { 0, 1, 4 },
+  {
+   block="bodypart",
+   numbers=32,
+   set="all",
+  },
+  { 0, 1, 5 },
+  {
+   block="bodypart",
+   numbers=34,
+   set="all",
+  },
+  {
+   catcodes=9,
+   kind="description",
+   level=3,
+   name="descr",
+  },
+  { 0, 1, 5, 1 },
+  {
+   block="bodypart",
+   numbers=37,
+   set="all",
+  },
+  { 6 },
+  {
+   numbers=39,
+  },
+  { 0, 2 },
+  {
+   block="bodypart",
+   numbers=41,
+   set="all",
+  },
+  { 0, 2, 1 },
+  {
+   block="bodypart",
+   numbers=43,
+   set="all",
+  },
+  { 0, 2, 1, 0, 1 },
+  {
+   block="bodypart",
+   numbers=45,
+   set="all",
+  },
+  { 0, 2, 2 },
+  {
+   block="bodypart",
+   numbers=47,
+   set="all",
+  },
+  { 7 },
+  {
+   numbers=49,
+  },
+  {
+   catcodes=9,
+   kind="description",
+   level=5,
+   name="footnote",
+  },
+  { 0, 2, 2, 1 },
+  {
+   block="bodypart",
+   numbers=52,
+   set="all",
+  },
+  { 0, 2, 2, 2 },
+  {
+   block="bodypart",
+   numbers=54,
+   set="all",
+  },
+  { 8 },
+  {
+   numbers=56,
+  },
+  { 0, 2, 3 },
+  {
+   block="bodypart",
+   numbers=58,
+   set="all",
+  },
+  { 9 },
+  {
+   numbers=60,
+  },
+  { 10 },
+  {
+   numbers=62,
+  },
+  { 0, 2, 3, 1 },
+  {
+   block="bodypart",
+   numbers=64,
+   set="all",
+  },
+  { 0, 2, 3, 1, 0, 1 },
+  {
+   block="bodypart",
+   numbers=66,
+   set="all",
+  },
+  {
+   catcodes=9,
+   coding="tex",
+   increment="yes",
+   kind="section",
+   name="subsubsubsection",
+  },
+  { 0, 3 },
+  {
+   block="bodypart",
+   numbers=69,
+   set="all",
+  },
+  { 0, 3, 1 },
+  {
+   block="bodypart",
+   numbers=71,
+   set="all",
+  },
+  { 0, 3, 1, 1 },
+  {
+   block="bodypart",
+   numbers=73,
+   set="all",
+  },
+  { 0, 3, 2 },
+  {
+   block="bodypart",
+   numbers=75,
+   set="all",
+  },
+  { 0, 3, 3 },
+  {
+   block="bodypart",
+   numbers=77,
+   set="all",
+  },
+  { 0, 3, 4 },
+  {
+   block="bodypart",
+   numbers=79,
+   set="all",
+  },
+  { 0, 3, 4, 1 },
+  {
+   block="bodypart",
+   numbers=81,
+   set="all",
+  },
+  { 0, 3, 4, 2 },
+  {
+   block="bodypart",
+   numbers=83,
+   set="all",
+  },
+  { 0, 4 },
+  {
+   block="bodypart",
+   numbers=85,
+   set="all",
+  },
+  { 0, 4, 1 },
+  {
+   block="bodypart",
+   numbers=87,
+   set="all",
+  },
+  { 0, 4, 2 },
+  {
+   block="bodypart",
+   numbers=89,
+   set="all",
+  },
+  { 0, 4, 3 },
+  {
+   block="bodypart",
+   numbers=91,
+   set="all",
+  },
+  { 0, 4, 3, 1 },
+  {
+   block="bodypart",
+   numbers=93,
+   set="all",
+  },
+  { 0, 4, 3, 2 },
+  {
+   block="bodypart",
+   numbers=95,
+   set="all",
+  },
+  { 11 },
+  {
+   numbers=97,
+  },
+  { 0, 5 },
+  {
+   block="bodypart",
+   numbers=99,
+   set="all",
+  },
+  { 0, 5, 1 },
+  {
+   block="bodypart",
+   numbers=101,
+   set="all",
+  },
+  { 12 },
+  {
+   numbers=103,
+  },
+  {
+   catcodes=9,
+   kind="description",
+   level=2,
+   name="footnote",
+  },
+  { 0, 5, 1, 1 },
+  {
+   block="bodypart",
+   numbers=106,
+   set="all",
+  },
+  {
+   connector=".",
+   prefix="yes",
+   segments="2:2",
+  },
+  {
+   catcodes=9,
+   kind="float",
+   level=4,
+   name="figure",
+  },
+  { 0, 6 },
+  {
+   block="bodypart",
+   numbers=110,
+   set="all",
+  },
+  { 0, 6, 0 },
+  {
+   block="bodypart",
+   hidenumber=true,
+   numbers=112,
+   set="all",
+  },
+  {
+   catcodes=9,
+   coding="tex",
+   kind="section",
+   name="subject",
+   nolist=true,
+  },
+  {
+   connector="\\endash ",
+   prefix="no",
+   set="part",
+  },
+ },
+ keys={
+  directives=true,
+  metadata=true,
+  numberdata=true,
+  numbers=true,
+  pagedata=true,
+  prefixdata=true,
+  sectiondata=true,
+  specification=true,
+ },
+ version=1.01,
+}
