@@ -32,6 +32,8 @@ Hayles, N. Katherine. (2004) "Print is Flat, Code is Deep: The Importance of Med
 
 Hayles, N. Katherine. (2008). _Electronic Literature: new horizons for the literary_. Notre Dame: University of Notre Dame. Print.
 
+Holt, Jason and Tom Miller. (2010). "Introducing the Google Command Line Tool". _Open Source at Google_ blog. 18 June 2010. Web. <[http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html](http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html)> (last accessed 18 June 2010).
+
 Illich, Ivan and Barry Sanders. (1988). _ABC: The Alphabetization of the Popular Mind_. San Fransisco: North Point Press. Print.
 
 Kay, Alan and Adele Goldberg. (1977). "Personal Dynamic Media". From the collection _The New Media Reader_, edited by Noah Wardrip-Fruin and Nick Montfort, 2003. Cambridge: MIT Press. PDF. <[http://www.newmediareader.com/book_samples/nmr-26-kay.pdf](http://www.newmediareader.com/book_samples/nmr-26-kay.pdf)> (last accessed 15 June 2010).
@@ -52,7 +54,11 @@ Manovich, Lev. (2001). _The Language of New Media_. MIT Press: Cambridge. Print.
 
 Manovich, Lev. (2008). _Software Takes Comman_. MS Doc manuscript, published online 20 November 2008. <[http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.doc](http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.doc)> (
 
+Marco, Meg. (2010). "Privacy Change: Apple Knows Where Your Phon Is and Is Telling People". _The Consumerist_. 21 June 2010. Wev. <[http://consumerist.com/2010/06/privacy-change-apple-knows-your-phone-is-and-is-telling-people.html](http://consumerist.com/2010/06/privacy-change-apple-knows-your-phone-is-and-is-telling-people.html)> (last accessed 22 June 2010).
+
 Maurer, Luna and Edo Paulus, Jonathan Puckey, Roel Wouters. (2008). "Conditional Design Manifesto". _conditionaldesign.org_. Web. <[http://www.conditionaldesign.org/manifesto/](http://www.conditionaldesign.org/manifesto/)> (last accessed 17 June 2010).
+
+McLuhan, Marshall. (1964). "Media Hot and Cold". _Understanding Media: The Extensions of Man_. Cambridge: MIT Press, 1994. PDF. 
 
 OSP. (2010). "OSP DIN". _Libre Graphics #0!_. Belgium: Drukkerij Bulckens nv. Print.
 
@@ -63,6 +69,8 @@ Rosenberg, Scott. (2008). _Dreaming in Code_. New York: Three Rivers Press. Prin
 Simondon, Gilbert. (2009). "The Position of the Problem of Ontogenesis". Gregor Flanders, trans. _Parrhesia_ 7. PDF. <[http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf](http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf)> (last accessed 5 June 2010).
 
 Snelting, Femke. (2009). "The Making of". _Tracks in electr(on)ic fields_. Brussels: Constant. Web. <http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf> (last accessed 5 June 2010).
+
+Snelting, Femke and Pierre Huyghebaert. (2010). Personal interview, with John Haltiwanger. Brussels, Belgium.
 
 Stephenson, Neal. (1999). ¨In the Beginning was the Command Line¨. Essay. Web. <[http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml](http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml)> (last accessed 16 June 2010).
 

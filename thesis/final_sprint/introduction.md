@@ -1,10 +1,3 @@
-# Preamble #
-
-_This thesis began as an overly technical proposal to develop a writing platform within a web application. The goal of this writing platform was to allow ease-of-publishing into standardized PDFs, HTML, and OpenOffice.org documents by constraining users with a simplified markup that could then be translated into all those formats. The thesis was seen as a means of documenting the development and deployment of that application with an eye towards theoretical considerations._
-
-_The project has subsequently morphed and become both less technical and more theoretical. It became obvious that material-based conceptions of media--such as those underlying the work of McLuhan, Bolter, Hayles, and Manovich--were inadequate for discussing operations such as command chaining that are essential to discussions of generativity. Likewise these material-media perspectives are inadequate in the face of the _metamedium_ of the computer: short of labelling every application a medium, there is no way to responsibly account for the effects of interface design. "First we shape our tools, and then our tools shape us," to quote McLuhan. In the metamedium of the computer, even small differences in interface design can have dramatic effects on the objects that those interfaces are used to produce. In the case of generative design, whose context is often a text editor and the command line, the differences in interface are vast compared to "traditional" design tools such as Adobe Photoshop or Illustrator._
-
-_Short of labelling every command line application a "medium," the material-media angle did not provide a vocabulary robust enough to discuss generative design in sufficient detail. This led to the adoption of a process-oriented approach to dealing with the computer metamedium. In conjunction with the formulation of ontogenesis from Gilbert Simondon's "The Position of the Problem of Ontogenesis," whose concept of transduction fits neatly into a descriptive framework for generative processes, a _process-oriented perspective_ arose. While such a perspective could (and has) theoretically engaged many spaces where it has found validity, such as in the widespread application of cybernetics theory through the evangelism of Stewart Brand, its applicability to new media, and software studies in particular, does not seem to have been sufficiently explored._
 
 # Introduction #
 
@@ -18,7 +11,7 @@ The third aspect is the allowance of a truly reflexive investigation in which mu
 
 The fourth is the simple fact that screenic text has not been interrogated on a _subtextual_ level---surface analysis of text (and hypertext) have driven the discourse of screenic text in new media. 
 
-## Screens ##
+# Screens #
 
 As digital typesetting provides the focus for the application of the process-oriented perspective, the point of origin is necessarily that of the screen. Information transmission is increasingly screen-based, a fact that only intensifies with the exponentializing ubiquity of mobile devices such as the iPhone. The long-awaited advent of cheap "tablet" computers and e-readers is also now at hand. These devices may all be seen as mediums for _screenic processes_ in that their entire configuration and all of its computation exists to serve as the basis for screenic interactions with _human processes_. These phrasings introduce the perceptual angle attendent with this thesis, namely the centering of _process_ as the atomic unit of what is discussed in new media theory. The term _screenic_ simply means 'screen-based,' or (perhaps) 'screen-native.' It is analagous to 'printed.'
 
@@ -33,7 +26,7 @@ The computer screen, on the other hand, is defined by its seemingly limitless de
 [^3]: A widget is the technical term for a GUI element. Scrollbars, titlebars, menus, and close/minimize/maximize buttons are widgets attached to most of the "windows" that appears on any given GUI-driven computer.
 
 
-### Screens as material, screens as process ###
+## Screens as material, screens as process ##
 
 Screens offer an ideal point of juxtaposition between the material and processual frames. From a material view, the very formulation of "screens" as _the_ interface between humans and computers is problematic: what of the interfaces that have been developed to work around instances of blindness or other [disabilities] that prohibit visually screenic interaction?
 
@@ -46,17 +39,33 @@ Is it possible to remediate of the term screen into discussions of previous medi
 This thesis proposes a conceptual-linguistic shift in the discussions of screens as the _site of discourse_ through which digital processes yield the results of their execution. Likewise, the remote control, or simply _control_, is the site of discourse through which which human processes instigate and extend into the digital. There is no removing or reducing of this dyadic assemblage---even when the control and the screen are literally fused (as in most contemporary smartphones) the distinction between _control_ and _screen_ holds on both a conceptual and material level. Conceptually, human process still extends through the control into digital process, which still produces feedback through the screen. Materially, the screen is a Liquid Crystal Display driven by a graphics card that interfaces with coded drivers and display subsystems in the device's operating system. The control, on the other hand, is the glass suspended over the LCD which, through one or more of the multitude of available technical solutions for the process, reads point(s) of contact, pressure, and vectors (velocity and direction) of movement.
 
 
-## From Screens to Text ##
+# From Screens to Text #
 
 To discuss computer screens one must necessarily engage with the concept of _interface_, a topic that rightfully occupies a great deal of current new media discourse. Interface, then, represents one point of departure from our origin. While interfaces often utilize many visual metaphors (most of them inherited from the work done developing the first GUI at Xerox's Palo Alto Advanced Research Lab (PARC) in the 1970s), there are yet few computer interfaces that do not rely on text as their dominant mechanism for organizing and presenting a program's internal capabilities to a user. (Mobile screens, on the other hand, increasingly display developing trends of icon-only design, though the web browser remains a popular application). Despite the success of the GUI over the text-only command-line interface (CLI), text remains central to contemporary experiences of computer screens.
 
+The command line is seen as a space of contestation for traditional
+modes of media analysis. Remediation, for instance, will be demonstrated as inappropriate for discussing the CLI. As Google has just recently released a command line interface for interacting with Google services, I believe a discussion of the command line is essential for new media (Holt and Miller 2010).
+
+(Unfortunate to note, this historiographic aspect is still **'to-do'**:
+
 The centrality of text to the experience of computer screens represents the main avenue by which we proceed from the origin, constituting a trunk from which many additional concerns fork away and then face examination. The arguments of the paper are augmented by the inclusion of a historiography of digital typesetting. Engaging critically with the history of _software itself_ is considered a requisite for responsible software studies: a full range of influences (economic, cultural, technological) should be considered in the re-telling of a given processual unfolding. In this aspect of focus, it extends Lev Manovich's admirable positioning of history as central to a software study by broadening the scope of historical considerations.[^note] Inspiring this enagement is the work of Robin Kinross, whose _Modern typography: an essay in critical history_ is one of but a few texts covering a history of typography to adequately engage with the influence of factors outside of that field on the field itself (Kinross 2004). By integrating a critical history of digital typesetting with a process perspective, an equilibrium between human and digital processes will be illustrated.
 
-[^note]: **Note:** This work largely remains unfinished in this draft, as it became apparent that I needed to work back through more discussions of basic infrastructural elements such as operating systems in order to fully describe the assemblage of process upon which computer-based design is situated.
+[^note]: **Note:** This work largely remains unfinished in this draft, as it became apparent that I needed to work back through more discussions of basic infrastructural elements such as operating systems in order to fully describe the assemblage of process upon which computer-based design is situated.)
 
-Another importannt element of this thesis, one that runs throughout the entirety of itself, is the underlying presentation of the text. Through the utilization of FLoSS software, multiple output formats will be not only be investigated but also materially instantiated. These output formats represent the top three (open) interfaces currently used to manage and display texts digitally: HTML, PDF and OpenOffice.org's ODT (Do we need ODT? I'm thinking not. It can be excluded--it's WYSIWYG interface does not make it an optimal format for an investigation in generativity; however, we will still discuss it).
+## Recognizing the Ontogenesis in Generativity ##
 
-The process(es) of their generation offers an attempt at mapping Gilbert Simondon's language of ontogenesis onto file format translation or, to begin the project immediately, _individuation_. Coupled with Simondon's individuation is the concept of _transduction_, which concerns itself with the nature of change.
+In his text _The Position of the Problem of Ontogenesis_, Simondon writes,
+
+  By transduction we mean an operation--physical, biological, mental, social--by which an activity propagates itself from one element to the next, within a given domain, and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structure serves as the principle and the model for the next area, as a primer for its constitution, to the extent that the modification expands progresively at the same time as the structuring operation. (Simondon 2009: 11).
+
+Note the distinct lack of 'computational' in Simondon's list of operations. Written prior to the advent of Manovich's formulation of the age of cultural computing, this absence might simply be read as a matter of temporal context. Nevertheless, Simondon's solution to the ontogenesis problematic provides a framework for describing digital processes of a generative nature.
+
+This leads to another important element of this thesis, one that runs throughout the entirety of itself---the underlying processes of presentation required to 'typeset' the text itself. Through the utilization of FLoSS software, multiple output formats will be not only be investigated but also materially instantiated through a designed mechanism of process--a _processual hybridity_. These output formats represent two of the top formats currently used to manage and display texts digitally: HTML and PDF.
+
+The process(es) of their generation offers an attempt at mapping Gilbert Simondon's language of ontogenesis onto file format translation or, to begin the project immediately, _individuation_. Coupled with Simondon's individuation is this concept of _transduction_. Repurposed from the language of chemistry, Simondon's metaphorically images transduction with the example of a substrate--swelling with _metapotential_--that crystallizes. The final formation is the substrate fulfilling this metapotential, a fulfillment that arises only through an unpredictable unfolding involving emergent factors. (The language of chemistry was likewise appropriated for the term 'interface' (Cramer and Fuller 2008: 149)). 
+
+Through this mapping I hope to provide a convincing argument for shared properties between what I am calling process and individuation, and between transduction and what I am calling instantiation.
+
 This relates with the increasingly generative nature of contemporary design. All of which are generated from a plain-text file whose syntax conforms to a format standard called 'markdown.' The polycephalous nature of _the text itself_ thus demands further branching into a discussion of formats. What are the attributes of the class of process to which formats belong? Formats are seen as stable, yet they move like glass (or glaciar) in the nano-magnitudes of the digital. Formats provide another point of contrast between process and material perceptual orientations.
 
 The discussion of generativity provides further means to demonstrate the equilibrium of human and digital processes. Analyzed materially, these processes are chunks of code electronically lifted from hard drive platters, loaded into system memory, and then executed via the assemblage of chips on the computer's motherboard by way of instructions from the operating system currently residing as a mass of memory heaps in RAM chips. Analyzed _processually_, however, these digital processes are properly seen as deriving from interactions with human beings. That is to say, digital and human processes are intimately intertwined, from the design of their physical landscape of execution (microcircuitry) to the instructions derived from the user. From a process angle the computer becomes something of an external nervous system, extending and modifying the realm of human potentiality even as it surpasses the capacity of a single mind to functionally comprehend the entirety of its workings.[^4]
@@ -65,31 +74,25 @@ The discussion of generativity provides further means to demonstrate the equilib
 
 
 
-### Print is (meta)static, code is (meta)process ###
+### Print is static, code is process ###
 
-The flat/deep distinction proposed by Hayles is, by its formualation, material. Problematizing this material focus is the interwoven nature of print and code. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process (NP-Complete). This non-reducibility of typesetting reflects the non-reducibility of computational processing of language, as well as the non-reducibility of language, as signifier, into that which is actually signified. This "turtles all the way down" scenario has intriguing implications from a process perspective as we investigate the methods that have been developed in order to work around this non-reducibility. 
+The flat/deep distinction proposed by Hayles is, by its formualation, material. Problematizing this material focus is the interwoven history of text and code: the lens of typesetting allows us to focus on a unique intersection of the two. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process (NP-Complete). This non-reducibility of typesetting reflects the non-reducibility of computational processing of language, as well as the non-reducibility of language, as signifier, into that which is actually signified. This "turtles all the way down" scenario has intriguing implications from a process perspective as we investigate the methods that have been developed in order to work around this non-reducibility.
+
+When Hayles states that "materiality thus cannot be specified in advance; rather it occupies a borderland--or better, performs as connective tissue," she is provisionally correct (Hayles 2004: 72). However, this metaphor-ization of process is exemplary of new media practices: reference the complex with an abstract metaphor, obscuring complex and important dynamics with a metaphor. The metaphor works, to be sure. One could even consider it an ideal formulation. At issue is the fact that this borderland is not discussed in a technically correct manner. 
 
 
-## Remote Controls ##
 
-Is it possible to take the remote control and use it to create a metaphor for all human-computer interaction?
+# Remote Controls #
+
+I think it may be reasonable to take the remote control and use it to create a metaphor for all human-computer interaction.
 
 Every digital process has, at its origin, a human. The rate of computation has increased the impact of human-digital processes in that the results deliver their results faster. The results will either match the intentions of the originating human process, or they will not. In the second case we can find the first evidence of the effects of digital process on human process: _the code behind the digital process will be re-arranged in an attempt to deliver an output that satisfies the intention of the human processes._ Whether this modulation of the executed code is through sliders/input boxes/etc within a GUI interface or through direct reworking of the source code itself, the effect is the same: the code executed has been re-configured according to the goal of human process. The result(s) of the digital process, experienced through a screen, can match, exceed, or fail this goal. In turn, human process is effected and the next move is made according to new goals or revised digital processes.
 
 Video games, for example, can easily be represented by this model. Human process is obviously shaped by digital at the outset: there are a finite number of actions that a game offers within its context. In addition, these actions are often presented as pre-set mappings of action to controller button.
 
-## Recognizing the Ontogenesis in Generativity ##
-
-In his text _The Position of the Problem of Ontogenesis_, Simondon writes,
-
-  By transduction we mean an operation--physical, biological, mental, social--by which an activity propagates itself from one element to the next, within a given domain, and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structure serves as the principle and the model for the next area, as a primer for its constitution, to the extent that the modification expands progresively at the same time as the structuring operation. (Simondon 2009: 11)
-
-The idea of transduction is tied to Simondon's solution for the problematic of _individuation_, a long-standing issue in discussions of ontogenesis.
-
-Note the distinct lack of 'computational' in Simondon's list of operations. Written prior to the advent of Manovich's formulation of the age of cultural computing, this absence might simply be read as a matter of temporal context. Nevertheless, Simondon's solution to the ontogenesis problematic provides a framework for describing digital processes of a generative nature.
 
 
-## Attributes of Process ##
+# Attributes of Process #
 
 [It needs to be asserted that I am willingly engaging in my own appropriation of the term 'process' outside of any traditions other than my own. As the process oriented perspective arose under the looming shadow of the draft deadline, I admit to a lack of historical perspective on the use of this word in either new media or other contexts. Withstanding that, however, I sense a real applicability of this term in the discourse of new media. I'm looking forward to working on the final draft and using some of that time to construct historical perspective for this shift to process. One important angle is Ned Rossiter's work on "Processual Media Theory" in his book _Organized Networks_ (Rossiter 2007: 166-192), which this draft does make use of but which I would like to interweave more deeply. As it stands, this introduction was left relatively alone for the sake of fleshing out the middle part of this thesis. This was at the suggestion of the second reader.]
 
@@ -97,7 +100,7 @@ Process is reflective. It's outputs reflect its inputs. Additionally, process re
 
 A new configuration of metapotential in any system results in the reconfiguration of (all) other systems as well. This fact reflects the _fractal_ nature of process--there is a degree of non-reducibility inherent in any discussion of process, as ultimately certain factors in its functioning are unknown to us.
 
-## Why free software? ##
+# Why free software? #
 
 There are multiple points of consideration that lead me to concentrate on free software. The first is its relative lack of presence within new media circles. Time and again I arrive at a conference only to see a room full of computers booted into proprietary operating systems. While I am not a 'zealot' who disavows any potential use or need for proprietary software, I find the general population of new media's reliance on proprietary operating systems--chiefly, by way of personal and anecdotal evidence, Mac OS X--disturbing. Hans Magnus Enzensberger outlined in his "Constituents of a Theory of the Media" the importance of issues of control with relation to mediums. Let us move through the juxtaposed elements of repressive versus emancipatory uses of media which Enzensberger provides and interrogate them in relation to Mac OS X and GNU/Linux (Enzensberger 1970: 269):
 
@@ -123,10 +126,10 @@ Passive consumer behavior vs. Interaction of those involved, feedback
 
 Depoliticization vs. A political learning process
 
-:	Mac OS X is pro-capitalist and promotes consumer culture. It can probably be said that it is politically "neutral" in its codedness, but this very codedness remains obfuscated and proprietary. GNU/Linux, in conservative judgment, at least does not actively promote consumerism. In an idealistic formulation, it destabilizes the capitalist ecosystem.[^untenable] It's politics are as multifaceted as its user base.
-	In its well-deserved reputation as 'taking some work to make it work,' GNU/Linux forces its users to become active in the system's administration. This induced learning of (one approach) to computer systems could be said to have political dimension.
+:	Mac OS X is pro-capitalist and promotes consumer culture. It can probably be said that it is politically "neutral" in its codedness, but this very codedness remains obfuscated and proprietary. GNU/Linux, in conservative judgment, at least does not actively promote consumerism. In an idealistic formulation, it destabilizes the capitalist ecosystem.[^discuss] It's politics are as multifaceted as its user base.
+	In its well-deserved reputation as 'taking some work to make it work,' GNU/Linux forces its users to become active in the system's administration. This induced learning of an open approach to computer systems could be said to have political dimension.
 
-[^untenable]: It is important to note that free software also plays a significant role in supporting this infrastructure, as the license provides no recourse on the terms of the softwares use (Pasquinelli 2008).
+[^discuss]: It is important to note that free software also plays a significant role in supporting this infrastructure, as the license provides no recourse on the terms of the softwares use (Pasquinelli 2008).
 
 Production by specialists vs. Collective production
 
@@ -136,4 +139,11 @@ Control by property owners or bureaucracy vs Social control by self-organization
 
 :	Are you getting the picture?
 
-Aymeric Mansoux, also of the Networked Media design faculty at the Piet Zwart Institute, describes the critical engagement in the error message, common to GNU/Linux distributions, found in the Totem media player program complaining of a missing codec library that is required to decode common patent-encumbered media formats such as MPEG-Layer 3 (Cramer, Mansoux, and Murtaugh 2010).
+In a presentation at the Libre Graphics Meeting 2010, Florian Cramer explains his theoretical positioning of free software as an entry point into media criticism. Aymeric Mansoux, also of the Networked Media design faculty at the Piet Zwart Institute and present with fellow faculty member Michael Murtough, describes the critical engagement in the error message common to GNU/Linux distributions, found in the Totem media player program complaining of a missing codec library that is required to decode common patent-encumbered media formats such as MPEG-Layer 3 (Cramer, Mansoux, and Murtaugh 2010). Behind the error message lies an assemblage of inter-related issues of intellectual property rights, cultural practices, and media accessibility. This is a clear instantiation of a "political learning process."
+
+On 21 June 2010, Apple changed its privacy settings to allow the company to "collect store and share 'precise location data, including real-time the geographic location of your Apple computer or device'" (Marco 2010).
+
+
+## Caveats ## 
+
+Free software is not, however, a "magic bullet"--tied to the open systems theory which is philosophically related to the underpinnings of the Chicago school of economics, some of the philosophical foundations of free software, _and especially open source_, need to be interrogated (Cramer, Mansoux, and Murtaugh 2010; Pasquinelli 2008). Liberation does not automatically lead to a distribution of tools to all those that need them. However, even in this instance we see the power of FloSS in its capacity to inspire critical engagement with media.
