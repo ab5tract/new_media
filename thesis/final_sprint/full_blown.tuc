@@ -1,7 +1,7 @@
 -- version: 1.10
 -- file: full_blown
 -- format: cont-en
--- stamp: 2010.02.23 14:10
+-- stamp: 2010.07.27 16:30
 -- escape: [===[ ... ]===]
 
 jobvariables = jobvariables or { }
@@ -19,9 +19,6 @@ jobvariables.collected={
 jobpasses = jobpasses or { }
 jobpasses.collected = jobpasses.collected or { }
 jobpasses.collected={
- floatdata={
-  ["1"]=40,
- },
 }
 structure = structure or { }
 structure.specials = structure.specials or { }
@@ -42,12 +39,12 @@ structure.lists.collected={
    section=1,
   },
   titledata={
-   label="chapter",
+   label="section",
    title="Introduction",
   },
  },
  {
-  metadata=6,
+  metadata=3,
   numberdata=5,
   references={
    block="bodypart",
@@ -61,45 +58,48 @@ structure.lists.collected={
   },
  },
  {
-  metadata=10,
-  numberdata=9,
-  prefixdata=7,
+  metadata=9,
+  numberdata=8,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=3,
    order=1,
    realpage=3,
    section=2,
+   symbolpage=3,
   },
   titledata={
    title="Mobile devices are beginning to ship IR transeivers with full hardware access through software. That is, the {\\em entire potential} of the IR spectrum is available to them.",
   },
  },
  {
-  metadata=10,
-  numberdata=12,
-  prefixdata=7,
+  metadata=9,
+  numberdata=11,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=4,
    order=2,
    realpage=3,
    section=2,
+   symbolpage=3,
   },
   titledata={
    title="Such as is demanded by no-frills distributions such as Gentoo and ArchLinux, where manual installation and configuration of a GUI is required for use.",
   },
  },
  {
-  metadata=10,
-  numberdata=14,
-  prefixdata=7,
+  metadata=9,
+  numberdata=13,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=5,
    order=3,
    realpage=3,
    section=2,
+   symbolpage=3,
   },
   titledata={
    bookmark="A widget is the technical term for a GUI element. Scrollbars, titlebars, menus, and close/minimize/maximize buttons are widgets attached to most of the \"windows\" that appears on any given GUI-driven computer.",
@@ -107,8 +107,8 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=16,
+  metadata=16,
+  numberdata=15,
   references={
    block="bodypart",
    internal=6,
@@ -121,8 +121,8 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=19,
+  metadata=3,
+  numberdata=18,
   references={
    block="bodypart",
    internal=7,
@@ -135,8 +135,8 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=21,
+  metadata=16,
+  numberdata=20,
   references={
    block="bodypart",
    internal=9,
@@ -149,23 +149,24 @@ structure.lists.collected={
   },
  },
  {
-  metadata=10,
-  numberdata=23,
-  prefixdata=7,
+  metadata=9,
+  numberdata=22,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=8,
    order=4,
    realpage=6,
    section=4,
+   symbolpage=6,
   },
   titledata={
    title="{\\bf Note:} This work largely remains unfinished in this draft, as it became apparent that I needed to work back through more discussions of basic infrastructural elements such as operating systems in order to fully describe the assemblage of process upon which computer-based design is situated.)",
   },
  },
  {
-  metadata=26,
-  numberdata=25,
+  metadata=25,
+  numberdata=24,
   references={
    block="bodypart",
    internal=11,
@@ -178,23 +179,24 @@ structure.lists.collected={
   },
  },
  {
-  metadata=29,
-  numberdata=28,
-  prefixdata=7,
+  metadata=28,
+  numberdata=27,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=10,
    order=5,
    realpage=7,
    section=5,
+   symbolpage=7,
   },
   titledata={
    title="The chips produced by Intel, for example, are too complex for any single person to ever hope to entirely understand.",
   },
  },
  {
-  metadata=6,
-  numberdata=31,
+  metadata=3,
+  numberdata=30,
   references={
    block="bodypart",
    internal=12,
@@ -207,8 +209,8 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=33,
+  metadata=3,
+  numberdata=32,
   references={
    block="bodypart",
    internal=13,
@@ -221,8 +223,8 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=35,
+  metadata=3,
+  numberdata=34,
   references={
    block="bodypart",
    internal=14,
@@ -235,7 +237,7 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=15,
@@ -249,7 +251,7 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=16,
@@ -263,7 +265,7 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=17,
@@ -277,7 +279,7 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=18,
@@ -291,12 +293,12 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=19,
    order=5,
-   realpage=11,
+   realpage=10,
    section=9,
   },
   titledata={
@@ -305,7 +307,7 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=21,
@@ -319,7 +321,7 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
    internal=22,
@@ -332,8 +334,8 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=38,
+  metadata=16,
+  numberdata=37,
   references={
    block="bodypart",
    internal=23,
@@ -346,15 +348,16 @@ structure.lists.collected={
   },
  },
  {
-  metadata=10,
-  numberdata=40,
-  prefixdata=7,
+  metadata=9,
+  numberdata=39,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=20,
    order=6,
    realpage=11,
    section=9,
+   symbolpage=11,
   },
   titledata={
    title="It is important to note that free software also plays a significant role in supporting this infrastructure, as the license provides no recourse on the terms of the softwares use (Pasquinelli 2008).",
@@ -362,25 +365,25 @@ structure.lists.collected={
  },
  {
   metadata=3,
-  numberdata=42,
+  numberdata=41,
   references={
    block="bodypart",
    internal=24,
-   realpage=13,
+   realpage=12,
    section=11,
   },
   titledata={
-   label="chapter",
+   label="section",
    title="Substrates of Digital Process",
   },
  },
  {
-  metadata=6,
-  numberdata=44,
+  metadata=3,
+  numberdata=43,
   references={
    block="bodypart",
    internal=25,
-   realpage=13,
+   realpage=12,
    section=12,
   },
   titledata={
@@ -389,12 +392,12 @@ structure.lists.collected={
   },
  },
  {
-  metadata=26,
-  numberdata=46,
+  metadata=25,
+  numberdata=45,
   references={
    block="bodypart",
    internal=26,
-   realpage=16,
+   realpage=15,
    section=13,
   },
   titledata={
@@ -403,29 +406,16 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=48,
-  references={
-   block="bodypart",
-   internal=28,
-   realpage=16,
-   section=14,
-  },
-  titledata={
-   label="section",
-   title="The evolving nature of operating systems",
-  },
- },
- {
-  metadata=51,
-  numberdata=50,
-  prefixdata=7,
+  metadata=48,
+  numberdata=47,
+  prefixdata=6,
   references={
    block="bodypart",
    internal=27,
    order=7,
-   realpage=16,
+   realpage=15,
    section=13,
+   symbolpage=15,
   },
   titledata={
    bookmark="In his text \"The Ideology of Free Culture and the Grammar of Sabotage,\" Italian media theorist Matteo Pasquinelli provides a critical analysis combining Marxist discourse on {\\em resource extraction} with Michael Serres' conception of the {\\em parasite} in an analysis of contradictory intersections between capitalism and FLoSS (Pasquinelli 2008). Apple´s investment in developing a competitor to the GNU compiler, LLVM, is the result of Apple´s decision to avoid the GNU Public License as much as possible (LLVM is licensed under an easily-coopted open source license).",
@@ -433,27 +423,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=53,
+  metadata=16,
+  numberdata=50,
   references={
    block="bodypart",
-   internal=29,
-   realpage=18,
-   section=15,
-  },
-  titledata={
-   label="subsection",
-   title="Unix and Code Drift",
-  },
- },
- {
-  metadata=17,
-  numberdata=55,
-  references={
-   block="bodypart",
-   internal=30,
-   realpage=19,
-   section=16,
+   internal=28,
+   realpage=17,
+   section=14,
   },
   titledata={
    label="subsection",
@@ -461,15 +437,16 @@ structure.lists.collected={
   },
  },
  {
-  metadata=29,
-  numberdata=57,
-  prefixdata=7,
+  metadata=28,
+  numberdata=52,
+  prefixdata=6,
   references={
    block="bodypart",
-   internal=31,
+   internal=29,
    order=8,
-   realpage=21,
-   section=16,
+   realpage=20,
+   section=14,
+   symbolpage=20,
   },
   titledata={
    bookmark="However, there are many different versions of Java, making this ideal of \"write once, run everywhere\" somewhat problematic. Microsoft was even successfully sued for trying to hijack the language with by leveraging an incompatible implementation through the virtual industry standardization of its Visual Studio development environment.",
@@ -477,13 +454,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=59,
+  metadata=3,
+  numberdata=54,
   references={
    block="bodypart",
-   internal=32,
-   realpage=22,
-   section=17,
+   internal=30,
+   realpage=21,
+   section=15,
   },
   titledata={
    label="section",
@@ -491,15 +468,16 @@ structure.lists.collected={
   },
  },
  {
-  metadata=10,
-  numberdata=61,
-  prefixdata=7,
+  metadata=9,
+  numberdata=56,
+  prefixdata=6,
   references={
    block="bodypart",
-   internal=33,
+   internal=31,
    order=9,
-   realpage=22,
-   section=17,
+   realpage=21,
+   section=15,
+   symbolpage=21,
   },
   titledata={
    bookmark="All prices sourced from the Adobe online store on 18 June 2010 (\\useURL [1][http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US&view=ols_cl&nr=0][][http://store1.adobe.com/cfusion/store/index.cfm?store=OLS-US\\&view=ols_{}cl\\&nr=0]\\from [1])",
@@ -507,28 +485,29 @@ structure.lists.collected={
   },
  },
  {
-  metadata=10,
-  numberdata=63,
-  prefixdata=7,
+  metadata=9,
+  numberdata=58,
+  prefixdata=6,
   references={
    block="bodypart",
-   internal=34,
+   internal=32,
    order=10,
-   realpage=23,
-   section=17,
+   realpage=22,
+   section=15,
+   symbolpage=22,
   },
   titledata={
    title="ginger coons does not capitalize her names for moral reasons related to the judgment implications of capitalizing some nouns over others.",
   },
  },
  {
-  metadata=17,
-  numberdata=65,
+  metadata=16,
+  numberdata=60,
   references={
    block="bodypart",
-   internal=35,
-   realpage=24,
-   section=18,
+   internal=33,
+   realpage=23,
+   section=16,
   },
   titledata={
    label="subsection",
@@ -536,13 +515,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=68,
-  numberdata=67,
+  metadata=63,
+  numberdata=62,
   references={
    block="bodypart",
-   internal=36,
-   realpage=24,
-   section=19,
+   internal=34,
+   realpage=23,
+   section=17,
   },
   titledata={
    label="subsubsubsection",
@@ -551,26 +530,26 @@ structure.lists.collected={
  },
  {
   metadata=3,
-  numberdata=70,
+  numberdata=65,
   references={
    block="bodypart",
-   internal=37,
-   realpage=26,
-   section=20,
+   internal=35,
+   realpage=24,
+   section=18,
   },
   titledata={
-   label="chapter",
+   label="section",
    title="Screenic Text",
   },
  },
  {
-  metadata=6,
-  numberdata=72,
+  metadata=3,
+  numberdata=67,
   references={
    block="bodypart",
-   internal=38,
-   realpage=26,
-   section=21,
+   internal=36,
+   realpage=24,
+   section=19,
   },
   titledata={
    label="section",
@@ -578,13 +557,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=74,
+  metadata=16,
+  numberdata=69,
   references={
    block="bodypart",
-   internal=39,
-   realpage=28,
-   section=22,
+   internal=37,
+   realpage=26,
+   section=20,
   },
   titledata={
    label="subsection",
@@ -592,13 +571,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=76,
+  metadata=3,
+  numberdata=71,
   references={
    block="bodypart",
-   internal=40,
-   realpage=29,
-   section=23,
+   internal=38,
+   realpage=27,
+   section=21,
   },
   titledata={
    label="section",
@@ -606,13 +585,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=78,
+  metadata=3,
+  numberdata=73,
   references={
    block="bodypart",
-   internal=41,
-   realpage=31,
-   section=24,
+   internal=39,
+   realpage=29,
+   section=22,
   },
   titledata={
    label="section",
@@ -620,13 +599,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=80,
+  metadata=3,
+  numberdata=75,
   references={
    block="bodypart",
-   internal=42,
-   realpage=32,
-   section=25,
+   internal=40,
+   realpage=30,
+   section=23,
   },
   titledata={
    label="section",
@@ -634,13 +613,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=82,
+  metadata=16,
+  numberdata=77,
   references={
    block="bodypart",
-   internal=43,
-   realpage=32,
-   section=26,
+   internal=41,
+   realpage=30,
+   section=24,
   },
   titledata={
    label="subsection",
@@ -648,13 +627,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=84,
+  metadata=16,
+  numberdata=79,
   references={
    block="bodypart",
-   internal=44,
-   realpage=33,
-   section=27,
+   internal=42,
+   realpage=31,
+   section=25,
   },
   titledata={
    label="subsection",
@@ -663,26 +642,26 @@ structure.lists.collected={
  },
  {
   metadata=3,
-  numberdata=86,
+  numberdata=81,
   references={
    block="bodypart",
-   internal=45,
-   realpage=34,
-   section=28,
+   internal=43,
+   realpage=31,
+   section=26,
   },
   titledata={
-   label="chapter",
+   label="section",
    title="Constraints: Generative Design in FLoSS",
   },
  },
  {
-  metadata=6,
-  numberdata=88,
+  metadata=3,
+  numberdata=83,
   references={
    block="bodypart",
-   internal=46,
-   realpage=34,
-   section=29,
+   internal=44,
+   realpage=31,
+   section=27,
   },
   titledata={
    label="section",
@@ -690,52 +669,52 @@ structure.lists.collected={
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
-   internal=47,
+   internal=45,
    order=8,
-   realpage=34,
-   section=29,
+   realpage=32,
+   section=27,
   },
   titledata={
    title="Process",
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
-   internal=48,
+   internal=46,
    order=9,
-   realpage=34,
-   section=29,
+   realpage=32,
+   section=27,
   },
   titledata={
    title="Logic",
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
-   internal=49,
+   internal=47,
    order=10,
-   realpage=35,
-   section=29,
+   realpage=32,
+   section=27,
   },
   titledata={
    title="Input",
   },
  },
  {
-  metadata=6,
-  numberdata=90,
+  metadata=3,
+  numberdata=85,
   references={
    block="bodypart",
-   internal=50,
-   realpage=35,
-   section=30,
+   internal=48,
+   realpage=33,
+   section=28,
   },
   titledata={
    label="section",
@@ -743,13 +722,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=6,
-  numberdata=92,
+  metadata=3,
+  numberdata=87,
   references={
    block="bodypart",
-   internal=51,
-   realpage=36,
-   section=31,
+   internal=49,
+   realpage=33,
+   section=29,
   },
   titledata={
    label="section",
@@ -757,13 +736,13 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=94,
+  metadata=16,
+  numberdata=89,
   references={
    block="bodypart",
-   internal=52,
-   realpage=36,
-   section=32,
+   internal=50,
+   realpage=33,
+   section=30,
   },
   titledata={
    label="subsection",
@@ -771,13 +750,29 @@ structure.lists.collected={
   },
  },
  {
-  metadata=17,
-  numberdata=96,
+  metadata=28,
+  numberdata=91,
+  prefixdata=6,
   references={
    block="bodypart",
-   internal=54,
-   realpage=36,
-   section=33,
+   internal=51,
+   order=11,
+   realpage=33,
+   section=30,
+   symbolpage=33,
+  },
+  titledata={
+   title="All quotes in this section, unless otherwise denoted, are from the presentation.",
+  },
+ },
+ {
+  metadata=16,
+  numberdata=93,
+  references={
+   block="bodypart",
+   internal=52,
+   realpage=34,
+   section=31,
   },
   titledata={
    label="subsection",
@@ -785,42 +780,27 @@ structure.lists.collected={
   },
  },
  {
-  metadata=29,
-  numberdata=98,
-  prefixdata=7,
+  metadata=3,
+  numberdata=95,
   references={
    block="bodypart",
    internal=53,
-   order=11,
-   realpage=36,
+   realpage=35,
    section=32,
   },
   titledata={
-   title="All quotes in this section, unless otherwise denoted, are from the presentation.",
-  },
- },
- {
-  metadata=3,
-  numberdata=100,
-  references={
-   block="bodypart",
-   internal=55,
-   realpage=38,
-   section=34,
-  },
-  titledata={
-   label="chapter",
+   label="section",
    title="Crystalized Process: Text That Typesets Itself",
   },
  },
  {
-  metadata=6,
-  numberdata=102,
+  metadata=3,
+  numberdata=97,
   references={
    block="bodypart",
-   internal=57,
-   realpage=38,
-   section=35,
+   internal=55,
+   realpage=35,
+   section=33,
   },
   titledata={
    label="section",
@@ -828,99 +808,45 @@ structure.lists.collected={
   },
  },
  {
-  metadata=105,
-  numberdata=104,
-  prefixdata=7,
+  metadata=35,
   references={
    block="bodypart",
    internal=56,
-   order=12,
-   realpage=38,
-   section=34,
-  },
-  titledata={
-   title="The second edition of the book, published in 2001, was used for this thesis. While it is updated to include the Web, its roots in a significantly older text are worth noting.",
-  },
- },
- {
-  metadata=36,
-  references={
-   block="bodypart",
-   internal=58,
    order=11,
-   realpage=39,
-   section=35,
+   realpage=35,
+   section=33,
   },
   titledata={
    title="HTML",
   },
  },
  {
-  metadata=36,
+  metadata=35,
   references={
    block="bodypart",
-   internal=59,
+   internal=57,
    order=12,
-   realpage=39,
-   section=35,
+   realpage=35,
+   section=33,
   },
   titledata={
    title="ConTeXt",
   },
  },
  {
-  metadata=17,
-  numberdata=107,
+  metadata=9,
+  numberdata=99,
+  prefixdata=6,
   references={
    block="bodypart",
-   internal=60,
-   realpage=39,
-   section=36,
+   internal=54,
+   order=12,
+   realpage=35,
+   section=32,
+   symbolpage=35,
   },
   titledata={
-   label="subsection",
-   title="Constraints",
-  },
- },
- {
-  metadata=109,
-  prefixdata=108,
-  references={
-   block="bodypart",
-   internal=61,
-   realpage=40,
-   section=36,
-  },
-  titledata={
-   title="Textroom and gvim. gvim is displayed on this screen but running on my netbook.",
-  },
- },
- {
-  metadata=3,
-  numberdata=111,
-  references={
-   block="bodypart",
-   internal=62,
-   realpage=41,
-   section=37,
-  },
-  titledata={
-   label="chapter",
-   title="Bibliography",
-  },
- },
- {
-  metadata=114,
-  numberdata=113,
-  references={
-   block="bodypart",
-   internal=63,
-   realpage=41,
-   section=37,
-  },
-  titledata={
-   label="subject",
-   title="Bibliography",
+   title="The second edition of the book, published in 2001, was used for this thesis. While it is updated to include the Web, its roots in a significantly older text are worth noting.",
   },
  },
 }
@@ -935,37 +861,37 @@ structure.counters.collected={
   { 0, 0, 0, 0 },
  },
  figure={
-  { 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0 },
  },
  footnote={
   { 0, 0, 0, 12 },
  },
  formula={
-  { 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0 },
  },
  graphic={
-  { 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0 },
  },
  intermezzo={
-  { 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0 },
  },
  ["itemgroup:itemize"]={
-  { 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0 },
  },
  ["ln:linenote"]={
   { 0, 0, 0, 0 },
  },
  realpage={
-  { 0, 43 },
+  { 0, 36 },
  },
  subpage={
   { 0, 1 },
  },
  table={
-  { 0, 0, 0, 0, 0, 0, 0, 0 },
+  { 0, 0 },
  },
  userpage={
-  { 0, 43 },
+  { 0, 36 },
  },
 }
 jobpages = jobpages or { }
@@ -974,217 +900,182 @@ jobpages.collected={
  {
   block="bodypart",
   number=1,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=2,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=3,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=4,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=5,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=6,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=7,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=8,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=9,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=10,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=11,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=12,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=13,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=14,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=15,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=16,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=17,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=18,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=19,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=20,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=21,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=22,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=23,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=24,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=25,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=26,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=27,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=28,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=29,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=30,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=31,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=32,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=33,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=34,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=35,
-  prefixdata=115,
+  prefixdata=100,
  },
  {
   block="bodypart",
   number=36,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=37,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=38,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=39,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=40,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=41,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=42,
-  prefixdata=115,
- },
- {
-  block="bodypart",
-  number=43,
-  prefixdata=115,
+  prefixdata=100,
  },
 }
 jobreferences = jobreferences or { }
@@ -1218,7 +1109,7 @@ jobfiles.collected={
 }
 job.packer={
  index={
-  { 0, 1 },
+  { 0, 0, 1 },
   {
    block="bodypart",
    numbers=1,
@@ -1229,20 +1120,13 @@ job.packer={
    coding="tex",
    increment="yes",
    kind="section",
-   name="chapter",
+   name="section",
   },
-  { 0, 1, 1 },
+  { 0, 0, 2 },
   {
    block="bodypart",
    numbers=4,
    set="all",
-  },
-  {
-   catcodes=9,
-   coding="tex",
-   increment="yes",
-   kind="section",
-   name="section",
   },
   {
    connector=".",
@@ -1250,7 +1134,7 @@ job.packer={
   },
   { 1 },
   {
-   numbers=8,
+   numbers=7,
   },
   {
    catcodes=9,
@@ -1260,16 +1144,16 @@ job.packer={
   },
   { 2 },
   {
-   numbers=11,
+   numbers=10,
   },
   { 3 },
   {
-   numbers=13,
+   numbers=12,
   },
-  { 0, 1, 1, 1 },
+  { 0, 0, 2, 1 },
   {
    block="bodypart",
-   numbers=15,
+   numbers=14,
    set="all",
   },
   {
@@ -1279,26 +1163,26 @@ job.packer={
    kind="section",
    name="subsection",
   },
-  { 0, 1, 2 },
+  { 0, 0, 3 },
   {
    block="bodypart",
-   numbers=18,
+   numbers=17,
    set="all",
   },
-  { 0, 1, 2, 1 },
+  { 0, 0, 3, 1 },
   {
    block="bodypart",
-   numbers=20,
+   numbers=19,
    set="all",
   },
   { 4 },
   {
-   numbers=22,
+   numbers=21,
   },
-  { 0, 1, 2, 1, 1 },
+  { 0, 0, 3, 1, 1 },
   {
    block="bodypart",
-   numbers=24,
+   numbers=23,
    set="all",
   },
   {
@@ -1310,7 +1194,7 @@ job.packer={
   },
   { 5 },
   {
-   numbers=27,
+   numbers=26,
   },
   {
    catcodes=9,
@@ -1318,22 +1202,22 @@ job.packer={
    level=4,
    name="footnote",
   },
-  { 0, 1, 3 },
+  { 0, 0, 4 },
   {
    block="bodypart",
-   numbers=30,
+   numbers=29,
    set="all",
   },
-  { 0, 1, 4 },
+  { 0, 0, 5 },
   {
    block="bodypart",
-   numbers=32,
+   numbers=31,
    set="all",
   },
-  { 0, 1, 5 },
+  { 0, 0, 6 },
   {
    block="bodypart",
-   numbers=34,
+   numbers=33,
    set="all",
   },
   {
@@ -1342,43 +1226,37 @@ job.packer={
    level=3,
    name="descr",
   },
-  { 0, 1, 5, 1 },
+  { 0, 0, 6, 1 },
   {
    block="bodypart",
-   numbers=37,
+   numbers=36,
    set="all",
   },
   { 6 },
   {
-   numbers=39,
+   numbers=38,
   },
-  { 0, 2 },
+  { 0, 0, 7 },
   {
    block="bodypart",
-   numbers=41,
+   numbers=40,
    set="all",
   },
-  { 0, 2, 1 },
+  { 0, 0, 8 },
   {
    block="bodypart",
-   numbers=43,
+   numbers=42,
    set="all",
   },
-  { 0, 2, 1, 0, 1 },
+  { 0, 0, 8, 0, 1 },
   {
    block="bodypart",
-   numbers=45,
-   set="all",
-  },
-  { 0, 2, 2 },
-  {
-   block="bodypart",
-   numbers=47,
+   numbers=44,
    set="all",
   },
   { 7 },
   {
-   numbers=49,
+   numbers=46,
   },
   {
    catcodes=9,
@@ -1386,46 +1264,40 @@ job.packer={
    level=5,
    name="footnote",
   },
-  { 0, 2, 2, 1 },
+  { 0, 0, 8, 1 },
   {
    block="bodypart",
-   numbers=52,
-   set="all",
-  },
-  { 0, 2, 2, 2 },
-  {
-   block="bodypart",
-   numbers=54,
+   numbers=49,
    set="all",
   },
   { 8 },
   {
-   numbers=56,
+   numbers=51,
   },
-  { 0, 2, 3 },
+  { 0, 0, 9 },
   {
    block="bodypart",
-   numbers=58,
+   numbers=53,
    set="all",
   },
   { 9 },
   {
-   numbers=60,
+   numbers=55,
   },
   { 10 },
   {
-   numbers=62,
+   numbers=57,
   },
-  { 0, 2, 3, 1 },
+  { 0, 0, 9, 1 },
   {
    block="bodypart",
-   numbers=64,
+   numbers=59,
    set="all",
   },
-  { 0, 2, 3, 1, 0, 1 },
+  { 0, 0, 9, 1, 0, 1 },
   {
    block="bodypart",
-   numbers=66,
+   numbers=61,
    set="all",
   },
   {
@@ -1435,152 +1307,109 @@ job.packer={
    kind="section",
    name="subsubsubsection",
   },
-  { 0, 3 },
+  { 0, 0, 10 },
   {
    block="bodypart",
-   numbers=69,
+   numbers=64,
    set="all",
   },
-  { 0, 3, 1 },
+  { 0, 0, 11 },
   {
    block="bodypart",
-   numbers=71,
+   numbers=66,
    set="all",
   },
-  { 0, 3, 1, 1 },
+  { 0, 0, 11, 1 },
   {
    block="bodypart",
-   numbers=73,
+   numbers=68,
    set="all",
   },
-  { 0, 3, 2 },
+  { 0, 0, 12 },
   {
    block="bodypart",
-   numbers=75,
+   numbers=70,
    set="all",
   },
-  { 0, 3, 3 },
+  { 0, 0, 13 },
   {
    block="bodypart",
-   numbers=77,
+   numbers=72,
    set="all",
   },
-  { 0, 3, 4 },
+  { 0, 0, 14 },
   {
    block="bodypart",
-   numbers=79,
+   numbers=74,
    set="all",
   },
-  { 0, 3, 4, 1 },
+  { 0, 0, 14, 1 },
   {
    block="bodypart",
-   numbers=81,
+   numbers=76,
    set="all",
   },
-  { 0, 3, 4, 2 },
+  { 0, 0, 14, 2 },
   {
    block="bodypart",
-   numbers=83,
+   numbers=78,
    set="all",
   },
-  { 0, 4 },
+  { 0, 0, 15 },
   {
    block="bodypart",
-   numbers=85,
+   numbers=80,
    set="all",
   },
-  { 0, 4, 1 },
+  { 0, 0, 16 },
   {
    block="bodypart",
-   numbers=87,
+   numbers=82,
    set="all",
   },
-  { 0, 4, 2 },
+  { 0, 0, 17 },
   {
    block="bodypart",
-   numbers=89,
+   numbers=84,
    set="all",
   },
-  { 0, 4, 3 },
+  { 0, 0, 18 },
   {
    block="bodypart",
-   numbers=91,
+   numbers=86,
    set="all",
   },
-  { 0, 4, 3, 1 },
+  { 0, 0, 18, 1 },
   {
    block="bodypart",
-   numbers=93,
-   set="all",
-  },
-  { 0, 4, 3, 2 },
-  {
-   block="bodypart",
-   numbers=95,
+   numbers=88,
    set="all",
   },
   { 11 },
   {
-   numbers=97,
+   numbers=90,
   },
-  { 0, 5 },
+  { 0, 0, 18, 2 },
   {
    block="bodypart",
-   numbers=99,
+   numbers=92,
    set="all",
   },
-  { 0, 5, 1 },
+  { 0, 0, 19 },
   {
    block="bodypart",
-   numbers=101,
+   numbers=94,
+   set="all",
+  },
+  { 0, 0, 20 },
+  {
+   block="bodypart",
+   numbers=96,
    set="all",
   },
   { 12 },
   {
-   numbers=103,
-  },
-  {
-   catcodes=9,
-   kind="description",
-   level=2,
-   name="footnote",
-  },
-  { 0, 5, 1, 1 },
-  {
-   block="bodypart",
-   numbers=106,
-   set="all",
-  },
-  {
-   connector=".",
-   prefix="yes",
-   segments="2:2",
-  },
-  {
-   catcodes=9,
-   kind="float",
-   level=4,
-   name="figure",
-  },
-  { 0, 6 },
-  {
-   block="bodypart",
-   numbers=110,
-   set="all",
-  },
-  { 0, 6, 0 },
-  {
-   block="bodypart",
-   hidenumber=true,
-   numbers=112,
-   set="all",
-  },
-  {
-   catcodes=9,
-   coding="tex",
-   kind="section",
-   name="subject",
-   nolist=true,
+   numbers=98,
   },
   {
    connector="\\endash ",
@@ -1595,6 +1424,7 @@ job.packer={
   numbers=true,
   pagedata=true,
   prefixdata=true,
+  processors=true,
   sectiondata=true,
   specification=true,
  },

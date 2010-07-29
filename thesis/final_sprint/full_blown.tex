@@ -80,7 +80,7 @@ after={\blank[medium]},
 
 \starttext
 
-\chapter{Introduction}
+\section{Introduction}
 
 Today's new media theory increasingly invokes {\em materiality} as
 a significant, perhaps even {\em the} significant, mode of
@@ -650,7 +650,7 @@ automatically lead to a distribution of tools to all those that
 need them. However, even in this instance we see the power of FloSS
 in its capacity to inspire critical engagement with media.
 
-\chapter{Substrates of Digital Process}
+\section{Substrates of Digital Process}
 
 In his outlining of the nature of a
 \quote{processual media theory,} Ned Rossiter asserts that
@@ -727,21 +727,6 @@ that
 \quotation{would require that data and control structures be done away with in favor of a more biological scheme of protected universal cells interacting only through messages that could mimic any desired behavior}
 (Kay 1993)[\high{smalltalk]. [}smalltalk]:
 http://gagne.homedns.org/\lettertilde{}tgagne/contrib/EarlyHistoryST.html
-
-To this end, Kay and other members of the PARC team developed this
-language Smalltalk to facilitate a
-\quotation{qualitative shift in belief structures---a new Kuhnian paradigm in the same spirit as the invention of the printing press}
-(Kay 1993). The technical details of Smalltalk are indeed
-impressive to those who can read and understand them: Smalltalk is
-{\em object-oriented}, {\em dynamically typed}, and
-{\em reflective} ({\em Smalltalk} 2010). All three of these
-approaches have found increasing adoption in computer programming
-languges. For instance, Yukhiro Matzumoto's popular language Ruby
-offers all three of these characteristics and the founder readily
-admits that his language is greatly influenced by Smalltalk
-(!CITE!). For the sake of reference, the idea of dynamic typing
-remains controversial among programming language designers from the
-implementation of Smalltalk in the 1970s until this very day.
 
 One of dynamic typing's greatest attribute---and perhaps at least a
 part of why some choose to object to it---is that it makes the
@@ -827,6 +812,9 @@ might be should either of those seminally-positioned products have
 shipped with the kind of development environment to be found in
 Kay's largely-forgotten prototype.
 
+--- kay and the ipad
+http://www.tomshardware.com/news/alan-kay-steve-jobs-ipad-iphone,10209.html
+
 \subsubsection{Operating Systems as the Substrates of Contemporary Design}
 
 This line of inquiry into lost historical possibilities serves only
@@ -854,7 +842,7 @@ competitor to the GNU compiler, LLVM, is the result of Apple´s
 decision to avoid the GNU Public License as much as possible (LLVM
 is licensed under an easily-coopted open source license).}
 
-\section{The evolving nature of operating systems}
+==== The evolving nature of operating systems ====
 
 The conceptions and roles of operating systems have been evolving
 along with the hardware. Originally the operating system of a
@@ -896,7 +884,7 @@ text concerns itself is not so much the distinctions and
 separations between hardware and software as the mode of
 interactions with which we engage information:
 
-The crucial separation here is not between the computer
+*****-T-he crucial separation here is not between the computer
 (hardware) and the Operating System (software). Those are so deeply
 integrated these days that they have effectively merged into the
 same beast. The crucial division is between ourselves, and our
@@ -920,7 +908,7 @@ materiality, then, of a personal computer is inherently tied to
 process---without an OS, the PC is not a metamedium, it is dead
 weight.
 
-\subsection{Unix and Code Drift}
+===== Unix and Code Drift =====
 
 The capacity of Unix to migrate across hardware while maintaining a
 consistent interface to both users and programmers has been
@@ -1242,7 +1230,7 @@ workflows that incorporate both generativity and WYSIWYG design
 approaches. After five years of development, it has effectively
 implemented the features necessary for graphic design on the web.
 
-\chapter{Screenic Text}
+\section{Screenic Text}
 
 \section{Text as Interface/Text as Process}
 
@@ -1631,8 +1619,8 @@ widely used than formal formats such as TeX (and LaTeX/ConTeXt).
 While both are bottom up in contrast to WYSIWYG, there is a
 distinction even here between top down and bottom up. (They are
 both bottom up in that the typesetting goals of any block of text
-are specified at the beginning of that block, i.e. \type{<em>} and
-\type{\quote} are both typed before the block of text begins.
+are specified at the beginning of that block, i.e.~\type{<em>} and
+`\quote' are both typed before the block of text begins.
 
 HTML is top down, however, because that is its rendering model. By
 imbuing blocks of text with semantic qualities, one abstracts away
@@ -1640,17 +1628,7 @@ the process of displaying those semantic blocks. Order is imposed
 from above, both through Cascading Style Sheets (CSS) and through
 the rendering algorithm of a given browser's implementation.
 
-TeX, on the other hand, is not simply a format. The kinetic language, denoted
-by keywords beginning with an \quote{\type{\}}, is literally compiled
-into the raw data of the PDF format. Because this raw data fits the PDF
-standard, any PDF browser should be able to view the resulting output.
-This is a bottom up approach in that the markup of TeX itself does
-not allow the plain text document to be rendered differently according
-to which interface is used (as an HTML file will look different according
-to whether it was opened in a text editor or a browser). Rather, TeX markup
-is a language of assembly.
-
-\chapter{Constraints: Generative Design in FLoSS}
+\section{Constraints: Generative Design in FLoSS}
 
 \section{Enter the Conditional}
 
@@ -1817,7 +1795,7 @@ applications of logic found within the Conditional Design
 Manifesto:
 \quotation{Constraints sharpen the perspective on the process and stimulate play within the limitations.}
 
-\chapter{Crystalized Process: Text That Typesets Itself}
+\section{Crystalized Process: Text That Typesets Itself}
 
 The time has come to for the self-reflective approach of this
 thesis to come into play. For a book called {\em Writing Space},
@@ -1852,17 +1830,6 @@ Bolter describes the operation of outline processors. These
 programs abstract a text to the level of sections. These sections
 can be moved around and manipulated.
 
-This argument is easily extended, as will be demonstrated in the final
-draft of this thesis. An easy mechanism is the importation of Robert Bringhurst's
-typographic grammars into the typesetting of the HTML output. By first
-applying the term remediation to this process, I will demonstrate how
-such an application is invalid and could better be understood as an
-appropriation of grammar.
-
-Lev Manovich's \quote{media hybridity} will also be complicated by
-its inapplicability in the context of describing this generative workflow
-of typesetting.
-
 \section{Environment of Operation}
 
 This text is not typed in the manner that you see it. The above
@@ -1876,19 +1843,19 @@ Through the wrapper program \type{pandoc}, this input (written in
 Markdown) is converted into HTML and ConTeXt outputs.
 
 \startdescr{HTML}
-\starttyping
-<h1>Environment of Operation</h1>
-\stoptyping
+\letteropenbrace{}
+Environment of Operation
+\letterclosebrace{}
 \stopdescr
 
 \startdescr{ConTeXt}
-\starttyping
-\section{Environment of Operation}
-\stoptyping
+\letteropenbrace{}
+\letterbackslash{}section\letteropenbrace{}Environment of
+Operation\letterclosebrace{} \letterclosebrace{}
 \stopdescr
 
 The syntax of HTML represents a semantic operation:
-\quotation{Dear Browser, treat this as a header of level 1.}
+\quotation{Dear Mr.~Browser, treat this as a header of level 1.}
 The syntax of ConTeXt, however, represents a macro command within a
 programming language. What it says is
 \quotation{call the sections of code that translate the text within the brackets to the parameters specified for the \type{\section{}} command.}
@@ -1904,241 +1871,6 @@ programmers on a code base, version control systems can track
 changes in text across time (useful for this project) and allow for
 massively distributed workflows involved tens of thousands of
 individuals (useful for the Linux kernel).
-
-
-
-\subsection{Constraints}
-
-\placefigure[here,nonumber]{Textroom and gvim. gvim is displayed on this screen but running on my netbook.}{\externalfigure[images/two_editors.png]}
-
-Above you see a necessary adaptation within my workflow. My netbook
-took a fall and lost the ability to use its screen. Because of the
-nature of the command line, I was able to log in to computer and
-execute commands that allowed me to establish remote access using a
-piece of software called \type{ssh}. This remote connection can
-also support the transmission of GUI applications using the
-client-server model at the heart of the X Windows system (which
-drives the GNU/Linux GUI). This was important a) to get files off
-the netbook, and b) the version of \type{pandoc} on my desktop had
-stopped working after a modular dependency was upgraded and I was
-finding it impossible to upgrade \type{pandoc} itself. In the image
-above we see the minimal editor Textroom and the editor gvim.
-Because of the pandoc incompatibility on the desktop, I was forced
-to use the netbook as the site of typesetting. This shaped the
-output of the project most likely by time. However, the simple
-ability to log in and enable remote access shaped this project
-immensely by allowing me to extract important work that would
-otherwise have been lost.
-
-An unfortunate constraint is the inability to take advantage of
-elements of the TeX landscape that are reknowned for making life
-easier. The chief among these is BibTeX, which allows for a
-bibliography to be dynamically generated and citations to be
-inserted according to a variety of formats (that one can change
-with a single line of text, if desired). By abstracting myself from
-TeX by using Markdown as the \quotation{pre-format,} I've lost the
-opportunity to easily manage bibliographic data and instead must
-input it by hand. That said, the MLA format is not currently
-available in BibTeX meaning that---even if I could use this
-software---the output would be necessarily shaped by the
-constraints of the tools.
-
-
-\chapter{Bibliography}
-
-\startworkscited
-
-Birkel, Garrett. (2004). ¨The Command Line In 2004¨. Web.
-\letterless{}\useURL[1][http://garote.bdmonkeys.net/commandline/index.html][][http://garote.bdmonkeys.net/commandline/index.html]\from[1]\lettermore{}
-(last accessed 20 June 2010).
-
-Bolter, Jay David. (2001).
-{\em Writing Space: Computers, hypertext, and the remediation of print}.
-New York: Routledge. Print.
-
-Bolter, Jay David and Richard A. Grusin. (1996).
-\quotation{Remediation}. {\em Configurations} 4:3. PDF. Bringhurst,
-Robert. (2008).
-{\em The Elements of Typographic Style, version 3.2}. Vancouver:
-Hartley \& Marks. Print.
-
-Brooks, Frederick. (1975).
-{\em The Mythical Man-Month: Essays on software engineering}.
-Massachusetts: Addison-Wesley. PDF.
-
-coons, ginger. (2010). \quotation{Why F/LOSS, why not F/LOSS}.
-{\em Libre Graphics \#0!}. Belgium: Drukkerij Bulckens nv. Print.
-
-Cramer, Florian. (2001).
-\quotation{Digital Code and Literary Text}. {\em netzlituratur}.
-Web.
-\letterless{}\useURL[2][http://www.netzliteratur.net/cramer/digital_code_and_literary_text.html][][http://www.netzliteratur.net/cramer/digital\letterunderscore{}code\letterunderscore{}and\letterunderscore{}literary\letterunderscore{}text.html]\from[2]\lettermore{}
-(last accessed 5 June 2010).
-
-Cramer, Florian. (2005).
-{\em Words Made Flesh: Code, Culture, Imagination}. Rotterdam: Piet
-Zwart Institute. PDF.
-\letterless{}\useURL[3][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/wordsmadefleshpdf][][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/wordsmadefleshpdf]\from[3]\lettermore{}
-
-Cramer, Florian and Matthew Fuller. (2008). \quotation{Interface}.
-In {\em Software Studies: a lexicon}, edited by Matthew Fuller. MIT
-Press: Cambridge. Print.
-
-Cramer, Florian, Aymeric Mansoux and Michael Murtaugh. (2010).
-\quotation{How to Run an Art School on Free and Open Source Software}.
-Presentation at the Libre Graphics Meeting 2010, Brussels. Online
-video.
-\letterless{}\useURL[4][http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/][][http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/]\from[4]\lettermore{}
-(last accessed 20 June 2010).
-
-Fuller, Matthew.
-\quotation{It looks like you're trying to write a letter: Microsoft Word}.
-2000. Web.
-\letterless{}\useURL[5][http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html][][http://www.nettime.org/Lists-Archives/nettime-l--0009/msg00040.html]\from[5]\lettermore{}
-(last accessed 5 June 2010).
-
-Galloway, Alexander. (2010). \quotation{Interface}. Presented at
-{\em A wedge between public and private conference} on 22 April
-2010, Amsterdam.
-
-Gitelman, Lisa. (2008).
-{\em Always Already New: Media, history, and the data of culture}.
-Cambridge: MIT Press. Print.
-
-Gillimore, Dan. (2010). ¨This Mac devotee is moving to Linux¨.
-{\em Salon.com}. 20 June 2010. Web.
-\useURL[6][http://www.salon.com/technology/apple/index.html?story=/tech/dan_gillmor/2010/06/20/from_mac_to_linux][][http://www.salon.com/technology/apple/index.html?story=/tech/dan\letterunderscore{}gillmor/2010/06/20/from\letterunderscore{}mac\letterunderscore{}to\letterunderscore{}linux]\from[6]
-(last accessed 21 June 2010).
-
-Hagen, Hans. (2009). {\em The history of luaTeX}. Netherlands:
-Pragma ADE. Web.
-\letterless{}\useURL[7][http://www.pragma-ade.com/general/manuals/mk.pdf][][http://www.pragma-ade.com/general/manuals/mk.pdf]\from[7]\lettermore{}
-(last accessed 5 June 2010).
-
-Hayles, N. Katherine. (2004)
-\quotation{Print is Flat, Code is Deep: The Importance of Media Specific Analysis}.
-{\em Poetics Today} 25:1. PDF.
-
-Hayles, N. Katherine. (2008).
-{\em Electronic Literature: new horizons for the literary}. Notre
-Dame: University of Notre Dame. Print.
-
-Holt, Jason and Tom Miller. (2010).
-\quotation{Introducing the Google Command Line Tool}.
-{\em Open Source at Google} blog. 18 June 2010. Web.
-\letterless{}\useURL[8][http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html][][http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html]\from[8]\lettermore{}
-(last accessed 18 June 2010).
-
-Illich, Ivan and Barry Sanders. (1988).
-{\em ABC: The Alphabetization of the Popular Mind}. San Fransisco:
-North Point Press. Print.
-
-Kay, Alan and Adele Goldberg. (1977).
-\quotation{Personal Dynamic Media}. From the collection
-{\em The New Media Reader}, edited by Noah Wardrip-Fruin and Nick
-Montfort, 2003. Cambridge: MIT Press. PDF.
-\letterless{}\useURL[9][http://www.newmediareader.com/book_samples/nmr-26-kay.pdf][][http://www.newmediareader.com/book\letterunderscore{}samples/nmr--26-kay.pdf]\from[9]\lettermore{}
-(last accessed 15 June 2010).
-
-{\em Kernel (computing)}. (2010). \quotation{Kernel (computing)}.
-{\em Wikipedia}. Web.
-\letterless{}[http://en.wikipedia.org/wiki/Kernel{\em \%28computing\%29](http://en.wikipedia.org/wiki/Kernel}\%28computing\%29)\lettermore{}
-(last accessed 18 June 2010).
-
-Kinross, Robin. (2004).
-{\em Modern typography: an essay in critical history}. London:
-Hyphen Press. Print.
-
-Knuth, Donald. (1984). {\em The TeXBook}. Massachusetts:
-Addison-Wesley. Print.
-
-Knuth, Donald. (1999). {\em Digital Typography}. Stanford: CSLI.
-Print.
-
-Kroker, Arthur and Marilouise Kroker. (2010). ¨Code Drift¨.
-{\em CTheory}. 14 April 2010. Web.
-\letterless{}\useURL[10][http://ctheory.net/articles.aspx?id=633][][http://ctheory.net/articles.aspx?id=633]\from[10]\lettermore{}
-(last accessed 19 June 2010).
-
-**Langlois, Ganaele, Fenwick McKelvey, Greg Elmer, and Kenneth
-Werbin. (2009). ¨Mapping Commercial Web 2.0 Spaces: Towards a New
-Critical Ontogenesis¨. {\em Fibreculture} 14. Web.
-\letterless{}\useURL[11][http://journal.fibreculture.org/issue14/issue14_langlois_et_al.html][][http://journal.fibreculture.org/issue14/issue14\letterunderscore{}langlois\letterunderscore{}et\letterunderscore{}al.html]\from[11]\lettermore{}
-
-Manovich, Lev. (2001). {\em The Language of New Media}. MIT Press:
-Cambridge. Print.
-
-Manovich, Lev. (2008). {\em Software Takes Comman}. MS Doc
-manuscript, published online 20 November 2008.
-\letterless{}\useURL[12][http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.doc][][http://softwarestudies.com/softbook/manovich\letterunderscore{}softbook\letterunderscore{}11\letterunderscore{}20\letterunderscore{}2008.doc]\from[12]\lettermore{}
-(
-
-Marco, Meg. (2010).
-\quotation{Privacy Change: Apple Knows Where Your Phon Is and Is Telling People}.
-{\em The Consumerist}. 21 June 2010. Wev.
-\letterless{}\useURL[13][http://consumerist.com/2010/06/privacy-change-apple-knows-your-phone-is-and-is-telling-people.html][][http://consumerist.com/2010/06/privacy-change-apple-knows-your-phone-is-and-is-telling-people.html]\from[13]\lettermore{}
-(last accessed 22 June 2010).
-
-Maurer, Luna and Edo Paulus, Jonathan Puckey, Roel Wouters. (2008).
-\quotation{Conditional Design Manifesto}.
-{\em conditionaldesign.org}. Web.
-\letterless{}\useURL[14][http://www.conditionaldesign.org/manifesto/][][http://www.conditionaldesign.org/manifesto/]\from[14]\lettermore{}
-(last accessed 17 June 2010).
-
-McLuhan, Marshall. (1964). \quotation{Media Hot and Cold}.
-{\em Understanding Media: The Extensions of Man}. Cambridge: MIT
-Press, 1994. PDF.
-
-OSP. (2010). \quotation{OSP DIN}. {\em Libre Graphics \#0!}.
-Belgium: Drukkerij Bulckens nv. Print.
-
-Pasquinelli, Matteo. (2008).
-\quotation{The Ideology of Free Culture and the Grammar of Sabotage}.
-{\em generation online}. PDF.
-\letterless{}\useURL[15][http://www.generation-online.org/c/fc_rent4.pdf][][http://www.generation-online.org/c/fc\letterunderscore{}rent4.pdf]\from[15]\lettermore{}
-
-Rosenberg, Scott. (2008). {\em Dreaming in Code}. New York: Three
-Rivers Press. Print.
-
-Simondon, Gilbert. (2009).
-\quotation{The Position of the Problem of Ontogenesis}. Gregor
-Flanders, trans. {\em Parrhesia} 7. PDF.
-\letterless{}\useURL[16][http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf][][http://www.parrhesiajournal.org/parrhesia07/parrhesia07\letterunderscore{}simondon1.pdf]\from[16]\lettermore{}
-(last accessed 5 June 2010).
-
-Snelting, Femke. (2009). \quotation{The Making of}.
-{\em Tracks in electr(on)ic fields}. Brussels: Constant. Web.
-\useURL[17][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf][][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf]\from[17]
-(last accessed 5 June 2010).
-
-Snelting, Femke and Pierre Huyghebaert. (2010). Personal interview,
-with John Haltiwanger. Brussels, Belgium.
-
-Stephenson, Neal. (1999). ¨In the Beginning was the Command Line¨.
-Essay. Web.
-\letterless{}\useURL[18][http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml][][http://artlung.com/smorgasborg/C\letterunderscore{}R\letterunderscore{}Y\letterunderscore{}P\letterunderscore{}T\letterunderscore{}O\letterunderscore{}N\letterunderscore{}O\letterunderscore{}M\letterunderscore{}I\letterunderscore{}C\letterunderscore{}O\letterunderscore{}N.shtml]\from[18]\lettermore{}
-(last accessed 16 June 2010).
-
-Garfinkel, Simson, Daniel Weise, and Steven Strassman (editors).
-(1994). {\em The UNIX-HATER´s Handbook}. San Mateo: IDG Worldwide.
-PDF.
-\letterless{}[http://web.mit.edu/\low{simsong/www/ugh.pdf](http://web.mit.edu/}simsong/www/ugh.pdf)\lettermore{}.
-
-{\em Windows 1.0}. (2010). \quotation{Windows 1.0}.
-{\em Wikipedia}. Web.
-\letterless{}\useURL[19][http://en.wikipedia.org/wiki/Windows_1.0][][http://en.wikipedia.org/wiki/Windows\letterunderscore{}1.0]\from[19]\lettermore{}
-(last accessed 19 June 2010).
-
-{\em Windows XP}. (2010). \quotation{Windows XP}. {\em Wikipedia}.
-Web.
-\letterless{}\useURL[20][http://en.wikipedia.org/wiki/Windows_xp][][http://en.wikipedia.org/wiki/Windows\letterunderscore{}xp]\from[20]\lettermore{}
-(last accessed 19 June 2010).
-
-{\em XNU}. (2010). \quotation{XNU}. {\em Wikipedia}. Web.
-\letterless{}\useURL[21][http://en.wikipedia.org/wiki/XNU][][http://en.wikipedia.org/wiki/XNU]\from[21]\lettermore{}
-(last accessed 18 June 2010).
-
-\stopworkscited
 
 \stoptext
 

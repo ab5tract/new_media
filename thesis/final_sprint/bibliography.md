@@ -48,6 +48,8 @@ Knuth, Donald. (1999). _Digital Typography_. Stanford: CSLI. Print.
 
 Kroker, Arthur and Marilouise Kroker. (2010). ¨Code Drift¨. _CTheory_. 14 April 2010. Web. <[http://ctheory.net/articles.aspx?id=633](http://ctheory.net/articles.aspx?id=633)> (last accessed 19 June 2010).
 
+Lovitt, Michael. (2010). "Rubular: a Ruby regular expression editor". _rubular.com_. Web. <[http://rubular.com](http://rubular.com)> (last accessed 28 July 2010).
+
 **Langlois, Ganaele, Fenwick McKelvey, Greg Elmer, and Kenneth Werbin. (2009). ¨Mapping Commercial Web 2.0 Spaces: Towards a New Critical Ontogenesis¨. _Fibreculture_ 14. Web. <[http://journal.fibreculture.org/issue14/issue14_langlois_et_al.html](http://journal.fibreculture.org/issue14/issue14_langlois_et_al.html)>
 
 Manovich, Lev. (2001). _The Language of New Media_. MIT Press: Cambridge. Print.
@@ -63,6 +65,8 @@ McLuhan, Marshall. (1964). "Media Hot and Cold". _Understanding Media: The Exten
 OSP. (2010). "OSP DIN". _Libre Graphics #0!_. Belgium: Drukkerij Bulckens nv. Print.
 
 Pasquinelli, Matteo. (2008). "The Ideology of Free Culture and the Grammar of Sabotage". _generation online_. PDF. <[http://www.generation-online.org/c/fc_rent4.pdf](http://www.generation-online.org/c/fc_rent4.pdf)>
+
+_Regular expression_. (2010). "Regular expression". _Wikipedia_. Web. <[http://en.wikipedia.org/wiki/Regular_expression](http://en.wikipedia.org/wiki/Regular_expression)> (last accessed 28 July 2010).
 
 Rosenberg, Scott. (2008). _Dreaming in Code_. New York: Three Rivers Press. Print.
 

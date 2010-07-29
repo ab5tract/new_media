@@ -8,14 +8,14 @@ $else$
 
 \usemodule[simplefonts]
 \setmainfont[Liberation-Serif]
-\setmonofont[inconsolata]
+\setmonofont[inconsolata][11pt]
 
 \setuppapersize[A4][A4]  % use letter paper
 %\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
 %             height=middle, header=0.75in, footer=0.75in] % page layout
 \setuppagenumbering[location={footer,right}]  % number pages
 \setupbodyfont[12pt]  % 11pt font
-\setupwhitespace[small]  % inter-paragraph spacing
+\setupwhitespace[medium]  % inter-paragraph spacing
 
 \setupindenting[medium]
 \indenting[always]
@@ -57,6 +57,27 @@ blockquote: blockquote
 before={\blank[medium]},
 after={\blank[medium]},
 ]
+
+% for bibliographic entries
+
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \subject{Bibliography}
+    \stopalignment
+    \setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
 
 \protect
 $endif$

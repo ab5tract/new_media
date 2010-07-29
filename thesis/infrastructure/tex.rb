@@ -47,12 +47,12 @@ module Tex
     render basenames    
 	end
 
-	def transduct
+	def transductl
 		files = []
 		files = Dir.glob('*.md') 
 		files.each do |f|
 			%x[pandoc -o #{File.basename(f, '.md')}.tex -t context -s #{f}]
-			%x[pandoc -o #{File.basename(f, '.md')}.html -s #{f}]
+			%x[pandoc -o #{File.basename(f, '.md')}.html -S -s #{f}]
 			%x[pandoc -o #{File.basename(f, '.md')}.odt #{f}]
 			%x[context #{File.basename(f, '.md')}.tex]
 		end

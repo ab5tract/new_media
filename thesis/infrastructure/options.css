@@ -1,0 +1,67 @@
+		#main {
+			width: "61.8%";
+			float: left;
+		}
+
+		#footer {
+		
+		}
+
+		/* we will need to add abbr's automatically */
+		abbr { letter-spacing: 0.1em }
+
+		body {
+			font-family : "Lib-Sans-R", serif;
+		}
+		
+		
+		
+		p {
+			text-align: left;
+			
+		}
+
+		em {
+			font-family : "Lib-Sans-I";
+		}
+
+		h1 {
+			font-family : "Lib-Serif-R";
+		}
+
+		h1[class="title"] {
+			font-size : 2.8em;
+			color : #910A00;
+			right: 85%;
+		}
+
+		h1[class="author"] {
+			font-size : 1.8em;
+		}
+
+		h1[class="date"] {
+			font-size : 1.3em;
+		}
+
+		h2 {
+			font-family : "Lib-Serif-R"
+		}
+
+		div[class="title_section"] {
+			padding-bottom : 4em; 
+		}
+
+		@font-face {
+			font-family : "Lib-Serif-R";
+			src : url(ttf/LiberationSerif-Regular.ttf) format("truetype");
+		}
+
+		@font-face {
+			font-family : "Lib-Sans-R";
+			src : url(ttf/LiberationSans-Regular.ttf) format("truetype");
+		}
+
+		@font-face {
+			font-family : "Lib-Sans-I";
+			src : url(ttf/LiberationSans-Italic.ttf) format("truetype");
+		}    
