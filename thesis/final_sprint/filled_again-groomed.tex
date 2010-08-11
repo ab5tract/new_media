@@ -1,0 +1,268 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=black] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[linlibertineo]
+\setmonofont[inconsolata][11pt]
+
+\setuppapersize[A4][A4]  % use A4 paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+%\setuppagenumbering[alternative=doublesided, location={header,margin}]  % number pages
+\setuppagenumbering[location=]
+\setupbodyfont[12pt]  % 12pt font
+\setupwhitespace[medium]  % inter-paragraph spacing
+
+\setupinterlinespace[line=18pt] % should be 3/2 spacing
+
+\setupcaptions[headstyle=smallcaps]
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\sc, alternative=margin]
+\setuphead[subsection][style=\sc, alternative=margin]
+\setuphead[subsubsection][style=\sc, alternative=margin]
+
+\setupheadertexts
+	[{\sc \getmarking[chapter]}]	[{\pagenumber}]
+	[{\sc \getmarking[Doctitle]}] [{\pagenumber}]	
+
+% this is for truly empty pagebreaks
+\definepagebreak
+  [mychapterpagebreak]
+  [yes,header,right]
+%\setuphead
+%  [chapter]
+%  [page=mychapterpagebreak]
+
+% setup title page
+\unprotect
+\definemarking[Author]
+\definemarking[Doctitle]
+
+\def\doctitle#1{\gdef\@title{#1}\marking[Doctitle]{#1}}
+\def\docsubtitle#1{\gdef\@subtitle{#1}}
+\def\author#1{\gdef\@author{#1}\marking[Author]{#1}}
+\def\date#1{\gdef\@date{#1}}
+\date{\currentdate[day, month, year]}  % Default to today unless specified otherwise.
+
+\def\maketitle{
+  \startalignment[center]
+    \blank[force,2*big]
+      {\scd \@title}
+		\blank[big]
+			{\scb \@subtitle}
+	\stopalignment
+	\startalignment[flushleft]
+    \blank[25*big]
+		\starttabulate[|l|l|]
+    			\NC Name: \NC \@author
+			\NR \NC Student Number: \NC 6100473
+			\NR \NC Email: \NC john.haltiwanger@gmail.com
+			\NR \NC Website:	\NC http://drippingdigital.com/
+			\NR
+		  \NR	\NC Date: \NC \@date
+			\NR \NC Supervisor: \NC Richard Rogers
+			\NR \NC Second reader: \NC Geert Lovink
+			\NR \NC Institution: \NC Universiteit van Amsterdam
+			\NR \NC Department: \NC Media and Culture (New Media)
+		\stoptabulate
+		\blank[3*big]
+		\starttabulate[|l|]
+		\NC {\sc Keywords} \NR
+		\stoptabulate
+		medium theory, ontogenesis, transduction, generative design, process oriented perspective, typesetting, ideological computing
+
+%		{\tfa Author: \@author}
+%		\blank[medium]
+%		{\tfa Student Number: 6100473}
+%		\blank[medium]
+%		{\tfa Supervisor: Richard Rogers}
+%		\blank[medium]
+%		{\tfa Program: New Media}
+%		\blank[medium]
+%		{\tfa Faculty: Media \& Culture}
+%		\blank[medium]
+%		{\tfa Date: \@date}
+\stopalignment}
+\protect
+
+
+% define descr (for definition lists)
+\definedescription
+  [descr]
+    [headstyle=bold,style=normal,align=right,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+
+% define a special head type of bibliography
+\definehead		[bibliography] [chapter]
+\setuphead		[bibliography] [number=no]
+%\definecombinedlist		[content][chapter,section,bibliography]
+\setuplist		[bibliography] [headnumber=no]
+
+\definehead		[intro]	[chapter]
+\setuphead		[intro]	[number=no]
+\definecombinedlist		[content][intro,chapter,section,subsection,subsubsection,bibliography]
+\setupcombinedlist		[content][alternative=c,interaction=all]
+\setuplist		[intro]	[headnumber=no]
+
+% let's get pretty chapters
+\def\MyChapterCommand#1#2% #1 is number, #2 is text
+  {\framed[frame=off,bottomframe=on,topframe=on]
+     {\vbox{\headtext{chapter} #1\blank#2}}} % \vbox is needed for \blank to work
+\def\MyEmptyChapterCommand#1#2% is a comment necessary?---apparently so...
+	{\framed[frame=off,bottomframe=on,topframe=on]
+			{\vbox{#2}}}
+
+\setuphead[chapter][command=\MyChapterCommand, style={\sc},page=mychapterpagebreak,header=empty]
+
+\setuphead[bibliography][command=\MyEmptyChapterCommand, style={\sc},page=mychapterpagebreak,header=empty]
+
+\setuphead[intro][command=\MyEmptyChapterCommand, style={\sc},page=mychapterpagebreak,header=empty]
+
+\setupheadtext[chapter=Chapter] % used by \headtext
+
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+% for long quotes
+\definestartstop
+  [longquote]
+  [before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for bibliographic entries
+
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \bibliography{Bibliography}
+    \stopalignment
+    \setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+\protect
+
+\definestartstop
+  [abstract]
+  [before={\blank[4*big]
+					 \midaligned{\sc Abstract}
+           \startnarrower[2*middle]},
+   after={\stopnarrower
+          \blank[big]}]
+
+\setupheader[state=start]
+
+
+\starttext
+	\doctitle{Grammars of Process}
+	\author{John C. Haltiwanger}
+
+\docsubtitle{Mapping Ontogenesis in Generative Design}
+
+
+%\setuppagenumbering[location=]
+\setupheader[state=stop]
+\maketitle
+\page
+
+%\setuppagenumbering[alternative=doublisided, location={header,margin}] 
+
+
+\startabstract
+Here goes the abstract!
+
+Will it do multi-line stuff for me?
+
+Eh????
+\stopabstract
+\page
+\setupheader[state=start]
+
+\placecontent
+%\startfrontmatter
+%\intro{Acknowledgments}
+
+%This is where I acknowledge everyone.
+
+%\intro{Introduction}
+
+%This is a chipper little introduction, don't you think?
+% should work in general, i hope!
+
+%\stopfrontmatter
+\startfrontmatter
+\intro{Acknowledgments}
+
+I'd like to thank the world.
+
+\intro{Introduction}
+
+This is the beginning of a very long introduction.
+
+\section{Now this should be interpreted correctly?}
+
+But how does it appear in the table of contents?
+
+\stopfrontmatter \chapter{A Source for All Ages} More Later.
+
+\section{Do I get sections in the main text}
+
+I hope so\ldots{}.
+
+\startworkscited
+
+This is where all the words will go.
+
+\input tufte
+
+% we should have an open works-cited going
+\stopworkscited
+
+\stoptext
+

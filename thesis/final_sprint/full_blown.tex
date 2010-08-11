@@ -4,22 +4,24 @@
 \setupinteraction[state=start, color=blue] % needed for hyperlinks
 
 \usemodule[simplefonts]
-\setmainfont[Liberation-Serif]
+\setmainfont[linlibertineo]
 \setmonofont[inconsolata][11pt]
 
-\setuppapersize[A4][A4]  % use letter paper
+\setuppapersize[A4][A4]  % use A4 paper
 %\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
 %             height=middle, header=0.75in, footer=0.75in] % page layout
 \setuppagenumbering[location={footer,right}]  % number pages
-\setupbodyfont[12pt]  % 11pt font
+\setupbodyfont[12pt]  % 12pt font
 \setupwhitespace[medium]  % inter-paragraph spacing
+
+\setupinterlinespace[line=1.5em] % should be 3/2 spacing
 
 \setupindenting[medium]
 \indenting[always]
 
-\setuphead[section][style=\tfc]
-\setuphead[subsection][style=\tfb]
-\setuphead[subsubsection][style=\bf]
+\setuphead[section][style=\sc]
+\setuphead[subsection][style=\sc]
+\setuphead[subsubsection][style=\sc]
 
 % define descr (for definition lists)
 \definedescription[descr][
@@ -727,6 +729,21 @@ that
 \quotation{would require that data and control structures be done away with in favor of a more biological scheme of protected universal cells interacting only through messages that could mimic any desired behavior}
 (Kay 1993)[\high{smalltalk]. [}smalltalk]:
 http://gagne.homedns.org/\lettertilde{}tgagne/contrib/EarlyHistoryST.html
+
+To this end, Kay and other members of the PARC team developed this
+language Smalltalk to facilitate a
+\quotation{qualitative shift in belief structures---a new Kuhnian paradigm in the same spirit as the invention of the printing press}
+(Kay 1993). The technical details of Smalltalk are indeed
+impressive to those who can read and understand them: Smalltalk is
+{\em object-oriented}, {\em dynamically typed}, and
+{\em reflective} ({\em Smalltalk} 2010). All three of these
+approaches have found increasing adoption in computer programming
+languges. For instance, Yukhiro Matzumoto's popular language Ruby
+offers all three of these characteristics and the founder readily
+admits that his language is greatly influenced by Smalltalk
+(!CITE!). For the sake of reference, the idea of dynamic typing
+remains controversial among programming language designers from the
+implementation of Smalltalk in the 1970s until this very day.
 
 One of dynamic typing's greatest attribute---and perhaps at least a
 part of why some choose to object to it---is that it makes the
@@ -1803,11 +1820,8 @@ this work by Jay David Bolter provides scant discussion of actual
 writing environments on the computer. Originally written before the
 expansion of the World Wide Web into the sphere of popular culture,
 {\em Writing Space} is concerns itself with
-\quotation{the space of electronic writing.}
-\footnote{The second edition of the book, published in 2001, was used for
-this thesis. While it is updated to include the Web, its roots in a
-significantly older text are worth noting.}
-In defining this space as
+\quotation{the space of electronic writing.}[\letterhat{}second] In
+defining this space as
 \quotation{both the computer screen, where text is displayed, and the electronic memory, in which it is stored,}
 Bolter belies the relative absence of process in materialist forms
 of media analysis (2001: 13).
@@ -1829,48 +1843,6 @@ symbol-processing:
 Bolter describes the operation of outline processors. These
 programs abstract a text to the level of sections. These sections
 can be moved around and manipulated.
-
-\section{Environment of Operation}
-
-This text is not typed in the manner that you see it. The above
-header is instead written like this:
-
-\starttyping
-  # Environment of Operation #
-\stoptyping
-
-Through the wrapper program \type{pandoc}, this input (written in
-Markdown) is converted into HTML and ConTeXt outputs.
-
-\startdescr{HTML}
-\letteropenbrace{}
-Environment of Operation
-\letterclosebrace{}
-\stopdescr
-
-\startdescr{ConTeXt}
-\letteropenbrace{}
-\letterbackslash{}section\letteropenbrace{}Environment of
-Operation\letterclosebrace{} \letterclosebrace{}
-\stopdescr
-
-The syntax of HTML represents a semantic operation:
-\quotation{Dear Mr.~Browser, treat this as a header of level 1.}
-The syntax of ConTeXt, however, represents a macro command within a
-programming language. What it says is
-\quotation{call the sections of code that translate the text within the brackets to the parameters specified for the \type{\section{}} command.}
-
-The literal \quote{writing space} of this thesis is a program
-called Textroom. Textroom is a minimalist text editor in which
-there are no buttons, taskbars, or other clutter. Only you, your
-words, and (optionally) informational text reporting the time, word
-count, percentage to accomplishing your writing goal, etc. By
-writing in plain-text, I open myself to the opportunities afforded
-me by version control systems. Developed to enable collaboration of
-programmers on a code base, version control systems can track
-changes in text across time (useful for this project) and allow for
-massively distributed workflows involved tens of thousands of
-individuals (useful for the Linux kernel).
 
 \stoptext
 

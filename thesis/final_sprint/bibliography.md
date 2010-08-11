@@ -22,6 +22,8 @@ Fuller, Matthew. "It looks like you're trying to write a letter: Microsoft Word"
 
 Galloway, Alexander. (2010). "Interface". Presented at _A wedge between public and private conference_ on 22 April 2010, Amsterdam.
 
+Garfinkel, Simson, Daniel Weise, and Steven Strassman (editors). (1994). _The UNIX-HATER´s Handbook_. San Mateo: IDG Worldwide. PDF. <[http://web.mit.edu/\~simsong/www/ugh.pdf](http://web.mit.edu/\~simsong/www/ugh.pdf)>.
+
 Gitelman, Lisa. (2008). _Always Already New: Media, history, and the data of culture_. Cambridge: MIT Press. Print.
 
 Gillimore, Dan. (2010). ¨This Mac devotee is moving to Linux¨. _Salon.com_. 20 June 2010. Web. <http://www.salon.com/technology/apple/index.html?story=/tech/dan_gillmor/2010/06/20/from_mac_to_linux> (last accessed 21 June 2010).
@@ -38,7 +40,7 @@ Illich, Ivan and Barry Sanders. (1988). _ABC: The Alphabetization of the Popular
 
 Kay, Alan and Adele Goldberg. (1977). "Personal Dynamic Media". From the collection _The New Media Reader_, edited by Noah Wardrip-Fruin and Nick Montfort, 2003. Cambridge: MIT Press. PDF. <[http://www.newmediareader.com/book_samples/nmr-26-kay.pdf](http://www.newmediareader.com/book_samples/nmr-26-kay.pdf)> (last accessed 15 June 2010).
 
-_Kernel (computing)_. (2010). "Kernel (computing)". _Wikipedia_. Web. <[http://en.wikipedia.org/wiki/Kernel_%28computing%29](http://en.wikipedia.org/wiki/Kernel_%28computing%29)> (last accessed 18 June 2010).
+_Kernel (computing)_. (2010). "Kernel (computing)". _Wikipedia_. Web. <[http://en.wikipedia.org/wiki/Kernel_\%28computing\%29](http://en.wikipedia.org/wiki/Kernel_\%28computing\%29)> (last accessed 18 June 2010).
 
 Kinross, Robin. (2004). _Modern typography: an essay in critical history_. London: Hyphen Press. Print.
 
@@ -47,6 +49,8 @@ Knuth, Donald. (1984). _The TeXBook_. Massachusetts: Addison-Wesley. Print.
 Knuth, Donald. (1999). _Digital Typography_. Stanford: CSLI. Print.
 
 Kroker, Arthur and Marilouise Kroker. (2010). ¨Code Drift¨. _CTheory_. 14 April 2010. Web. <[http://ctheory.net/articles.aspx?id=633](http://ctheory.net/articles.aspx?id=633)> (last accessed 19 June 2010).
+
+Lafuente, Ricardo. (2010). "About : Batch Commander". _tinkerhouse.com_. Web. <[http://tinkerhouse.net/batchcommander/about/](http://tinkerhouse.net/batchcommander/about/)> (last accessed 10 August 2010).
 
 Lovitt, Michael. (2010). "Rubular: a Ruby regular expression editor". _rubular.com_. Web. <[http://rubular.com](http://rubular.com)> (last accessed 28 July 2010).
 
@@ -77,8 +81,6 @@ Snelting, Femke. (2009). "The Making of". _Tracks in electr(on)ic fields_. Bruss
 Snelting, Femke and Pierre Huyghebaert. (2010). Personal interview, with John Haltiwanger. Brussels, Belgium.
 
 Stephenson, Neal. (1999). ¨In the Beginning was the Command Line¨. Essay. Web. <[http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml](http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml)> (last accessed 16 June 2010).
-
-Garfinkel, Simson, Daniel Weise, and Steven Strassman (editors). (1994). _The UNIX-HATER´s Handbook_. San Mateo: IDG Worldwide. PDF. <[http://web.mit.edu/~simsong/www/ugh.pdf](http://web.mit.edu/~simsong/www/ugh.pdf)>.
 
 _Windows 1.0_. (2010). "Windows 1.0". _Wikipedia_. Web. <[http://en.wikipedia.org/wiki/Windows_1.0](http://en.wikipedia.org/wiki/Windows_1.0)> (last accessed 19 June 2010).
 

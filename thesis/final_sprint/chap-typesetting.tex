@@ -1,0 +1,1328 @@
+%\enableregime[utf]  % use UTF-8
+
+\setupcolors[state=start]
+\setupinteraction[state=start, color=black] % needed for hyperlinks
+
+\usemodule[simplefonts]
+\setmainfont[linlibertineo]
+\setmonofont[inconsolata][11pt]
+
+\setuppapersize[A4][A4]  % use A4 paper
+%\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
+%             height=middle, header=0.75in, footer=0.75in] % page layout
+%\setuppagenumbering[alternative=doublesided, location={header,margin}]  % number pages
+\setuppagenumbering[location=]
+\setupbodyfont[12pt]  % 12pt font
+\setupwhitespace[medium]  % inter-paragraph spacing
+
+\setupinterlinespace[line=18pt] % should be 3/2 spacing
+
+\setupcaptions[headstyle=smallcaps]
+
+\setupindenting[medium]
+\indenting[always]
+
+\setuphead[section][style=\sc, alternative=margin]
+\setuphead[subsection][style=\sc, alternative=margin]
+\setuphead[subsubsection][style=\sc, alternative=margin]
+
+\setupheadertexts
+	[{\sc \getmarking[chapter]}]	[{\pagenumber}]
+	[{\sc \getmarking[Doctitle]}] [{\pagenumber}]	
+
+% this is for truly empty pagebreaks
+\definepagebreak
+  [mychapterpagebreak]
+  [yes,header,right]
+%\setuphead
+%  [chapter]
+%  [page=mychapterpagebreak]
+
+% setup title page
+\unprotect
+\definemarking[Author]
+\definemarking[Doctitle]
+
+\def\doctitle#1{\gdef\@title{#1}\marking[Doctitle]{#1}}
+\def\docsubtitle#1{\gdef\@subtitle{#1}}
+\def\author#1{\gdef\@author{#1}\marking[Author]{#1}}
+\def\date#1{\gdef\@date{#1}}
+\date{\currentdate[day, month, year]}  % Default to today unless specified otherwise.
+
+\def\maketitle{
+  \startalignment[center]
+    \blank[force,2*big]
+      {\scd \@title}
+		\blank[big]
+			{\scb \@subtitle}
+	\stopalignment
+	\startalignment[flushleft]
+    \blank[25*big]
+		\starttabulate[|l|l|]
+    			\NC Name: \NC \@author
+			\NR \NC Student Number: \NC 6100473
+			\NR \NC Email: \NC john.haltiwanger@gmail.com
+			\NR \NC Website:	\NC http://drippingdigital.com/
+			\NR
+		  \NR	\NC Date: \NC \@date
+			\NR \NC Supervisor: \NC Richard Rogers
+			\NR \NC Second reader: \NC Geert Lovink
+			\NR \NC Institution: \NC Universiteit van Amsterdam
+			\NR \NC Department: \NC Media and Culture (New Media)
+		\stoptabulate
+		\blank[3*big]
+		\starttabulate[|l|]
+		\NC {\sc Keywords} \NR
+		\stoptabulate
+		medium theory, ontogenesis, transduction, generative design, process oriented perspective, typesetting, ideological computing
+
+%		{\tfa Author: \@author}
+%		\blank[medium]
+%		{\tfa Student Number: 6100473}
+%		\blank[medium]
+%		{\tfa Supervisor: Richard Rogers}
+%		\blank[medium]
+%		{\tfa Program: New Media}
+%		\blank[medium]
+%		{\tfa Faculty: Media \& Culture}
+%		\blank[medium]
+%		{\tfa Date: \@date}
+\stopalignment}
+\protect
+
+
+% define descr (for definition lists)
+\definedescription
+  [descr]
+    [headstyle=bold,style=normal,align=right,location=hanging,
+  width=broad,margin=1cm]
+
+% prevent orphaned list intros
+\setupitemize[autointro]
+
+% define defaults for bulleted lists 
+\setupitemize[1][symbol=1][indentnext=no]
+\setupitemize[2][symbol=2][indentnext=no]
+\setupitemize[3][symbol=3][indentnext=no]
+\setupitemize[4][symbol=4][indentnext=no]
+
+\setupthinrules[width=15em]  % width of horizontal rules
+
+
+% define a special head type of bibliography
+\definehead		[bibliography] [chapter]
+\setuphead		[bibliography] [number=no]
+%\definecombinedlist		[content][chapter,section,bibliography]
+\setuplist		[bibliography] [headnumber=no]
+
+\definehead		[intro]	[chapter]
+\setuphead		[intro]	[number=no]
+\definecombinedlist		[content][intro,chapter,section,subsection,subsubsection,bibliography]
+\setupcombinedlist		[content][alternative=c,interaction=all]
+\setuplist		[intro]	[headnumber=no]
+
+% let's get pretty chapters
+\def\MyChapterCommand#1#2% #1 is number, #2 is text
+  {\framed[frame=off,bottomframe=on,topframe=on]
+     {\vbox{\headtext{chapter} #1\blank#2}}} % \vbox is needed for \blank to work
+\def\MyEmptyChapterCommand#1#2% is a comment necessary?---apparently so...
+	{\framed[frame=off,bottomframe=on,topframe=on]
+			{\vbox{#2}}}
+
+\setuphead[chapter][command=\MyChapterCommand, style={\sc},page=mychapterpagebreak,header=empty]
+
+\setuphead[bibliography][command=\MyEmptyChapterCommand, style={\sc},page=mychapterpagebreak,header=empty]
+
+\setuphead[intro][command=\MyEmptyChapterCommand, style={\sc},page=mychapterpagebreak,header=empty]
+
+\setupheadtext[chapter=Chapter] % used by \headtext
+
+
+% for block quotations
+\unprotect
+
+\startvariables all
+blockquote: blockquote
+\stopvariables
+
+\definedelimitedtext
+[\v!blockquote][\v!quotation]
+
+\setupdelimitedtext
+[\v!blockquote]
+[\c!left=,
+\c!right=,
+before={\blank[medium]},
+after={\blank[medium]},
+]
+
+% for long quotes
+\definestartstop
+  [longquote]
+  [before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
+% for bibliographic entries
+
+% following hanging indent code (also in workscited) taken from 
+%  http://www.ntg.nl/pipermail/ntg-context/2004/005280.html
+% [NTG-context] Re: Again: "hanging" for a lot of paragraphs?
+%  ~ Patrick Gundlach
+\def\hangover{\hangafter=1\hangindent=0.5in}
+\definestartstop[workscited][
+  before={
+    \page[no]
+    \indenting[never]
+    \startalignment[left]
+    \bibliography{Bibliography}
+    \stopalignment
+    \setupwhitespace[medium]
+    \bgroup\appendtoks\hangover\to\everypar
+    },
+  after={
+    \egroup
+    \indenting[yes]}]
+
+\protect
+
+\definestartstop
+  [abstract]
+  [before={\blank[4*big]
+					 \midaligned{\sc Abstract}
+           \startnarrower[2*middle]},
+   after={\stopnarrower
+          \blank[big]}]
+
+\setupheader[state=start]
+
+
+\starttext
+	\doctitle{Grammars of Process}
+	\author{John Haltiwanger}
+
+\docsubtitle{Mapping Ontogenesis in Generative Design}
+
+
+%\setuppagenumbering[location=]
+\setupheader[state=stop]
+\maketitle
+\page
+
+%\setuppagenumbering[alternative=doublisided, location={header,margin}] 
+
+
+\startabstract
+Here goes the abstract!
+
+Will it do multi-line stuff for me?
+
+Eh????
+\stopabstract
+\page
+\setupheader[state=start]
+
+\placecontent
+%\startfrontmatter
+%\intro{Acknowledgments}
+
+%This is where I acknowledge everyone.
+
+%\intro{Introduction}
+
+%This is a chipper little introduction, don't you think?
+% should work in general, i hope!
+
+%\stopfrontmatter
+\section{Acknowledgments}
+
+\section{Introduction}
+
+Today's new media theory increasingly invokes {\em materiality} as
+a significant, perhaps even {\em the} significant, mode of
+investigating digital objects and the media through which they are
+delivered. This thesis questions such a centrality of materiality
+through a practice-based, process-oriented approach. {\em Process}
+is proposed as the atomic unit of that which new media theory
+investigates. This is true on a formal material level: applications
+run as either as individual process or as assemblages of process
+which are managed by an operating system and through which the
+application's code is accomplishes all of its tasks, from memory
+and access to algorithmic execution on the central processing unit.
+A process-oriented approach will be shown to provide superior
+methodologies for engaging with and understanding software than
+material analysis alone provides. For instance, certain
+problematics within Lev Manovich's concept of
+\quote{media hybridity} will be resolved by a re-orientation
+towards process (Manovich 2008). Process also allows a fresh
+perspective for examining human-digital relations. Human processes
+and digital processes are seen as inextricably intertwined, leaving
+any discussion of digital process that excludes relevant dimensions
+of human process necessarily unfinished.
+
+=== FRESH ===
+
+In this introduction, I will first briefly re-trace the vectors of
+medium theory as they have developed since the introduction of
+\quote{new media} as an academic institution. Such re-tracing
+necessarily begins with McLuhan, as his theory is intrinsic to one
+of the earliest theoretical frameworks of new media, the
+{\em remediation} model of Jay David Bolter and Richard Grusin.
+This framework was eventually superceded by a discipline-wide turn
+towards investigations of materiality and medium specificity,
+spearheaded by the work of N. Katherine Hayles. Finally, Lev
+Manovich's manuscript {\em Software takes command} provides
+concepts of {\em media hybridity} and {\em deep remixability}.
+Throughout this swath of theory is woven an intrinsic focus on the
+{\em material} modes of media. Media hybridity, for instance,
+relies on a medium having a specific dimensionality that is
+enlarged or otherwise augmented through hybridization with other
+mediums. In a significant example, the dimension of typography
+obtains velocity and physicality as it enters the 3D void of the
+After Effects window. I pose the following question to this
+explanation [WHUT WASS IT AGGIN\lettermore{}\lettermore{}??].
+Rather than \quote{dimensionality,} I propose that we conceptualize
+these hybridizations as generating new levels of metapotentiality.
+This is a transposition of Gilbert Simondon's language of
+ontogenesis into new media discourse. Simondon utilizes the ideas
+of metastability and metapotential to describe active forms of
+those concepts: a metastability is likened to a substrate in which
+massive activity occurs. One example is a fluid suspension that
+happens to contain ideal conditions for crystalization: the
+metastability of the suspension drives its crystalization, and
+crystalization is the actualization of the suspension's
+metapotential. Yet crystalization is a singular process, a form of
+individuation for which identical crystals are said not to exist in
+nature. The metapotential of each substrate is fulfilled uniquely.
+And in natural or otherwise unbounded systems, crystals are often
+on-going processes of {\em individuation}---Simondon's term for the
+movement of a metastability through the courses of its own
+metapotential. This thesis proposes that grammars are a key factor
+of enabling hybridization. Hybridization, in turn, expands and
+extends the metapotentials of involved processes. Thus, grammars
+are crucial mechanisms through which the metastability expands
+along its metapotential.
+
+The method proposed to demonstrate these points is two-fold. The
+first is an analytic approach---the modes of operation of designers
+themselves are examined. Starting from the proprietary Mac OS X
+operating system, described here as a unique and powerful example
+of {\em process hybridity}, we progress to a discussion of the
+operations of designers as constrained by FLoSS
+(Free/Libre/open/Source Software). The second aspect of the method
+is a detailed interrogation of actual practice in the form of
+{\em digital typesetting}. This topic was chosen for several
+reasons. The first is a general lack of focus on the processes
+behind typesetting among new media theory---while the surfaces of
+text have been investigated in numerous ways (Bolter 2001; Fuller
+2000), there has been a general lack of concern (or capacity)
+regarding the underlying processes of text in the metamedium
+(computers). This is especially evidenced as regards the
+{\em command line interface}, a realm where text becomes kinetic.
+Yet I found that very little theory has been written regarding the
+command-line, despite its place as the historical interface (once
+contemporary with batch punch cards) by which digital processes
+were initiated. Far from being obsolete, both Microsoft and Apple
+ship command line interfaces within their operating systems. In
+Microsoft´s case, significant money has been spent developing a new
+grammar and implementing new functionalities into their modern
+command line implementation Powershell (as opposed to the grammar
+and functionalities of DOS).
+
+The second reason for choosing typesetting is the supposed lack of
+media hybridity of typesetting---according to Manovich's
+definitions of the terms, typesetting has failed to move beyond
+\quote{multimedia} to a state of \quote{media hybridity} (this is
+opposed to typography, which undoubtedly has) (2008: 86). Media
+hybridity is Manovich´s formulation of the increasingly common
+¨sharing of languages¨ between media. When media share language,
+they develop new dimensions (2008: 86). Language, then,
+demonstrates its capacity for modulation in a new context. While
+the proposition that ¨language can add dimensions to things¨ may at
+first consideration seem a bit too obvious for stating out loud,
+the kinetic properties of language within the context of the
+metamedium---that the code enabling the language sharing that
+enables media hybridity is
+{\em itself made of language and made executable by language}---seem
+to beg for consideration. Whereas much of the new media discourse
+relating to changes in media trends toward contemplating fast-paced
+visual cultures such as video games and cinema, this thesis aims to
+take the opportunity to contemplate the much slower-moving medium
+of text. This contemplation of screenic text leads to questions
+about the nature of media within a medium as well as to the
+introduction of a conception of processual hybridity that both
+underpins and exceeds the dynamics of media hybridity.
+
+The third aspect is the allowance of a truly reflexive
+investigation in which multiple processes of digital typesetting
+are utilized to generate the thesis itself. This provides a means
+to integrate the process-oriented perspective into a software study
+of FLoSS typesetting software. Not only this, it provides a means
+to attempt what could be considered a {\em refractional}
+methodology. Inspired by Gilbert Simondon´s adoption of the
+language of chemistry in the formulation of {\em transduction}
+within his theory of ontogenesis, this thesis can be viewed as a
+distinct crystallization process, the composition of a whole from
+the process of that whole´s unfolding. The applicability of
+Simondon´s ontogenesis to matters of generative design will be
+interrogated in contrast to Jay David Bolter and David Grusin´s
+remediation theory (Bolter and Grusin 1996; Bolter 2001).
+Ontogenesis, albeit without Simondon, has already proven an
+effective angle for approaching Web 2.0 platforms (Langlois,
+McKelvey, Elmer, and Werbin 2009). Here the description of this
+thesis´own workflow will demonstrate Simondon´s ontogenesis as
+making unique contributions to the process-oriented perspective
+which this thesis attempts to invoke and instantiate.
+
+The fourth is the simple fact that screenic text has not been
+interrogated on a {\em subtextual} level---surface analysis of text
+(and hypertext) have driven the discourse of screenic text in new
+media.
+
+\section{Screens}
+
+As digital typesetting provides the focus for the application of
+the process-oriented perspective, the point of origin is
+necessarily that of the screen. Information transmission is
+increasingly screen-based, a fact that only intensifies with the
+exponentializing ubiquity of mobile devices such as the iPhone. The
+long-awaited advent of cheap \quotation{tablet} computers and
+e-readers is also now at hand. These devices may all be seen as
+mediums for {\em screenic processes} in that their entire
+configuration and all of its computation exists to serve as the
+basis for screenic interactions with {\em human processes}. These
+phrasings introduce the perceptual angle attendent with this
+thesis, namely the centering of {\em process} as the atomic unit of
+what is discussed in new media theory. The term {\em screenic}
+simply means \quote{screen-based,} or (perhaps)
+\quote{screen-native.} It is analagous to \quote{printed.}
+
+One way to define screens is in terms of their interactivity. Some
+screens, such as television screens, offer very limited
+interactivity: the choice of content. This choice itself can be
+constrained by varying degrees, such as the number of available
+channels and playback formats (VHS, DVD, Xvid, etc.), even to the
+point of disappearing (in the case of many televisions that appear
+in public spaces).
+\footnote{Mobile devices are beginning to ship IR transeivers with full
+hardware access through software. That is, the
+{\em entire potential} of the IR spectrum is available to them.}
+The medium of the remote control should not be underestimated in
+its effects on human processes, to say nothing of the screens at
+which they are aimed. Indeed, they drive the interactivity of the
+video game consoles, an interactivity that clearly represents the
+cultural cutting edge of what a television screen can offer.
+
+The computer screen, on the other hand, is defined by its seemingly
+limitless degree of interactivity. Remote controls can be run as
+screenic processes and can not only change television
+channels---processes on remote systems can be controlled with
+similar ease. Indeed, the entire screenic composition of one
+computer can be controlled over a network by a second computer
+using included, or easy to obtain, applications. Furthermore, the
+very interfaces to the screen (keyboards and mice) are examples of
+remote controls in cases where the screen has not itself become its
+own remote control (touch-screen devices). Typically the only
+element of a computer screen that the user does not effectively
+control are the structure and visual language of an operating
+system's graphical user interface (GUI). Even this, however, is
+generally accomplishable by a significantly informed user. In the
+case of GNU/Linux the task is not only accomplishable: in the case
+of a \quotation{from scratch} installation,
+\footnote{Such as is demanded by no-frills distributions such as Gentoo and
+ArchLinux, where manual installation and configuration of a GUI is
+required for use.}
+the user is literally forced to make a choice of GUI structure and
+visual styling. Microsoft has generally shipped their operating
+systems with multiple choices for widget
+\footnote{A widget is the technical term for a GUI element. Scrollbars,
+titlebars, menus, and close/minimize/maximize buttons are widgets
+attached to most of the \quotation{windows} that appears on any
+given GUI-driven computer.}
+presentation, including re-mediations of widgets from previous
+versions of Windows. Users also developed Apple, however, maintains
+strict control of widget presentation, especially on their mobile
+devices.
+
+\subsection{Screens as material, screens as process}
+
+Screens offer an ideal point of juxtaposition between the material
+and processual frames. From a material view, the very formulation
+of \quotation{screens} as {\em the} interface between humans and
+computers is problematic: what of the interfaces that have been
+developed to work around instances of blindness or other
+[disabilities] that prohibit visually screenic interaction?
+
+From a processual orientation, the question becomes: how do
+interactions between humans and computers resolve themselves? The
+answer returns in the form of the {\em available} remote controls
+and the {\em available} response interfaces. The next step might be
+to investigate the degree of variance between these availabilities,
+and whether they problematize any umbrella-classification. While it
+would be {\em insensible} to argue that material differences in
+inputs and outputs can---or do---not lead to a huge amount of
+variation between experiences within humans. Such variation is
+likely to occur in differentials. That is to say, the spectrum of
+possible feedback occurs at the level of the human
+individual---one's experiences are functionally irrepresentable
+without translation of some kind. [We can choose to call these
+translations mediums, or we can choose to call these processes.]
+
+At this point the question becomes, then, whether it is necessary
+to instantiate these inherent divergences in every evocation of a
+broad level discussion of input and output mechanisms or whether
+the inherent, {\em core} similarity between them all remains that
+in all instances they serve as {\em the point of contact} between
+human and digital processes. Does it make a processual difference
+if the output technology is a braille screen or an LCD screen? Only
+inasmuch as to what degree the process being examined is unique to,
+or highlights differences between, one or the other. From a
+discursive level, {\em controls} and {\em screens} can capture the
+essence of these dual \quotation{action spaces} that together form
+the single point of contact between human and digital process.
+
+Is it possible to remediate of the term screen into discussions of
+previous mediums? For instance could one speak of the
+\quotation{screen} of a newspaper or the \quotation{screen} of a
+cave wall? What about the \quotation{screen} of a radio? From a
+linguistic-conceptual perspective the final example certainly
+pushes the limits. From a process perspective, though, the presence
+of the radio/what it is playing/what listening choices are
+available/how and to what degree does the hardware support
+frequency tuning: these questions can all be conceived in terms of
+\quote{control} and \quote{screen.} The sounds of a radio do emit,
+after all, from the vibrations of a stretched membrane.
+
+This thesis proposes a conceptual-linguistic shift in the
+discussions of screens as the {\em site of discourse} through which
+digital processes yield the results of their execution. Likewise,
+the remote control, or simply {\em control}, is the site of
+discourse through which which human processes instigate and extend
+into the digital. There is no removing or reducing of this dyadic
+assemblage---even when the control and the screen are literally
+fused (as in most contemporary smartphones) the distinction between
+{\em control} and {\em screen} holds on both a conceptual and
+material level. Conceptually, human process still extends through
+the control into digital process, which still produces feedback
+through the screen. Materially, the screen is a Liquid Crystal
+Display driven by a graphics card that interfaces with coded
+drivers and display subsystems in the device's operating system.
+The control, on the other hand, is the glass suspended over the LCD
+which, through one or more of the multitude of available technical
+solutions for the process, reads point(s) of contact, pressure, and
+vectors (velocity and direction) of movement.
+
+\section{From Screens to Text}
+
+To discuss computer screens one must necessarily engage with the
+concept of {\em interface}, a topic that rightfully occupies a
+great deal of current new media discourse. Interface, then,
+represents one point of departure from our origin. While interfaces
+often utilize many visual metaphors (most of them inherited from
+the work done developing the first GUI at Xerox's Palo Alto
+Advanced Research Lab (PARC) in the 1970s), there are yet few
+computer interfaces that do not rely on text as their dominant
+mechanism for organizing and presenting a program's internal
+capabilities to a user. (Mobile screens, on the other hand,
+increasingly display developing trends of icon-only design, though
+the web browser remains a popular application). Despite the success
+of the GUI over the text-only command-line interface (CLI), text
+remains central to contemporary experiences of computer screens.
+
+The command line is seen as a space of contestation for traditional
+modes of media analysis. Remediation, for instance, will be
+demonstrated as inappropriate for discussing the CLI. As Google has
+just recently released a command line interface for interacting
+with Google services, I believe a discussion of the command line is
+essential for new media (Holt and Miller 2010).
+
+(Unfortunate to note, this historiographic aspect is still
+{\bf \quote{to-do}}:
+
+The centrality of text to the experience of computer screens
+represents the main avenue by which we proceed from the origin,
+constituting a trunk from which many additional concerns fork away
+and then face examination. The arguments of the paper are augmented
+by the inclusion of a historiography of digital typesetting.
+Engaging critically with the history of {\em software itself} is
+considered a requisite for responsible software studies: a full
+range of influences (economic, cultural, technological) should be
+considered in the re-telling of a given processual unfolding. In
+this aspect of focus, it extends Lev Manovich's admirable
+positioning of history as central to a software study by broadening
+the scope of historical considerations.
+\footnote{{\bf Note:} This work largely remains unfinished in this draft, as
+it became apparent that I needed to work back through more
+discussions of basic infrastructural elements such as operating
+systems in order to fully describe the assemblage of process upon
+which computer-based design is situated.)}
+Inspiring this enagement is the work of Robin Kinross, whose
+{\em Modern typography: an essay in critical history} is one of but
+a few texts covering a history of typography to adequately engage
+with the influence of factors outside of that field on the field
+itself (Kinross 2004). By integrating a critical history of digital
+typesetting with a process perspective, an equilibrium between
+human and digital processes will be illustrated.
+
+\subsection{Recognizing the Ontogenesis in Generativity}
+
+In his text {\em The Position of the Problem of Ontogenesis},
+Simondon writes,
+
+\startlongquote
+By transduction we mean an operation--physical, biological, mental, social--by which an activity propagates itself from one element to the next, within a given domain, and founds this propagation on a structuration of the domain that is realized from place to place: each area of the constituted structure serves as the principle and the model for the next area, as a primer for its constitution, to the extent that the modification expands progresively at the same time as the structuring operation. (Simondon 2009: 11).
+\stoplongquote
+
+Note the distinct lack of \quote{computational} in Simondon's list
+of operations. Written prior to the advent of Manovich's
+formulation of the age of cultural computing, this absence might
+simply be read as a matter of temporal context. Nevertheless,
+Simondon's solution to the ontogenesis problematic provides a
+framework for describing digital processes of a generative nature.
+
+This leads to another important element of this thesis, one that
+runs throughout the entirety of itself---the underlying processes
+of presentation required to \quote{typeset} the text itself.
+Through the utilization of FLoSS software, multiple output formats
+will be not only be investigated but also materially instantiated
+through a designed mechanism of process---a
+{\em processual hybridity}. These output formats represent two of
+the top formats currently used to manage and display texts
+digitally: HTML and PDF.
+
+The process(es) of their generation offers an attempt at mapping
+Gilbert Simondon's language of ontogenesis onto file format
+translation or, to begin the project immediately,
+{\em individuation}. Coupled with Simondon's individuation is this
+concept of {\em transduction}. Repurposed from the language of
+chemistry, Simondon's metaphorically images transduction with the
+example of a substrate---swelling with {\em metapotential}---that
+crystallizes. The final formation is the substrate fulfilling this
+metapotential, a fulfillment that arises only through an
+unpredictable unfolding involving emergent factors. (The language
+of chemistry was likewise appropriated for the term
+\quote{interface} (Cramer and Fuller 2008: 149)).
+
+Through this mapping I hope to provide a convincing argument for
+shared properties between what I am calling process and
+individuation, and between transduction and what I am calling
+instantiation.
+
+This relates with the increasingly generative nature of
+contemporary design. All of which are generated from a plain-text
+file whose syntax conforms to a format standard called
+\quote{markdown.} The polycephalous nature of {\em the text itself}
+thus demands further branching into a discussion of formats. What
+are the attributes of the class of process to which formats belong?
+Formats are seen as stable, yet they move like glass (or glaciar)
+in the nano-magnitudes of the digital. Formats provide another
+point of contrast between process and material perceptual
+orientations.
+
+The discussion of generativity provides further means to
+demonstrate the equilibrium of human and digital processes.
+Analyzed materially, these processes are chunks of code
+electronically lifted from hard drive platters, loaded into system
+memory, and then executed via the assemblage of chips on the
+computer's motherboard by way of instructions from the operating
+system currently residing as a mass of memory heaps in RAM chips.
+Analyzed {\em processually}, however, these digital processes are
+properly seen as deriving from interactions with human beings. That
+is to say, digital and human processes are intimately intertwined,
+from the design of their physical landscape of execution
+(microcircuitry) to the instructions derived from the user. From a
+process angle the computer becomes something of an external nervous
+system, extending and modifying the realm of human potentiality
+even as it surpasses the capacity of a single mind to functionally
+comprehend the entirety of its workings.
+\footnote{The chips produced by Intel, for example, are too complex for any
+single person to ever hope to entirely understand.}
+
+\subsubsection{Print is static, code is process}
+
+The flat/deep distinction proposed by Hayles is, by its
+formualation, material. Problematizing this material focus is the
+interwoven history of text and code: the lens of typesetting allows
+us to focus on a unique intersection of the two. As the
+historiographic case will demonstrate, typesetting is a
+{\em non-reducible} process (NP-Complete). This non-reducibility of
+typesetting reflects the non-reducibility of computational
+processing of language, as well as the non-reducibility of
+language, as signifier, into that which is actually signified. This
+\quotation{turtles all the way down} scenario has intriguing
+implications from a process perspective as we investigate the
+methods that have been developed in order to work around this
+non-reducibility.
+
+When Hayles states that
+\quotation{materiality thus cannot be specified in advance; rather it occupies a borderland---or better, performs as connective tissue,}
+she is provisionally correct (Hayles 2004: 72). However, this
+metaphor-ization of process is exemplary of new media practices:
+reference the complex with an abstract metaphor, obscuring complex
+and important dynamics with a metaphor. The metaphor works, to be
+sure. One could even consider it an ideal formulation. At issue is
+the fact that this borderland is not discussed in a technically
+correct manner.
+
+\section{Remote Controls}
+
+I think it may be reasonable to take the remote control and use it
+to create a metaphor for all human-computer interaction.
+
+Every digital process has, at its origin, a human. The rate of
+computation has increased the impact of human-digital processes in
+that the results deliver their results faster. The results will
+either match the intentions of the originating human process, or
+they will not. In the second case we can find the first evidence of
+the effects of digital process on human process:
+{\em the code behind the digital process will be re-arranged in an attempt to deliver an output that satisfies the intention of the human processes.}
+Whether this modulation of the executed code is through
+sliders/input boxes/etc within a GUI interface or through direct
+reworking of the source code itself, the effect is the same: the
+code executed has been re-configured according to the goal of human
+process. The result(s) of the digital process, experienced through
+a screen, can match, exceed, or fail this goal. In turn, human
+process is effected and the next move is made according to new
+goals or revised digital processes.
+
+Video games, for example, can easily be represented by this model.
+Human process is obviously shaped by digital at the outset: there
+are a finite number of actions that a game offers within its
+context. In addition, these actions are often presented as pre-set
+mappings of action to controller button.
+
+\section{Attributes of Process}
+
+[It needs to be asserted that I am willingly engaging in my own
+appropriation of the term \quote{process} outside of any traditions
+other than my own. As the process oriented perspective arose under
+the looming shadow of the draft deadline, I admit to a lack of
+historical perspective on the use of this word in either new media
+or other contexts. Withstanding that, however, I sense a real
+applicability of this term in the discourse of new media. I'm
+looking forward to working on the final draft and using some of
+that time to construct historical perspective for this shift to
+process. One important angle is Ned Rossiter's work on
+\quotation{Processual Media Theory} in his book
+{\em Organized Networks} (Rossiter 2007: 166--192), which this
+draft does make use of but which I would like to interweave more
+deeply. As it stands, this introduction was left relatively alone
+for the sake of fleshing out the middle part of this thesis. This
+was at the suggestion of the second reader.]
+
+Process is reflective. It's outputs reflect its inputs.
+Additionally, process reconfigures the metapotential in any given
+system. It's reflectivity, then, has material effect. As it
+reflects the inputs into the outputs, the outputs in turn reflect
+new (or else simply different) potentials back into the
+{\em context} which is the reciprocal contact point in which the
+processes began. This language is extrapolative into any set of
+intersections. This paper considers just the subset of
+human-digital recipricity, and within the relatively static domain
+of typesetting.
+
+A new configuration of metapotential in any system results in the
+reconfiguration of (all) other systems as well. This fact reflects
+the {\em fractal} nature of process---there is a degree of
+non-reducibility inherent in any discussion of process, as
+ultimately certain factors in its functioning are unknown to us.
+
+\section{Why free software?}
+
+There are multiple points of consideration that lead me to
+concentrate on free software. The first is its relative lack of
+presence within new media circles. Time and again I arrive at a
+conference only to see a room full of computers booted into
+proprietary operating systems. While I am not a \quote{zealot} who
+disavows any potential use or need for proprietary software, I find
+the general population of new media's reliance on proprietary
+operating systems---chiefly, by way of personal and anecdotal
+evidence, Mac OS X---disturbing. Hans Magnus Enzensberger outlined
+in his \quotation{Constituents of a Theory of the Media} the
+importance of issues of control with relation to mediums. Let us
+move through the juxtaposed elements of repressive versus
+emancipatory uses of media which Enzensberger provides and
+interrogate them in relation to Mac OS X and GNU/Linux
+(Enzensberger 1970: 269):
+
+{\em Repressive versus Emancipatory}
+
+\startdescr{Centrally controlled program vs.~Decentralized program}
+This question is answered by asking the question:
+\quotation{Where is the source code of the operating system?} In
+the case of OS X, the source code resides only within the confines
+of Apple's corporate computers. It is likely heavily guarded by
+multiple mechanisms. Whereas in the case of GNU/Linux, the
+operating system source code is spread across dozens of mirrors on
+the Internet as well as the computers of programmers and users
+around the world. Each of these copies can be readily modified to
+the designs of any given user, demonstrating decentralized (in
+fact, distributed) control. Apple maintains sole, central control
+of the code and thus fully determines the functional possibilities
+of the operating system.
+\stopdescr
+
+\startdescr{One transmitter, many receivers vs.~Each receiver a potential transmitter}
+This is already demonstrated above: the code for GNU/Linux is
+globally distributed across hundreds of thousands of computers.
+Each one of these has the ability to modify the software and share
+those modifications with anyone who will listen. OS X can be
+modified by no one.
+\stopdescr
+
+\startdescr{Immobilization of isolated individuals vs.~Mobilization of the masses}
+OS X encourages the use of proprietary applications. These
+applications have restrictive license that generally allow only one
+individual the right to run the application. GNU/Linux, meanwhile,
+\stopdescr
+
+\startdescr{Passive consumer behavior vs.~Interaction of those involved, feedback}
+A major advantage for both users and developers in a free software
+ecosystem is the feedback that occurs between them. Users may
+suggest new features at any time. If they have the skill and/or
+time, they can add these features themselves. If the addition of
+the features is contentious in any way, the contributer can simply
+fork the codebase and continue evolving the software in new
+directions. In OS X, you run the binaries you are given.
+\stopdescr
+
+\startdescr{Depoliticization vs.~A political learning process}
+Mac OS X is pro-capitalist and promotes consumer culture. It can
+probably be said that it is politically \quotation{neutral} in its
+codedness, but this very codedness remains obfuscated and
+proprietary. GNU/Linux, in conservative judgment, at least does not
+actively promote consumerism. In an idealistic formulation, it
+destabilizes the capitalist ecosystem.
+\footnote{It is important to note that free software also plays a significant
+role in supporting this infrastructure, as the license provides no
+recourse on the terms of the softwares use (Pasquinelli 2008).}
+It's politics are as multifaceted as its user base. In its
+well-deserved reputation as
+\quote{taking some work to make it work,} GNU/Linux forces its
+users to become active in the system's administration. This induced
+learning of an open approach to computer systems could be said to
+have political dimension.
+\stopdescr
+
+\startdescr{Production by specialists vs.~Collective production}
+This seems self-explanatory.
+\stopdescr
+
+\startdescr{Control by property owners or bureaucracy vs Social control by self-organization}
+Are you getting the picture?
+\stopdescr
+
+In a presentation at the Libre Graphics Meeting 2010, Florian
+Cramer explains his theoretical positioning of free software as an
+entry point into media criticism. Aymeric Mansoux, also of the
+Networked Media design faculty at the Piet Zwart Institute and
+present with fellow faculty member Michael Murtough, describes the
+critical engagement in the error message common to GNU/Linux
+distributions, found in the Totem media player program complaining
+of a missing codec library that is required to decode common
+patent-encumbered media formats such as MPEG-Layer 3 (Cramer,
+Mansoux, and Murtaugh 2010). Behind the error message lies an
+assemblage of inter-related issues of intellectual property rights,
+cultural practices, and media accessibility. This is a clear
+instantiation of a \quotation{political learning process.}
+
+On 21 June 2010, Apple changed its privacy settings to allow the
+company to
+\quotation{collect store and share \quote{precise location data, including real-time the geographic location of your Apple computer or device}}
+(Marco 2010).
+
+\subsection{Caveats}
+
+Free software is not, however, a \quotation{magic bullet}---tied to
+the open systems theory which is philosophically related to the
+underpinnings of the Chicago school of economics, some of the
+philosophical foundations of free software,
+{\em and especially open source}, need to be interrogated (Cramer,
+Mansoux, and Murtaugh 2010; Pasquinelli 2008). Liberation does not
+automatically lead to a distribution of tools to all those that
+need them. However, even in this instance we see the power of FloSS
+in its capacity to inspire critical engagement with media.
+
+\stopfrontmatter
+\chapter{Crystalized Process: Text That Typesets Itself}
+
+The time has come to for the self-reflective approach of this
+thesis to come into play. For a book called {\em Writing Space},
+this work by Jay David Bolter provides scant discussion of actual
+writing environments on the computer. Originally written before the
+expansion of the World Wide Web into the sphere of popular culture,
+{\em Writing Space} is concerns itself with
+\quotation{the space of electronic writing}.
+\footnote{The second edition of the book, published in 2001, was used for
+this thesis. While it is updated to include the Web, its roots in a
+significantly older text are worth noting.}
+In defining this space as
+\quotation{both the computer screen, where text is displayed, and the electronic memory, in which it is stored,}
+Bolter belies the relative absence of process in materialist forms
+of media analysis (2001: 13).
+
+Bolter's over-simple definition of electronic writing space does
+not incorporate the act of writing, only the display of it. This
+surface-level analysis fits well the application of his remediation
+theory---the surface of a medium (it's \quotation{screen}) is the
+host site of remediation. Bolter delves below the surface in his
+explanation of a shift to topographical writing. In the electronic
+writing space,
+\quotation{any relationships that can be defined as the interplay of pointers and elements}
+are representable (32). The writing space
+\quotation{itself has become a hierarchy of topical elements} (32).
+This is the effect of the computer's affinity for
+symbol-processing:
+\quotation{Any symbol in the space can refer to another symbol using its numerical address}
+(30). To highlight the dimensional shift in the writing space,
+Bolter describes the operation of outline processors. These
+programs abstract a text to the level of sections. These sections
+can be moved around and manipulated. Writing becomes
+{\em topological} in the sense that they now have a spatial aspect.
+Sections of text have obtained a modularity and independence that
+allows visual arrangement.
+\footnote{Almost twenty years later, layout processors have been for the most
+part subsumed by word processors. The layout shifting process has
+been hybridized into the increasingly feature-ful assemblages of
+word processors where it has not morphed into a niche proprietary
+product.}
+What he does not talk about is the formats generated by the
+Macintosh program that he uses in his figures. He mentions passing
+layouts around on floppies between friends, but that assumes a
+parity of operating systems and proprietary software (at least in
+his example) (!CITE!).
+
+(!!! WHERE WAS I GOING?? !!!)
+
+\section{Environment of Operation}
+
+This text is not typed in the manner that you see it. The above
+header is instead written like this:
+
+\starttyping
+  # Environment of Operation #
+\stoptyping
+
+Through the wrapper program \type{pandoc}, this input (written in
+Markdown) is converted into HTML and ConTeXt outputs.
+
+\startdescr{HTML}
+\type{<h1>Environment of Operation</h1>}
+\stopdescr
+
+\startdescr{ConTeXt}
+\type{\section{Environment of Operation}}
+\stopdescr
+
+The syntax of HTML represents a semantic operation:
+\quotation{Dear Mr.~Browser, treat this as a header of level 1.}
+The syntax of ConTeXt, however, represents a macro command within a
+programming language. What it says is
+\quotation{call the sections of code that translate the text within the brackets to the parameters specified for the \type{\section{}} command.}
+
+The literal \quote{writing space} of this thesis is a program
+called Textroom. Textroom is a minimalist text editor in which
+there are no buttons, taskbars, or other clutter. Only you, your
+words, and (optionally) informational text reporting the time, word
+count, percentage to accomplishing your writing goal, etc. By
+writing in plain-text, I open myself to the opportunities afforded
+me by version control systems. Developed to enable collaboration of
+programmers on a code base, version control systems can track
+changes in text across time (useful for this project) and allow for
+massively distributed workflows involved tens of thousands of
+individuals (useful for the Linux kernel).
+
+\subsection{Constraints}
+
+\placefigure[here,nonumber]{Textroom and gvim. gvim is displayed on this screen but running on my netbook.}{\externalfigure[images/two_editors.png]}
+
+Above you see a necessary adaptation within my workflow. My netbook
+took a fall and lost the ability to use its screen. Because of the
+nature of the command line, I was able to log in to computer and
+execute commands that allowed me to establish remote access using a
+piece of software called \type{ssh}. This remote connection can
+also support the transmission of GUI applications using the
+client-server model at the heart of the X Windows system (which
+drives the GNU/Linux GUI). This was important a) to get files off
+the netbook, and b) the version of \type{pandoc} on my desktop had
+stopped working after a modular dependency was upgraded and I was
+finding it impossible to upgrade \type{pandoc} itself. In the image
+above we see the minimal editor Textroom and the editor gvim.
+Because of the pandoc incompatibility on the desktop, I was forced
+to use the netbook as the site of typesetting. This shaped the
+output of the project most likely by time. However, the simple
+ability to log in and enable remote access shaped this project
+immensely by allowing me to extract important work that would
+otherwise have been lost.
+
+An unfortunate constraint is the inability to take advantage of
+elements of the TeX landscape that are reknowned for making life
+easier. The chief among these is BibTeX, which allows for a
+bibliography to be dynamically generated and citations to be
+inserted according to a variety of formats (that one can change
+with a single line of text, if desired). By abstracting myself from
+TeX by using Markdown as the \quotation{pre-format,} I've lost the
+opportunity to easily manage bibliographic data and instead must
+input it by hand. That said, the MLA format is not currently
+available in BibTeX meaning that---even if I could use this
+software---the output would be necessarily shaped by the
+constraints of the tools.
+
+\subsection{A pre-format necessarily complicates while it simplifies}
+
+Using the \quote{markdown} pre-format complicates several issues
+with typesetting documents in both HTML and ConTeXt. For instance,
+ConTeXt includes a \type{\chapter{}} macro, which influences the
+numbering of sections so that sections are relative to the chapter
+number, rather than to the entire text. Thus the first section of
+chapter two will be rendered into text as \quote{2.1}. The issue
+arises because HTML has no similar distinction: sections are
+related to the depth of the header, such that H1 is the highest
+level section (the equivalent of ConTeXt's \type{\chapter{}}). In
+markdown, the top-level section appears as in the example above,
+that is using a single \quote{\type{#}}. My initial solution was to
+include two sections with only one \quote{\type{#}} per chapter,
+the first of which I would manually change from \type{\section{}}
+to \type{\chapter{}}, with the result that the sectioning of the
+chapter fits what is expected---chapter 2, section 1 is numbered as
+\quote{2.1}.
+
+This does not satisfy HTML, however, as there is nothing to change
+the first single \quote{\#} into: it is already inserting the
+highest level section, \quote{H1}. Thus, where ConTeXt begins
+numbering the sections within the chapter (2.1, 2.2, etc.), HTML
+increments the top-level section number, so that the second single
+\quote{\#} increments to \quote{3}, instead of to \quote{2.1}. If a
+double \quote{\#\#} is used, the sectioning will appear as we
+desire in the HTML, but will appear as \quote{2.0.1} in ConTeXt.
+This incompatibility requires either modifying the Pandoc source
+code directly or else the creation of a specific \quote{helper}
+script to create a sectioning parity between the two output
+formats. As I do not know Haskell, I've opted for the second
+solution.
+
+Since markdown allows passing TeX commands, I solved the problem by
+using \type{\chapter{}} to designate the chapter title. Then, using
+a command-line script written in the Ruby programming language, a
+copy of the markdown file is created in which \type{\chapter{}} is
+replaced by a single \quote{\#} and all subsequent
+\quote{\#'s are increased by one}\#' until the next
+\type{\chapter{}} is reached. From this copy we generate the HTML
+version, while the original can be processed into TeX. Perhaps this
+technical description appears to be more of a computer science
+discussion than it is a media theory one. However it highlights the
+ways in which processes hybridize: the conflicting grammars of
+ConTeXt and HTML create a complication which the wrapper program
+Pandoc either does not or can not address. To work around this
+issue, a separate program (the Ruby interpeter) is used to
+integrate a script file which deals with the problem. This is a
+common feature of a command-line based workflow: \quotation{glue}
+scripts are written in order to fuse processes together. This glue
+can result from .
+
+\subsubsection{Regular Expressions and Process Hybridity}
+
+Regular expressions represent another avenue for demonstrating
+process hybridity. Since their introduction into the early text
+editors \type{QED} and \type{ed} by Ken Thompson, regular
+expressions have since been incorporated into many Unix commands
+such as \type{grep} and \type{awk}, newer editors such as \type{vi}
+and \type{emacs}, and programming languages such as Perl, PHP,
+Python, Ruby, and many more ({\em Regular expression} 2010).
+Regular expressions are a means for describing parameters of text
+searches, whereby arranging esoteric control characters in and
+around the text one is looking to find allows for finely tuned
+pattern matching.
+
+The hybridity of regular expressions lies in it's adoption by
+nearly every major programming language: from Wikipedia, the list
+includes
+\quotation{Java, JavaScript, PCRE, Python, Ruby, Microsoft's .Net Framework, and the W3C's XML Schema}
+({\em Regular expression} 2010). This list of languages refers to
+those who have hybridized some form or derivative of Perl's
+implementation of regular expressions, which is considered more
+robust than Ken Thompson's original version.
+
+Is it possible to say that these programming languages are
+\quote{remediating} the regular expressions from Perl? It is not
+beyond reason to assert that programming languages are
+\quote{mediums}---Ken Thompson has referred to Smalltalk as a new
+medium, for instance (!CITE!). However, mapping the term medium
+onto a programming language falls into the same trap of stretching
+the term medium until it becomes incomprehensible. Do different
+versions of the same language, representing different capabilities
+and even incompatible syntax changes, constitute separate mediums?
+What is useful about applying the term medium here, other than it
+enables us to discuss the prolific implementation of regular
+expressions as an example of \quote{remediation}?
+
+Programming languages often borrow concepts from each other, as
+this example of regular expressions clearly demonstrates. Saying
+that Perl remediates C syntax because it uses curly braces and
+semi-colons under-emphasizes Perl's own syntax. Rather it seems
+more evocative to describe ways in which Perl hybridizes elements
+of C's grammar while augmenting them with grammar of its own.
+
+In other words, to say that
+
+\starttyping
+my $variable = "value";    # defining a variable in Perl
+\stoptyping
+
+is a remediation of
+
+\starttyping
+char[5] variable = "value"; /* defining a variable in C */
+\stoptyping
+
+is an over-simplification. It obfuscates significant algorithmic
+differences in the two approaches by focusing on the surface level
+syntax (which is relatively similar) over the significant internal
+differences in the way the two languages deal with variables (such
+as static versus dynamic typing). The grammar of C is hybridized by
+Perl---re-implemented rather than remediated, related yet
+irreconcilable. Implementation differences have huge implications
+on the utility and functionality of the languages, a theoretical
+framework that focuses on surface-level similarities is incapable
+of expressing the variation that occurs beneath those similarities.
+
+Rather than a remediation of regular expressions, then, we see a
+hybridization of specific grammars of regular expressions, with the
+most popularly hybridized grammar deriving from the version found
+in Perl. However, many of the languages that hybridize the Perl
+version of regular expressions only implement a particular subset
+of that version. Additionally, extensions may be added that are not
+included in Perl. The result is a proliferation of regex---in the
+programmer shorthand for \quote{regular expression}---grammars as
+they are integrated into various process hybridities such as
+programming languages, command line utilities, and text editors.
+
+The website {\em Rubular} stands as an example of how far-reaching
+the hybridization of regular expressions has come in terms of
+process assemblage complexity (Lovitt 2010). The website utilizes
+not only the HTTP protocol that drives the World Wide Web, it uses
+AJAX in order to provide real-time representations of pattern
+matching within a Ruby interpreter (of which there are many). The
+GUI browser is involved in this assemblage by design
+\footnote{A zen (?koan?) for the 21\letterhat{}st century: Does a website
+truly exist if there is no browser to render it?}.
+So is a web framework of some kind, from the looks of it the
+increasingly ubiquitous Ruby on Rails There could be an argument
+made against such far-reaching hybridity: Ruby can be programmed
+interactively, line by line, in it's interpreter. The layers of
+code wrapped around the processing of Ruby regexes could be seen as
+superfluous---in fact, this is a common attitude of certain hacker
+types who look with disdain upon any non-essential fuctionality.
+Questions of {\em essentiality} in software remain an
+under-discussed topic in new media studies, despite the
+ever-present debates among developers on the issue.
+
+\startlongquote
+\input tufte
+\stoplongquote
+
+\section{Bibliography}
+
+Birkel, Garrett. (2004). ¨The Command Line In 2004¨. Web.
+\letterless{}\useURL[1][http://garote.bdmonkeys.net/commandline/index.html][][http://garote.bdmonkeys.net/commandline/index.html]\from[1]\lettermore{}
+(last accessed 20 June 2010).
+
+Bolter, Jay David. (2001).
+{\em Writing Space: Computers, hypertext, and the remediation of print}.
+New York: Routledge. Print.
+
+Bolter, Jay David and Richard A. Grusin. (1996).
+\quotation{Remediation}. {\em Configurations} 4:3. PDF. Bringhurst,
+Robert. (2008).
+{\em The Elements of Typographic Style, version 3.2}. Vancouver:
+Hartley \& Marks. Print.
+
+Brooks, Frederick. (1975).
+{\em The Mythical Man-Month: Essays on software engineering}.
+Massachusetts: Addison-Wesley. PDF. coons, ginger. (2010).
+\quotation{Why F/LOSS, why not F/LOSS}. {\em Libre Graphics \#0!}.
+Belgium: Drukkerij Bulckens nv. Print.
+
+Cramer, Florian. (2001).
+\quotation{Digital Code and Literary Text}. {\em netzlituratur}.
+Web.
+\letterless{}\useURL[2][http://www.netzliteratur.net/cramer/digital_code_and_literary_text.html][][http://www.netzliteratur.net/cramer/digital\letterunderscore{}code\letterunderscore{}and\letterunderscore{}literary\letterunderscore{}text.html]\from[2]\lettermore{}
+(last accessed 5 June 2010).
+
+Cramer, Florian. (2005).
+{\em Words Made Flesh: Code, Culture, Imagination}. Rotterdam: Piet
+Zwart Institute. PDF.
+\letterless{}\useURL[3][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/wordsmadefleshpdf][][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/wordsmadefleshpdf]\from[3]\lettermore{}
+
+Cramer, Florian and Matthew Fuller. (2008). \quotation{Interface}.
+In {\em Software Studies: a lexicon}, edited by Matthew Fuller. MIT
+Press: Cambridge. Print.
+
+Cramer, Florian, Aymeric Mansoux and Michael Murtaugh. (2010).
+\quotation{How to Run an Art School on Free and Open Source Software}.
+Presentation at the Libre Graphics Meeting 2010, Brussels. Online
+video.
+\letterless{}\useURL[4][http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/][][http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/]\from[4]\lettermore{}
+(last accessed 20 June 2010).
+
+Fuller, Matthew.
+\quotation{It looks like you're trying to write a letter: Microsoft Word}.
+2000. Web.
+\letterless{}\useURL[5][http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html][][http://www.nettime.org/Lists-Archives/nettime-l--0009/msg00040.html]\from[5]\lettermore{}
+(last accessed 5 June 2010).
+
+Galloway, Alexander. (2010). \quotation{Interface}. Presented at
+{\em A wedge between public and private conference} on 22 April
+2010, Amsterdam.
+
+Garfinkel, Simson, Daniel Weise, and Steven Strassman (editors).
+(1994). {\em The UNIX-HATER´s Handbook}. San Mateo: IDG Worldwide.
+PDF.
+\letterless{}\useURL[6][http://web.mit.edu/~simsong/www/ugh.pdf][][http://web.mit.edu/\lettertilde{}simsong/www/ugh.pdf]\from[6]\lettermore{}.
+
+Gitelman, Lisa. (2008).
+{\em Always Already New: Media, history, and the data of culture}.
+Cambridge: MIT Press. Print.
+
+Gillimore, Dan. (2010). ¨This Mac devotee is moving to Linux¨.
+{\em Salon.com}. 20 June 2010. Web.
+\useURL[7][http://www.salon.com/technology/apple/index.html?story=/tech/dan_gillmor/2010/06/20/from_mac_to_linux][][http://www.salon.com/technology/apple/index.html?story=/tech/dan\letterunderscore{}gillmor/2010/06/20/from\letterunderscore{}mac\letterunderscore{}to\letterunderscore{}linux]\from[7]
+(last accessed 21 June 2010).
+
+Hagen, Hans. (2009). {\em The history of luaTeX}. Netherlands:
+Pragma ADE. Web.
+\letterless{}\useURL[8][http://www.pragma-ade.com/general/manuals/mk.pdf][][http://www.pragma-ade.com/general/manuals/mk.pdf]\from[8]\lettermore{}
+(last accessed 5 June 2010).
+
+Hayles, N. Katherine. (2004)
+\quotation{Print is Flat, Code is Deep: The Importance of Media Specific Analysis}.
+{\em Poetics Today} 25:1. PDF.
+
+Hayles, N. Katherine. (2008).
+{\em Electronic Literature: new horizons for the literary}. Notre
+Dame: University of Notre Dame. Print.
+
+Holt, Jason and Tom Miller. (2010).
+\quotation{Introducing the Google Command Line Tool}.
+{\em Open Source at Google} blog. 18 June 2010. Web.
+\letterless{}\useURL[9][http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html][][http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html]\from[9]\lettermore{}
+(last accessed 18 June 2010).
+
+Illich, Ivan and Barry Sanders. (1988).
+{\em ABC: The Alphabetization of the Popular Mind}. San Fransisco:
+North Point Press. Print.
+
+Kay, Alan and Adele Goldberg. (1977).
+\quotation{Personal Dynamic Media}. From the collection
+{\em The New Media Reader}, edited by Noah Wardrip-Fruin and Nick
+Montfort, 2003. Cambridge: MIT Press. PDF.
+\letterless{}\useURL[10][http://www.newmediareader.com/book_samples/nmr-26-kay.pdf][][http://www.newmediareader.com/book\letterunderscore{}samples/nmr--26-kay.pdf]\from[10]\lettermore{}
+(last accessed 15 June 2010).
+
+{\em Kernel (computing)}. (2010). \quotation{Kernel (computing)}.
+{\em Wikipedia}. Web.
+\letterless{}\useURL[11][http://en.wikipedia.org/wiki/Kernel][][http://en.wikipedia.org/wiki/Kernel]\from[11]\lettermore{}
+(last accessed 18 June 2010).
+
+Kinross, Robin. (2004).
+{\em Modern typography: an essay in critical history}. London:
+Hyphen Press. Print.
+
+Knuth, Donald. (1984). {\em The TeXBook}. Massachusetts:
+Addison-Wesley. Print.
+
+Knuth, Donald. (1999). {\em Digital Typography}. Stanford: CSLI.
+Print.
+
+Kroker, Arthur and Marilouise Kroker. (2010). ¨Code Drift¨.
+{\em CTheory}. 14 April 2010. Web.
+\letterless{}\useURL[12][http://ctheory.net/articles.aspx?id=633][][http://ctheory.net/articles.aspx?id=633]\from[12]\lettermore{}
+(last accessed 19 June 2010).
+
+Lovitt, Michael. (2010).
+\quotation{Rubular: a Ruby regular expression editor}.
+{\em rubular.com}. Web.
+\letterless{}\useURL[13][http://rubular.com][][http://rubular.com]\from[13]\lettermore{}
+(last accessed 28 July 2010).
+
+**Langlois, Ganaele, Fenwick McKelvey, Greg Elmer, and Kenneth
+Werbin. (2009). ¨Mapping Commercial Web 2.0 Spaces: Towards a New
+Critical Ontogenesis¨. {\em Fibreculture} 14. Web.
+\letterless{}\useURL[14][http://journal.fibreculture.org/issue14/issue14_langlois_et_al.html][][http://journal.fibreculture.org/issue14/issue14\letterunderscore{}langlois\letterunderscore{}et\letterunderscore{}al.html]\from[14]\lettermore{}
+
+Manovich, Lev. (2001). {\em The Language of New Media}. MIT Press:
+Cambridge. Print.
+
+Manovich, Lev. (2008). {\em Software Takes Comman}. MS Doc
+manuscript, published online 20 November 2008.
+\letterless{}\useURL[15][http://softwarestudies.com/softbook/manovich_softbook_11_20_2008.doc][][http://softwarestudies.com/softbook/manovich\letterunderscore{}softbook\letterunderscore{}11\letterunderscore{}20\letterunderscore{}2008.doc]\from[15]\lettermore{}.
+Web.
+
+Marco, Meg. (2010).
+\quotation{Privacy Change: Apple Knows Where Your Phone Is and Is Telling People}.
+{\em The Consumerist}. 21 June 2010. Wev.
+\letterless{}\useURL[16][http://consumerist.com/2010/06/privacy-change-apple-knows-your-phone-is-and-is-telling-people.html][][http://consumerist.com/2010/06/privacy-change-apple-knows-your-phone-is-and-is-telling-people.html]\from[16]\lettermore{}
+(last accessed 22 June 2010).
+
+Maurer, Luna and Edo Paulus, Jonathan Puckey, Roel Wouters. (2008).
+\quotation{Conditional Design Manifesto}.
+{\em conditionaldesign.org}. Web.
+\letterless{}\useURL[17][http://www.conditionaldesign.org/manifesto/][][http://www.conditionaldesign.org/manifesto/]\from[17]\lettermore{}
+(last accessed 17 June 2010).
+
+McLuhan, Marshall. (1964). \quotation{Media Hot and Cold}.
+{\em Understanding Media: The Extensions of Man}. Cambridge: MIT
+Press, 1994. PDF.
+
+OSP. (2010). \quotation{OSP DIN}. {\em Libre Graphics \#0!}.
+Belgium: Drukkerij Bulckens nv. Print.
+
+Pasquinelli, Matteo. (2008).
+\quotation{The Ideology of Free Culture and the Grammar of Sabotage}.
+{\em generation online}. PDF.
+\letterless{}\useURL[18][http://www.generation-online.org/c/fc_rent4.pdf][][http://www.generation-online.org/c/fc\letterunderscore{}rent4.pdf]\from[18]\lettermore{}
+
+{\em Regular expression}. (2010). \quotation{Regular expression}.
+{\em Wikipedia}. Web.
+\letterless{}\useURL[19][http://en.wikipedia.org/wiki/Regular_expression][][http://en.wikipedia.org/wiki/Regular\letterunderscore{}expression]\from[19]\lettermore{}
+(last accessed 28 July 2010).
+
+Rosenberg, Scott. (2008). {\em Dreaming in Code}. New York: Three
+Rivers Press. Print.
+
+Simondon, Gilbert. (2009).
+\quotation{The Position of the Problem of Ontogenesis}. Gregor
+Flanders, trans. {\em Parrhesia} 7. PDF.
+\letterless{}\useURL[20][http://www.parrhesiajournal.org/parrhesia07/parrhesia07_simondon1.pdf][][http://www.parrhesiajournal.org/parrhesia07/parrhesia07\letterunderscore{}simondon1.pdf]\from[20]\lettermore{}
+(last accessed 5 June 2010).
+
+Snelting, Femke. (2009). \quotation{The Making of}.
+{\em Tracks in electr(on)ic fields}. Brussels: Constant. Web.
+\useURL[21][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf][][http://ospublish.constantvzw.org/wp-content/uploads/makingof.pdf]\from[21]
+(last accessed 5 June 2010).
+
+Snelting, Femke and Pierre Huyghebaert. (2010). Personal interview,
+with John Haltiwanger. Brussels, Belgium.
+
+Stephenson, Neal. (1999). ¨In the Beginning was the Command Line¨.
+Essay. Web.
+\letterless{}\useURL[22][http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml][][http://artlung.com/smorgasborg/C\letterunderscore{}R\letterunderscore{}Y\letterunderscore{}P\letterunderscore{}T\letterunderscore{}O\letterunderscore{}N\letterunderscore{}O\letterunderscore{}M\letterunderscore{}I\letterunderscore{}C\letterunderscore{}O\letterunderscore{}N.shtml]\from[22]\lettermore{}
+(last accessed 16 June 2010).
+
+{\em Windows 1.0}. (2010). \quotation{Windows 1.0}.
+{\em Wikipedia}. Web.
+\letterless{}\useURL[23][http://en.wikipedia.org/wiki/Windows_1.0][][http://en.wikipedia.org/wiki/Windows\letterunderscore{}1.0]\from[23]\lettermore{}
+(last accessed 19 June 2010).
+
+{\em Windows XP}. (2010). \quotation{Windows XP}. {\em Wikipedia}.
+Web.
+\letterless{}\useURL[24][http://en.wikipedia.org/wiki/Windows_xp][][http://en.wikipedia.org/wiki/Windows\letterunderscore{}xp]\from[24]\lettermore{}
+(las
+
+% we should have an open works-cited going
+\stopworkscited
+
+\stoptext
+
