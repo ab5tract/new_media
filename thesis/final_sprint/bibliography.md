@@ -5,10 +5,13 @@ Birkel, Garrett. (2004). ¨The Command Line In 2004¨. Web. <[http://garote.bdmo
 Bolter, Jay David. (2001). _Writing Space: Computers, hypertext, and the remediation of print_. New York: Routledge. Print.
 
 Bolter, Jay David and Richard A. Grusin. (1996). "Remediation". _Configurations_ 4:3. PDF.
+
 Bringhurst, Robert. (2008). _The Elements of Typographic Style, version 3.2_. Vancouver: Hartley & Marks. Print.
 
 Brooks, Frederick. (1975). _The Mythical Man-Month: Essays on software engineering_. Massachusetts: Addison-Wesley. PDF.
 coons, ginger. (2010). "Why F/LOSS, why not F/LOSS". _Libre Graphics #0!_. Belgium: Drukkerij Bulckens nv. Print.
+
+Chun, Wendy Hui Kyong. (2008). "On 'Sourcery,' or Code as Fetish". _Configurations_ 16:3, p. 299-324.
 
 Cramer, Florian. (2001). "Digital Code and Literary Text". _netzlituratur_. Web. <[http://www.netzliteratur.net/cramer/digital_code_and_literary_text.html](http://www.netzliteratur.net/cramer/digital_code_and_literary_text.html)> (last accessed 5 June 2010).
 
@@ -55,6 +58,8 @@ Lafuente, Ricardo. (2010). "About : Batch Commander". _tinkerhouse.com_. Web. <[
 Lovitt, Michael. (2010). "Rubular: a Ruby regular expression editor". _rubular.com_. Web. <[http://rubular.com](http://rubular.com)> (last accessed 28 July 2010).
 
 **Langlois, Ganaele, Fenwick McKelvey, Greg Elmer, and Kenneth Werbin. (2009). ¨Mapping Commercial Web 2.0 Spaces: Towards a New Critical Ontogenesis¨. _Fibreculture_ 14. Web. <[http://journal.fibreculture.org/issue14/issue14_langlois_et_al.html](http://journal.fibreculture.org/issue14/issue14_langlois_et_al.html)>
+
+Mackenzie, Adrian. (2006). "The Strange Meshing of Impersonal and Personal Forces in Technological Action". _Culture, Theory & Critique 47:2, 197-212.
 
 Manovich, Lev. (2001). _The Language of New Media_. MIT Press: Cambridge. Print.
 
