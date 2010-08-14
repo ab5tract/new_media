@@ -17,6 +17,13 @@
 
 md_file = ARGV[0] # the name of the markdown file is passed in as the only argument.
 
+# Set solme variables to be passed to pandoc
+abstract = <<eos
+Despite years of theorization, a concise definition of what constitutes a medium remains elusive. Theorists have variously described media as extensions of human senses (Marshall McLuhan), as agents of reform ruled by a double-logic of remediation (Jay David Bolter and Robert Grusin), as aggregates of material specificity (N. Katherine Hayles), and as evolutionarily selected forms defined by their effects (Lev Manovich). While all of these theorists use examples of and from specific media, none of them explicitly address the specificities of media themselves. This thesis proposes a {\\em process-oriented perspective} that seeks to address this slipperiness that has resulted from unclear definitions of the concept---a slipperiness that only intensifies within the context of the computer metamedium. Media are seen as reflexive sites in which humans create grammars that organize and distribute processes. As reflexive sites, they both change and are changed by human beings. The reflexiveness of the computer metamedium, defined as it is by its programmability, inspires an investigation into the dynamic and co-evolving relationship of human and digital process. The practice of {\\em generative design} is selected as an evocative instance of this relationship, and a reflexive engagement with the practice is undertaken as the thesis becomes a site of generative typesetting. The concept of process utilized here is organized according to Gilbert Simondon's theory of {\\em ontogenesis}, a framework that questions 'becoming' rather than 'being' and in so doing provides a mechanism for explaining collective change.
+eos
+
+subtitle = "Mapping Individuation in Human and Digital Processes Through Generative Design"
+keywords = "medium theory, ontogenesis, transduction, generative design, process oriented perspective, typesetting, ideological computing"
 
 in_code = false
 
@@ -25,29 +32,57 @@ basename = File.basename(md_file, '.md')
 html = File.new("#{basename}-html.md", 'w')
 context = File.new("#{basename}-context.md", 'w')
 
+first_chapter = true
+
+special_sections = ["Introduction", "Acknowledgments", "Bibliography"]
+
 exclaims = Array.new
 questions = Array.new
 
 input.each do |line|
-	if line =~ /^#+[\w\s]+#+$/
-		unless in_code == true 
-			html_line = "##{line.chomp}#"
-			html.puts html_line
-			context.puts line
-		end 
 	# !ALWAYS! remember that regex.match() needs parentheses!
-	elsif /^~+~$/.match(line)
+	# Set toggle if we are in a code block
+	if /^~+~$/.match(line)
 		in_code = (in_code == false) ? true : false
 		html.puts line
 		context.puts line	
-	elsif m = /^\\chapter\{(.+)\}$/.match(line)
-		html.puts "# #{m[1]} #"
+	elsif m = /^\#+\s([\S\s]+)\s\#+$/.match(line) and in_code == false
+		unless (special_sections & [m[1]]).empty? == true
+			html.puts line
+			context.puts line
+		else
+			html.puts "\##{line.chomp}\#"
+			context.puts line
+		end
+	elsif /^\(\%grrrquote\)$/.match(line) and in_code == false
+		html.puts '<blockquote>'
+		context.puts '\startlongquote'
+	elsif /^\/\(\%grrrquote\)$/.match(line) and in_code == false
+		html.puts '</blockquote>'
+		context.puts '\stoplongquote'
+	# Chapter handling (may need to add something to remove the first </div> in a file)
+	elsif m = /^\\chapter\{(.+)\}$/.match(line) and in_code == false 
+		html.puts "</div><div class='chapter'>\n# #{m[1]} #"
+		if first_chapter == true
+			context.puts '\stopfrontmatter'
+			context.puts line
+			first_chapter = false
+		else
+			context.puts line
+		end
+	elsif m = /^\\section\{(.+)\}$/.match(line) and in_code == false
+		html.puts "## #{m[1]} ##"
 		context.puts line
-	elsif m = /\(\!+(.+)\!\)/.match(line)
-		exclaims << [$., m[1]]
+	elsif m = /^\\subsection\{(.+)\}$/.match(line) and in_code == false
+		html.puts "### #{m[1]} ###"
+		context.puts line
+	# Count exclamation mark(up)s
+	elsif m = /\(\!+(.+)\!\)/.match(line) 
+		exclaims << [$., m[1]] # $. is a special constant for the current line
 		html.puts line
 		context.puts line
 		next
+	# Count question mark(up)s
 	elsif m = /\(\?+(.+)\?\)/.match(line)
 		questions << [$., m[1]]
 		html.puts line
@@ -62,6 +97,9 @@ input.each do |line|
 		context.puts line
 	end
 end
+html.close
+context.close
+
 
 puts "Grooming successful \t\t\t\t\t ...... \t[OK]"
 
@@ -80,14 +118,14 @@ end
 puts "\n\n### Conversions happening in sequence ###"
 print "Converting #{basename}-html.md to #{basename}.html\t.....\t "
 command = Thread.new do
-	%x[pandoc -o #{basename}.html -s -N #{basename}-html.md]
+	%x[pandoc -o #{basename}.html -s -N -V abstract=\"#{abstract}\" -V subtitle=\"#{subtitle}\" -V keywords=\"#{keywords}\" --toc #{basename}-html.md]
 end
 command.join
 puts "[OK]"
 
 print "Converting #{basename}-context.md to #{basename}.tex\t.....\t "
 command = Thread.new do
-	%x[pandoc -o #{basename}.tex -t context -s -N #{basename}-context.md]
+	%x[pandoc -o #{basename}.tex -t context -s -N -V abstract=\"#{abstract}\" -V subtitle=\"#{subtitle}\" -V keywords=\"#{keywords}\" #{basename}-context.md]
 end
 command.join
 puts "[OK]"
@@ -102,12 +140,33 @@ tex.each do |line|
 		groom.puts line.gsub(m[1], "{\\#{m[1].upcase}}")
 #	elsif m = /\b(TeX)\b/.match(line)
 #		groom.puts line.gsub(m[1], '\cap{\TEX}')
+	elsif /^\\section\{Introduction\}$/.match(line) and in_code == false
+#		html.puts "<div class='chapter' id='introduction'># Introduction #"
+		groom.puts '\intro{Introduction}'
+	elsif /^\\section\{Bibliography\}$/.match(line) and in_code == false
+#		html.puts "</div><div class='chapter' id='bibliography'># Bibliography #"
+		groom.puts '\startworkscited'
+	elsif /^\\section\{Acknowledgments\}$/.match(line) and in_code == false
+#		html.puts "<div class='chapter' id='acknowledgments'>\n# Acknowledgments #"
+		groom.puts '\startfrontmatter' 
+		groom.puts '\intro{Acknowledgments}'
 	else
 		groom.puts line
 	end
 end
 groom.close
 
+
+#	if /# Introduction #/.match(line) and in_code == false
+#		html.puts "<div class='chapter' id='introduction'># Introduction #"
+#		context.puts '\intro{Introduction}'
+#	elsif /# Bibliography #/.match(line) and in_code == false
+#		html.puts "</div><div class='chapter' id='bibliography'># Bibliography #"
+#		context.puts '\startworkscited'
+#	elsif /# Acknowledgments #/.match(line) and in_code == false
+#		html.puts "<div class='chapter' id='acknowledgments'>\n# Acknowledgments #"
+#		context.puts '\startfrontmatter' 
+#		context.puts '\intro{Acknowledgments}'
 
 
 print "Converting #{basename}.tex to #{basename}.pdf\t ..... \t "

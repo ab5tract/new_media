@@ -4,30 +4,94 @@ $else$
 %\enableregime[utf]  % use UTF-8
 
 \setupcolors[state=start]
-\setupinteraction[state=start, color=blue] % needed for hyperlinks
+\setupinteraction[state=start, color=black, contrastcolor=black] % needed for hyperlinks
 
 \usemodule[simplefonts]
-\setmainfont[Liberation-Serif]
+\setmainfont[Linux Libertine O]
 \setmonofont[inconsolata][11pt]
 
-\setuppapersize[A4][A4]  % use letter paper
+\setuppapersize[A4][A4]  % use A4 paper
 %\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
 %             height=middle, header=0.75in, footer=0.75in] % page layout
-\setuppagenumbering[location={footer,right}]  % number pages
-\setupbodyfont[12pt]  % 11pt font
+%\setuppagenumbering[alternative=doublesided, location={header,margin}]  % number pages
+\setuppagenumbering[alternative=doublesided, location=]
+\setupbodyfont[12pt]  % 12pt font
 \setupwhitespace[medium]  % inter-paragraph spacing
+
+\setupinterlinespace[line=18pt] % should be 3/2 spacing
+
+\setupcaptions[headstyle=smallcaps]
 
 \setupindenting[medium]
 \indenting[always]
 
-\setuphead[section][style=\tfc]
-\setuphead[subsection][style=\tfb]
-\setuphead[subsubsection][style=\bf]
+\setuphead[section][style=\sc, alternative=margin]
+\setuphead[subsection][style=\sc, alternative=margin]
+\setuphead[subsubsection][style=\sc, alternative=margin]
+
+\setupheadertexts [text]
+	[{\sc \getmarking[chapter]}]	[{\pagenumber}]
+	[{\sc \getmarking[Doctitle]}] [{\pagenumber}]	
+
+% this is for truly empty pagebreaks
+\definepagebreak
+  [mychapterpagebreak]
+  [yes,header,right]
+\setuphead
+  [chapter]
+  [page=mychapterpagebreak, header=empty, footer=empty]
+
+% setup title page
+\unprotect
+\definemarking[Author]
+\definemarking[Doctitle]
+
+\def\doctitle#1{\gdef\@title{#1}\marking[Doctitle]{#1}}
+\def\docsubtitle#1{\gdef\@subtitle{#1}}
+\def\author#1{\gdef\@author{#1}\marking[Author]{#1}}
+\def\date#1{\gdef\@date{#1}}
+\date{\currentdate[day, month, year]}  % Default to today unless specified otherwise.
+
+
+\setupcolor[hex]
+\definecolor[titleRed][h=910A00]
+
+\def\maketitle{
+  \startalignment[center]
+    \blank[force,2*big]
+      {\scd \color[titleRed]{\@title}}
+		\blank[big]
+			{\scb \@subtitle}
+	\stopalignment
+	\startalignment[flushleft]
+    \blank[25*big]
+		\starttabulate[|l|l|]
+    			\NC Name: \NC \@author
+			\NR \NC Student Number: \NC 6100473
+			\NR \NC Email: \NC john.haltiwanger@gmail.com
+			\NR \NC Website:	\NC http://drippingdigital.com/
+			\NR
+		  \NR	\NC Date: \NC \@date
+			\NR \NC Supervisor: \NC Richard Rogers
+			\NR \NC Second reader: \NC Geert Lovink
+			\NR \NC Institution: \NC Universiteit van Amsterdam
+			\NR \NC Department: \NC Media and Culture (New Media)
+		\stoptabulate
+		\blank[3*big]
+		\starttabulate[|l|]
+		\NC {\sc Keywords} \NR
+		\stoptabulate
+		$keywords$
+\stopalignment}
+\protect
+
 
 % define descr (for definition lists)
-\definedescription[descr][
-  headstyle=bold,style=normal,align=left,location=hanging,
-  width=broad,margin=1cm]
+\definedescription
+  [descr]
+    [headstyle={\bf},style=normal,location=top, hang=20,
+  width=broad,
+	command=\hskip-1cm,margin=1cm]
 
 % prevent orphaned list intros
 \setupitemize[autointro]
@@ -39,6 +103,36 @@ $else$
 \setupitemize[4][symbol=4][indentnext=no]
 
 \setupthinrules[width=15em]  % width of horizontal rules
+
+
+% define a special head type of bibliography
+\definehead		[bibliography] [chapter]
+\setuphead		[bibliography] [number=no, page=mychapterpagebreak]
+%\definecombinedlist		[content][chapter,section,bibliography]
+\setuplist		[bibliography] [headnumber=no]
+
+\definehead		[intro]	[chapter]
+\setuphead		[intro]	[number=no, page=mychapterpagebreak]
+\definecombinedlist		[content][intro,chapter,section,subsection,subsubsection,bibliography,figure]
+\setupcombinedlist		[content][alternative=c,interaction=all]
+\setuplist		[intro]	[headnumber=no]
+
+% let's get pretty chapters
+\def\MyChapterCommand#1#2% #1 is number, #2 is text
+  {\framed[frame=off,bottomframe=on,topframe=on]
+     {\vbox{\blank\headtext{chapter} #1\blank#2\blank}}} % \vbox is needed for \blank to work
+\def\MyEmptyChapterCommand#1#2% is a comment necessary?---apparently so...
+	{\framed[frame=off,bottomframe=on,topframe=on]
+			{\vbox{\blank#2\blank}}}
+
+\setuphead[chapter][command=\MyChapterCommand, style={\scc},page=mychapterpagebreak,header=empty]
+
+\setuphead[bibliography][command=\MyEmptyChapterCommand, style={\scc},page=mychapterpagebreak,header=empty]
+
+\setuphead[intro][command=\MyEmptyChapterCommand, style={\scc},page=mychapterpagebreak,header=empty]
+
+\setupheadtext[chapter=Chapter] % used by \headtext
+
 
 % for block quotations
 \unprotect
@@ -58,6 +152,15 @@ before={\blank[medium]},
 after={\blank[medium]},
 ]
 
+% for long quotes
+\definestartstop
+  [longquote]
+  [before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
 % for bibliographic entries
 
 % following hanging indent code (also in workscited) taken from 
@@ -70,7 +173,7 @@ after={\blank[medium]},
     \page[no]
     \indenting[never]
     \startalignment[left]
-    \subject{Bibliography}
+    \bibliography{Bibliography}
     \stopalignment
     \setupwhitespace[medium]
     \bgroup\appendtoks\hangover\to\everypar
@@ -80,6 +183,17 @@ after={\blank[medium]},
     \indenting[yes]}]
 
 \protect
+
+\definestartstop
+  [abstract]
+  [before={\blank[4*big]
+					 \midaligned{\sc Abstract}
+           \startnarrower[2*middle]},
+   after={\stopnarrower
+          \blank[big]}]
+
+\setupheader[state=start]
+
 $endif$
 $for(header-includes)$
 $header-includes$
@@ -87,25 +201,40 @@ $endfor$
 
 \starttext
 $if(title)$
-	{\tfd $title$}
+	\doctitle{$title$}
 $if(author)$
-	\starttabulate[|l|] 
-	\NC {\tfa $author$} 
+	\author{$author$}
 $if(date)$
-	\NR
-  \NC $date$
-$endif$
-	\stoptabulate
+  \date{$date$}
 $endif$
 $endif$
+$endif$
+
+\docsubtitle{$subtitle$}
+
 $for(include-before)$
 $include-before$
 $endfor$
-$if(toc)$
+
+%\setuppagenumbering[location=]
+\setupheader[state=stop]
+\maketitle
+\page
+
+%\setuppagenumbering[alternative=doublisided, location={header,margin}] 
+\page[odd]
+\startabstract
+$abstract$
+\stopabstract
+\page[odd]
+\setupheader[state=start]
+
 \placecontent
-$endif$
 
 $body$
+
+% we should have an open works-cited going
+\stopworkscited
 
 $for(include-after)$
 $include-after$

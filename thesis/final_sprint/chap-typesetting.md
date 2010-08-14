@@ -240,12 +240,14 @@ is an over-simplification. It obfuscates significant algorithmic differences in 
 
 Rather than a remediation of regular expressions, then, we see a hybridization of specific grammars of regular expressions, with the most popularly hybridized grammar deriving from the version found in Perl. However, many of the languages that hybridize the Perl version of regular expressions only implement a particular subset of that version. Additionally, extensions may be added that are not included in Perl. The result is a proliferation of regex--in the programmer shorthand for 'regular expression'--grammars as they are integrated into various process hybridities such as programming languages, command line utilities, and text editors.
 
-The website _Rubular_ stands as an example of how far-reaching the hybridization of regular expressions has come in terms of process assemblage complexity (Lovitt 2010). The website utilizes not only the HTTP protocol that drives the World Wide Web, it uses AJAX in order to provide real-time representations of pattern matching within a Ruby interpreter (of which there are many). The GUI browser is involved in this assemblage by design[^zen]. So is a web framework of some kind, from the looks of it the increasingly ubiquitous Ruby on Rails There could be an argument made against such far-reaching hybridity: Ruby can be programmed interactively, line by line, in it's interpreter. The layers of code wrapped around the processing of Ruby regexes could be seen as superfluous---in fact, this is a common attitude of certain hacker types who look with disdain upon any non-essential fuctionality. Questions of _essentiality_ in software remain an under-discussed topic in new media studies, despite the ever-present debates among developers on the issue.
+The website _Rubular_ stands as an example of how far-reaching the hybridization of regular expressions has come in terms of process assemblage complexity (Lovitt 2010). The website utilizes not only the HTTP protocol that drives the World Wide Web, it uses AJAX in order to provide real-time representations of pattern matching within a Ruby interpreter (of which there are many). The GUI browser is involved in this assemblage by design[^zen]. So is a web framework of some kind, from the looks of it the increasingly ubiquitous Ruby on Rails There could be an argument made against such far-reaching hybridity: Ruby can be programmed interactively, line by line, in it's interpreter. The layers of code wrapped around the processing of Ruby regexes could be seen as superfluous---in fact, this is a common attitude of certain hacker types who look with disdain upon any non-essential fuctionality. 
 
+Questions of _essentiality_ in software remain an under-discussed topic in new media studies, despite the ever-present debates among developers on the issue. These debates seem to hinge, at least to some extent, to that el
 
-\startlongquote
-\input tufte
-\stoplongquote
+(%grrrquote)
+Like calculus (which McLuhan considered a conquest of the tactile area of numbers) regular expressions anticipate the unpredictable and bring repeatability to the immeasurable. A simple * (which means "zero or more of the preceding item") compresses everything from zero to infinity into a calculable scheme. (Oram 2002)
+/(%grrrquote)
+
 
 [^zen]: A zen (?koan?) for the 21^st century: Does a website truly exist if there is no browser to render it?
 

@@ -21,6 +21,10 @@ Cramer, Florian and Matthew Fuller. (2008). "Interface". In _Software Studies: a
 	
 Cramer, Florian, Aymeric Mansoux and Michael Murtaugh. (2010). "How to Run an Art School on Free and Open Source Software". Presentation at the Libre Graphics Meeting 2010, Brussels. Online video. <[http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/](http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/)> (last accessed 20 June 2010).
 
+Crockford, Douglas. (2010a). "Volume One: The Early Years". 25 January 2010. Lecture in the series _Crockford on JavaScript_. Streaming video and transcript. <[http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-1](http://developer.yahoo.com/yui/theater/video.php?v=crockonjs-1)> (Last accessed 18 July 2010).
+
+Enzensberger, Hans Magnus. (1970). "Constituents of a Theory of the Media". _New Left Review_ I/64. Web. <[http://www.newleftreview.org/?page=article&view=430](http://www.newleftreview.org/?page=article&view=430)> (last accessed 15 June 2010). 
+
 Fuller, Matthew. "It looks like you're trying to write a letter: Microsoft Word". 2000. Web. <[http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html](http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html)> (last accessed 5 June 2010).
 
 Galloway, Alexander. (2010). "Interface". Presented at _A wedge between public and private conference_ on 22 April 2010, Amsterdam.
@@ -73,7 +77,11 @@ McLuhan, Marshall. (1964). "Media Hot and Cold". _Understanding Media: The Exten
 
 OSP. (2010). "OSP DIN". _Libre Graphics #0!_. Belgium: Drukkerij Bulckens nv. Print.
 
+Ornstein, Severo. (2002). _Computing in the Middle Ages: A view from the trenches 1955-1983_. Authorhouse. Print.
+
 Pasquinelli, Matteo. (2008). "The Ideology of Free Culture and the Grammar of Sabotage". _generation online_. PDF. <[http://www.generation-online.org/c/fc_rent4.pdf](http://www.generation-online.org/c/fc_rent4.pdf)>
+
+PBS. (1996). "Triumph of the Nerds, Part Three". Transcript of video documentary. <[http://www.pbs.org/nerds/part3.html](http://www.pbs.org/nerds/part3.html)> (last accessed 5 August 2010). 
 
 _Regular expression_. (2010). "Regular expression". _Wikipedia_. Web. <[http://en.wikipedia.org/wiki/Regular_expression](http://en.wikipedia.org/wiki/Regular_expression)> (last accessed 28 July 2010).
 
@@ -86,6 +94,8 @@ Snelting, Femke. (2009). "The Making of". _Tracks in electr(on)ic fields_. Bruss
 Snelting, Femke and Pierre Huyghebaert. (2010). Personal interview, with John Haltiwanger. Brussels, Belgium.
 
 Stephenson, Neal. (1999). ¨In the Beginning was the Command Line¨. Essay. Web. <[http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml](http://artlung.com/smorgasborg/C_R_Y_P_T_O_N_O_M_I_C_O_N.shtml)> (last accessed 16 June 2010).
+
+W3C. (1999). "HTML 4.01 Specification". _W3C Recommendation_, 24 December 1999. Web. <[http://www.w3.org/TR/html4/](http://www.w3.org/TR/html4/)> (last accessed 12 August 2010).
 
 _Windows 1.0_. (2010). "Windows 1.0". _Wikipedia_. Web. <[http://en.wikipedia.org/wiki/Windows_1.0](http://en.wikipedia.org/wiki/Windows_1.0)> (last accessed 19 June 2010).
 

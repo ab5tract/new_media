@@ -37,12 +37,22 @@ $endif$
 		div[id="body_text"] {
 			width: 61.8%;
 			float: left;
+			left: 15%;
+			position: relative;
 		}
 
 		#footer {
 		
 		}
 
+		a {
+			text-decoration: none;
+			color: black;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
 		/* we will need to add abbr's automatically */
 		abbr { letter-spacing: 0.1em }
 
@@ -54,15 +64,13 @@ $endif$
 		
 		p {
 			text-align: left;
-			
+			size: 12pt;
+			line-height: 1.5;
+			margin-bottom: 0;
 		}
 
 		em {
-			font-family : "Lib-Sans-I";
-		}
-
-		h1 {
-			font-family : "Lib-Serif-R";
+			font-family : "Lib-Serif-I";
 		}
 
 		h1[class="title"] {
@@ -79,8 +87,22 @@ $endif$
 			font-size : 1.3em;
 		}
 
-		h2 {
-			font-family : "Lib-Serif-R"
+		h1, h2, h3, h4, div#TOC {
+			font-family : "Lib-SC";
+			font-size : 12pt;
+		}
+
+		div#body_text > h1, h2, h3, h4 {
+			position: relative;
+			left: -2.5%;
+		}
+
+	/*	div[id="TOC"] > */ ul {
+			list-style-type: none;	
+		}
+
+		div[id="TOC"] {
+			line-height: 1.75;
 		}
 
 		div[class="title_section"] {
@@ -89,17 +111,22 @@ $endif$
 
 		@font-face {
 			font-family : "Lib-Serif-R";
-			src : url(ttf/LiberationSerif-Regular.ttf) format("truetype");
+			src : url(ttf/LinLibertine_Re-4.7.5.tt) format("truetype");
+		}
+/*
+		@font-face {
+			font-family : "Lib-Serif-I";
+			src : url(ttf/) format("truetype");
+		} */
+
+		@font-face {
+			font-family : "Lib-Serif-I";
+			src : url(ttf/LinLibertine_It-4.2.6.ttf) format("truetype");
 		}
 
 		@font-face {
-			font-family : "Lib-Sans-R";
-			src : url(ttf/LiberationSans-Regular.ttf) format("truetype");
-		}
-
-		@font-face {
-			font-family : "Lib-Sans-I";
-			src : url(ttf/LiberationSans-Italic.ttf) format("truetype");
+			font-family : "Lib-SC";
+			src : url(ttf/LinLibertine_C-4.0.4.ttf ) format("truetype")
 		}
 	</style>
 
@@ -119,18 +146,28 @@ $endfor$
 $if(title)$
 <div class="title_page">
 	<h1 class="title">$title$</h1>
+	<h1 class="subtitle">$subtitle$</h1>
 	<h1 class="author">$author$</h1>
 	<h1 class="date">$date$</h1>
+	<p class="abstract">
+		<h3 class="abstract_title">Abstract</h3>
+		$abstract$
+	</p>
 </div>
 $endif$
-$for(include-before)$
-$include-before$
-$endfor$
+
 $if(toc)$
 $toc$
 $endif$
+
+$for(include-before)$
+$include-before$
+$endfor$
+
+
 <div id="body_text">
 $body$
+</div> <!-- for the chain of chapter divs -->
 </div>
 $for(include-after)$
 $include-after$
