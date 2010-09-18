@@ -1,7 +1,7 @@
 %\enableregime[utf]  % use UTF-8
 
 \setupcolors[state=start]
-\setupinteraction[state=start, color=blue] % needed for hyperlinks
+\setupinteraction[state=start, color=black] % needed for hyperlinks
 
 \usemodule[simplefonts]
 \setmainfont[linlibertineo]
@@ -10,23 +10,81 @@
 \setuppapersize[A4][A4]  % use A4 paper
 %\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
 %             height=middle, header=0.75in, footer=0.75in] % page layout
-\setuppagenumbering[location={footer,right}]  % number pages
+%\setuppagenumbering[alternative=doublesided, location={header,margin}]  % number pages
+\setuppagenumbering[location=]
 \setupbodyfont[12pt]  % 12pt font
 \setupwhitespace[medium]  % inter-paragraph spacing
 
-\setupinterlinespace[line=1.5em] % should be 3/2 spacing
+\setupinterlinespace[line=18pt] % should be 3/2 spacing
+
+\setupcaptions[headstyle=smallcaps]
 
 \setupindenting[medium]
 \indenting[always]
 
-\setuphead[section][style=\sc]
-\setuphead[subsection][style=\sc]
-\setuphead[subsubsection][style=\sc]
+\setuphead[section][style=\sc, alternative=margin]
+\setuphead[subsection][style=\sc, alternative=margin]
+\setuphead[subsubsection][style=\sc, alternative=margin]
+
+\setupheadertexts
+	[{\sc \getmarking[chapter]}]	[{\pagenumber}]
+	[{\sc \getmarking[Doctitle]}] [{\pagenumber}]	
+
+% this is for truly empty pagebreaks
+\definepagebreak
+  [mychapterpagebreak]
+  [yes,header,right]
+%\setuphead
+%  [chapter]
+%  [page=mychapterpagebreak]
+
+% setup title page
+\unprotect
+\definemarking[Author]
+\definemarking[Doctitle]
+
+\def\doctitle#1{\gdef\@title{#1}\marking[Doctitle]{#1}}
+\def\docsubtitle#1{\gdef\@subtitle{#1}}
+\def\author#1{\gdef\@author{#1}\marking[Author]{#1}}
+\def\date#1{\gdef\@date{#1}}
+\date{\currentdate[day, month, year]}  % Default to today unless specified otherwise.
+
+\def\maketitle{
+  \startalignment[center]
+    \blank[force,2*big]
+      {\scd \@title}
+		\blank[big]
+			{\scb \@subtitle}
+	\stopalignment
+	\startalignment[flushleft]
+    \blank[25*big]
+		\starttabulate[|l|l|]
+    			\NC Name: \NC \@author
+			\NR \NC Student Number: \NC 6100473
+			\NR \NC Email: \NC john.haltiwanger@gmail.com
+			\NR \NC Website:	\NC http://drippingdigital.com/
+			\NR
+		  \NR	\NC Date: \NC \@date
+			\NR \NC Supervisor: \NC Richard Rogers
+			\NR \NC Second reader: \NC Geert Lovink
+			\NR \NC Institution: \NC Universiteit van Amsterdam
+			\NR \NC Department: \NC Media and Culture (New Media)
+		\stoptabulate
+		\blank[3*big]
+		\starttabulate[|l|]
+		\NC {\sc Keywords} \NR
+		\stoptabulate
+		medium theory, ontogenesis, transduction, generative design, process oriented perspective, typesetting, ideological computing
+\stopalignment}
+\protect
+
 
 % define descr (for definition lists)
-\definedescription[descr][
-  headstyle=bold,style=normal,align=left,location=hanging,
-  width=broad,margin=1cm]
+\definedescription
+  [descr]
+    [headstyle=bold,style=normal,location=top, hang=20,
+  width=broad,
+	command=\hskip-1cm,margin=1cm]
 
 % prevent orphaned list intros
 \setupitemize[autointro]
@@ -38,6 +96,36 @@
 \setupitemize[4][symbol=4][indentnext=no]
 
 \setupthinrules[width=15em]  % width of horizontal rules
+
+
+% define a special head type of bibliography
+\definehead		[bibliography] [chapter]
+\setuphead		[bibliography] [number=no]
+%\definecombinedlist		[content][chapter,section,bibliography]
+\setuplist		[bibliography] [headnumber=no]
+
+\definehead		[intro]	[chapter]
+\setuphead		[intro]	[number=no]
+\definecombinedlist		[content][intro,chapter,section,subsection,subsubsection,bibliography]
+\setupcombinedlist		[content][alternative=c,interaction=all]
+\setuplist		[intro]	[headnumber=no]
+
+% let's get pretty chapters
+\def\MyChapterCommand#1#2% #1 is number, #2 is text
+  {\framed[frame=off,bottomframe=on,topframe=on]
+     {\vbox{\blank\headtext{chapter} #1\blank#2\blank}}} % \vbox is needed for \blank to work
+\def\MyEmptyChapterCommand#1#2% is a comment necessary?---apparently so...
+	{\framed[frame=off,bottomframe=on,topframe=on]
+			{\vbox{\blank#2\blank}}}
+
+\setuphead[chapter][command=\MyChapterCommand, style={\scc},page=mychapterpagebreak,header=empty]
+
+\setuphead[bibliography][command=\MyEmptyChapterCommand, style={\scc},page=mychapterpagebreak,header=empty]
+
+\setuphead[intro][command=\MyEmptyChapterCommand, style={\scc},page=mychapterpagebreak,header=empty]
+
+\setupheadtext[chapter=Chapter] % used by \headtext
+
 
 % for block quotations
 \unprotect
@@ -57,6 +145,15 @@ before={\blank[medium]},
 after={\blank[medium]},
 ]
 
+% for long quotes
+\definestartstop
+  [longquote]
+  [before={\indenting[never]
+    \setupnarrower[left=0.5in,right=0.5in]
+    \startnarrower[left,right]},
+  after={\stopnarrower
+    \indenting[yes]}]
+
 % for bibliographic entries
 
 % following hanging indent code (also in workscited) taken from 
@@ -69,7 +166,7 @@ after={\blank[medium]},
     \page[no]
     \indenting[never]
     \startalignment[left]
-    \subject{Bibliography}
+    \bibliography{Bibliography}
     \stopalignment
     \setupwhitespace[medium]
     \bgroup\appendtoks\hangover\to\everypar
@@ -80,9 +177,61 @@ after={\blank[medium]},
 
 \protect
 
-\starttext
+\definestartstop
+  [abstract]
+  [before={\blank[4*big]
+					 \midaligned{\sc Abstract}
+           \startnarrower[2*middle]},
+   after={\stopnarrower
+          \blank[big]}]
 
-\section{Introduction}
+\setupheader[state=start]
+
+
+\starttext
+	\doctitle{Grammars of the Damned}
+	\author{John C. Haltiwanger}
+
+\docsubtitle{Mapping Ontogenesis in Generative Design}
+
+
+%\setuppagenumbering[location=]
+\setupheader[state=stop]
+\maketitle
+\page
+
+%\setuppagenumbering[alternative=doublisided, location={header,margin}] 
+
+
+\startabstract
+Here goes the abstract!
+
+Will it do multi-line stuff for me?
+
+Eh????
+\stopabstract
+\page
+\setupheader[state=start]
+
+\placecontent
+%\startfrontmatter
+%\intro{Acknowledgments}
+
+%This is where I acknowledge everyone.
+
+%\intro{Introduction}
+
+%This is a chipper little introduction, don't you think?
+% should work in general, i hope!
+
+%\stopfrontmatter
+\startfrontmatter
+\intro{Acknowledgments}
+
+I'd like to thank Natalia, for agreeing to review this Special
+Edition of my ridiculous thesis.
+
+\intro{Introduction}
 
 Today's new media theory increasingly invokes {\em materiality} as
 a significant, perhaps even {\em the} significant, mode of
@@ -117,35 +266,35 @@ is a detailed interrogation of actual practice in the form of
 {\em digital typesetting}. This topic was chosen for several
 reasons. The first is a general lack of focus on the processes
 behind typesetting among new media theory---while the surfaces of
-text have been investigated in numerous ways (Bolter 2001; Fuller
-2000), there has been a general lack of concern (or capacity)
-regarding the underlying processes of text in the metamedium
-(computers). This is especially evidenced as regards the
-{\em command line interface}, a realm where text becomes kinetic.
-Yet I found that very little theory has been written regarding the
-command-line, despite its place as the historical interface (once
-contemporary with batch punch cards) by which digital processes
-were initiated. Far from being obsolete, both Microsoft and Apple
-ship command line interfaces within their operating systems. In
-Microsoft´s case, significant money has been spent developing a new
-grammar and implementing new functionalities into their modern
-command line implementation Powershell (as opposed to the grammar
-and functionalities of DOS).
+text and textual interfaces have been investigated in numerous ways
+(Bolter 2001; Fuller 2000), there has been a general lack of
+theoretical concern (or capacity) regarding the underlying
+processes of text in the metamedium (computers). This is especially
+evidenced as regards the {\em command line interface}, a realm
+where text becomes kinetic. Yet I found that very little theory has
+been written regarding the command-line, despite its place as the
+historical interface (once contemporary with batch punch cards) by
+which digital processes were initiated. Far from being obsolete,
+both Microsoft and Apple ship command line interfaces within their
+operating systems. In Microsoft's case, significant money has been
+spent developing a new grammar and implementing new functionalities
+into their modern command line implementation Powershell (as
+opposed to the grammar and functionalities of DOS).
 
 The second reason for choosing typesetting is the supposed lack of
 media hybridity of typesetting---according to Manovich's
 definitions of the terms, typesetting has failed to move beyond
 \quote{multimedia} to a state of \quote{media hybridity} (this is
-opposed to typography, which undoubtedly has) (2008: 86). Media
-hybridity is Manovich´s formulation of the increasingly common
-¨sharing of languages¨ between media. When media share language,
-they develop new dimensions (2008: 86). Language, then,
-demonstrates its capacity for modulation in a new context. While
-the proposition that ¨language can add dimensions to things¨ may at
-first consideration seem a bit too obvious for stating out loud,
-the kinetic properties of language within the context of the
-metamedium---that the code enabling the language sharing that
-enables media hybridity is
+opposed to typography, which according to Manovich has achieved
+media hybridity) (2008: 86). Media hybridity is Manovich´s
+formulation of the increasingly common ¨sharing of languages¨
+between media. When media share language, they develop new
+dimensions (2008: 86). Language, then, demonstrates its capacity
+for modulation in a new context. While the proposition that
+¨language can add dimensions to things¨ may at first consideration
+seem a bit too obvious for stating out loud, the kinetic properties
+of language within the context of the metamedium---that the code
+enabling the language sharing that enables media hybridity is
 {\em itself made of language and made executable by language}---seem
 to beg for consideration. Whereas much of the new media discourse
 relating to changes in media trends toward contemplating fast-paced
@@ -447,7 +596,7 @@ comprehend the entirety of its workings.
 \footnote{The chips produced by Intel, for example, are too complex for any
 single person to ever hope to entirely understand.}
 
-\subsubsection{Print is static, code is process}
+\subsection{Print is static, code is process}
 
 The flat/deep distinction proposed by Hayles is, by its
 formualation, material. Problematizing this material focus is the
@@ -652,29 +801,17 @@ automatically lead to a distribution of tools to all those that
 need them. However, even in this instance we see the power of FloSS
 in its capacity to inspire critical engagement with media.
 
-\section{Substrates of Digital Process}
+\stopfrontmatter \chapter{Substrates of Digital Process}
 
-In his outlining of the nature of a
-\quote{processual media theory,} Ned Rossiter asserts that
-\quotation{a processual media theory examines the tensions and torques between that which has emerged and conditions of possibility; it is an approach that inquires into the potentiality of motion that underpins the existence and formation of a system}
-(2007: 178). To that end I have deemed it important to begin at
-\quotation{a basis} of digital process as it stands today.
-Computers have multiplexed dependencies. The hardware is virtually
-non-functional without an operating system. Likewise operating
-systems, like all software, are non-functional, even
-\quotation{non-existent,} without the presence of hardware. As the
-coded substrate for software, the operating system provides the
-sites of intersection between human and digital process.
-
-\section{Alan Kay and a `Metamedium´ Vision for Personal Computing}
+\section{Alan Kay and a \quote{Metamedium} Vision for Personal Computing}
 
 In his text {\em Software Takes Command}, it is Manovich's
 inclination to focus on the work of Alan Kay at Xerox PARC when
 discussing the development of {\em cultural software}. He notes
 that there are multiple entry potential entrypoints for
 consideration: the work of Douglas Englebart and his team, the
-development of the LINC computer at the MIT´s Lincoln Lab, and
-Donald Sutherland´s SketchPad. The development of the Xerox Alto,
+development of the LINC computer at the MIT's Lincoln Lab, and
+Donald Sutherland's SketchPad. The development of the Xerox Alto,
 however, is unique in multiple ways. First and foremost is the
 architecture of the software: by developing and employing an
 object-oriented approach to software design, users were positioned
@@ -683,7 +820,7 @@ interfaces that both enabled and spurred new modes of creation
 native to the screen. These screenic modes of creation represented
 a new, vital dimension to computing---the willful,
 {\em shaping into existence} through design and implementation of
-new digital processes. Kay´s team was specifically dedicated to
+new digital processes. Kay's team was specifically dedicated to
 applying intersections between education and computation. In the
 process of teaching the system to children and adults alike, those
 they taught often ended up developing their own unique applications
@@ -832,7 +969,7 @@ Kay's largely-forgotten prototype.
 --- kay and the ipad
 http://www.tomshardware.com/news/alan-kay-steve-jobs-ipad-iphone,10209.html
 
-\subsubsection{Operating Systems as the Substrates of Contemporary Design}
+\section{Operating Systems as the Substrates of Contemporary Design}
 
 This line of inquiry into lost historical possibilities serves only
 to highlight the serious degree to which history affects the
@@ -859,7 +996,7 @@ competitor to the GNU compiler, LLVM, is the result of Apple´s
 decision to avoid the GNU Public License as much as possible (LLVM
 is licensed under an easily-coopted open source license).}
 
-==== The evolving nature of operating systems ====
+\subsection{The evolving nature of operating systems}
 
 The conceptions and roles of operating systems have been evolving
 along with the hardware. Originally the operating system of a
@@ -925,7 +1062,7 @@ materiality, then, of a personal computer is inherently tied to
 process---without an OS, the PC is not a metamedium, it is dead
 weight.
 
-===== Unix and Code Drift =====
+\subsection{Unix and Code Drift}
 
 The capacity of Unix to migrate across hardware while maintaining a
 consistent interface to both users and programmers has been
@@ -1106,7 +1243,17 @@ status as an easy-to-use, GUI driven development platform
 maintaining a clean integration with the lineage of previous
 versions of Macintosh operating systems.
 
-\section{Design Beyond the Proprietary}
+\startblockquote
+\startblockquote
+\startblockquote
+\startblockquote
+This is where that chapter ended mysteriously ;)
+\stopblockquote
+\stopblockquote
+\stopblockquote
+\stopblockquote
+
+\chapter{Design Beyond the Proprietary}
 
 Much of the prominent research within the field of software studies
 thus far has been dedicated to investigating the operation of
@@ -1187,7 +1334,7 @@ manipulation programs---competition, insofar as it exists, is
 solely within the consumer space where relatively few features are
 needed to meet user requirements.
 
-\subsection{Traditional Design Interfaces in FLoSS}
+\section{Traditional Design Interfaces in FLoSS}
 
 In a personal conversation between myself and professional web
 designer Andy Fitz, he explained how he came to use FLoSS. In
@@ -1208,7 +1355,7 @@ roommate replied.
 
 Five years later and counting, Andy Fitz is no longer complaining.
 
-\subsubsubsection{Software Time}
+\section{Software Time}
 
 Five years is both a long and short time for FLoSS. It is long
 because a piece of software that hasn't been updated for five years
@@ -1247,7 +1394,7 @@ workflows that incorporate both generativity and WYSIWYG design
 approaches. After five years of development, it has effectively
 implemented the features necessary for graphic design on the web.
 
-\section{Screenic Text}
+\chapter{Screenic Text}
 
 \section{Text as Interface/Text as Process}
 
@@ -1374,7 +1521,7 @@ the raw 1s and 0s on the magnetic platters that constitute the
 persistent body of the command. It will not, however, survive the
 reboot inevitably awaiting such a fubar´d system.
 
-\subsection{Remediation and the Command Line}
+\section{Remediation and the Command Line}
 
 While the modern command line may be a remediated teletype machine,
 it is crucial to note that the commands available at the prompt
@@ -1645,7 +1792,7 @@ the process of displaying those semantic blocks. Order is imposed
 from above, both through Cascading Style Sheets (CSS) and through
 the rendering algorithm of a given browser's implementation.
 
-\section{Constraints: Generative Design in FLoSS}
+\chapter{Constraints: Generative Design in FLoSS}
 
 \section{Enter the Conditional}
 
@@ -1659,51 +1806,46 @@ conditional design and presents its three central elements:
 {\em process}, {\em logic}, and {\em input}. The statements of
 their manifesto on these topics are reproduced in full below:
 
-\startdescr{Process}
-The process is the product.
+\startlongquote
+**Process**
+- The process is the product.
 
-The most important aspects of a process are time, relationship and
-change.
+- The most important aspects of a process are time, relationship and change.
 
-The process produces formations rather than forms.
+- The process produces formations rather than forms.
 
-We search for unexpected but correlative, emergent patterns.
+- We search for unexpected but correlative, emergent patterns.
 
-Even though a process has the appearance of objectivity, we realize
-the fact that it stems from subjective intentions.
-\stopdescr
+- Even though a process has the appearance of objectivity, we realize the fact that it stems from subjective intentions.
 
-\startdescr{Logic}
-Logic is our tool.
 
-Logic is our method for accentuating the ungraspable.
-\stopdescr
+**Logic**   
 
-A clear and logical setting emphasizes that which does not seem to
-fit within it.
+- Logic is our tool.
 
-\starttyping
-We use logic to design the conditions through which the process can take place.
+- Logic is our method for accentuating the ungraspable.
 
-Design conditions using intelligible rules.
+- A clear and logical setting emphasizes that which does not seem to fit within it.
 
-Avoid arbitrary randomness.
+- We use logic to design the conditions through which the process can take place.
 
-Difference should have a reason.
+- Design conditions using intelligible rules.
 
-Use rules as constraints.
+- Avoid arbitrary randomness.
 
-Constraints sharpen the perspective on the process and stimulate play within the limitations.
-\stoptyping
+- Difference should have a reason.
 
-\startdescr{Input}
-The input is our material.
+- Use rules as constraints.
 
-Input engages logic and activates and influences the process.
+- Constraints sharpen the perspective on the process and stimulate play within the limitations.
 
-Input should come from our external and complex environment:
-nature, society and its human interactions.
-\stopdescr
+**Input**
+- The input is our material.
+
+- Input engages logic and activates and influences the process.
+
+- Input should come from our external and complex environment: nature, society and its human interactions.
+\stoplongquote
 
 \quotation{The process is the product,} the manifesto declares.
 Employing the
@@ -1812,7 +1954,7 @@ applications of logic found within the Conditional Design
 Manifesto:
 \quotation{Constraints sharpen the perspective on the process and stimulate play within the limitations.}
 
-\section{Crystalized Process: Text That Typesets Itself}
+\chapter{Crystalized Process: Text That Typesets Itself}
 
 The time has come to for the self-reflective approach of this
 thesis to come into play. For a book called {\em Writing Space},
@@ -1820,8 +1962,11 @@ this work by Jay David Bolter provides scant discussion of actual
 writing environments on the computer. Originally written before the
 expansion of the World Wide Web into the sphere of popular culture,
 {\em Writing Space} is concerns itself with
-\quotation{the space of electronic writing.}[\letterhat{}second] In
-defining this space as
+\quotation{the space of electronic writing.}
+\footnote{The second edition of the book, published in 2001, was used for
+this thesis. While it is updated to include the Web, its roots in a
+significantly older text are worth noting.}
+In defining this space as
 \quotation{both the computer screen, where text is displayed, and the electronic memory, in which it is stored,}
 Bolter belies the relative absence of process in materialist forms
 of media analysis (2001: 13).
@@ -1843,6 +1988,170 @@ symbol-processing:
 Bolter describes the operation of outline processors. These
 programs abstract a text to the level of sections. These sections
 can be moved around and manipulated.
+
+\section{Environment of Operation}
+
+This text is not typed in the manner that you see it. The above
+header is instead written like this:
+
+\starttyping
+  # Environment of Operation #
+\stoptyping
+
+Through the wrapper program \type{pandoc}, this input (written in
+Markdown) is converted into HTML and {\CONTEXT} outputs.
+
+\startdescr{HTML}
+\letteropenbrace{}
+Environment of Operation
+\letterclosebrace{}
+\stopdescr
+
+\startdescr{{\CONTEXT}}
+\letteropenbrace{}
+\letterbackslash{}section\letteropenbrace{}Environment of
+Operation\letterclosebrace{} \letterclosebrace{}
+\stopdescr
+
+The syntax of HTML represents a semantic operation:
+\quotation{Dear Mr.~Browser, treat this as a header of level 1.}
+The syntax of {\CONTEXT}, however, represents a macro command within a
+programming language. What it says is
+\quotation{call the sections of code that translate the text within the brackets to the parameters specified for the \type{\section{}} command.}
+
+The literal \quote{writing space} of this thesis is a program
+called Textroom. Textroom is a minimalist text editor in which
+there are no buttons, taskbars, or other clutter. Only you, your
+words, and (optionally) informational text reporting the time, word
+count, percentage to accomplishing your writing goal, etc. By
+writing in plain-text, I open myself to the opportunities afforded
+me by version control systems. Developed to enable collaboration of
+programmers on a code base, version control systems can track
+changes in text across time (useful for this project) and allow for
+massively distributed workflows involved tens of thousands of
+individuals (useful for the Linux kernel).
+
+\subsection{Constraints}
+
+\placefigure[here,nonumber]{Textroom and gvim. gvim is displayed on this screen but running on my netbook.}{\externalfigure[images/two_editors.png]}
+
+Above you see a necessary adaptation within my workflow. My netbook
+took a fall and lost the ability to use its screen. Because of the
+nature of the command line, I was able to log in to computer and
+execute commands that allowed me to establish remote access using a
+piece of software called \type{ssh}. This remote connection can
+also support the transmission of GUI applications using the
+client-server model at the heart of the X Windows system (which
+drives the GNU/Linux GUI). This was important a) to get files off
+the netbook, and b) the version of \type{pandoc} on my desktop had
+stopped working after a modular dependency was upgraded and I was
+finding it impossible to upgrade \type{pandoc} itself. In the image
+above we see the minimal editor Textroom and the editor gvim.
+Because of the pandoc incompatibility on the desktop, I was forced
+to use the netbook as the site of typesetting. This shaped the
+output of the project most likely by time. However, the simple
+ability to log in and enable remote access shaped this project
+immensely by allowing me to extract important work that would
+otherwise have been lost.
+
+An unfortunate constraint is the inability to take advantage of
+elements of the {\TEX} landscape that are reknowned for making life
+easier. The chief among these is BibTeX, which allows for a
+bibliography to be dynamically generated and citations to be
+inserted according to a variety of formats (that one can change
+with a single line of text, if desired). By abstracting myself from
+{\TEX} by using Markdown as the \quotation{pre-format,} I've lost the
+opportunity to easily manage bibliographic data and instead must
+input it by hand. That said, the MLA format is not currently
+available in BibTeX meaning that---even if I could use this
+software---the output would be necessarily shaped by the
+constraints of the tools.
+
+\startworkscited
+
+Birkel, Garrett. (2004). ¨The Command Line In 2004¨. Web.
+\letterless{}\useURL[2][http://garote.bdmonkeys.net/commandline/index.html][][http://garote.bdmonkeys.net/commandline/index.html]\from[2]\lettermore{}
+(last accessed 20 June 2010).
+
+Bolter, Jay David. (2001).
+{\em Writing Space: Computers, hypertext, and the remediation of print}.
+New York: Routledge. Print.
+
+Bolter, Jay David and Richard A. Grusin. (1996).
+\quotation{Remediation}. {\em Configurations} 4:3. PDF. Bringhurst,
+Robert. (2008).
+{\em The Elements of Typographic Style, version 3.2}. Vancouver:
+Hartley \& Marks. Print.
+
+Brooks, Frederick. (1975).
+{\em The Mythical Man-Month: Essays on software engineering}.
+Massachusetts: Addison-Wesley. PDF.
+
+coons, ginger. (2010). \quotation{Why F/LOSS, why not F/LOSS}.
+{\em Libre Graphics \#0!}. Belgium: Drukkerij Bulckens nv. Print.
+
+Cramer, Florian. (2001).
+\quotation{Digital Code and Literary Text}. {\em netzlituratur}.
+Web.
+\letterless{}\useURL[3][http://www.netzliteratur.net/cramer/digital_code_and_literary_text.html][][http://www.netzliteratur.net/cramer/digital\letterunderscore{}code\letterunderscore{}and\letterunderscore{}literary\letterunderscore{}text.html]\from[3]\lettermore{}
+(last accessed 5 June 2010).
+
+Cramer, Florian. (2005).
+{\em Words Made Flesh: Code, Culture, Imagination}. Rotterdam: Piet
+Zwart Institute. PDF.
+\letterless{}\useURL[4][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/wordsmadefleshpdf][][http://pzwart.wdka.hro.nl/mdr/research/fcramer/wordsmadeflesh/wordsmadefleshpdf]\from[4]\lettermore{}
+
+Cramer, Florian and Matthew Fuller. (2008). \quotation{Interface}.
+In {\em Software Studies: a lexicon}, edited by Matthew Fuller. MIT
+Press: Cambridge. Print.
+
+Cramer, Florian, Aymeric Mansoux and Michael Murtaugh. (2010).
+\quotation{How to Run an Art School on Free and Open Source Software}.
+Presentation at the Libre Graphics Meeting 2010, Brussels. Online
+video.
+\letterless{}\useURL[5][http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/][][http://river-valley.tv/how-to-run-an-art-school-on-free-and-open-source-software/]\from[5]\lettermore{}
+(last accessed 20 June 2010).
+
+Fuller, Matthew.
+\quotation{It looks like you're trying to write a letter: Microsoft Word}.
+2000. Web.
+\letterless{}\useURL[6][http://www.nettime.org/Lists-Archives/nettime-l-0009/msg00040.html][][http://www.nettime.org/Lists-Archives/nettime-l--0009/msg00040.html]\from[6]\lettermore{}
+(last accessed 5 June 2010).
+
+Galloway, Alexander. (2010). \quotation{Interface}. Presented at
+{\em A wedge between public and private conference} on 22 April
+2010, Amsterdam.
+
+Gitelman, Lisa. (2008).
+{\em Always Already New: Media, history, and the data of culture}.
+Cambridge: MIT Press. Print.
+
+Gillimore, Dan. (2010). ¨This Mac devotee is moving to Linux¨.
+{\em Salon.com}. 20 June 2010. Web.
+\useURL[7][http://www.salon.com/technology/apple/index.html?story=/tech/dan_gillmor/2010/06/20/from_mac_to_linux][][http://www.salon.com/technology/apple/index.html?story=/tech/dan\letterunderscore{}gillmor/2010/06/20/from\letterunderscore{}mac\letterunderscore{}to\letterunderscore{}linux]\from[7]
+(last accessed 21 June 2010).
+
+Hagen, Hans. (2009). {\em The history of luaTeX}. Netherlands:
+Pragma ADE. Web.
+\letterless{}\useURL[8][http://www.pragma-ade.com/general/manuals/mk.pdf][][http://www.pragma-ade.com/general/manuals/mk.pdf]\from[8]\lettermore{}
+(last accessed 5 June 2010).
+
+Hayles, N. Katherine. (2004)
+\quotation{Print is Flat, Code is Deep: The Importance of Media Specific Analysis}.
+{\em Poetics Today} 25:1. PDF.
+
+Hayles, N. Katherine. (2008).
+{\em Electronic Literature: new horizons for the literary}. Notre
+Dame: University of Notre Dame. Print.
+
+Holt, Jason and Tom Miller. (2010).
+\quotation{Introducing the Google Command Line Tool}.
+{\em Open Source at Google} blog. 18 June 2010. Web.
+\letterless{}\useURL[9][http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html][][http://google-opensource.blogspot.com/2010/06/introducing-google-command-line-tool.html]\from[9]\lettermore{}
+(last accessed 18 June 2010).
+
+% we should have an open works-cited going
+\stopworkscited
 
 \stoptext
 

@@ -1,11 +1,19 @@
+% Grammars of the Damned
+% John C. Haltiwanger
+%
+
+# Acknowledgments #
+
+I'd like to thank Natalia, for agreeing to review this Special Edition of my ridiculous thesis.
+
 
 # Introduction #
 
 Today's new media theory increasingly invokes _materiality_ as a significant, perhaps even _the_ significant, mode of investigating digital objects and the media through which they are delivered. This thesis questions such a centrality of materiality through a practice-based, process-oriented approach. _Process_ is proposed as the atomic unit of that which new media theory investigates. This is true on a formal material level: applications run as either as individual process or as assemblages of process which are managed by an operating system and through which the application's code is accomplishes all of its tasks, from memory and access to algorithmic execution on the central processing unit. A process-oriented approach will be shown to provide superior methodologies for engaging with and understanding software than material analysis alone provides. For instance, certain problematics within Lev Manovich's concept of 'media hybridity' will be resolved by a re-orientation towards process (Manovich 2008). Process also allows a fresh perspective for examining human-digital relations. Human processes and digital processes are seen as inextricably intertwined, leaving any discussion of digital process that excludes relevant dimensions of human process necessarily unfinished.
 
-The method proposed to demonstrate these points is two-fold. The first is an analytic approach---the modes of operation of designers themselves are examined. Starting from the proprietary Mac OS X operating system, described here as a unique and powerful example of _process hybridity_, we progress to a discussion of the operations of designers as constrained by FLoSS (Free/Libre/open/Source Software). The second aspect of the method is a detailed interrogation of actual practice in the form of _digital typesetting_. This topic was chosen for several reasons. The first is a general lack of focus on the processes behind typesetting among new media theory---while the surfaces of text have been investigated in numerous ways (Bolter 2001; Fuller 2000), there has been a general lack of concern (or capacity) regarding the underlying processes of text in the metamedium (computers). This is especially evidenced as regards the _command line interface_, a realm where text becomes kinetic. Yet I  found that very little theory has been written regarding the command-line, despite its place as the historical interface (once contemporary with batch punch cards) by which digital processes were initiated. Far from being obsolete, both Microsoft and Apple ship command line interfaces within their operating systems. In Microsoft´s case, significant money has been spent developing a new grammar and implementing new functionalities into their modern command line implementation Powershell (as opposed to the grammar and functionalities of DOS).
+The method proposed to demonstrate these points is two-fold. The first is an analytic approach---the modes of operation of designers themselves are examined. Starting from the proprietary Mac OS X operating system, described here as a unique and powerful example of _process hybridity_, we progress to a discussion of the operations of designers as constrained by FLoSS (Free/Libre/open/Source Software). The second aspect of the method is a detailed interrogation of actual practice in the form of _digital typesetting_. This topic was chosen for several reasons. The first is a general lack of focus on the processes behind typesetting among new media theory---while the surfaces of text and textual interfaces have been investigated in numerous ways (Bolter 2001; Fuller 2000), there has been a general lack of theoretical concern (or capacity) regarding the underlying processes of text in the metamedium (computers). This is especially evidenced as regards the _command line interface_, a realm where text becomes kinetic. Yet I  found that very little theory has been written regarding the command-line, despite its place as the historical interface (once contemporary with batch punch cards) by which digital processes were initiated. Far from being obsolete, both Microsoft and Apple ship command line interfaces within their operating systems. In Microsoft's case, significant money has been spent developing a new grammar and implementing new functionalities into their modern command line implementation Powershell (as opposed to the grammar and functionalities of DOS).
 
-The second reason for choosing typesetting is the supposed lack of media hybridity of typesetting--according to Manovich's definitions of the terms, typesetting has failed to move beyond 'multimedia' to a state of 'media hybridity' (this is opposed to typography, which undoubtedly has) (2008: 86). Media hybridity is Manovich´s formulation of the increasingly common ¨sharing of languages¨ between media. When media share language, they develop new dimensions (2008: 86). Language, then, demonstrates its capacity for modulation in a new context. While the proposition that ¨language can add dimensions to things¨ may at first consideration seem a bit too obvious for stating out loud, the kinetic properties of language within the context of the metamedium--that the code enabling the language sharing that enables media hybridity is _itself made of language and made executable by language_--seem to beg for consideration. Whereas much of the new media discourse relating to changes in media trends toward contemplating fast-paced visual cultures such as video games and cinema, this thesis aims to take the opportunity to contemplate the much slower-moving medium of text. This contemplation of screenic text leads to questions about the nature of media within a medium as well as to the introduction of a conception of processual hybridity that both underpins and exceeds the dynamics of media hybridity.
+The second reason for choosing typesetting is the supposed lack of media hybridity of typesetting--according to Manovich's definitions of the terms, typesetting has failed to move beyond 'multimedia' to a state of 'media hybridity' (this is opposed to typography, which according to Manovich has achieved media hybridity) (2008: 86). Media hybridity is Manovich´s formulation of the increasingly common ¨sharing of languages¨ between media. When media share language, they develop new dimensions (2008: 86). Language, then, demonstrates its capacity for modulation in a new context. While the proposition that ¨language can add dimensions to things¨ may at first consideration seem a bit too obvious for stating out loud, the kinetic properties of language within the context of the metamedium--that the code enabling the language sharing that enables media hybridity is _itself made of language and made executable by language_--seem to beg for consideration. Whereas much of the new media discourse relating to changes in media trends toward contemplating fast-paced visual cultures such as video games and cinema, this thesis aims to take the opportunity to contemplate the much slower-moving medium of text. This contemplation of screenic text leads to questions about the nature of media within a medium as well as to the introduction of a conception of processual hybridity that both underpins and exceeds the dynamics of media hybridity.
 
 The third aspect is the allowance of a truly reflexive investigation in which multiple processes of digital typesetting are utilized to generate the thesis itself. This provides a means to integrate the process-oriented perspective into a software study of FLoSS typesetting software. Not only this, it provides a means to attempt what could be considered a _refractional_ methodology. Inspired by Gilbert Simondon´s adoption of the language of chemistry in the formulation of _transduction_ within his theory of ontogenesis, this thesis can be viewed as a distinct crystallization process, the composition of a whole from the process of that whole´s unfolding. The applicability of Simondon´s ontogenesis to matters of generative design will be interrogated in contrast to Jay David Bolter and David Grusin´s remediation theory (Bolter and Grusin 1996; Bolter 2001). Ontogenesis, albeit without Simondon, has already proven an effective angle for approaching Web 2.0 platforms (Langlois, McKelvey, Elmer, and Werbin 2009). Here the description of this thesis´own workflow will demonstrate Simondon´s ontogenesis as making unique contributions to the process-oriented perspective which this thesis attempts to invoke and instantiate. 
 
@@ -74,7 +82,7 @@ The discussion of generativity provides further means to demonstrate the equilib
 
 
 
-### Print is static, code is process ###
+## Print is static, code is process ##
 
 The flat/deep distinction proposed by Hayles is, by its formualation, material. Problematizing this material focus is the interwoven history of text and code: the lens of typesetting allows us to focus on a unique intersection of the two. As the historiographic case will demonstrate, typesetting is a _non-reducible_ process (NP-Complete). This non-reducibility of typesetting reflects the non-reducibility of computational processing of language, as well as the non-reducibility of language, as signifier, into that which is actually signified. This "turtles all the way down" scenario has intriguing implications from a process perspective as we investigate the methods that have been developed in order to work around this non-reducibility.
 
@@ -148,15 +156,16 @@ On 21 June 2010, Apple changed its privacy settings to allow the company to "col
 
 Free software is not, however, a "magic bullet"--tied to the open systems theory which is philosophically related to the underpinnings of the Chicago school of economics, some of the philosophical foundations of free software, _and especially open source_, need to be interrogated (Cramer, Mansoux, and Murtaugh 2010; Pasquinelli 2008). Liberation does not automatically lead to a distribution of tools to all those that need them. However, even in this instance we see the power of FloSS in its capacity to inspire critical engagement with media.
 
-# Substrates of Digital Process #
-
-In his outlining of the nature of a 'processual media theory,' Ned Rossiter asserts that "a processual media theory examines the tensions and torques between that which has emerged and conditions of possibility; it is an approach that inquires into the potentiality of motion that underpins the existence and formation of a system" (2007: 178). To that end I have deemed it important to begin at "a basis" of digital process as it stands today. Computers have multiplexed dependencies. The hardware is virtually non-functional without an operating system. Likewise operating systems, like all software, are non-functional, even "non-existent," without the presence of hardware. As the coded substrate for software, the operating system provides the sites of intersection between human and digital process.
-
+\stopfrontmatter
+\chapter{Substrates of Digital Process}
 
 
-# Alan Kay and a `Metamedium´ Vision for Personal Computing #
 
-In his text _Software Takes Command_, it is Manovich's inclination to focus on the work of Alan Kay at Xerox PARC when discussing the development of _cultural software_. He notes that there are multiple entry potential entrypoints for consideration: the work of Douglas Englebart and his team, the development of the LINC computer at the MIT´s Lincoln Lab, and Donald Sutherland´s SketchPad. The development of the Xerox Alto, however, is unique in multiple ways. First and foremost is the architecture of the software: by developing and employing an object-oriented approach to software design, users were positioned as inventors of new media through their ability to design their own interfaces that both enabled and spurred new modes of creation native to the screen. These screenic modes of creation represented a new, vital dimension to computing---the willful, _shaping into existence_ through design and implementation of new digital processes. Kay´s team was specifically dedicated to applying intersections between education and computation. In the process of teaching the system to children and adults alike, those they taught often ended up developing their own unique applications out of the _objects_ that could be shared between applications as well as extended through the inheritance model of object-oriented programming.
+
+
+# Alan Kay and a 'Metamedium' Vision for Personal Computing #
+
+In his text _Software Takes Command_, it is Manovich's inclination to focus on the work of Alan Kay at Xerox PARC when discussing the development of _cultural software_. He notes that there are multiple entry potential entrypoints for consideration: the work of Douglas Englebart and his team, the development of the LINC computer at the MIT's Lincoln Lab, and Donald Sutherland's SketchPad. The development of the Xerox Alto, however, is unique in multiple ways. First and foremost is the architecture of the software: by developing and employing an object-oriented approach to software design, users were positioned as inventors of new media through their ability to design their own interfaces that both enabled and spurred new modes of creation native to the screen. These screenic modes of creation represented a new, vital dimension to computing---the willful, _shaping into existence_ through design and implementation of new digital processes. Kay's team was specifically dedicated to applying intersections between education and computation. In the process of teaching the system to children and adults alike, those they taught often ended up developing their own unique applications out of the _objects_ that could be shared between applications as well as extended through the inheritance model of object-oriented programming.
 
  Cultural software--and the _cultural computing_ which it facilitates--is defined by Manovich as software that is "directly used by hundreds of millions of people" and that "carries 'atoms' of culture (media and information, as well as human interactions around these media and information)" (2008: 3). Alan Kay is a pioneer figure in the computing world, an individual who not only theoritically formulated a vision of the computer as a 'metamedium' but also did a great deal of practical work in order to achieve this vision. Unfortunately, as is all too common in the lives of visionaries, key elements of Kay's ideal never breached into the mainstream even as other aspects where appropriated and commodified wholesale by Apple and Microsoft.
 
@@ -179,13 +188,13 @@ There is, however, one major element of their implementation--central to the cap
 -- kay and the ipad http://www.tomshardware.com/news/alan-kay-steve-jobs-ipad-iphone,10209.html
 
 
-### Operating Systems as the Substrates of Contemporary Design ###
+# Operating Systems as the Substrates of Contemporary Design #
 
 This line of inquiry into lost historical possibilities serves only to highlight the serious degree to which history affects the unfolding of the metamedium that we call a computer. Historical developments have also lead to further opportunities, as well. The manifestation of the metamedium as a space operating nearly exclusively on proprietary software in the 1990s drove many freedom-minded individuals to begin, and contribute to, free and libre software. What at first approach looked like an impossible task (Richard Stallman's pledge to implement a completely free implementation of Unix called Gnu's Not Unix (GNU) OS) has resulted in a snow-ball effect that provides not only the backdrop for much of this thesis' discussion but indeed the GNU project provides the compiler with which Apple builds its invisible, proprietary codebase into the commodity known as Mac OS X.[^pasq]
 
 [^pasq]: In his text "The Ideology of Free Culture and the Grammar of Sabotage," Italian media theorist Matteo Pasquinelli provides a critical analysis combining Marxist discourse on _resource extraction_ with Michael Serres' conception of the _parasite_ in an analysis of contradictory intersections between capitalism and FLoSS (Pasquinelli 2008). Apple´s investment in developing a competitor to the GNU compiler, LLVM, is the result of Apple´s decision to avoid the GNU Public License as much as possible (LLVM is licensed under an easily-coopted open source license).
 
-==== The evolving nature of operating systems ====
+## The evolving nature of operating systems ##
 
 The conceptions and roles of operating systems have been evolving along with the hardware. Originally the operating system of a computer was intimately tied to its hardware. It was the development and _dissemination_ of Unix by software engineering luminaries Ken Thompson and Dennis Ritchie that sparked the ontogenesis of operating systems as a ¨hardware independent¨ process, enabling _cross-platform code_ as a dimension in the software process. While operating systems had always existed to abstract the system to some extent, for instance to hold segments of code for handling routine tasks (incidentally, these segments of code are often called `code routines´) such that they need not be input every time that operation is to be performed, the introduction of Unix accelerated this process of abstraction.
 
@@ -198,7 +207,7 @@ Computer programmer Garrett Birkel, writing in his update/response to Stephenson
 The operating system is the initial site of formation for the processes that define this division between ¨ourselves¨ and ¨our information,¨ but it is far from the end of story, and perhaps far from the most influential. I will return to Stephenson and Birkel in the next chapter, which begins with a discussion of the command line. For now, the point has been made that there is no true means of separating hardware from software---without an operating system, there is no means for hardware to access its own functionality. The materiality, then, of a personal computer is inherently tied to process---without an OS, the PC is not a metamedium, it is dead weight.
 
 
-===== Unix and Code Drift =====
+## Unix and Code Drift ##
 
 The capacity of Unix to migrate across hardware while maintaining a consistent interface to both users and programmers has been criticized as well as lauded, for example in the _UNIX-HATER´s Handbook_ wherein the authors liken it to ¨a computer virus with a user interface¨ (Garfinkel, Weiss, and Strassman 1994: 4). The author´s complain that the portability of Unix results from an under-designed infrastructure, which they call _incoherent_. The virus metaphor works, for them, because of this portability (whatever its origins), the ability to ¨commandeer the resources of hosts¨ (of which there were, even at the time of their writing, many), and Unix´s capacity for rapid mutation (Garfinkel, Weiss, and Strassman 1994: 4).
 
@@ -225,8 +234,9 @@ Three other hybridities occur within this top level of Mac OS X: Carbon, Classic
 
 The hybridities present in Mac OS X have material effects from the execution of code to the variability of its cultural enablement. It allows for a vast assortment of applications from various lineages and paradigms to coexist and interoperate within a single operating system context. Short of labelling each of these hybridized elements a "medium," there is currently no proposed language within new media for articulating the hybridity of the assemblage as a whole. In this fashion, _process hybridity_ provides a mechanism with which we can describe the facets of OS X. Perhaps UNIX is a medium, perhaps not. However, as a standard, it can be recognized as a formalized resolution of a design process. In an environment where 3D cinema is not even presented as a new medium in popular discourse, the term itself appears to me to have lost its utility. Further in the thesis I will introduced more localized and dissectable instances of process hybridity. At this point it should be convincingly demonstrated that Mac OS X hybridizes not only material processes (code) but also ideological processes (licensing terms). This allows OS X its status as the only successful, commercial UNIX for a desktop as well as its status as an easy-to-use, GUI driven development platform (something no other UNIX can claim as convincingly), while maintaining a clean integration with the lineage of previous versions of Macintosh operating systems.
 
+>>>>This is where that chapter ended mysteriously ;)
 
-# Design Beyond the Proprietary #
+\chapter{Design Beyond the Proprietary}
 
 Much of the prominent research within the field of software studies thus far has been dedicated to investigating the operation of various proprietary applications (Fuller 2000; Manovich 2008). Culturally speaking this may make sense: study what the users actually use. However, from a moral or political angle it can easily be seen as irresponsible or, at the very least, incomplete. Use of proprietary operating systems and application software still seems to dominate the field of new media. This is in spite of Hans Magnus Enzensberger's classic critique of 'repressive' media---if you do not control the mechanisms of your medium, those mechanisms can be used to control you.
 
@@ -246,7 +256,7 @@ Graphics professionals learn proprietary software in school because the industry
 
 Part of the problem lies in the evolutionary nature of the open source development model. Whereas proprietary programs are expected to be "feature complete" with any given release, FLoSS integrates features as they are added. Any potential proprietary competitor to Adobe Photoshop, for instance, has to ship its first version under the expectations of proprietary software: a) it should offer at least the features that are used every day in Photoshop; and b) it should be stable. Otherwise there is no reason for a user to purchase this new proprietary option over the older, more mature one. Also, if coons' formulation of the feedback loop supporting proprietary software is correct, a new proprietary entrant into the field of image manipulation faces vertical economic barriers to adoption: it isn't an industry standard, so the industry isn't hiring those who only know that software. Thus, coons' formulation not only explains why professionals are slow to adopt FLoSS alternatives, it also serves to demonstrate why there is no competition in the space of professional proprietary image manipulation programs---competition, insofar as it exists, is solely within the consumer space where relatively few features are needed to meet user requirements.
 
-## Traditional Design Interfaces in FLoSS ##
+# Traditional Design Interfaces in FLoSS #
 
 In a personal conversation between myself and professional web designer Andy Fitz, he explained how he came to use FLoSS. In college, the Windows operating system on his computer broke down. His roommate restored the computer, but replaced the operating system with a variant of GNU/Linux. After realizing that this meant no more working with Photoshop, Andy gave GIMP a try. Frustrated by the difficulty of transitioning, he complained to his roommate that GIMP simply was not powerful enough. It didn't have all the features of Photoshop. Nothing was in the same place.
 
@@ -258,7 +268,7 @@ In a personal conversation between myself and professional web designer Andy Fit
 
 Five years later and counting, Andy Fitz is no longer complaining.
 
-#### Software Time ####
+# Software Time #
 
 Five years is both a long and short time for FLoSS. It is long because a piece of software that hasn't been updated for five years not only seems horribly outdated, the chances are high that it will not even compile against the versions of the software it depends on that exist today. It is also a short time because there are many projects for which five years is just a small slice of the time it has been in development. For instance, GNUStep (a free software implementation of the same NeXTSTEP technologies behind Cocoa in Mac OS X) has been in development since the mid-1990s, which means it predates the development of Cocoa by five or more years itself. The typesetting system TeX began development 32 years ago---while the main program is no longer extended, new variations that fix longstanding issues with the original implementation continue to evolve. Five years can be a long time in terms of new features and code growth, yet it is not necessarily a long time in the lifespan of a FLoSS project.
 
@@ -266,7 +276,7 @@ Scott Rosenberg provides an important investigation into software time in his bo
 
 Five years ago the Inkscape project began. Inkscape is a vector graphics editor similar in goals to that of Adobe Illustrator. Five years ago it did not exist. Today it is known for enabling workflows that incorporate both generativity and WYSIWYG design approaches. After five years of development, it has effectively implemented the features necessary for graphic design on the web.
 
-# Screenic Text #
+\chapter{Screenic Text}
 
 # Text as Interface/Text as Process #
 
@@ -292,7 +302,7 @@ This contradictory nature envelops the command line as well. A tool at once more
 
 will erase the entire contents of that Unix´s filesystem from the hard drive. The code for `rm` loaded into memory survives to delete itself from a core component of its materiality, that is, the raw 1s and 0s on the magnetic platters that constitute the persistent body of the command. It will not, however, survive the reboot inevitably awaiting such a fubar´d system.
 
-## Remediation and the Command Line ##
+# Remediation and the Command Line #
 
 While the modern command line may be a remediated teletype machine, it is crucial to note that the commands available at the prompt _re-mediate nothing_. The processes embodied in file operation commands, for instance, instantiate into material effects on hard drives. They are abstractions of processual hybridization that results in the same command in the same operating system having the same effect, in this instance, on the file system. The modules loaded into the assemblage offering this abstraction depend on the format of the file system (NTFS, HFS+, ext*, etc.), the motherboard-to-disk controller protocol (IDE, SCSI, SATA, etc.) and the driver specificities of that disk controller. All of these elements are unique, digital assemblages. The _embodied processes_ that are typed commands cannot be accurately held to the standard of a theory that is based on a conception of mediums as containing and extending previous mediums. 
 
@@ -352,51 +362,54 @@ Processed text comes in two flavors: _semantic_ and _formal_. Semantic formats s
 
 HTML is top down, however, because that is its rendering model. By imbuing blocks of text with semantic qualities, one abstracts away the process of displaying those semantic blocks. Order is imposed from above, both through Cascading Style Sheets (CSS) and through the rendering algorithm of a given browser's implementation.  
 
-# Constraints: Generative Design in FLoSS #
+\chapter{Constraints: Generative Design in FLoSS}
 
 
 # Enter the Conditional #
 
+
 The design world is increasingly integrating generative approaches to their workflows. The most explicit manifestation, in writing, of this impulse is the "Conditional Design Manifesto" (Maurer, Paulus, Puckey, Wouters 2008). Written by Amsterdam-based designers Luna Maurer, Edo Paulus, Jonathan Puckey, and Roel Wouters, this manifesto outlines the approach that they have named conditional design and presents its three central elements: _process_, _logic_, and _input_. The statements of their manifesto on these topics are reproduced in full below:
 
-Process
-:	The process is the product.
+\startlongquote
+**Process**
+- The process is the product.
 
-	The most important aspects of a process are time, relationship and change.
+- The most important aspects of a process are time, relationship and change.
 
-	The process produces formations rather than forms.
+- The process produces formations rather than forms.
 
-	We search for unexpected but correlative, emergent patterns.
+- We search for unexpected but correlative, emergent patterns.
 
-	Even though a process has the appearance of objectivity, we realize the fact that it stems from subjective intentions.
+- Even though a process has the appearance of objectivity, we realize the fact that it stems from subjective intentions.
 
 
-Logic
-:	Logic is our tool.
+**Logic**	
 
-	Logic is our method for accentuating the ungraspable.
-A clear and logical setting emphasizes that which does not seem to fit within it.
+- Logic is our tool.
 
-	We use logic to design the conditions through which the process can take place.
+- Logic is our method for accentuating the ungraspable.
 
-	Design conditions using intelligible rules.
+- A clear and logical setting emphasizes that which does not seem to fit within it.
 
-	Avoid arbitrary randomness.
+- We use logic to design the conditions through which the process can take place.
+
+- Design conditions using intelligible rules.
+
+- Avoid arbitrary randomness.
 	
-	Difference should have a reason.
+- Difference should have a reason.
 
-	Use rules as constraints.
+- Use rules as constraints.
 
-	Constraints sharpen the perspective on the process and stimulate play within the limitations.
+- Constraints sharpen the perspective on the process and stimulate play within the limitations.
 
+**Input**
+- The input is our material.
 
-Input
-:	The input is our material.
+- Input engages logic and activates and influences the process.
 
-	Input engages logic and activates and influences the process.
-
-	Input should come from our external and complex environment: nature, society and its human interactions.
-
+- Input should come from our external and complex environment: nature, society and its human interactions.
+\stoplongquote
 
 "The process is the product," the manifesto declares. Employing the "methods of philosophers, engineers, inventors and mystics," the four authors of the manifesto seek to abandon the idea of a product in favor of "things that adapt to their environment, emphasize change and show difference."
 
@@ -442,7 +455,7 @@ Snelting again and again invokes constraints as the most engaging aspect of work
 
 
 
-# Crystalized Process: Text That Typesets Itself #
+\chapter{Crystalized Process: Text That Typesets Itself}
 
 The time has come to for the self-reflective approach of this thesis to come into play. For a book called _Writing Space_, this work by Jay David Bolter provides scant discussion of actual writing environments on the computer. Originally written before the expansion of the World Wide Web into the sphere of popular culture, _Writing Space_ is concerns itself with "the space of electronic writing."[^second] In defining this space as "both the computer screen, where text is displayed, and the electronic memory, in which it is stored," Bolter belies the relative absence of process in materialist forms of media analysis (2001: 13). 
 
