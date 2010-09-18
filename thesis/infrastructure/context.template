@@ -1,14 +1,15 @@
 $if(legacy-header)$
 $legacy-header$
 $else$
-%\enableregime[utf]  % use UTF-8
-
 \setupcolors[state=start]
 \setupinteraction[state=start, color=black, contrastcolor=black] % needed for hyperlinks
 
 \usemodule[simplefonts]
 \setmainfont[Linux Libertine O]
 \setmonofont[inconsolata][11pt]
+
+% let's not have overhangers
+\setuptolerance[verytolerant]
 
 \usemodule[vim]
 \definetypevimfile [typeRUBY] [syntax=ruby, numbering=on, colorscheme=blackandwhite]
@@ -56,8 +57,8 @@ $else$
 \date{\currentdate[day, month, year]}  % Default to today unless specified otherwise.
 
 
-\setupcolor[hex]
-\definecolor[titleRed][x=910A00]
+%\setupcolor[hex]
+\definecolor[titleRed][x=910A0]
 
 \definefont [Poem]  [Mono at 9.5pt]
 
@@ -101,7 +102,10 @@ $else$
 %  \stoptyping
 %  \stopnarrower
 }
-
+% Tagged PDF
+\setupstructure[state=start]
+\setupbackend[export=yes]
+%\setuptrackers[structure.tags, backends.tags]
 
 \def\maketitle{
   \startalignment[center]
@@ -113,12 +117,12 @@ $else$
 	\startalignment[flushleft]
     \blank[25*big]
 		\starttabulate[|l|l|]
-    			\NC Name: \NC \@author
+    			\NC Name: \NC John C. Haltiwanger
 			\NR \NC Student Number: \NC 6100473
 			\NR \NC Email: \NC john.haltiwanger@gmail.com
 			\NR \NC Website:	\NC http://drippingdigital.com/
 			\NR
-		  \NR	\NC Date: \NC \@date
+		  \NR	\NC Date: \NC 2 September 2010
 			\NR \NC Supervisor: \NC Richard Rogers
 			\NR \NC Second reader: \NC Geert Lovink
 			\NR \NC Institution: \NC Universiteit van Amsterdam
@@ -128,7 +132,7 @@ $else$
 		\starttabulate[|l|]
 		\NC {\sc Keywords} \NR
 		\stoptabulate
-		$keywords$
+		media theory, generative design, FLoSS, ontogenesis, individuation, process oriented perspective, typesetting
 \stopalignment}
 \protect
 
