@@ -10,6 +10,9 @@ $else$
 \setmainfont[Linux Libertine O]
 \setmonofont[inconsolata][11pt]
 
+\usemodule[vim]
+\definetypevimfile [typeRUBY] [syntax=ruby, numbering=on, colorscheme=blackandwhite]
+
 \setuppapersize[A4][A4]  % use A4 paper
 %\setuplayout[width=middle, backspace=1.5in, cutspace=1.5in,
 %             height=middle, header=0.75in, footer=0.75in] % page layout
@@ -20,7 +23,7 @@ $else$
 
 \setupinterlinespace[line=18pt] % should be 3/2 spacing
 
-\setupcaptions[headstyle=smallcaps]
+\setupcaptions[headstyle=smallcaps, style=\tfx, way=bytext, prefixsegments=none]
 
 \setupindenting[medium]
 \indenting[always]
@@ -54,7 +57,51 @@ $else$
 
 
 \setupcolor[hex]
-\definecolor[titleRed][h=910A00]
+\definecolor[titleRed][x=910A00]
+
+\definefont [Poem]  [Mono at 9.5pt]
+
+\def\makededicated{
+  \startalignment[center]
+    \blank[force,3*big]
+      {\bf This thesis is dedicated to}
+    \blank[none]
+      {\bf the living memories of Caroline Gallagher and Jacob Renshaw.}
+  \stopalignment
+
+  \bgroup
+  \setupnarrower[left=4.7cm]
+  \switchtobodyfont[9.5pt]
+	\setupinterlinespace[1.3em]
+	\setupwhitespace[none]
+  \startnarrower[left]
+    \blank[3*big]
+%		\startlines
+      Though forever is longer than \par
+      the time we meet again, \par
+      in the space between \par
+      this now and our then, \par
+      as absence brings you \par
+      into moments, I'll miss \par
+      you, my friends.
+%		\stoplines
+  \stopnarrower
+  \egroup
+%  \switchtobodyfont[12pt]
+
+%  \startnarrower
+%  \starttyping
+%    Though forever is longer than
+%    the time we meet again,
+%    in the space between
+%    this now and our then,
+%    as absence brings you 
+%    into moments, I'll miss
+%    you, my friends.
+%  \stoptyping
+%  \stopnarrower
+}
+
 
 \def\maketitle{
   \startalignment[center]
@@ -113,7 +160,7 @@ $else$
 
 \definehead		[intro]	[chapter]
 \setuphead		[intro]	[number=no, page=mychapterpagebreak]
-\definecombinedlist		[content][intro,chapter,section,subsection,subsubsection,bibliography,figure]
+\definecombinedlist		[content][intro,chapter,section,subsection,subsubsection,appendix, bibliography]
 \setupcombinedlist		[content][alternative=c,interaction=all]
 \setuplist		[intro]	[headnumber=no]
 
@@ -219,7 +266,8 @@ $endfor$
 %\setuppagenumbering[location=]
 \setupheader[state=stop]
 \maketitle
-\page
+\page[odd]
+\makededicated
 
 %\setuppagenumbering[alternative=doublisided, location={header,margin}] 
 \page[odd]
